@@ -1,0 +1,264 @@
+# Project Memory
+## Pesticides Management System
+
+Living state tracker. Update this file at the end of every work session — mark tasks as they move, append new decisions to the log (never edit past log entries; append a correction instead, same discipline as [[rules.md]] §2's ledger immutability rule).
+
+Legend: `[x]` completed · `[/]` in progress · `[ ]` backlog / upcoming
+
+---
+
+## Task Tracker
+
+### Phase 0 — Planning & Documentation
+- [x] `prd.md` written
+- [x] `architecture.md` written
+- [x] `rules.md` written
+- [x] `phases.md` written
+- [x] `design.md` written
+- [x] `memory.md` written (this file)
+
+### Phase 1 — Core Setup, Glassmorphism UI, Auth & Localization
+- [x] Laravel project scaffolded, MySQL connected
+- [x] `laravel/breeze` (Livewire stack) installed
+- [x] `spatie/laravel-permission` installed + `RoleAndPermissionSeeder` (Admin, Inventory Manager, Accountant, Salesman)
+- [x] `theme_settings` + `receipt_settings` tables/models/seeders
+- [x] Glassmorphism `layouts/app.blade.php` shell (navbar/sidebar from theme_settings)
+- [x] `lang/en` + `lang/ur` scaffolding + `LanguageSwitcher` component
+- [x] Phase 1 verification checklist passed (see [[phases.md]]) — fresh migrate+seed, all 4 role logins, RTL toggle, live theme color change all confirmed in-browser
+
+### Phase 2 — Vendor, Customer & Ledger System + Bank Accounts
+- [x] `vendors`, `customers`, `banks` tables/models + CRUD components
+- [x] `vendor_ledgers`, `customer_ledgers` tables/models
+- [x] `LedgerService` (`postVendorEntry`, `postCustomerEntry`)
+- [x] Opening balance → first ledger row on entity creation
+- [x] Ledger statement Livewire views (filterable, paginated)
+- [x] Standalone payment recording flow (`payments` rows with `payable_type` vendor/customer)
+- [x] Phase 2 verification checklist passed — opening balance produces exactly one ledger row, standalone cash/bank payments post correctly signed entries, prior rows verified byte-for-byte unchanged, immutability guards confirmed to throw on update/delete, route + action-level permission enforcement confirmed for all 4 roles (403 on both direct URL and direct Livewire action call)
+
+### Phase 3 — Product, Batching, Barcodes & Automated Expiry Alerts
+- [x] `products`, `batches` tables/models + CRUD components
+- [x] `BarcodeService` (milon/barcode, unique Code128 per batch) + printable label view
+- [x] `ExpiryAlertService` + `CheckExpiringBatches` scheduled command (daily, registered in routes/console.php)
+- [x] `ExpiryAlertsDashboard` widget (dedicated page + dashboard summary card)
+- [x] `BatchObserver` wired (save-time freshness dispatch of `BatchExpiringSoon`)
+- [x] Phase 3 verification checklist passed — unique id-derived barcodes confirmed (BCH00000001/2), 30-day window correctly includes a 21-day batch and excludes a 308-day batch, SKU uniqueness and expiry-after-manufacturing validation both confirmed rejecting invalid input server-side, scheduled command output verified, permission matrix confirmed for all 4 roles
+
+### Phase 4 — Salesman Role & POS Permission System + Returns
+- [x] Policies implemented and applied (Vendor, Customer, Purchase — Sale/Settings deferred, see decision log)
+- [x] `PurchaseService::create()` fully implemented (purchase → purchase_items → batches → payments → vendor ledger, atomic)
+- [x] `PaymentSplitService` + `UnbalancedPaymentSplitException` (built now, reused by SaleService in Phase 5)
+- [x] `PurchaseReturnService` implemented; `SaleReturnService` deferred to Phase 5 (see decision log)
+- [x] Returns tables/models/forms (purchase_returns/purchase_return_items; sale_returns deferred)
+- [x] Salesman-role UI restriction + 403 enforcement verified
+- [x] Phase 4 verification checklist passed — full multi-item/split-payment/on-account purchase verified end-to-end at the DB level (batches, payments, vendor ledger all correct in one transaction); unbalanced split rejected with zero rows written; over-quantity purchase return rejected with zero rows written; valid partial return correctly reversed batch stock + posted a reversing ledger entry while leaving the original entry untouched; Salesman gets 403 on `/purchases`, `/purchases/create`, `/purchases/{id}`, and `/vendors` (both direct URL and a direct Livewire action call); Accountant confirmed view-only on purchases (sees list, blocked from create)
+
+### Phase 5 — POS System, Split Payments Engine & Dynamic Receipt Generator
+- [x] `Pos` component (single combined component, not split into PosCart/PosPaymentSplit — see decision log): barcode-scan-to-cart, batch resolution, walk-in/named customer, split payment modal
+- [x] `SaleService::create()` fully implemented (stock validation → batch decrement → sale+sale_items → split payment → customer ledger, atomic)
+- [x] `PaymentSplitService` (built in Phase 4, reused here as planned — sum-to-total enforcement)
+- [x] `ReceiptRenderService` + thermal receipt Blade view (58mm/80mm, dynamic header/footer/logo from receipt_settings/theme_settings)
+- [x] In-POS sales return flow (`SaleReturnService` + `SaleShow`'s return modal — the piece deferred from Phase 4)
+- [x] Phase 5 verification checklist passed — full 3-item, 3-way-split (cash+bank+on-account) sale verified end-to-end at the DB level (sale, sale_items, batch decrements, payments, and a single correctly-sized customer-ledger entry for only the on-account portion); insufficient-stock and unbalanced-split attempts both rejected with zero rows written (confirmed a harmless auto-increment id gap from one rolled-back attempt, no orphaned rows); receipt verified to render correctly and un-clipped at both 58mm (219px) and 80mm (302px) computed widths; sale return verified on both a walk-in sale (stock restored, correctly *no* ledger entry since no customer) and a named-customer sale (stock restored + reversing ledger credit posted, original entry untouched); over-return attempt rejected; POS verified at tablet viewport (768px) with no horizontal overflow and a 52px checkout button; Salesman confirmed can reach POS/sales, Accountant confirmed view-only on sales (403 on `/pos` directly, sees `/sales` list with no POS quick-link)
+
+### Phase 6 — Full Mobile Optimization Polish, Testing & Deployment
+- [x] Dedicated MySQL test database + `phpunit.xml` config (real InnoDB, not sqlite, for `lockForUpdate()` fidelity)
+- [x] Automated test suite (PHPUnit) for financial paths — 54 tests / 142 assertions, all green
+- [x] `larastan/larastan` level 5 baseline — 14 → 2 findings (remaining 2 are a documented tooling limitation, not real bugs)
+- [x] Mobile-first responsive pass across all screens (360px sweep + 768px touch-target audit)
+- [x] Production deployment prep for Namecheap shared hosting — codebase readiness + written runbook (no real hosting credentials available to deploy for real; see decision log)
+- [ ] Optional: `spatie/laravel-activitylog` if settings-audit need confirmed
+- [x] Phase 6 verification checklist passed (see decision log — scoped to what's verifiable without a live server)
+
+---
+
+## Key Architectural Decisions Log
+
+Append-only. Each entry: date, decision, why, source.
+
+**2026-07-28** — Project scoped as **single business, single physical location** (not multi-tenant, not multi-warehouse). No `tenant_id`, no branch/warehouse tables anywhere in the schema.
+*Why:* Confirmed directly by stakeholder during requirements Q&A; avoids premature complexity per [[rules.md]] §3.3 YAGNI discipline.
+*Source:* [[prd.md]] §1.3, §1.
+
+**2026-07-28** — Batch selection at point-of-sale is **manual** (salesman/cashier picks the specific batch, e.g. via barcode scan), not automatic FIFO/LIFO allocation.
+*Why:* Stakeholder decision — keeps traceability tied to what's physically handed to the customer and matches how the counter workflow actually operates.
+*Source:* [[prd.md]] §2.3, [[architecture.md]] §1.2.
+
+**2026-07-28** — Receipt printing is **browser-based print** (`window.print()` + `@media print` CSS for 58mm/80mm), not a native ESC/POS print-agent integration.
+*Why:* Stakeholder preference — works from any device/browser without installing print drivers or a local bridge service; simpler deployment for a single-counter shop.
+*Source:* [[prd.md]] §2.6, [[architecture.md]] §1.2, [[design.md]] §4.4.
+
+**2026-07-28** — **No tax calculation** in v1 (no `tax_rate`/`tax_amount` fields anywhere). Currency fixed to **PKR**.
+*Why:* Stakeholder decision — out of scope for now, avoids speculative schema.
+*Source:* [[prd.md]] §1.3.
+
+**2026-07-28** — **Sales and purchase returns are in scope** for v1 (not deferred), each reversing both stock and the relevant ledger via a dedicated reversing entry, never a mutation of the original transaction.
+*Why:* Stakeholder confirmed this is core to a realistic pesticide retail/distribution workflow and cheaper to build now than retrofit into an immutable-ledger design later.
+*Source:* [[prd.md]] §2.4, [[architecture.md]] §1.4, [[rules.md]] §2 rule 6.
+
+**2026-07-28** — The originally-considered **geographic "territory" permission system for salesmen was dropped entirely**. Replaced with a simple four-role model (Admin, Inventory Manager, Accountant, Salesman) via `spatie/laravel-permission`, with no `territories` table and no area-based data filtering.
+*Why:* Stakeholder clarified salesmen all work from one shared physical counter/computer, not out in the field — geographic restriction doesn't map to the real business. Original brief's "Salesman Territory & Permission System" module is reframed as "Salesman Role & POS Permission System."
+*Source:* [[prd.md]] §3, [[architecture.md]] §3 (no territories table), [[phases.md]] Phase 4, [[rules.md]] §3.2 guardrail against building a territories table.
+
+**2026-07-28** — Standard package choices adopted rather than custom-building: `spatie/laravel-permission` (roles), `milon/barcode` (barcode generation), `barryvdh/laravel-dompdf` (PDF statements/reports only, not receipts), `laravel/breeze` Livewire stack (auth scaffolding).
+*Why:* Stakeholder approved recommended standard Laravel ecosystem choices over custom-building or alternative packages — reduces build time and risk for well-solved problems.
+*Source:* [[architecture.md]] §4, [[rules.md]] §3.1.
+
+**2026-07-28** — `payments.payable` uses an **explicit `payable_type` string + `payable_id` int pair**, not Eloquent's polymorphic `morphTo`/`morphMany`.
+*Why:* Architectural choice to keep reporting/ledger-adjacent SQL joins simple and explicit, at the cost of losing automatic Eloquent polymorphic relation loading. Documented as a conscious tradeoff so it isn't "fixed" into a morph relation later without revisiting this reasoning.
+*Source:* [[architecture.md]] §3.17, [[rules.md]] §3.2.
+
+**2026-07-28** — Scaffolded on **Laravel 12.64.0**, not 11 as originally drafted in `prd.md`'s "latest stable" framing.
+*Why:* At scaffold time, `laravel/framework` 11.x had two unpatched security advisories (temp signed URL path confusion, CRLF injection in the email validation rule) with no 11.x fix released — only 12.60+/13.10+ carry the fix. Laravel 13 requires PHP 8.3, but our fixed tech-stack constraint is PHP 8.2, so 12.64.0 is the newest version that is both patched and PHP-8.2-compatible.
+*Source:* `composer.json` `laravel/framework: ^12.61`.
+
+**2026-07-28** — The local dev MySQL/MariaDB instance (shared WAMP install, also serving unrelated legacy projects) defaults to the **MyISAM** storage engine, not InnoDB. Forced `'engine' => 'InnoDB'` on the `mysql`/`mariadb` connections in `config/database.php` rather than changing the server-wide default.
+*Why:* MyISAM has no transaction/foreign-key support (fatal for [[rules.md]] §2's atomic-transaction requirement) and a much shorter max index key length, which broke the very first migration (`users_email_unique`) with "max key length is 1000 bytes". Changing the server's global default was avoided since other unrelated databases on the same shared instance depend on it.
+*Source:* `config/database.php` (`engine` key on `mysql` and `mariadb` connections).
+
+**2026-07-28** — `LanguageSwitcher::switchTo()` must call Livewire's own `$this->redirect($url)` — returning a plain Laravel `redirect()` `RedirectResponse` from a Livewire action method does not reliably trigger a client-side navigation; the browser silently stayed on the old page/locale even though the server-side session write succeeded.
+*Why:* Discovered via live browser testing during Phase 1 verification — the session locale was in fact being persisted correctly, but the page never navigated to reflect it because Livewire didn't turn the raw `RedirectResponse` into a redirect *effect* for the front end.
+*Source:* `app/Livewire/Shared/LanguageSwitcher.php`.
+
+**2026-07-28** — Phase 2 authorization uses direct `$this->authorize('permission.name')` / `@can('permission.name')` checks against the permissions seeded in `RoleAndPermissionSeeder` (Phase 1), not dedicated model Policy classes.
+*Why:* `spatie/laravel-permission` registers a `Gate::before` hook that resolves any ability string against the user's permissions automatically, so `$this->authorize('vendors.manage')` works without a `VendorPolicy` class needing to exist. [[phases.md]] explicitly defers formal Policy classes to Phase 4 ("Policies implemented and applied"); Phase 2 satisfies [[rules.md]] §4.3's "every write authorizes" rule with this lighter mechanism in the meantime. Verified end-to-end: direct URL access and direct Livewire action calls (bypassing the hidden UI button) both correctly return 403 for a Salesman attempting `vendors.manage`-gated actions.
+*Source:* `app/Livewire/Vendors/VendorList.php`, `app/Livewire/Customers/CustomerList.php`, `app/Livewire/Admin/BankAccountManager.php`.
+
+**2026-07-28** — `VendorLedger`/`CustomerLedger` immutability is enforced in code, not just by convention: both models override `update()` and `delete()` to throw `LogicException`.
+*Why:* [[rules.md]] §2 rule 1 states ledger rows are insert-only: this makes that a hard guarantee (verified via tinker — both calls throw) rather than a rule developers could accidentally violate later, e.g. while building Phase 4/5's return/reversal flows.
+*Source:* `app/Models/VendorLedger.php`, `app/Models/CustomerLedger.php`.
+
+**2026-07-28** — In `layouts/partials/head.blade.php`, the per-shop dynamic `<style>` block (theme colors from `theme_settings`) must be placed **after** `@vite(['resources/css/app.css', ...])`, not before.
+*Why:* `app.css` declares the same CSS custom properties as a static `:root` fallback (see [[design.md]] §2.1). Two `:root` rules with equal specificity resolve by source order — with the dynamic block first, the static fallback in app.css always won and theme color changes silently never appeared in the browser, even though the server was rendering the correct value (confirmed by comparing `curl` output against the live DOM's computed style).
+*Source:* `resources/views/layouts/partials/head.blade.php`.
+
+**2026-07-28** — `payments.payable_type` extended beyond the original `sale`\|`purchase` to also allow `vendor`\|`customer` (new `PayableType` enum).
+*Why:* [[phases.md]] Phase 2 calls for a standalone payment flow (pay down a vendor balance / receive a customer payment with no linked sale or purchase), and the original schema only had `payments` rows backing sale/purchase transactions. Rather than inventing a second payment-recording path, `payments` now also backs standalone ledger settlements directly against a vendor or customer.
+*Source:* [[architecture.md]] §3.17, `app/Enums/PayableType.php`.
+
+**2026-07-29** — Batch barcodes are derived from the batch's own auto-increment id (`BCH` + zero-padded id), assigned via a create-then-update inside one `DB::transaction()` in `BarcodeService::createBatchWithBarcode()`, rather than a randomly-generated code checked for collisions.
+*Why:* The `barcode` column is `NOT NULL UNIQUE`, but no code can be derived from an id that doesn't exist yet pre-insert. Using the id sidesteps collision-retry logic entirely — uniqueness is free once the row exists — at the cost of a two-statement write, hidden inside the transaction so no caller ever sees the temporary placeholder value.
+*Source:* `app/Services/BarcodeService.php`.
+
+**2026-07-29** — `batches.purchase_item_id` has no FK constraint yet (plain `unsignedBigInteger`, nullable) since the `purchase_items` table doesn't exist until Phase 4/5.
+*Why:* [[phases.md]] explicitly defers the full purchase flow to Phase 4 ("PurchaseService::create()... completing the data flow... that Phase 3 deferred"); Phase 3's batches are created directly (opening-stock style, `purchase_item_id = null`) via the Batch CRUD UI. The FK constraint should be added in the Phase 4 migration that creates `purchase_items`, not backfilled awkwardly later.
+*Source:* `database/migrations/..._create_batches_table.php`, [[architecture.md]] §3.7.
+
+**2026-07-29** — Resolved the note above: `batches.purchase_item_id` now has a real `restrictOnDelete()` FK to `purchase_items`, added in Phase 4 once that table exists.
+*Source:* `database/migrations/..._add_purchase_item_foreign_key_to_batches_table.php`.
+
+**2026-07-29** — `SalePolicy` and `SaleReturnService`/`sale_returns`/`sale_return_items` (all nominally part of [[phases.md]] Phase 4's "Policies implemented and applied (..., Sale, ...)" and returns line) are **deferred to Phase 5**, not built in Phase 4.
+*Why:* Both require the `Sale`/`SaleItem` models, which don't exist until Phase 5's POS work (architecture.md §1.2). A `SalePolicy` with no `Sale` model to auto-discover against, or a `sale_returns` table with no `sales` table to FK against, would be an empty shell with nothing real to test — the same reasoning already applied to `batches.purchase_item_id` in Phase 3. `PurchaseReturnService` (real FKs, fully testable) was built in full instead; `SaleReturnService` will follow the identical pattern once `sales`/`sale_items` exist.
+*Source:* [[phases.md]] Phase 4 & 5.
+
+**2026-07-29** — `PaymentSplitService` (originally slotted for Phase 5 in [[architecture.md]] §4) was built in Phase 4 instead, since `PurchaseService` already needs decimal-safe sum-to-total validation for split purchase payments.
+*Why:* Avoids duplicating the same bcmath sum-check logic once now (purchases) and again in Phase 5 (POS sales) — built once as a shared service and reused, per rules.md's own DRY framing for split payments.
+*Source:* `app/Services/PaymentSplitService.php`.
+
+**2026-07-29** — `Purchase.invoice_number` uses the same create-then-update-from-own-id trick as batch barcodes (`PU-` + zero-padded id), inside `PurchaseService::create()`'s transaction.
+*Why:* Same reasoning as the barcode decision above — avoids any race condition from a `max(id)+1`-style counter under concurrent purchase creation, at the cost of one extra UPDATE per purchase, hidden inside the same transaction.
+*Source:* `app/Services/PurchaseService.php`.
+
+**2026-07-29** — A purchase return's allowed quantity is capped by **both** `purchase_item.returnableQuantity()` (original qty minus already-returned) **and** the batch's current `quantity_remaining` — whichever is smaller.
+*Why:* Once Phase 5 sales exist, a batch could have less stock remaining than its "returnable" purchase quantity implies (some of it may have already been sold). Capping only against the purchase quantity would let a return push `quantity_remaining` negative. This wasn't yet observable in Phase 4 (no sales exist), but the guard was added now since `PurchaseReturnService` is unlikely to be revisited once Phase 5 ships.
+*Source:* `app/Services/PurchaseReturnService.php`.
+
+**2026-07-29** — POS is a **single combined `Pos` Livewire component** (cart array + payment-split array as plain public properties), not the three-file `Pos`/`PosCart`/`PosPaymentSplit` split architecture.md's folder listing describes.
+*Why:* Consistent with the pattern already established for `PurchaseCreate` in Phase 4 (dynamic repeating rows as component array properties, no child-component event-dispatch indirection) — simpler to reason about and sufficient at this shop's scale. `PosCart`/`PosPaymentSplit` as separate files were never created.
+*Source:* `app/Livewire/Pos/Pos.php`.
+
+**2026-07-29** — `Sale.invoice_number` uses the same create-then-update-from-own-id trick as batch barcodes and purchase invoice numbers (`SL-` + zero-padded id).
+*Source:* `app/Services/SaleService.php`.
+
+**2026-07-29** — Observed (not a bug): after a transaction rolls back inside `PurchaseService`/`SaleService` (e.g. an `InsufficientStockException` thrown after the `Purchase`/`Sale` row was inserted but before commit), the row itself is correctly rolled back, but MySQL/InnoDB's `AUTO_INCREMENT` counter is **not** transactional and does not roll back — so the next real purchase/sale skips that id. Confirmed via a live test (id 2 was "consumed" by a failed sale, the next successful sale became id 3, and row counts before/after the failed attempt were verified identical). This is standard InnoDB behavior, not a data-integrity issue; don't "fix" gaps in `sales`/`purchases` ids later under the assumption something is wrong.
+*Source:* verified live during Phase 5 verification.
+
+**2026-07-29** — `tests/TestCase.php` sets `protected $seed = true;` so every `RefreshDatabase` test auto-runs `DatabaseSeeder`.
+*Why:* Every layout calls `ThemeSetting::current()`, which does `firstOrFail()` and throws `ModelNotFoundException` (rendered as a 404) if the `theme_settings` row doesn't exist. Without auto-seeding, any `RefreshDatabase` feature test touching a page renders as a spurious 404 with no obvious connection to the real cause — this cost real debugging time before being traced back through what looked like unrelated OneDrive file-lock errors on the compiled view cache (fixed separately via `VIEW_COMPILED_PATH` pointing outside OneDrive in `phpunit.xml`).
+*Source:* `tests/TestCase.php`, `phpunit.xml`.
+
+**2026-07-29** — larastan level 5 was run against `app/` and reduced from 14 findings to 2 via real fixes, not suppression: generic PHPDoc (`@return BelongsTo<Target, $this>` etc.) on Eloquent relation methods across `Batch`, `PurchaseItem`, `Purchase`, `Sale`, `SaleItem`; `User implements MustVerifyEmail`; bcmath string casts in `PurchaseReturnService`/`SaleReturnService`; `@property-read` PHPDoc on `Pos` for its Livewire computed `cartTotal` property; `Collection<int, Batch>` generic on `ExpiryAlertService::expiringWithin()`. The remaining 2 findings (`BatchForm.php` lines 42-43, calling `toDateString()` on a value larastan infers as possibly-string) are a known larastan/Laravel `casts()`-method-style tooling limitation — functionally verified correct via prior extensive browser testing of the batch edit flow — and are left as documented, not suppressed.
+*Source:* `phpstan.neon`, `app/Models/*.php`, `app/Livewire/Pos/Pos.php`, `app/Services/PurchaseReturnService.php`, `app/Services/SaleReturnService.php`, `app/Services/ExpiryAlertService.php`.
+
+**2026-07-29** — Mobile-first audit (360px width sweep of every screen + 768px touch-target scan) found two real bugs, both fixed: (1) the dashboard/navbar overflowed horizontally at 360px (394px scrollWidth vs 360px viewport) because the app-name brand link, language switcher, and user dropdown didn't fit in one row — fixed by hiding the brand link below `sm:`, adding `ms-auto`/`min-w-0` to the right-side flex container, truncating the username, and trimming language-switcher button padding on mobile; (2) the navbar brand link was only 28px tall at tablet width (768px), below the 44px minimum touch target from [[design.md]] §4.1 — fixed via `min-h-[44px] items-center` and `sm:flex` instead of `sm:block`. Both verified fixed post-rebuild; the fix was confirmed to generalize across every other screen swept (vendors/customers/banks/products/batches/expiry-alerts/purchases/POS/sales/profile), all zero-overflow at 360px.
+*Source:* `resources/views/components/navbar.blade.php`, `resources/views/livewire/shared/language-switcher.blade.php`.
+
+**2026-07-29** — Deployment target is **Namecheap shared hosting (cPanel)**, chosen directly by the stakeholder. No real hosting credentials were available in this session, so "Phase 6 deployment" was scoped down to (a) codebase production-readiness and (b) a written, host-specific runbook — not an actual live deploy. [[phases.md]] Phase 6's verification item "smoke test... against the deployed production instance" is therefore not literally completed; the runbook's own step 13 smoke-test checklist exists so the stakeholder can run it themselves once real hosting is provisioned.
+*Why:* No SSH/FTP/cPanel access was ever provided to this session — deploying without credentials isn't possible, and fabricating a "deployed" status would be dishonest about what was actually verified.
+*Source:* [[DEPLOYMENT.md]].
+
+**2026-07-29** — Production `.env` should **not** be seeded via the default `DatabaseSeeder` — it creates four demo accounts (`admin@example.com` / `password` among them) that are dev/test fixtures only ([[architecture.md]] user model, `database/seeders/DatabaseSeeder.php` docblock). The deployment runbook instead seeds only `RoleAndPermissionSeeder`/`ThemeSettingSeeder`/`ReceiptSettingSeeder` and creates one real Admin account via a one-off tinker command — both paths verified to actually run cleanly against the dev database before being written into the runbook.
+*Why:* Shipping the known dev credentials to a public production server would be a live, guessable admin login. Per `prd.md` §3.1, users are meant to be Admin-created, not seeded, in the first place.
+*Source:* [[DEPLOYMENT.md]] step 8, `database/seeders/DatabaseSeeder.php`.
+
+**2026-07-29** — Production `.env` sets `QUEUE_CONNECTION=sync`, not `database` (the local-dev default).
+*Why:* No job in the codebase implements `ShouldQueue` (grepped `app/` — zero matches), so there's nothing to actually queue; `sync` avoids needing a persistent `queue:work` worker process, which most shared-hosting plans either can't run at all (no long-lived background processes outside cron) or only support awkwardly. If a real queued job is ever added, this should be revisited.
+*Source:* [[DEPLOYMENT.md]], `.env.production.example`.
+
+**2026-07-29** — `php artisan storage:link` is called out as a required deployment step even though no logo has ever been uploaded through the app's UI (no upload form exists yet as of Phase 6).
+*Why:* `resources/views/receipts/thermal-receipt.blade.php` already reads `theme_settings.logo_path` through `Storage::disk('public')->url(...)`, so the symlink is a prerequisite the moment that field is ever populated (e.g. directly via DB/tinker) — better to set it up once during deploy than to hit a broken image path later and have to remember why.
+*Source:* [[DEPLOYMENT.md]] step 9, `resources/views/receipts/thermal-receipt.blade.php`.
+
+**2026-07-29** — **Critical, app-wide bug found and fixed post-launch**: every "Add X" button rendered inside `<x-slot:header>` on a full-page Livewire component (`#[Layout('layouts.app')]`) was permanently inert — clicking did nothing, no request ever fired. Root-caused via Livewire's own source (`vendor/livewire/livewire/src/Features/SupportPageComponents/SupportPageComponents.php::renderContentsIntoLayout`): the `Layout` attribute mechanism captures `<x-slot:header>` content via Blade's normal named-slot mechanism and forwards it into the layout's `$header` variable *separately* from the component's own rendered `$content` string — meaning the header slot's HTML physically ends up **outside** the `wire:id`-tagged root element Livewire tracks. Livewire's click-delegation walks up the DOM from the clicked element looking for a `wire:id` ancestor to resolve which component instance owns the action; finding none, it silently no-ops. Confirmed via live DOM inspection: only 2 `wire:id` roots existed on a vendor-list page (the language-switcher component, and a div starting *after* the header slot) — zero ancestors for the header's "Add Vendor" button. This had been invisible throughout Phases 1–6 because prior verification always called Livewire actions directly via `$wire.method()` in browser tests rather than literally clicking the rendered button.
+*Why:* This is inherent to Livewire's Layout+slot feature (not a regression introduced in this session) — `<x-slot:header>` is fine for static content (a page title) but any `wire:click`/`wire:model`/`wire:submit` placed inside it will never fire, no matter how correct the rest of the code is.
+*How fixed:* Added [[resources/views/components/page-header.blade.php|page-header.blade.php]] — a genuine Blade component (not a named slot) rendered as the first child *inside* each Livewire component's own tracked root, styled identically to the old `$header` output. Converted all 14 pages that used `<x-slot:header>` to `<x-page-header>` (7 had real broken buttons: product/batch/vendor/customer lists, bank accounts, vendor/customer ledgers — batch-list had two; the other 7 were header-only-static and safe, converted anyway for consistency so nobody falls into this trap again by adding a button to one of those headers later). `layouts/app.blade.php`'s `@if(isset($header))` block is now effectively dead code (nothing sets `$header` anymore) but left in place since Livewire's Layout mechanism still supports the (now avoided) pattern.
+*Source:* `resources/views/components/page-header.blade.php`, all 14 `resources/views/livewire/**/*.blade.php` list/show/ledger/manager views, `vendor/livewire/livewire/src/Features/SupportPageComponents/SupportPageComponents.php`.
+
+**2026-07-29** — Product categories are a real `categories` table (`id`, `name` unique, `is_active`), not the free-text `products.category` string column from Phases 1–6.
+*Why:* User asked "where do I add categories?" — there was no answer, because it was always a plain text field (typing "Insecticide" vs "insecticide" would silently create two different categories with no way to reconcile them, and no page to manage the list). Replaced with `Category` model + `CategoryManager` Livewire CRUD (`/categories`, gated on `products.manage`, same pattern as `BankAccountManager`) + `products.category_id` FK (`nullOnDelete`). `CategorySeeder` seeds the four standard pesticide categories (Insecticide, Herbicide, Fungicide, Rodenticide) as part of `DatabaseSeeder`. No data migration was needed since this is still pre-production with no real customer data — the old `category` string column was dropped outright rather than kept for backward compatibility, per [[rules.md]]'s no-backwards-compat-hacks guidance.
+*Source:* `app/Models/Category.php`, `app/Livewire/Inventory/CategoryManager.php`, `database/migrations/..._create_categories_table.php`, `database/migrations/..._modify_products_table_use_category_id.php`, `database/seeders/CategorySeeder.php`.
+
+**2026-07-29** — POS view redesigned for a more professional look: barcode-scan bar with an icon, cart rendered as a proper itemized list (not wrapped flex chips) with a `+`/`−` quantity stepper (`Pos::incrementQuantity()`/`decrementQuantity()`, bcmath-safe, capped at the batch's `available` quantity) alongside the existing free-text quantity input, a sticky order-summary sidebar on desktop (items count, subtotal, total, checkout button) mirrored as the existing mobile docked bar, a "Clear cart" action (`Pos::clearCart()`), and a live "Remaining to pay" / "Fully paid" indicator in the checkout modal computed client-side from `paymentLines` vs `cartTotal` for immediate visual feedback (the actual balance validation is still server-side via `PaymentSplitService`, this is UI-only). Verified end-to-end via direct `$wire` calls: scan → cart line → stepper → checkout → payment split → completed sale → receipt, all correct.
+*Source:* `resources/views/livewire/pos/pos.blade.php`, `app/Livewire/Pos/Pos.php`.
+
+**2026-07-29** — Sidebar gained a desktop collapse/expand toggle (icon-only rail at `w-20` vs full `w-64`), state persisted via plain `localStorage` (no Alpine persist plugin installed — a manual `x-init`/`localStorage.getItem` read plus a `toggleCollapsed()` method that also writes back is sufficient and dependency-free). All 11 nav items got real inline SVG icons (heroicons-outline-style paths) since a collapsed, label-less sidebar needs something to show; each link also got a `title` attribute so the icon is still identifiable via native tooltip when collapsed.
+*Why:* User reported "no option to hide or extend the sidebar" — there was genuinely no desktop collapse affordance before this (only a mobile off-canvas hamburger existed, gated `lg:hidden`).
+*A debugging note for future sessions:* while verifying this live, `getComputedStyle`/`window.matchMedia('(min-width:1024px)')` returned **inconsistent results across different browser-automation tabs** in this same session — some freshly-`tabs_create()`'d tabs reported `matches: false` despite `window.innerWidth` correctly reporting 1280, causing the `lg:` responsive classes to visually appear broken (sidebar stuck at mobile width/off-screen) even though the compiled Tailwind CSS and Alpine reactive state were both independently verified 100% correct (`Element.matches()`, direct stylesheet rule inspection, and `Alpine.$data()` all agreed). Reproduced identically against both the Vite dev server and a fresh `npm run build` production bundle, ruling out HMR/caching as the cause. The original, longest-lived tab in the session (open since early in the conversation) never exhibited this and consistently rendered correctly. Diagnosed as a viewport-state artifact specific to this browser-automation tooling, not a real code or browser bug — do not "fix" this by adding `!important` or other cascade-forcing hacks to `lg:` sidebar classes if it resurfaces; verify first against the long-lived tab or a real browser before assuming the code is at fault.
+*Source:* `resources/views/components/sidebar.blade.php`.
+
+**2026-07-29** — Real bug found and fixed: the sidebar disappeared entirely when switching to Urdu (RTL), at any viewport width, including desktop. Root cause was a genuine CSS cascade tie: the sidebar's off-canvas-hide classes are `-translate-x-full rtl:translate-x-full` (added whenever the mobile drawer is closed) versus the desktop-visible override `lg:translate-x-0` (static). Tailwind's built-in `rtl:` variant wraps its selector in `:where([dir="rtl"], [dir="rtl"] *)`, which contributes **zero** specificity specifically so it doesn't fight other variants — but that also means the tie between `.rtl\:translate-x-full` and `.lg\:translate-x-0` (both otherwise-equal single-class selectors) is broken by source order alone, and Tailwind happened to emit `.rtl\:translate-x-full` *after* `.lg\:translate-x-0` in the compiled stylesheet — so in RTL mode the hidden state won even at desktop width. Confirmed by direct byte-offset inspection of the compiled CSS (`rtl:translate-x-full` at a later position than `lg:translate-x-0`) before touching any code.
+*How fixed:* added `lg:rtl:translate-x-0` (a combined variant) to the sidebar's static class list. Verified the compiled selector is `.lg\:rtl\:translate-x-0:where([dir="rtl"], [dir="rtl"] *)` inside `@media (min-width:1024px)`, positioned *after* `.rtl\:translate-x-full` in the stylesheet — so it now wins the same source-order tie in the one scenario that matters (RTL + desktop). Verified live: sidebar stays fully visible (256px expanded / 80px collapsed, `transform: none`) after switching to Urdu, at desktop width, in both the expanded and collapsed states.
+*Why this matters beyond the fix itself:* any future `rtl:`-conditioned class added to an element that *also* has a competing `lg:` (or other bare-variant) class for the same CSS property needs an explicit `lg:rtl:`-combined override too — Tailwind's zero-specificity `:where()` wrapper for direction variants means these ties are resolved by emission order, not intent, and that order isn't something to rely on without checking.
+*Source:* `resources/views/components/sidebar.blade.php`.
+
+**2026-07-29** — **The dev environment now runs on the static production build (`npm run build`), not the Vite dev server.** `public/hot` was deleted and the `npm run dev` process was killed.
+*Why:* The user reported that switching language broke the sidebar and POS layout, but a hard refresh (Ctrl+Shift+R) fixed it while a normal refresh (Ctrl+R) did not — the textbook symptom of a stale browser-cached asset served from an unhashed URL. `public/hot` was present (left over from earlier development in this session), meaning `@vite()` was serving `resources/js/app.js`/`resources/css/app.css` from the Vite dev server at un-hashed URLs (`http://[::1]:5173/resources/js/app.js`), relying entirely on its HMR websocket to push updates — if that connection doesn't reliably update the real browser's cache (as observed here), normal navigation (including the language switcher's server redirect) can silently keep serving old CSS/JS against newly-rendered HTML, producing exactly this kind of broken-until-hard-refresh layout. The static build instead emits a **new content-hashed filename** (e.g. `app-D9sW1YPy.css`) every time the compiled output actually changes, so any real change is automatically a cache miss — no hard refresh ever required, and this exactly matches how `APP_ENV=production` behaves per [[DEPLOYMENT.md]], so testing against it now is more representative besides.
+*How to apply going forward:* after any `resources/css/**` or `resources/js/**` change, run `npm run build` (already standard practice in this project) — do **not** run `npm run dev` for the user's own testing/browsing. Only run it if actively pairing on frontend asset changes together in real time.
+*Source:* `public/build/`, `vite.config.js`, [[DEPLOYMENT.md]].
+
+**2026-07-29** — Added an optional customer-photo capture to credit sales, and made customer-ledger credit rows link back to their originating sale/sale return. Scope was clarified with the stakeholder first: the photo is of the customer's face (not an ID or signature), capture is optional (never blocks checkout), the browser picks whichever camera it defaults to (no forced facing mode), and the photo is visible both on the sale's own page and reachable from the ledger row — sale-return credits link to the parent sale too.
+- `sales.photo_path` (nullable string) added via migration; stored using the same create-then-update-from-own-id pattern as barcodes/invoice numbers (`sale-photos/{sale->id}.jpg`), inside `SaleService::create()`'s existing transaction — one fewer place for the photo and the sale row to ever disagree.
+- `SaleService::create()` gained an optional `?Illuminate\Http\UploadedFile $photo` param (typed against the base Laravel class, not Livewire's `TemporaryUploadedFile`, so the service layer isn't coupled to the UI framework — Livewire's subclass satisfies it fine).
+- `Pos` component uses `WithFileUploads` with a `capturedPhoto` property (`nullable|image|max:5120` — 5MB cap), reset only on a *successful* checkout (an unbalanced-split error, for example, keeps the photo attached rather than losing it).
+- Camera UI is a live `getUserMedia()` preview (not the `<input capture>` attribute, which on desktop just opens a file picker rather than a webcam) — a new `resources/js/camera-capture.js` registers an `Alpine.data('cameraCapture', ...)` component via `alpine:init`, opening a `<video>` preview, drawing a frame to a hidden `<canvas>` on capture, and uploading the resulting JPEG blob to the `capturedPhoto` property via `$wire.upload()`. Denied/unsupported camera access is caught and shown as a friendly inline message, not a browser-native alert. The capture section only renders (`@if`) when at least one payment line's method is `ledger`.
+- `CustomerLedger`'s `render()` batch-resolves `sale_return` → parent `sale_id` in one extra query (`SaleReturn::whereIn('id', ...)->pluck('sale_id', 'id')`) rather than N+1 per row — `sale` reference rows need no extra query since `reference_id` already *is* the sale id. The ledger view links only when the entry resolves to a sale id **and** the viewing user has `sales.view`.
+*Why the file-typing choice:* keeps `SaleService` framework-agnostic per the project's existing service-layer discipline, at zero practical cost since Livewire's upload object already extends `UploadedFile`.
+*Source:* `database/migrations/..._add_photo_path_to_sales_table.php`, `app/Services/SaleService.php`, `app/Livewire/Pos/Pos.php`, `resources/js/camera-capture.js`, `resources/views/livewire/pos/pos.blade.php`, `resources/views/livewire/pos/sale-show.blade.php`, `app/Livewire/Customers/CustomerLedger.php`, `resources/views/livewire/customers/customer-ledger.blade.php`.
+
+**2026-07-29** — Real, previously-hidden bug found and fixed while building the above: `.env`'s `APP_URL` was `http://localhost` while the dev server actually runs on `http://127.0.0.1:8000`. Nothing surfaced this for the first six phases because no feature generated an absolute URL from `APP_URL` before now — `Storage::disk('public')->url(...)` (used to display the new customer photo) does exactly that per `config/filesystems.php`'s `'url' => env('APP_URL').'/storage'`, so every photo `<img>` tag pointed at port 80 on `localhost` and silently 404'd. Fixed by correcting `.env` to `APP_URL=http://127.0.0.1:8000` and clearing the config cache. Also ran `php artisan storage:link` for the first time in this environment, since this is the app's first real use of the public disk.
+*Why this matters beyond the fix itself:* any future feature that calls `Storage::disk('public')->url()`, `asset()` with an absolute flag, or otherwise builds a URL from `APP_URL` should be spot-checked in a real browser (not just "does the file get created on disk") — the write path and the read/display path can both work in isolation while the generated link is still wrong.
+*Source:* `.env`, `config/filesystems.php`.
+
+**2026-07-29** — Added a unified `/settings` page (General / Receipt / Theme & Colors / Bank Accounts tabs) and relocated Bank Accounts into it. Scope was clarified with the stakeholder first: Shop Name replaces the app's branding in the navbar, sidebar, browser tab, *and* receipts (not receipt-only); "footer" in the original ask turned out to mean the already-existing `receipt_settings.footer_text` field (there's no page-level footer element in this app, and none was added); the sidebar gets a real two-stop CSS gradient (not the receipt footer, which has no color); the 4 suggested themes pre-fill the color/gradient pickers so the admin can still fine-tune before saving; and the whole Settings area — including the relocated Bank Accounts tab — is now **Admin-only**.
+- `theme_settings` gained `shop_name` (nullable), `sidebar_gradient_from`, `sidebar_gradient_to` (both `#RRGGBB`, backfilled from the existing `sidebar_primary_color` so current installs don't visually change until an admin picks a real two-tone gradient). `ThemeSetting::displayName()` returns `shop_name` or falls back to the `nav.app_name` translation — used by `head.blade.php` (`<title>`), `navbar.blade.php`, `sidebar.blade.php`, and `thermal-receipt.blade.php`, replacing their previous hardcoded `__('nav.app_name')` calls.
+- `.glass-sidebar`'s background changed from a flat `color-mix()` to `linear-gradient(180deg, color-mix(...--sidebar-gradient-from...), color-mix(...--sidebar-gradient-to...))` — same glassmorphism translucency, now blending two colors top-to-bottom. `navbar_primary_color`/`navbar_accent_color` stayed solid (only Sidebar was asked for gradient support).
+- `App\Livewire\Admin\SettingsPage` is one Livewire component with Alpine-only (no round-trip) client-side tab switching; the Bank Accounts tab embeds the **existing, unmodified** `<livewire:admin.bank-account-manager />` as a nested component rather than rewriting it — reuses its already-tested create/edit/toggle logic and permission checks verbatim. General/Theme tabs are gated on `branding.manage`, Receipt on `receipt-settings.manage` — both permissions already existed (seeded in Phase 1, Admin-only) but were never wired to any UI until now.
+- The 4 preset themes (`SettingsPage::PRESET_THEMES` — Forest/Ocean/Sunset/Royal) are a plain PHP const array; `applyPreset(int $index)` just overwrites the component's own bound properties (not the DB) so "Save" is still required — matches the stakeholder's chosen behavior exactly.
+- **Permission matrix change**: removed `bank-accounts.manage`/`bank-accounts.view` from Accountant, and `bank-accounts.view` from Inventory Manager, in `RoleAndPermissionSeeder` — bank accounts are Admin-only now that they live inside Settings. The old standalone `/banks` route was deleted (nothing else referenced `route('banks.index')`); its sidebar entry was replaced with a single `/settings` entry gated on `branding.manage`.
+- **Real bug caught by the test suite, not manual testing**: `database/seeders/ThemeSettingSeeder.php` was never updated with the three new columns, so any *fresh* install (`migrate:fresh --seed`, or the test suite's own `RefreshDatabase`) got `NULL` for `sidebar_gradient_from`/`sidebar_gradient_to`, which crashed `SettingsPage::mount()` (`Cannot assign null to property ...$sidebarGradientFrom of type string`) the instant an Admin opened `/settings`. The migration's own backfill only touches rows that already existed *at migration time* — it can't retroactively fix rows a seeder inserts afterward. Fixed by adding the three new columns to the seeder's insert data. This is exactly the kind of gap that manual browser testing against the long-lived dev database (which already had the row from before this migration ran) would never have caught — only running the real test suite, which exercises fresh installs, surfaced it.
+*Source:* `database/migrations/..._add_settings_fields_to_theme_settings_table.php`, `app/Models/ThemeSetting.php`, `app/Livewire/Admin/SettingsPage.php`, `resources/views/livewire/admin/settings-page.blade.php`, `resources/css/app.css`, `database/seeders/RoleAndPermissionSeeder.php`, `database/seeders/ThemeSettingSeeder.php`, `routes/web.php`, `resources/views/components/{navbar,sidebar}.blade.php`, `resources/views/layouts/partials/head.blade.php`, `resources/views/receipts/thermal-receipt.blade.php`, `tests/Feature/RolePermissionTest.php`.
+
+**2026-07-29** — Real bug found and fixed: every page header (`<x-page-header>`) looked visibly wrong — indented ~32px further right than the rest of the page's content, with extra top spacing — on every one of the 14 pages that use it. Root cause was a side effect of fixing the earlier `x-slot:header` wire:click bug: the OLD layout rendered the header as a *sibling* of `<main>`, each independently applying `px-4 lg:px-8 pt-6`, which lined up fine since they never stacked. `<x-page-header>` kept that same padding but is now rendered *inside* `<main>` (deliberately, to stay within the Livewire-tracked root) — so its padding stacks on top of `<main>`'s identical padding, double-indenting the header relative to every `.glass-panel` below it. Confirmed via `getBoundingClientRect()`: the header's inner panel sat at `left: 320` while the cart/table panels below it sat at `left: 288` — an exact 32px (one `lg:px-8`) discrepancy.
+*How fixed:* removed `<x-page-header>`'s own horizontal/top padding entirely (it now relies solely on `<main>`'s), keeping only a bottom margin (`mb-4 sm:mb-6`) to preserve the visual gap to the content that follows. Verified the header's panel now sits at the identical `left` offset as every other panel on POS, Sales History, and Products. Also removed the `@if (isset($header))` block from `layouts/app.blade.php` — fully dead code now that all 14 pages use `<x-page-header>` instead of `<x-slot:header>`, and leaving it around risked someone copying the old (broken) pattern back in.
+*A second real bug found during the same pass:* Products' header (title + "Manage Categories" link + "Add Product" button, all three added across two different sessions without re-checking mobile width) overflowed the viewport at 360px — `flex items-center justify-between` with no wrap point. Fixed with `flex-wrap` on both the outer header row and the button group, matching the pattern already used elsewhere (e.g. Batches' header). Re-swept all 14 pages plus both ledger pages at 360px after both fixes — zero overflow anywhere.
+*Source:* `resources/views/components/page-header.blade.php`, `resources/views/layouts/app.blade.php`, `resources/views/livewire/inventory/product-list.blade.php`.
+
+---
+
+## Related Documents
+
+- [[prd.md]] — what's being built.
+- [[architecture.md]] — how it's structured.
+- [[rules.md]] — standards constraining every change.
+- [[phases.md]] — the phase checklist this file tracks.
+- [[design.md]] — the visual system.
+- [[DEPLOYMENT.md]] — Namecheap shared-hosting deployment runbook (Phase 6).

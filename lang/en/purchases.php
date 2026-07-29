@@ -1,0 +1,37 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'title' => 'Purchases',
+    'new' => 'New Purchase',
+    'vendor' => 'Vendor',
+    'select_vendor' => 'Select a vendor…',
+    'line_items' => 'Line Items',
+    'add_item' => 'Add Item',
+    'product' => 'Product',
+    'select_product' => 'Select a product…',
+    'cost_price' => 'Cost Price',
+    'quantity' => 'Quantity',
+    'payment_split' => 'Payment',
+    'total' => 'Total',
+    'on_account' => 'On Account (Ledger)',
+    'add_payment_line' => 'Add Payment Line',
+    'submit' => 'Create Purchase',
+    'invoice' => 'Invoice #',
+    'date' => 'Date',
+    'status' => 'Status',
+    'status_completed' => 'Completed',
+    'status_returned' => 'Returned',
+    'status_partially_returned' => 'Partially Returned',
+    'actions' => 'Actions',
+    'view' => 'View',
+    'none' => 'No purchases found.',
+    'created' => 'Purchase :invoice created successfully.',
+    'returned' => 'Returned',
+    'line_total' => 'Line Total',
+    'return' => 'Return',
+    'returns_history' => 'Returns History',
+    'reason' => 'Reason',
+    'return_recorded' => 'Purchase return recorded successfully.',
+];

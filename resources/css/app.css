@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens — see design.md §1-§3. Navbar/sidebar colors are overridden
+   per-request via inline custom properties from theme_settings (see
+   layouts/app.blade.php); the values below are only a static fallback. */
+:root {
+    --page-bg-start: #f4f6fa;
+    --page-bg-end: #e9edf5;
+
+    --glass-bg: rgba(255, 255, 255, 0.55);
+    --glass-bg-strong: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.85);
+    --glass-shadow: 0 8px 32px rgba(31, 41, 55, 0.08);
+
+    --blur-panel: 16px;
+    --blur-nav: 20px;
+
+    --navbar-primary-color: #2f6f4f;
+    --navbar-accent-color: #e8f5ee;
+    --sidebar-primary-color: #1f4d38;
+    --sidebar-accent-color: #eaf6f0;
+    --sidebar-gradient-from: #1f4d38;
+    --sidebar-gradient-to: #1f4d38;
+
+    --color-success: #1f8a4c;
+    --color-danger: #c0392b;
+    --color-warning: #d98c00;
+    --color-info: #2563eb;
+
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+    --text-on-dark: #f7fafc;
+}
+
+body {
+    background: linear-gradient(160deg, var(--page-bg-start), var(--page-bg-end));
+    min-height: 100vh;
+    color: var(--text-primary);
+}
+
+[dir="rtl"] body {
+    font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', ui-sans-serif, sans-serif;
+}
+
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--blur-panel));
+    -webkit-backdrop-filter: blur(var(--blur-panel));
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    box-shadow: var(--glass-shadow);
+}
+
+.glass-panel-strong {
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(var(--blur-panel));
+    -webkit-backdrop-filter: blur(var(--blur-panel));
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    box-shadow: var(--glass-shadow);
+}
+
+.glass-nav {
+    background: color-mix(in srgb, var(--navbar-primary-color) 85%, white);
+    backdrop-filter: blur(var(--blur-nav));
+    -webkit-backdrop-filter: blur(var(--blur-nav));
+}
+
+.glass-sidebar {
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--sidebar-gradient-from) 85%, white),
+        color-mix(in srgb, var(--sidebar-gradient-to) 85%, white)
+    );
+    backdrop-filter: blur(var(--blur-nav));
+    -webkit-backdrop-filter: blur(var(--blur-nav));
+}
+
+@media print {
+    body {
+        background: none;
+    }
+}

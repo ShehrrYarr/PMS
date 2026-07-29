@@ -1,0 +1,36 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'title' => 'ترتیبات',
+    'tab_general' => 'عام',
+    'tab_receipt' => 'رسید',
+    'tab_theme' => 'تھیم اور رنگ',
+    'tab_banks' => 'بینک اکاؤنٹس',
+    'saved' => 'ترتیبات کامیابی سے محفوظ ہو گئیں۔',
+    'save' => 'تبدیلیاں محفوظ کریں',
+
+    'shop_name' => 'دکان کا نام',
+    'shop_name_hint' => 'نیویگیشن بار، سائیڈ بار، براؤزر ٹیب اور رسیدوں پر دکھایا جاتا ہے۔ ڈیفالٹ ایپ کا نام استعمال کرنے کے لیے خالی چھوڑ دیں۔',
+
+    'receipt_header_text' => 'رسید ہیڈر ٹیکسٹ',
+    'receipt_header_hint' => 'ہر رسید کے اوپر دکان کے نام کے نیچے پرنٹ ہوتا ہے (مثلاً پتہ، فون نمبر)۔',
+    'receipt_footer_text' => 'رسید فوٹر ٹیکسٹ',
+    'receipt_footer_hint' => 'ہر رسید کے نیچے پرنٹ ہوتا ہے (مثلاً شکریہ کا پیغام یا واپسی کی پالیسی)۔',
+    'receipt_show_logo' => 'رسید پر لوگو دکھائیں',
+    'receipt_paper_width' => 'کاغذ کی چوڑائی',
+
+    'theme_presets' => 'تجویز کردہ تھیمز',
+    'theme_presets_hint' => 'تھیم لگانے کے لیے کلک کریں، پھر محفوظ کرنے سے پہلے نیچے دیے گئے رنگوں کو بہتر بنائیں۔',
+    'navbar_colors' => 'نیویگیشن بار کے رنگ',
+    'navbar_primary_color' => 'نیویگیشن بار کا رنگ',
+    'navbar_accent_color' => 'نیویگیشن بار کا اضافی رنگ',
+    'sidebar_colors' => 'سائیڈ بار کے رنگ',
+    'sidebar_primary_color' => 'سائیڈ بار ٹیکسٹ کا رنگ',
+    'sidebar_accent_color' => 'سائیڈ بار فعال آئٹم کا رنگ',
+    'sidebar_gradient' => 'سائیڈ بار گریڈینٹ',
+    'sidebar_gradient_from' => 'گریڈینٹ شروع',
+    'sidebar_gradient_to' => 'گریڈینٹ اختتام',
+    'preview' => 'پیش منظر',
+];

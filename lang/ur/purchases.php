@@ -1,0 +1,37 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'title' => 'خریداریاں',
+    'new' => 'نئی خریداری',
+    'vendor' => 'وینڈر',
+    'select_vendor' => 'وینڈر منتخب کریں…',
+    'line_items' => 'اشیاء',
+    'add_item' => 'شے شامل کریں',
+    'product' => 'پروڈکٹ',
+    'select_product' => 'پروڈکٹ منتخب کریں…',
+    'cost_price' => 'لاگت قیمت',
+    'quantity' => 'مقدار',
+    'payment_split' => 'ادائیگی',
+    'total' => 'کل رقم',
+    'on_account' => 'ادھار (کھاتہ)',
+    'add_payment_line' => 'ادائیگی کی سطر شامل کریں',
+    'submit' => 'خریداری درج کریں',
+    'invoice' => 'انوائس نمبر',
+    'date' => 'تاریخ',
+    'status' => 'حیثیت',
+    'status_completed' => 'مکمل',
+    'status_returned' => 'واپس شدہ',
+    'status_partially_returned' => 'جزوی طور پر واپس شدہ',
+    'actions' => 'اعمال',
+    'view' => 'دیکھیں',
+    'none' => 'کوئی خریداری نہیں ملی۔',
+    'created' => 'خریداری :invoice کامیابی سے درج ہو گئی۔',
+    'returned' => 'واپس شدہ',
+    'line_total' => 'مجموعی رقم',
+    'return' => 'واپسی',
+    'returns_history' => 'واپسی کی تاریخ',
+    'reason' => 'وجہ',
+    'return_recorded' => 'خریداری کی واپسی کامیابی سے درج ہو گئی۔',
+];

@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Database\Factories;
+
+use App\Models\Vendor;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends Factory<Vendor>
+ */
+class VendorFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => fake()->company(),
+            'phone' => fake()->numerify('03##-#######'),
+            'address' => fake()->address(),
+            'opening_balance' => 0,
+            'is_active' => true,
+        ];
+    }
+}
