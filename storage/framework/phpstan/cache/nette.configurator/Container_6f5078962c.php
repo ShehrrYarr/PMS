@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
+class Container_6f5078962c extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 {
 	protected $tags = [
 		'phpstan.broker.dynamicMethodReturnTypeExtension' => [
@@ -6147,7 +6147,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_7959123fd1 $container)
+			public function __construct(Container_6f5078962c $container)
 			{
 				$this->container = $container;
 			}
@@ -6167,7 +6167,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_7959123fd1 $container)
+			public function __construct(Container_6f5078962c $container)
 			{
 				$this->container = $container;
 			}
@@ -6187,7 +6187,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_7959123fd1 $container)
+			public function __construct(Container_6f5078962c $container)
 			{
 				$this->container = $container;
 			}
@@ -6212,7 +6212,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_7959123fd1 $container)
+			public function __construct(Container_6f5078962c $container)
 			{
 				$this->container = $container;
 			}
@@ -6260,7 +6260,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_7959123fd1 $container)
+			public function __construct(Container_6f5078962c $container)
 			{
 				$this->container = $container;
 			}
@@ -6329,7 +6329,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_7959123fd1 $container)
+			public function __construct(Container_6f5078962c $container)
 			{
 				$this->container = $container;
 			}
@@ -6389,7 +6389,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_7959123fd1 $container)
+			public function __construct(Container_6f5078962c $container)
 			{
 				$this->container = $container;
 			}
@@ -6429,7 +6429,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_7959123fd1 $container)
+			public function __construct(Container_6f5078962c $container)
 			{
 				$this->container = $container;
 			}
@@ -9843,7 +9843,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 	}
 
 
-	public function createServiceContainer(): Container_7959123fd1
+	public function createServiceContainer(): Container_6f5078962c
 	{
 		return $this;
 	}
@@ -10982,7 +10982,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 				'OneDriveConsumer' => 'C:\Users\shehr\OneDrive',
 				'PATH' => 'C:\Users\shehr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\shehr\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\wamp64\bin\php\php8.2.26;C:\composer;C:\Program Files\Git\cmd;C:\Users\shehr\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\dotnet;C:\Program Files\Java\jdk-19\bin;C:\Src\3.27.0\bin;C:\Src\flutter\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\shehr\AppData\Local\Android\Sdk\platform-tools;C:\Users\shehr\AppData\Roaming\npm;C:\Users\shehr\AppData\Local\Android\Sdk\emulator;C:\Users\shehr\AppData\Local\Programs\Python\Python314;C:\Users\shehr\AppData\Local\Programs\Python\Python314\Scripts;C:\Users\shehr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\shehr\AppData\Local\Programs\Python\Python310;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\Users\shehr\AppData\Roaming\Claude\local-agent-mode-sessions\skills-plugin\3358262a-4f5e-464a-bcf2-0f9ac39ebc65\1e6452c3-51eb-4a0c-b013-3224f905440f\bin',
 				'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
-				'PHPRC' => 'C:\Users\shehr\AppData\Local\Temp\A8DF.tmp',
+				'PHPRC' => 'C:\Users\shehr\AppData\Local\Temp\ABF6.tmp',
 				'PHPSTAN_ORIGINAL_INIS' => 'C:\wamp64\bin\php\php8.2.26\php.ini',
 				'PHP_CLI_SERVER_WORKERS' => '4',
 				'PHP_INI_SCAN_DIR' => '',
@@ -11026,7 +11026,7 @@ class Container_7959123fd1 extends _PHPStan_d7e9e6b1a\Nette\DI\Container
 				'VBOX_MSI_INSTALL_PATH' => 'C:\Program Files\Oracle\VirtualBox\\',
 				'VITE_APP_NAME' => 'Pesticides Management System',
 				'WINDIR' => 'C:\WINDOWS',
-				'XDEBUG_HANDLER_SETTINGS' => 'C:\Users\shehr\AppData\Local\Temp\A8DF.tmp|0|*|*|C:\wamp64\bin\php\php8.2.26\php.ini|3.3.2',
+				'XDEBUG_HANDLER_SETTINGS' => 'C:\Users\shehr\AppData\Local\Temp\ABF6.tmp|0|*|*|C:\wamp64\bin\php\php8.2.26\php.ini|3.3.2',
 				'ZES_ENABLE_SYSMAN' => '1',
 				'_' => 'C:/wamp64/bin/php/php8.2.26/php',
 			],

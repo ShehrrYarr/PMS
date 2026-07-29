@@ -17,6 +17,11 @@
             <button type="button" @click="tab = 'banks'" :class="tab === 'banks' ? 'bg-[var(--navbar-primary-color)] text-white' : 'text-[var(--text-primary)] hover:bg-black/5'" class="min-h-[44px] rounded-xl px-4 py-2 text-sm font-bold transition">
                 {{ __('settings.tab_banks') }}
             </button>
+            @can('developer-tools.manage')
+                <button type="button" @click="tab = 'developer'" :class="tab === 'developer' ? 'bg-[var(--navbar-primary-color)] text-white' : 'text-[var(--text-primary)] hover:bg-black/5'" class="min-h-[44px] rounded-xl px-4 py-2 text-sm font-bold transition">
+                    {{ __('settings.tab_developer') }}
+                </button>
+            @endcan
         </div>
     </div>
 
@@ -177,5 +182,12 @@
         <div x-show="tab === 'banks'" x-cloak>
             <livewire:admin.bank-account-manager />
         </div>
+
+        {{-- Developer Tools --}}
+        @can('developer-tools.manage')
+            <div x-show="tab === 'developer'" x-cloak>
+                <livewire:admin.developer-tools />
+            </div>
+        @endcan
     </div>
 </div>

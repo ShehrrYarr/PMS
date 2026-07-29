@@ -6,6 +6,7 @@ namespace Tests\Feature;
 
 use App\Enums\UserRole;
 use App\Livewire\Admin\BankAccountManager;
+use App\Livewire\Admin\DeveloperTools;
 use App\Livewire\Vendors\VendorList;
 use App\Models\User;
 use App\Models\Vendor;
@@ -106,6 +107,28 @@ class RolePermissionTest extends TestCase
         Livewire::actingAs($admin)
             ->test(BankAccountManager::class)
             ->call('create')
+            ->assertOk();
+    }
+
+    /**
+     * Developer Tools (migrate/optimize/config:cache/git pull) is the most
+     * sensitive surface in the app — every non-Admin role must be unable to
+     * even mount the component, not just hit the /settings route.
+     */
+    public function test_only_admin_can_reach_developer_tools(): void
+    {
+        foreach ([UserRole::InventoryManager, UserRole::Accountant, UserRole::Salesman] as $role) {
+            $user = $this->userWithRole($role);
+
+            Livewire::actingAs($user)
+                ->test(DeveloperTools::class)
+                ->assertForbidden();
+        }
+
+        $admin = $this->userWithRole(UserRole::Admin);
+
+        Livewire::actingAs($admin)
+            ->test(DeveloperTools::class)
             ->assertOk();
     }
 

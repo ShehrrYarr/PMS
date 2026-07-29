@@ -23,6 +23,7 @@ class RoleAndPermissionSeeder extends Seeder
         UserRole::Admin->value => [
             'branding.manage',
             'receipt-settings.manage',
+            'developer-tools.manage',
             'bank-accounts.manage',
             'bank-accounts.view',
             'users.manage',
