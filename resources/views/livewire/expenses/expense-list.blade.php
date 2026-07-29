@@ -48,7 +48,7 @@
                                 {{ $expense->payment_method === 'bank' ? __('ledger.bank').' — '.($expense->bank->name ?? '—') : __('ledger.cash') }}
                             </td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $expense->vendor->name ?? '—' }}</td>
-                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $expense->amount, 2) }}</td>
+                            <td class="px-3 py-3 text-end font-bold">{{ money($expense->amount) }}</td>
                             <td class="px-3 py-3 text-end">
                                 <div class="flex justify-end gap-2">
                                     @if ($expense->receipt_photo_path)

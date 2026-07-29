@@ -34,7 +34,7 @@
                         <tr class="border-b border-black/5 text-base font-medium text-[var(--text-primary)]">
                             <td class="px-3 py-3">{{ $vendor->name }}</td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $vendor->phone ?? '—' }}</td>
-                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $vendor->currentBalance(), 2) }}</td>
+                            <td class="px-3 py-3 text-end font-bold">{{ money($vendor->currentBalance()) }}</td>
                             <td class="px-3 py-3 text-center">
                                 <span class="rounded-full px-3 py-1 text-xs font-bold {{ $vendor->is_active ? 'bg-[var(--color-success)]/10 text-[var(--color-success)]' : 'bg-[var(--color-danger)]/10 text-[var(--color-danger)]' }}">
                                     {{ $vendor->is_active ? __('vendors.active') : __('vendors.inactive') }}

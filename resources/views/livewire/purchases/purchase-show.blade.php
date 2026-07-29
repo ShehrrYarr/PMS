@@ -31,8 +31,8 @@
                                 <td class="px-3 py-3 font-mono text-sm text-[var(--text-secondary)]">{{ $item->batch->barcode ?? '—' }}</td>
                                 <td class="px-3 py-3 text-end">{{ number_format((float) $item->quantity, 2) }}</td>
                                 <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ number_format((float) $item->quantity_returned, 2) }}</td>
-                                <td class="px-3 py-3 text-end">{{ number_format((float) $item->cost_price, 2) }}</td>
-                                <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $item->line_total, 2) }}</td>
+                                <td class="px-3 py-3 text-end">{{ money($item->cost_price) }}</td>
+                                <td class="px-3 py-3 text-end font-bold">{{ money($item->line_total) }}</td>
                                 <td class="px-3 py-3 text-end">
                                     @can('purchase-returns.manage')
                                         @if (bccomp($item->returnableQuantity(), '0', 2) > 0)
@@ -48,7 +48,7 @@
                     <tfoot>
                         <tr>
                             <td colspan="5" class="px-3 py-3 text-end text-base font-bold text-[var(--text-primary)]">{{ __('purchases.total') }}</td>
-                            <td class="px-3 py-3 text-end text-base font-bold text-[var(--text-primary)]">{{ number_format((float) $purchase->total_amount, 2) }}</td>
+                            <td class="px-3 py-3 text-end text-base font-bold text-[var(--text-primary)]">{{ money($purchase->total_amount) }}</td>
                             <td></td>
                         </tr>
                     </tfoot>
@@ -63,7 +63,7 @@
                     @foreach ($purchase->returns as $return)
                         <div class="rounded-xl border border-black/10 bg-white/50 p-3">
                             <p class="text-sm font-semibold text-[var(--text-secondary)]">{{ $return->created_at->format('Y-m-d H:i') }} — {{ $return->reason }}</p>
-                            <p class="text-base font-bold text-[var(--color-danger)]">-{{ number_format((float) $return->total_amount, 2) }}</p>
+                            <p class="text-base font-bold text-[var(--color-danger)]">{{ money(-1 * (float) $return->total_amount) }}</p>
                         </div>
                     @endforeach
                 </div>

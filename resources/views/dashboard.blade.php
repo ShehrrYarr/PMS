@@ -55,19 +55,19 @@
                 <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
                     <div class="glass-panel px-4 py-4">
                         <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('dashboard.sales') }}</p>
-                        <p class="mt-1 text-xl font-bold text-[var(--text-primary)]">{{ number_format((float) $todaysReport['sales_total'], 2) }}</p>
+                        <p class="mt-1 text-xl font-bold text-[var(--text-primary)]">{{ money($todaysReport['sales_total']) }}</p>
                     </div>
                     <div class="glass-panel px-4 py-4">
                         <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('dashboard.returns') }}</p>
-                        <p class="mt-1 text-xl font-bold text-[var(--color-danger)]">{{ number_format((float) $todaysReport['returns_total'], 2) }}</p>
+                        <p class="mt-1 text-xl font-bold text-[var(--color-danger)]">{{ money($todaysReport['returns_total']) }}</p>
                     </div>
                     <div class="glass-panel px-4 py-4">
                         <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('dashboard.payment_ins') }}</p>
-                        <p class="mt-1 text-xl font-bold text-[var(--color-success)]">{{ number_format((float) $todaysReport['payment_ins_total'], 2) }}</p>
+                        <p class="mt-1 text-xl font-bold text-[var(--color-success)]">{{ money($todaysReport['payment_ins_total']) }}</p>
                     </div>
                     <div class="glass-panel px-4 py-4">
                         <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('dashboard.expenses') }}</p>
-                        <p class="mt-1 text-xl font-bold text-[var(--color-danger)]">{{ number_format((float) $todaysReport['expenses_total'], 2) }}</p>
+                        <p class="mt-1 text-xl font-bold text-[var(--color-danger)]">{{ money($todaysReport['expenses_total']) }}</p>
                     </div>
                 </div>
 
@@ -76,17 +76,17 @@
                     <div class="flex flex-wrap gap-3">
                         <div class="rounded-xl bg-black/5 px-4 py-3">
                             <p class="text-sm font-semibold text-[var(--text-secondary)]">{{ __('dashboard.cash') }}</p>
-                            <p class="text-lg font-bold text-[var(--text-primary)]">{{ number_format((float) $todaysReport['cash_total'], 2) }}</p>
+                            <p class="text-lg font-bold text-[var(--text-primary)]">{{ money($todaysReport['cash_total']) }}</p>
                         </div>
                         @forelse ($todaysReport['bank_breakdown'] as $bank)
                             <div class="rounded-xl bg-black/5 px-4 py-3">
                                 <p class="text-sm font-semibold text-[var(--text-secondary)]">{{ __('dashboard.bank') }} — {{ $bank['name'] }}</p>
-                                <p class="text-lg font-bold text-[var(--text-primary)]">{{ number_format((float) $bank['amount'], 2) }}</p>
+                                <p class="text-lg font-bold text-[var(--text-primary)]">{{ money($bank['amount']) }}</p>
                             </div>
                         @empty
                             <div class="rounded-xl bg-black/5 px-4 py-3">
                                 <p class="text-sm font-semibold text-[var(--text-secondary)]">{{ __('dashboard.bank') }}</p>
-                                <p class="text-lg font-bold text-[var(--text-primary)]">0.00</p>
+                                <p class="text-lg font-bold text-[var(--text-primary)]">{{ money(0) }}</p>
                             </div>
                         @endforelse
                     </div>
@@ -150,7 +150,11 @@
                         Object.values(instances).forEach((chart) => chart.destroy());
                     }
 
-                    function renderChart(id, type, extra) {
+                    function moneyFormat(value) {
+                        return 'PKR ' + Math.round(value).toLocaleString();
+                    }
+
+                    function renderChart(id, type, extra, isMoney) {
                         const canvas = document.getElementById(id);
 
                         if (! canvas || ! window.Chart) {
@@ -169,7 +173,17 @@
                             options: {
                                 responsive: true,
                                 maintainAspectRatio: false,
-                                plugins: { legend: { display: type !== 'line' } },
+                                plugins: {
+                                    legend: { display: type !== 'line' },
+                                    tooltip: isMoney ? {
+                                        callbacks: {
+                                            label: (ctx) => moneyFormat(ctx.parsed.y ?? ctx.parsed),
+                                        },
+                                    } : undefined,
+                                },
+                                scales: isMoney && type !== 'doughnut' ? {
+                                    y: { ticks: { callback: (v) => moneyFormat(v) } },
+                                } : undefined,
                             },
                         });
                     }
@@ -192,11 +206,11 @@
                             fill: true,
                             tension: 0.3,
                             pointRadius: 0,
-                        });
+                        }, true);
 
                         renderChart('chart-cash-bank', 'doughnut', {
                             backgroundColor: palette,
-                        });
+                        }, true);
 
                         renderChart('chart-top-products', 'bar', {
                             label: '{{ __('dashboard.quantity_sold') }}',

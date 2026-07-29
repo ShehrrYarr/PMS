@@ -76,7 +76,7 @@
                             <tr>
                                 <td>{{ $item->batch->product->name }}</td>
                                 <td class="text-end">{{ rtrim(rtrim(number_format((float) $item->quantity, 2), '0'), '.') }}</td>
-                                <td class="text-end">{{ number_format((float) $item->line_total, 2) }}</td>
+                                <td class="text-end">{{ money($item->line_total) }}</td>
                             </tr>
                         @endforeach
                     </tbody>
@@ -86,7 +86,7 @@
 
                 <div class="totals-row grand-total">
                     <span>{{ __('receipt.total') }}</span>
-                    <span>{{ number_format((float) $sale->total_amount, 2) }}</span>
+                    <span>{{ money($sale->total_amount) }}</span>
                 </div>
 
                 <div class="divider"></div>
@@ -96,7 +96,7 @@
                     @foreach ($payments as $payment)
                         <div class="totals-row">
                             <span>{{ __('ledger.'.$payment->method->value) }}</span>
-                            <span>{{ number_format((float) $payment->amount, 2) }}</span>
+                            <span>{{ money($payment->amount) }}</span>
                         </div>
                     @endforeach
                 </div>

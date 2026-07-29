@@ -5,7 +5,7 @@
                 <h2 class="text-2xl font-bold text-[var(--text-primary)]">{{ $customer->name }}</h2>
                 <p class="text-base font-semibold text-[var(--text-secondary)]">
                     {{ __('ledger.balance') }}:
-                    <span class="font-bold text-[var(--text-primary)]">{{ number_format((float) $currentBalance, 2) }}</span>
+                    <span class="font-bold text-[var(--text-primary)]">{{ money($currentBalance) }}</span>
                 </p>
             </div>
             @can('payments.manage')
@@ -59,9 +59,9 @@
                                     {{ $entry->description ?? ucfirst(str_replace('_', ' ', $entry->reference_type)) }}
                                 @endif
                             </td>
-                            <td class="px-3 py-3 text-end">{{ (float) $entry->debit > 0 ? number_format((float) $entry->debit, 2) : '—' }}</td>
-                            <td class="px-3 py-3 text-end">{{ (float) $entry->credit > 0 ? number_format((float) $entry->credit, 2) : '—' }}</td>
-                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $entry->running_balance, 2) }}</td>
+                            <td class="px-3 py-3 text-end">{{ (float) $entry->debit > 0 ? money($entry->debit) : '—' }}</td>
+                            <td class="px-3 py-3 text-end">{{ (float) $entry->credit > 0 ? money($entry->credit) : '—' }}</td>
+                            <td class="px-3 py-3 text-end font-bold">{{ money($entry->running_balance) }}</td>
                         </tr>
                     @empty
                         <tr>

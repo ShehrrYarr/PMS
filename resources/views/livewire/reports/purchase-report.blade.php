@@ -26,7 +26,7 @@
 
         <div class="mb-4 rounded-xl bg-black/5 px-4 py-3 sm:w-64">
             <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('reports.totals') }}</p>
-            <p class="mt-1 text-lg font-bold text-[var(--text-primary)]">{{ number_format((float) $purchasesTotal, 2) }}</p>
+            <p class="mt-1 text-lg font-bold text-[var(--text-primary)]">{{ money($purchasesTotal) }}</p>
         </div>
 
         <div class="overflow-x-auto">
@@ -49,7 +49,7 @@
                                 </a>
                             </td>
                             <td class="px-3 py-3">{{ $purchase->vendor->name ?? '—' }}</td>
-                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $purchase->total_amount, 2) }}</td>
+                            <td class="px-3 py-3 text-end font-bold">{{ money($purchase->total_amount) }}</td>
                         </tr>
                     @empty
                         <tr>

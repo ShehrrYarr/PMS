@@ -96,7 +96,7 @@
 
                                 <div class="w-24 text-end">
                                     <x-input-label :value="__('pos.line_total')" class="text-xs" />
-                                    <p class="mt-2 text-base font-bold text-[var(--text-primary)]">{{ number_format((float) $line['unit_price'] * (float) $line['quantity'], 2) }}</p>
+                                    <p class="mt-2 text-base font-bold text-[var(--text-primary)]">{{ money((float) $line['unit_price'] * (float) $line['quantity']) }}</p>
                                 </div>
 
                                 <button type="button" wire:click="removeCartItem({{ $index }})" class="flex min-h-[40px] min-w-[40px] items-center justify-center rounded-lg text-[var(--color-danger)] hover:bg-black/5" aria-label="{{ __('products.actions') }}">
@@ -128,12 +128,12 @@
                     </div>
                     <div class="flex items-center justify-between text-sm font-semibold text-[var(--text-secondary)]">
                         <span>{{ __('pos.subtotal') }}</span>
-                        <span>{{ number_format((float) $this->cartTotal, 2) }}</span>
+                        <span>{{ money($this->cartTotal) }}</span>
                     </div>
                 </div>
                 <div class="flex items-center justify-between pt-4">
                     <span class="text-lg font-bold text-[var(--text-primary)]">{{ __('pos.total') }}</span>
-                    <span class="text-3xl font-bold text-[var(--text-primary)]">{{ number_format((float) $this->cartTotal, 2) }}</span>
+                    <span class="text-3xl font-bold text-[var(--text-primary)]">{{ money($this->cartTotal) }}</span>
                 </div>
                 <button
                     type="button"
@@ -151,7 +151,7 @@
     <div class="glass-panel-strong fixed inset-x-0 bottom-0 z-30 flex items-center justify-between gap-4 p-4 lg:hidden">
         <div>
             <p class="text-xs font-semibold text-[var(--text-secondary)]">{{ __('pos.total') }} ({{ count($cart) }})</p>
-            <p class="text-xl font-bold text-[var(--text-primary)]">{{ number_format((float) $this->cartTotal, 2) }}</p>
+            <p class="text-xl font-bold text-[var(--text-primary)]">{{ money($this->cartTotal) }}</p>
         </div>
         <button
             type="button"
@@ -175,7 +175,7 @@
         <form wire:submit="checkout" class="space-y-4">
             <div class="flex items-center justify-between">
                 <h3 class="text-xl font-bold text-[var(--text-primary)]">{{ __('pos.checkout') }}</h3>
-                <p class="text-xl font-bold text-[var(--text-primary)]">{{ number_format((float) $this->cartTotal, 2) }}</p>
+                <p class="text-xl font-bold text-[var(--text-primary)]">{{ money($this->cartTotal) }}</p>
             </div>
 
             <div class="space-y-3">
@@ -228,7 +228,7 @@
                     {{ $remaining === 0.0 ? __('pos.fully_paid') : __('pos.remaining_to_pay') }}
                 </span>
                 @if ($remaining !== 0.0)
-                    <span class="text-sm font-bold text-[var(--color-warning)]">{{ number_format($remaining, 2) }}</span>
+                    <span class="text-sm font-bold text-[var(--color-warning)]">{{ money($remaining) }}</span>
                 @endif
             </div>
 

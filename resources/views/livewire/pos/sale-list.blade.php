@@ -29,7 +29,7 @@
                             <td class="px-3 py-3 font-mono text-sm">{{ $sale->invoice_number }}</td>
                             <td class="px-3 py-3">{{ $sale->customer->name ?? __('pos.walk_in') }}</td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $sale->created_at->format('Y-m-d H:i') }}</td>
-                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $sale->total_amount, 2) }}</td>
+                            <td class="px-3 py-3 text-end font-bold">{{ money($sale->total_amount) }}</td>
                             <td class="px-3 py-3 text-center">
                                 <span class="rounded-full bg-black/5 px-3 py-1 text-xs font-bold text-[var(--text-secondary)]">
                                     {{ __('purchases.status_'.$sale->status) }}

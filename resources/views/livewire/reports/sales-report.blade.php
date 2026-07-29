@@ -27,15 +27,15 @@
         <div class="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div class="rounded-xl bg-black/5 px-4 py-3">
                 <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('reports.sale_total') }}</p>
-                <p class="mt-1 text-lg font-bold text-[var(--text-primary)]">{{ number_format((float) $summary['sales_total'], 2) }}</p>
+                <p class="mt-1 text-lg font-bold text-[var(--text-primary)]">{{ money($summary['sales_total']) }}</p>
             </div>
             <div class="rounded-xl bg-black/5 px-4 py-3">
                 <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('reports.cost') }}</p>
-                <p class="mt-1 text-lg font-bold text-[var(--text-primary)]">{{ number_format((float) $summary['cost_total'], 2) }}</p>
+                <p class="mt-1 text-lg font-bold text-[var(--text-primary)]">{{ money($summary['cost_total']) }}</p>
             </div>
             <div class="rounded-xl bg-black/5 px-4 py-3">
                 <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('reports.profit') }}</p>
-                <p class="mt-1 text-lg font-bold text-[var(--color-success)]">{{ number_format((float) $summary['profit_total'], 2) }}</p>
+                <p class="mt-1 text-lg font-bold text-[var(--color-success)]">{{ money($summary['profit_total']) }}</p>
             </div>
             <div class="rounded-xl bg-black/5 px-4 py-3">
                 <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('reports.margin') }}</p>
@@ -66,9 +66,9 @@
                                 </a>
                             </td>
                             <td class="px-3 py-3">{{ $sale->customer->name ?? __('reports.walk_in') }}</td>
-                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $sale->total_amount, 2) }}</td>
-                            <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ number_format((float) $sale->costTotal(), 2) }}</td>
-                            <td class="px-3 py-3 text-end text-[var(--color-success)]">{{ number_format((float) $sale->profit(), 2) }}</td>
+                            <td class="px-3 py-3 text-end font-bold">{{ money($sale->total_amount) }}</td>
+                            <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ money($sale->costTotal()) }}</td>
+                            <td class="px-3 py-3 text-end text-[var(--color-success)]">{{ money($sale->profit()) }}</td>
                             <td class="px-3 py-3 text-end">{{ number_format((float) $sale->profitMarginPercent(), 2) }}%</td>
                         </tr>
                     @empty

@@ -65,7 +65,7 @@
         <div class="glass-panel p-4 sm:p-6">
             <div class="mb-4 flex flex-wrap items-center justify-between gap-2">
                 <h3 class="text-lg font-bold text-[var(--text-primary)]">{{ __('purchases.payment_split') }}</h3>
-                <p class="text-base font-bold text-[var(--text-primary)]">{{ __('purchases.total') }}: {{ number_format((float) $this->total, 2) }}</p>
+                <p class="text-base font-bold text-[var(--text-primary)]">{{ __('purchases.total') }}: {{ money($this->total) }}</p>
             </div>
 
             <div class="space-y-3">
