@@ -7,13 +7,18 @@ namespace App\Livewire\Admin;
 use App\Models\ReceiptSetting;
 use App\Models\ThemeSetting;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
+use Livewire\WithFileUploads;
 
 #[Layout('layouts.app')]
 class SettingsPage extends Component
 {
+    use WithFileUploads;
+
     /**
      * Four curated palettes an admin can apply with one click, then still
      * fine-tune — each sets both the solid navbar colors and the sidebar's
@@ -93,6 +98,11 @@ class SettingsPage extends Component
     #[Validate('required|regex:/^#[0-9a-fA-F]{6}$/')]
     public string $sidebarGradientTo = '#1f4d38';
 
+    #[Validate('nullable|image|max:1024')]
+    public ?TemporaryUploadedFile $logo = null;
+
+    public ?string $logoPath = null;
+
     public function mount(): void
     {
         $this->authorize('branding.manage');
@@ -112,6 +122,8 @@ class SettingsPage extends Component
         $this->receiptFooterText = (string) $receipt->footer_text;
         $this->receiptShowLogo = $receipt->show_logo;
         $this->receiptPaperWidth = $receipt->paper_width;
+
+        $this->logoPath = $theme->logo_path;
     }
 
     public function saveGeneral(): void
@@ -127,6 +139,49 @@ class SettingsPage extends Component
         ]);
 
         session()->flash('success', __('settings.saved'));
+        $this->dispatch('branding-updated');
+    }
+
+    public function saveLogo(): void
+    {
+        $this->authorize('branding.manage');
+
+        $this->validate([
+            'logo' => 'required|image|max:1024',
+        ]);
+
+        $theme = ThemeSetting::current();
+
+        if ($theme->logo_path !== null) {
+            Storage::disk('public')->delete($theme->logo_path);
+        }
+
+        $path = $this->logo->storeAs('branding', 'shop-logo-'.now()->timestamp.'.'.$this->logo->getClientOriginalExtension(), 'public');
+
+        $theme->update(['logo_path' => $path]);
+
+        $this->logoPath = $path;
+        $this->logo = null;
+
+        session()->flash('success', __('settings.saved'));
+        $this->dispatch('branding-updated');
+    }
+
+    public function removeLogo(): void
+    {
+        $this->authorize('branding.manage');
+
+        $theme = ThemeSetting::current();
+
+        if ($theme->logo_path !== null) {
+            Storage::disk('public')->delete($theme->logo_path);
+        }
+
+        $theme->update(['logo_path' => null]);
+
+        $this->logoPath = null;
+
+        $this->dispatch('branding-updated');
     }
 
     public function saveReceipt(): void
@@ -191,6 +246,7 @@ class SettingsPage extends Component
         ]);
 
         session()->flash('success', __('settings.saved'));
+        $this->dispatch('branding-updated');
     }
 
     public function render(): View

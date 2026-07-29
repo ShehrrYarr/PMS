@@ -74,6 +74,7 @@ class SaleService
                     'batch_id' => $batch->id,
                     'quantity' => $item['quantity'],
                     'unit_price' => $item['unit_price'],
+                    'cost_price' => $batch->cost_price,
                     'line_total' => $lineTotal,
                 ]);
 

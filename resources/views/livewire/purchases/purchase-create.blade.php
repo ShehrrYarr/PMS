@@ -6,12 +6,9 @@
     <form wire:submit="save" class="space-y-6">
         <div class="glass-panel p-4 sm:p-6">
             <x-input-label for="vendor_id" :value="__('purchases.vendor')" />
-            <select id="vendor_id" wire:model="vendor_id" class="mt-1 min-h-[44px] w-full max-w-md rounded-xl border border-black/10 bg-white/70 px-4 py-2 text-base font-medium text-[var(--text-primary)]">
-                <option value="">{{ __('purchases.select_vendor') }}</option>
-                @foreach ($vendors as $vendor)
-                    <option value="{{ $vendor->id }}">{{ $vendor->name }}</option>
-                @endforeach
-            </select>
+            <div class="mt-1 max-w-md">
+                <x-searchable-select wire:model="vendor_id" :options="$vendors" :placeholder="__('purchases.select_vendor')" />
+            </div>
             <x-input-error :messages="$errors->get('vendor_id')" class="mt-1" />
         </div>
 
@@ -28,12 +25,9 @@
                     <div class="grid grid-cols-1 gap-3 rounded-xl border border-black/10 bg-white/50 p-4 sm:grid-cols-6">
                         <div class="sm:col-span-2">
                             <x-input-label :value="__('purchases.product')" />
-                            <select wire:model="items.{{ $index }}.product_id" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-3 py-2 text-sm font-medium text-[var(--text-primary)]">
-                                <option value="">{{ __('purchases.select_product') }}</option>
-                                @foreach ($products as $product)
-                                    <option value="{{ $product->id }}">{{ $product->name }}</option>
-                                @endforeach
-                            </select>
+                            <div class="mt-1">
+                                <x-searchable-select wire:model="items.{{ $index }}.product_id" :options="$products" :placeholder="__('purchases.select_product')" />
+                            </div>
                             <x-input-error :messages="$errors->get('items.'.$index.'.product_id')" class="mt-1" />
                         </div>
                         <div>

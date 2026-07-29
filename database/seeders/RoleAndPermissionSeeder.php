@@ -48,6 +48,7 @@ class RoleAndPermissionSeeder extends Seeder
             'sale-returns.manage',
             'payments.manage',
             'reports.view',
+            'expenses.manage',
         ],
         UserRole::InventoryManager->value => [
             'vendors.manage',
@@ -77,6 +78,7 @@ class RoleAndPermissionSeeder extends Seeder
             'purchases.view',
             'sales.view',
             'reports.view',
+            'expenses.manage',
         ],
         UserRole::Salesman->value => [
             'customers.view',

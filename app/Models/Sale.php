@@ -57,4 +57,32 @@ class Sale extends Model
     {
         return $this->hasMany(SaleReturn::class);
     }
+
+    /**
+     * Total cost basis of this sale's items, from each item's cost_price
+     * snapshot (captured at sale time — see rules.md's "create-then-update"
+     * pattern discussion and SaleService::create()). Assumes items is
+     * already eager-loaded to avoid N+1 queries.
+     */
+    public function costTotal(): string
+    {
+        return $this->items->reduce(
+            fn (string $carry, SaleItem $item) => bcadd($carry, bcmul((string) $item->quantity, (string) ($item->cost_price ?? '0'), 2), 2),
+            '0.00'
+        );
+    }
+
+    public function profit(): string
+    {
+        return bcsub((string) $this->total_amount, $this->costTotal(), 2);
+    }
+
+    public function profitMarginPercent(): string
+    {
+        if (bccomp((string) $this->total_amount, '0.00', 2) <= 0) {
+            return '0.00';
+        }
+
+        return bcmul(bcdiv($this->profit(), (string) $this->total_amount, 4), '100', 2);
+    }
 }

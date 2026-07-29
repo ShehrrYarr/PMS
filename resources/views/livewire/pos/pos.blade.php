@@ -115,12 +115,9 @@
         <div class="hidden space-y-4 lg:sticky lg:top-6 lg:block lg:self-start">
             <div class="glass-panel p-4 sm:p-6">
                 <x-input-label for="customer_id" :value="__('pos.customer')" />
-                <select id="customer_id" wire:model="customer_id" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-4 py-2 text-base font-medium text-[var(--text-primary)]">
-                    <option value="">{{ __('pos.walk_in') }}</option>
-                    @foreach ($customers as $customer)
-                        <option value="{{ $customer->id }}">{{ $customer->name }}</option>
-                    @endforeach
-                </select>
+                <div class="mt-1">
+                    <x-searchable-select wire:model="customer_id" :options="$customers" :placeholder="__('pos.walk_in')" />
+                </div>
             </div>
 
             <div class="glass-panel-strong p-5 sm:p-6">
@@ -169,12 +166,9 @@
     {{-- Mobile customer picker (desktop version lives in the sticky sidebar above) --}}
     <div class="glass-panel mb-4 p-4 lg:hidden">
         <x-input-label for="customer_id_mobile" :value="__('pos.customer')" />
-        <select id="customer_id_mobile" wire:model="customer_id" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-4 py-2 text-base font-medium text-[var(--text-primary)]">
-            <option value="">{{ __('pos.walk_in') }}</option>
-            @foreach ($customers as $customer)
-                <option value="{{ $customer->id }}">{{ $customer->name }}</option>
-            @endforeach
-        </select>
+        <div class="mt-1">
+            <x-searchable-select wire:model="customer_id" :options="$customers" :placeholder="__('pos.walk_in')" />
+        </div>
     </div>
 
     <x-glass-modal show="showCheckoutModal" maxWidth="max-w-xl">

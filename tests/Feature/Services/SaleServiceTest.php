@@ -58,6 +58,7 @@ class SaleServiceTest extends TestCase
         $this->assertSame(1, SaleItem::query()->count());
         $this->assertSame(2, Payment::query()->where('payable_id', $sale->id)->count());
         $this->assertSame('2000.00', $customer->currentBalance());
+        $this->assertSame('400.00', SaleItem::query()->where('sale_id', $sale->id)->first()->cost_price);
     }
 
     public function test_walk_in_sale_posts_no_ledger_entry(): void

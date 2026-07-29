@@ -8,12 +8,20 @@ return [
     'tab_receipt' => 'Receipt',
     'tab_theme' => 'Theme & Colors',
     'tab_banks' => 'Bank Accounts',
+    'tab_banners' => 'Banners',
     'tab_developer' => 'Developer Tools',
     'saved' => 'Settings saved successfully.',
     'save' => 'Save Changes',
 
     'shop_name' => 'Shop Name',
     'shop_name_hint' => 'Shown in the navbar, sidebar, browser tab, and on printed receipts. Leave blank to use the default app name.',
+
+    'shop_logo' => 'Shop Logo',
+    'shop_logo_hint' => 'Used as the browser tab icon (favicon) and on printed receipts when enabled.',
+    'upload_logo' => 'Upload Logo',
+    'remove_logo' => 'Remove',
+    'remove_logo_confirm' => 'Remove the shop logo?',
+    'uploading' => 'Uploading…',
 
     'receipt_header_text' => 'Receipt Header Text',
     'receipt_header_hint' => 'Printed below the shop name at the top of every receipt (e.g. address, phone number).',
@@ -34,6 +42,15 @@ return [
     'sidebar_gradient_from' => 'Gradient Start',
     'sidebar_gradient_to' => 'Gradient End',
     'preview' => 'Preview',
+
+    'banner_upload' => 'Add a Banner',
+    'banner_dimensions_hint' => 'Recommended size: 1200×400px (3:1 ratio). Banners are shown full-width and crop to fit — this ratio looks good on both desktop and mobile screens.',
+    'banner_add' => 'Add Banner',
+    'banner_current' => 'Current Banners',
+    'banner_delete_confirm' => 'Delete this banner?',
+    'banner_none' => 'No banners uploaded yet.',
+    'banner_interval' => 'Slide Interval',
+    'banner_interval_seconds' => 'Seconds per slide',
 
     'dev_warning' => 'These run directly on the live server. Only use them if you understand what each one does.',
     'dev_migrate' => 'Run Database Migrations',

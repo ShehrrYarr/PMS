@@ -53,6 +53,56 @@ class RolePermissionTest extends TestCase
         $this->actingAs($salesman)->get('/settings')->assertForbidden();
     }
 
+    public function test_only_admin_and_accountant_can_reach_expenses(): void
+    {
+        $accountant = $this->userWithRole(UserRole::Accountant);
+        $this->actingAs($accountant)->get('/expenses')->assertOk();
+        $this->actingAs($accountant)->get('/expense-categories')->assertOk();
+
+        foreach ([UserRole::InventoryManager, UserRole::Salesman] as $role) {
+            $user = $this->userWithRole($role);
+
+            $this->actingAs($user)->get('/expenses')->assertForbidden();
+            $this->actingAs($user)->get('/expense-categories')->assertForbidden();
+        }
+
+        $admin = $this->userWithRole(UserRole::Admin);
+        $this->actingAs($admin)->get('/expenses')->assertOk();
+        $this->actingAs($admin)->get('/expense-categories')->assertOk();
+    }
+
+    public function test_salesman_is_forbidden_from_the_sales_report(): void
+    {
+        $salesman = $this->userWithRole(UserRole::Salesman);
+
+        $this->actingAs($salesman)->get('/reports/sales')->assertForbidden();
+    }
+
+    public function test_admin_inventory_manager_and_accountant_can_reach_the_sales_report(): void
+    {
+        foreach ([UserRole::Admin, UserRole::InventoryManager, UserRole::Accountant] as $role) {
+            $user = $this->userWithRole($role);
+
+            $this->actingAs($user)->get('/reports/sales')->assertOk();
+        }
+    }
+
+    public function test_salesman_is_forbidden_from_the_purchase_report(): void
+    {
+        $salesman = $this->userWithRole(UserRole::Salesman);
+
+        $this->actingAs($salesman)->get('/reports/purchases')->assertForbidden();
+    }
+
+    public function test_admin_inventory_manager_and_accountant_can_reach_the_purchase_report(): void
+    {
+        foreach ([UserRole::Admin, UserRole::InventoryManager, UserRole::Accountant] as $role) {
+            $user = $this->userWithRole($role);
+
+            $this->actingAs($user)->get('/reports/purchases')->assertOk();
+        }
+    }
+
     public function test_salesman_can_reach_pos_and_sales(): void
     {
         $salesman = $this->userWithRole(UserRole::Salesman);

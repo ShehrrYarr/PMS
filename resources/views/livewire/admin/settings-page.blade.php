@@ -1,4 +1,4 @@
-<div x-data="{ tab: 'general' }">
+<div x-data="{ tab: 'general' }" x-on:branding-updated.window="window.location.reload()">
     <x-page-header>
         <h2 class="text-2xl font-bold text-[var(--text-primary)]">{{ __('settings.title') }}</h2>
     </x-page-header>
@@ -16,6 +16,9 @@
             </button>
             <button type="button" @click="tab = 'banks'" :class="tab === 'banks' ? 'bg-[var(--navbar-primary-color)] text-white' : 'text-[var(--text-primary)] hover:bg-black/5'" class="min-h-[44px] rounded-xl px-4 py-2 text-sm font-bold transition">
                 {{ __('settings.tab_banks') }}
+            </button>
+            <button type="button" @click="tab = 'banners'" :class="tab === 'banners' ? 'bg-[var(--navbar-primary-color)] text-white' : 'text-[var(--text-primary)] hover:bg-black/5'" class="min-h-[44px] rounded-xl px-4 py-2 text-sm font-bold transition">
+                {{ __('settings.tab_banners') }}
             </button>
             @can('developer-tools.manage')
                 <button type="button" @click="tab = 'developer'" :class="tab === 'developer' ? 'bg-[var(--navbar-primary-color)] text-white' : 'text-[var(--text-primary)] hover:bg-black/5'" class="min-h-[44px] rounded-xl px-4 py-2 text-sm font-bold transition">
@@ -38,6 +41,35 @@
 
                 <div class="flex justify-end">
                     <x-primary-button>{{ __('settings.save') }}</x-primary-button>
+                </div>
+            </form>
+
+            <hr class="my-6 border-black/10">
+
+            <form wire:submit="saveLogo" class="max-w-lg space-y-4">
+                <div>
+                    <x-input-label :value="__('settings.shop_logo')" />
+                    <p class="mt-1 text-xs text-[var(--text-secondary)]">{{ __('settings.shop_logo_hint') }}</p>
+
+                    @if ($logoPath)
+                        <div class="mt-3 flex items-center gap-3">
+                            <img src="{{ Illuminate\Support\Facades\Storage::disk('public')->url($logoPath) }}" alt="" class="h-16 w-16 rounded-xl border border-black/10 bg-white/70 object-contain p-1">
+                            <button type="button" wire:click="removeLogo" onclick="return confirm('{{ __('settings.remove_logo_confirm') }}')" class="min-h-[44px] rounded-xl px-4 py-2 text-sm font-semibold text-[var(--color-danger)] hover:bg-black/5">
+                                {{ __('settings.remove_logo') }}
+                            </button>
+                        </div>
+                    @endif
+
+                    <input type="file" wire:model="logo" accept="image/*" class="mt-3 block w-full text-sm text-[var(--text-primary)] file:mr-3 file:min-h-[44px] file:rounded-xl file:border-0 file:bg-[var(--navbar-primary-color)] file:px-4 file:py-2 file:text-sm file:font-bold file:text-white">
+                    <div wire:loading wire:target="logo" class="mt-1 text-xs text-[var(--text-secondary)]">{{ __('settings.uploading') }}</div>
+                    @if ($logo)
+                        <img src="{{ $logo->temporaryUrl() }}" alt="" class="mt-2 h-16 w-16 rounded-xl border border-black/10 bg-white/70 object-contain p-1">
+                    @endif
+                    <x-input-error :messages="$errors->get('logo')" class="mt-1" />
+                </div>
+
+                <div class="flex justify-end">
+                    <x-primary-button>{{ __('settings.upload_logo') }}</x-primary-button>
                 </div>
             </form>
         </div>
@@ -181,6 +213,11 @@
         {{-- Bank Accounts --}}
         <div x-show="tab === 'banks'" x-cloak>
             <livewire:admin.bank-account-manager />
+        </div>
+
+        {{-- Banners --}}
+        <div x-show="tab === 'banners'" x-cloak>
+            <livewire:admin.banner-manager />
         </div>
 
         {{-- Developer Tools --}}

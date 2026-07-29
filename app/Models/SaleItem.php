@@ -14,6 +14,7 @@ class SaleItem extends Model
         'batch_id',
         'quantity',
         'unit_price',
+        'cost_price',
         'line_total',
         'quantity_returned',
     ];
@@ -23,6 +24,7 @@ class SaleItem extends Model
         return [
             'quantity' => 'decimal:2',
             'unit_price' => 'decimal:2',
+            'cost_price' => 'decimal:2',
             'line_total' => 'decimal:2',
             'quantity_returned' => 'decimal:2',
         ];

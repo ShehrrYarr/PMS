@@ -18,7 +18,15 @@ class ThemeSetting extends Model
         'sidebar_gradient_from',
         'sidebar_gradient_to',
         'default_locale',
+        'banner_interval_seconds',
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'banner_interval_seconds' => 'integer',
+        ];
+    }
 
     /**
      * theme_settings is a single-row table (id = 1); this returns that row.

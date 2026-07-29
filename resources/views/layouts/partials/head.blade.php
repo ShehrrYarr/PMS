@@ -7,6 +7,10 @@
 
 <title>{{ $theme->displayName() }}</title>
 
+@if ($theme->logo_path)
+    <link rel="icon" href="{{ Illuminate\Support\Facades\Storage::disk('public')->url($theme->logo_path) }}">
+@endif
+
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

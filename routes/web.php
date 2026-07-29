@@ -4,6 +4,8 @@ use App\Livewire\Actions\Logout;
 use App\Livewire\Admin\SettingsPage;
 use App\Livewire\Customers\CustomerLedger;
 use App\Livewire\Customers\CustomerList;
+use App\Livewire\Expenses\ExpenseCategoryManager;
+use App\Livewire\Expenses\ExpenseList;
 use App\Livewire\Inventory\BatchList;
 use App\Livewire\Inventory\CategoryManager;
 use App\Livewire\Inventory\ExpiryAlertsDashboard;
@@ -14,6 +16,8 @@ use App\Livewire\Pos\SaleShow;
 use App\Livewire\Purchases\PurchaseCreate;
 use App\Livewire\Purchases\PurchaseList;
 use App\Livewire\Purchases\PurchaseShow;
+use App\Livewire\Reports\PurchaseReport;
+use App\Livewire\Reports\SalesReport;
 use App\Livewire\Vendors\VendorLedger;
 use App\Livewire\Vendors\VendorList;
 use App\Models\Batch;
@@ -59,6 +63,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('expiry-alerts', ExpiryAlertsDashboard::class)->middleware('can:expiry-alerts.view')->name('expiry-alerts.index');
 
+    Route::get('expenses', ExpenseList::class)->middleware('can:expenses.manage')->name('expenses.index');
+    Route::get('expense-categories', ExpenseCategoryManager::class)->middleware('can:expenses.manage')->name('expense-categories.index');
+
     Route::get('purchases', PurchaseList::class)->middleware('can:viewAny,App\Models\Purchase')->name('purchases.index');
     Route::get('purchases/create', PurchaseCreate::class)->middleware('can:create,App\Models\Purchase')->name('purchases.create');
     Route::get('purchases/{purchase}', PurchaseShow::class)->middleware('can:view,purchase')->name('purchases.show');
@@ -69,6 +76,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('sales/{sale}/receipt', function (Sale $sale, ReceiptRenderService $receiptRenderService) {
         return $receiptRenderService->render($sale);
     })->middleware('can:view,sale')->name('sales.receipt');
+
+    Route::get('reports/sales', SalesReport::class)->middleware('can:reports.view')->name('reports.sales');
+    Route::get('reports/purchases', PurchaseReport::class)->middleware('can:reports.view')->name('reports.purchases');
 });
 
 require __DIR__.'/auth.php';
