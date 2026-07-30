@@ -10,11 +10,11 @@ use Illuminate\Database\Seeder;
 class ThemeSettingSeeder extends Seeder
 {
     /**
-     * Seed the single theme_settings row with the default palette from design.md §2.1.
+     * Seed one shop's theme_settings row with the default palette from design.md §2.1.
      */
-    public function run(): void
+    public function run(int $shopId): void
     {
-        ThemeSetting::query()->firstOrCreate(['id' => 1], [
+        ThemeSetting::query()->firstOrCreate(['shop_id' => $shopId], [
             'logo_path' => null,
             'shop_name' => null,
             'navbar_primary_color' => '#2f6f4f',

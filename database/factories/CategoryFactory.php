@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Database\Factories;
 
 use App\Models\Category;
+use App\Models\Shop;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,6 +21,8 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         return [
+            // See UserFactory for why this reuses the existing shop.
+            'shop_id' => Shop::query()->value('id') ?? Shop::factory()->create()->id,
             'name' => fake()->unique()->words(2, true),
             'is_active' => true,
         ];

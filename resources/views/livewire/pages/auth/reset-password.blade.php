@@ -42,13 +42,20 @@ new #[Layout('layouts.guest')] class extends Component
         // Here we will attempt to reset the user's password. If it is successful we
         // will update the password on an actual user model and persist it to the
         // database. Otherwise we will parse the error and return the response.
+        // This flow never logs the user in, so (unlike the login page) there's no
+        // ambient shop context available for the final redirect — capture it here
+        // from the user whose password was just reset.
+        $shopSlug = null;
+
         $status = Password::reset(
             $this->only('email', 'password', 'password_confirmation', 'token'),
-            function ($user) {
+            function ($user) use (&$shopSlug) {
                 $user->forceFill([
                     'password' => Hash::make($this->password),
                     'remember_token' => Str::random(60),
                 ])->save();
+
+                $shopSlug = $user->shop->slug;
 
                 event(new PasswordReset($user));
             }
@@ -65,7 +72,7 @@ new #[Layout('layouts.guest')] class extends Component
 
         Session::flash('status', __($status));
 
-        $this->redirectRoute('login', navigate: true);
+        $this->redirectRoute('login', ['shop' => $shopSlug], navigate: true);
     }
 }; ?>
 

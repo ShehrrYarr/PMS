@@ -10,11 +10,11 @@ use Illuminate\Database\Seeder;
 class CategorySeeder extends Seeder
 {
     /**
-     * Seed the standard pesticide product categories.
+     * Seed the standard pesticide product categories for one shop.
      */
-    public function run(): void
+    public function run(int $shopId): void
     {
         collect(['Insecticide', 'Herbicide', 'Fungicide', 'Rodenticide'])
-            ->each(fn (string $name) => Category::query()->firstOrCreate(['name' => $name]));
+            ->each(fn (string $name) => Category::query()->firstOrCreate(['name' => $name, 'shop_id' => $shopId]));
     }
 }

@@ -66,6 +66,7 @@ class PurchaseReturnService
             }
 
             $purchaseReturn = PurchaseReturn::query()->create([
+                'shop_id' => $user->shop_id,
                 'purchase_id' => $purchase->id,
                 'vendor_id' => $purchase->vendor_id,
                 'reason' => $reason,
@@ -74,7 +75,7 @@ class PurchaseReturnService
             ]);
 
             foreach ($itemsData as $data) {
-                PurchaseReturnItem::query()->create([...$data, 'purchase_return_id' => $purchaseReturn->id]);
+                PurchaseReturnItem::query()->create([...$data, 'shop_id' => $user->shop_id, 'purchase_return_id' => $purchaseReturn->id]);
             }
 
             $this->ledgerService->postVendorEntry(

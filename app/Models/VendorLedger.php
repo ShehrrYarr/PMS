@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models;
 
+use App\Models\Concerns\BelongsToShop;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use LogicException;
@@ -14,9 +15,12 @@ use LogicException;
  */
 class VendorLedger extends Model
 {
+    use BelongsToShop;
+
     public const UPDATED_AT = null;
 
     protected $fillable = [
+        'shop_id',
         'vendor_id',
         'debit',
         'credit',

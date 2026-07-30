@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
+use App\Models\User;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase
@@ -15,4 +16,13 @@ abstract class TestCase extends BaseTestCase
      * RefreshDatabase tests get a working app, not just an empty schema.
      */
     protected $seed = true;
+
+    /**
+     * Every shop route now lives under /{shop-slug}/... — build a path
+     * within the given user's own shop instead of hardcoding a bare path.
+     */
+    protected function shopPath(User $user, string $path = ''): string
+    {
+        return '/'.$user->shop->slug.($path !== '' ? '/'.ltrim($path, '/') : '');
+    }
 }

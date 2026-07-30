@@ -43,6 +43,7 @@ class LedgerService
                 : bcsub($previousBalance, $amount, 2);
 
             return VendorLedger::create([
+                'shop_id' => $vendor->shop_id,
                 'vendor_id' => $vendor->id,
                 'debit' => $type === LedgerEntryType::Debit ? $amount : '0.00',
                 'credit' => $type === LedgerEntryType::Credit ? $amount : '0.00',
@@ -77,6 +78,7 @@ class LedgerService
                 : bcsub($previousBalance, $amount, 2);
 
             return CustomerLedger::create([
+                'shop_id' => $customer->shop_id,
                 'customer_id' => $customer->id,
                 'debit' => $type === LedgerEntryType::Debit ? $amount : '0.00',
                 'credit' => $type === LedgerEntryType::Credit ? $amount : '0.00',

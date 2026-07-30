@@ -4,11 +4,15 @@ declare(strict_types=1);
 
 namespace App\Models;
 
+use App\Models\Concerns\BelongsToShop;
 use Illuminate\Database\Eloquent\Model;
 
 class ReceiptSetting extends Model
 {
+    use BelongsToShop;
+
     protected $fillable = [
+        'shop_id',
         'header_text',
         'footer_text',
         'show_logo',

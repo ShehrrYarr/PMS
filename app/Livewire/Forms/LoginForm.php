@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Forms;
 
+use App\Models\Shop;
 use Illuminate\Auth\Events\Lockout;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;
@@ -35,6 +36,28 @@ class LoginForm extends Form
 
             throw ValidationException::withMessages([
                 'form.email' => trans('auth.failed'),
+            ]);
+        }
+
+        // Credentials matched a real user, but not one belonging to the
+        // shop whose /{shop}/login page this is — reject with the same
+        // generic message as bad credentials, never a distinct one, so this
+        // can't be used to enumerate which shop an email belongs to.
+        $currentShop = request()->attributes->get('currentShop');
+
+        if ($currentShop instanceof Shop && Auth::user()->shop_id !== $currentShop->id) {
+            Auth::logout();
+
+            throw ValidationException::withMessages([
+                'form.email' => trans('auth.failed'),
+            ]);
+        }
+
+        if (! Auth::user()->shop->is_active) {
+            Auth::logout();
+
+            throw ValidationException::withMessages([
+                'form.email' => trans('auth.shop_suspended'),
             ]);
         }
 

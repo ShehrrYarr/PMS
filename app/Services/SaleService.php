@@ -48,6 +48,7 @@ class SaleService
 
         return DB::transaction(function () use ($customer, $items, $paymentLines, $totalAmount, $user, $photo) {
             $sale = Sale::query()->create([
+                'shop_id' => $user->shop_id,
                 'invoice_number' => (string) Str::uuid(),
                 'customer_id' => $customer?->id,
                 'user_id' => $user->id,
@@ -70,6 +71,7 @@ class SaleService
                 $lineTotal = bcmul($item['unit_price'], $item['quantity'], 2);
 
                 SaleItem::query()->create([
+                    'shop_id' => $user->shop_id,
                     'sale_id' => $sale->id,
                     'batch_id' => $batch->id,
                     'quantity' => $item['quantity'],
@@ -87,6 +89,7 @@ class SaleService
 
             foreach ($paymentLines as $line) {
                 Payment::query()->create([
+                    'shop_id' => $user->shop_id,
                     'payable_type' => PayableType::Sale->value,
                     'payable_id' => $sale->id,
                     'method' => $line['method'],

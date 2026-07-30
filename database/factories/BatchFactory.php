@@ -22,8 +22,14 @@ class BatchFactory extends Factory
     {
         $quantityReceived = fake()->randomFloat(2, 10, 200);
 
+        // Created eagerly (not passed as a lazy Product::factory() attribute)
+        // so shop_id is known synchronously below — a batch must always
+        // belong to the same shop as its product.
+        $product = Product::factory()->create();
+
         return [
-            'product_id' => Product::factory(),
+            'shop_id' => $product->shop_id,
+            'product_id' => $product->id,
             'barcode' => strtoupper('BCH'.fake()->unique()->numerify('########')),
             'manufacturing_date' => fake()->dateTimeBetween('-1 year', '-1 month'),
             'expiry_date' => fake()->dateTimeBetween('+1 month', '+2 years'),

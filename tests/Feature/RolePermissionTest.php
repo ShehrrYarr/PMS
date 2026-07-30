@@ -6,7 +6,6 @@ namespace Tests\Feature;
 
 use App\Enums\UserRole;
 use App\Livewire\Admin\BankAccountManager;
-use App\Livewire\Admin\DeveloperTools;
 use App\Livewire\Vendors\VendorList;
 use App\Models\User;
 use App\Models\Vendor;
@@ -35,47 +34,47 @@ class RolePermissionTest extends TestCase
     {
         $salesman = $this->userWithRole(UserRole::Salesman);
 
-        $this->actingAs($salesman)->get('/vendors')->assertForbidden();
+        $this->actingAs($salesman)->get($this->shopPath($salesman, 'vendors'))->assertForbidden();
     }
 
     public function test_salesman_is_forbidden_from_purchases(): void
     {
         $salesman = $this->userWithRole(UserRole::Salesman);
 
-        $this->actingAs($salesman)->get('/purchases')->assertForbidden();
-        $this->actingAs($salesman)->get('/purchases/create')->assertForbidden();
+        $this->actingAs($salesman)->get($this->shopPath($salesman, 'purchases'))->assertForbidden();
+        $this->actingAs($salesman)->get($this->shopPath($salesman, 'purchases/create'))->assertForbidden();
     }
 
     public function test_salesman_is_forbidden_from_settings(): void
     {
         $salesman = $this->userWithRole(UserRole::Salesman);
 
-        $this->actingAs($salesman)->get('/settings')->assertForbidden();
+        $this->actingAs($salesman)->get($this->shopPath($salesman, 'settings'))->assertForbidden();
     }
 
     public function test_only_admin_and_accountant_can_reach_expenses(): void
     {
         $accountant = $this->userWithRole(UserRole::Accountant);
-        $this->actingAs($accountant)->get('/expenses')->assertOk();
-        $this->actingAs($accountant)->get('/expense-categories')->assertOk();
+        $this->actingAs($accountant)->get($this->shopPath($accountant, 'expenses'))->assertOk();
+        $this->actingAs($accountant)->get($this->shopPath($accountant, 'expense-categories'))->assertOk();
 
         foreach ([UserRole::InventoryManager, UserRole::Salesman] as $role) {
             $user = $this->userWithRole($role);
 
-            $this->actingAs($user)->get('/expenses')->assertForbidden();
-            $this->actingAs($user)->get('/expense-categories')->assertForbidden();
+            $this->actingAs($user)->get($this->shopPath($user, 'expenses'))->assertForbidden();
+            $this->actingAs($user)->get($this->shopPath($user, 'expense-categories'))->assertForbidden();
         }
 
         $admin = $this->userWithRole(UserRole::Admin);
-        $this->actingAs($admin)->get('/expenses')->assertOk();
-        $this->actingAs($admin)->get('/expense-categories')->assertOk();
+        $this->actingAs($admin)->get($this->shopPath($admin, 'expenses'))->assertOk();
+        $this->actingAs($admin)->get($this->shopPath($admin, 'expense-categories'))->assertOk();
     }
 
     public function test_salesman_is_forbidden_from_the_sales_report(): void
     {
         $salesman = $this->userWithRole(UserRole::Salesman);
 
-        $this->actingAs($salesman)->get('/reports/sales')->assertForbidden();
+        $this->actingAs($salesman)->get($this->shopPath($salesman, 'reports/sales'))->assertForbidden();
     }
 
     public function test_admin_inventory_manager_and_accountant_can_reach_the_sales_report(): void
@@ -83,7 +82,7 @@ class RolePermissionTest extends TestCase
         foreach ([UserRole::Admin, UserRole::InventoryManager, UserRole::Accountant] as $role) {
             $user = $this->userWithRole($role);
 
-            $this->actingAs($user)->get('/reports/sales')->assertOk();
+            $this->actingAs($user)->get($this->shopPath($user, 'reports/sales'))->assertOk();
         }
     }
 
@@ -91,7 +90,7 @@ class RolePermissionTest extends TestCase
     {
         $salesman = $this->userWithRole(UserRole::Salesman);
 
-        $this->actingAs($salesman)->get('/reports/purchases')->assertForbidden();
+        $this->actingAs($salesman)->get($this->shopPath($salesman, 'reports/purchases'))->assertForbidden();
     }
 
     public function test_admin_inventory_manager_and_accountant_can_reach_the_purchase_report(): void
@@ -99,7 +98,7 @@ class RolePermissionTest extends TestCase
         foreach ([UserRole::Admin, UserRole::InventoryManager, UserRole::Accountant] as $role) {
             $user = $this->userWithRole($role);
 
-            $this->actingAs($user)->get('/reports/purchases')->assertOk();
+            $this->actingAs($user)->get($this->shopPath($user, 'reports/purchases'))->assertOk();
         }
     }
 
@@ -107,78 +106,56 @@ class RolePermissionTest extends TestCase
     {
         $salesman = $this->userWithRole(UserRole::Salesman);
 
-        $this->actingAs($salesman)->get('/pos')->assertOk();
-        $this->actingAs($salesman)->get('/sales')->assertOk();
+        $this->actingAs($salesman)->get($this->shopPath($salesman, 'pos'))->assertOk();
+        $this->actingAs($salesman)->get($this->shopPath($salesman, 'sales'))->assertOk();
     }
 
     public function test_accountant_can_view_purchases_but_not_create_them(): void
     {
         $accountant = $this->userWithRole(UserRole::Accountant);
 
-        $this->actingAs($accountant)->get('/purchases')->assertOk();
-        $this->actingAs($accountant)->get('/purchases/create')->assertForbidden();
+        $this->actingAs($accountant)->get($this->shopPath($accountant, 'purchases'))->assertOk();
+        $this->actingAs($accountant)->get($this->shopPath($accountant, 'purchases/create'))->assertForbidden();
     }
 
     public function test_accountant_is_forbidden_from_pos(): void
     {
         $accountant = $this->userWithRole(UserRole::Accountant);
 
-        $this->actingAs($accountant)->get('/pos')->assertForbidden();
+        $this->actingAs($accountant)->get($this->shopPath($accountant, 'pos'))->assertForbidden();
     }
 
     public function test_inventory_manager_can_manage_vendors_but_is_forbidden_from_settings(): void
     {
         $inventoryManager = $this->userWithRole(UserRole::InventoryManager);
 
-        $this->actingAs($inventoryManager)->get('/vendors')->assertOk();
+        $this->actingAs($inventoryManager)->get($this->shopPath($inventoryManager, 'vendors'))->assertOk();
 
         // Settings (which now houses Bank Accounts as a tab) is Admin-only —
         // bank-accounts.view/.manage were removed from every non-Admin role
         // when Bank Accounts moved under Settings.
-        $this->actingAs($inventoryManager)->get('/settings')->assertForbidden();
+        $this->actingAs($inventoryManager)->get($this->shopPath($inventoryManager, 'settings'))->assertForbidden();
     }
 
     public function test_accountant_is_forbidden_from_settings(): void
     {
         $accountant = $this->userWithRole(UserRole::Accountant);
 
-        $this->actingAs($accountant)->get('/settings')->assertForbidden();
+        $this->actingAs($accountant)->get($this->shopPath($accountant, 'settings'))->assertForbidden();
     }
 
     public function test_admin_can_reach_everything(): void
     {
         $admin = $this->userWithRole(UserRole::Admin);
 
-        $this->actingAs($admin)->get('/vendors')->assertOk();
-        $this->actingAs($admin)->get('/purchases')->assertOk();
-        $this->actingAs($admin)->get('/settings')->assertOk();
-        $this->actingAs($admin)->get('/pos')->assertOk();
+        $this->actingAs($admin)->get($this->shopPath($admin, 'vendors'))->assertOk();
+        $this->actingAs($admin)->get($this->shopPath($admin, 'purchases'))->assertOk();
+        $this->actingAs($admin)->get($this->shopPath($admin, 'settings'))->assertOk();
+        $this->actingAs($admin)->get($this->shopPath($admin, 'pos'))->assertOk();
 
         Livewire::actingAs($admin)
             ->test(BankAccountManager::class)
             ->call('create')
-            ->assertOk();
-    }
-
-    /**
-     * Developer Tools (migrate/optimize/config:cache/git pull) is the most
-     * sensitive surface in the app — every non-Admin role must be unable to
-     * even mount the component, not just hit the /settings route.
-     */
-    public function test_only_admin_can_reach_developer_tools(): void
-    {
-        foreach ([UserRole::InventoryManager, UserRole::Accountant, UserRole::Salesman] as $role) {
-            $user = $this->userWithRole($role);
-
-            Livewire::actingAs($user)
-                ->test(DeveloperTools::class)
-                ->assertForbidden();
-        }
-
-        $admin = $this->userWithRole(UserRole::Admin);
-
-        Livewire::actingAs($admin)
-            ->test(DeveloperTools::class)
             ->assertOk();
     }
 

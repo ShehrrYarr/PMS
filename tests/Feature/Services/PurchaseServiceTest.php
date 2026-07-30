@@ -26,7 +26,7 @@ class PurchaseServiceTest extends TestCase
         $vendor = Vendor::factory()->create();
         $user = User::factory()->create();
         $product = Product::factory()->create();
-        $bank = Bank::query()->create(['name' => 'Test Bank', 'is_active' => true]);
+        $bank = Bank::query()->create(['shop_id' => $user->shop_id, 'name' => 'Test Bank', 'is_active' => true]);
 
         $purchase = app(PurchaseService::class)->create(
             vendor: $vendor,

@@ -46,6 +46,7 @@ class PurchaseService
 
         return DB::transaction(function () use ($vendor, $items, $paymentLines, $totalAmount, $user) {
             $purchase = Purchase::query()->create([
+                'shop_id' => $user->shop_id,
                 'invoice_number' => (string) Str::uuid(),
                 'vendor_id' => $vendor->id,
                 'user_id' => $user->id,
@@ -61,6 +62,7 @@ class PurchaseService
                 $lineTotal = bcmul($item['cost_price'], $item['quantity'], 2);
 
                 $purchaseItem = PurchaseItem::query()->create([
+                    'shop_id' => $user->shop_id,
                     'purchase_id' => $purchase->id,
                     'product_id' => $item['product_id'],
                     'quantity' => $item['quantity'],
@@ -84,6 +86,7 @@ class PurchaseService
 
             foreach ($paymentLines as $line) {
                 Payment::query()->create([
+                    'shop_id' => $user->shop_id,
                     'payable_type' => PayableType::Purchase->value,
                     'payable_id' => $purchase->id,
                     'method' => $line['method'],

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Services;
 
 use App\Models\Batch;
+use App\Models\Product;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Milon\Barcode\DNS1D;
@@ -31,6 +32,10 @@ class BarcodeService
     {
         $manualBarcode = $attributes['barcode'] ?? null;
         unset($attributes['barcode']);
+
+        // A batch always belongs to its product's shop — derive it here
+        // rather than requiring every caller to pass it explicitly.
+        $attributes['shop_id'] ??= Product::query()->findOrFail($attributes['product_id'])->shop_id;
 
         return DB::transaction(function () use ($attributes, $manualBarcode) {
             if ($manualBarcode !== null && $manualBarcode !== '') {

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Services;
 
 use App\Models\Sale;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 /**
@@ -30,6 +31,7 @@ class SalesReportService
 
         $costTotal = (string) DB::table('sale_items')
             ->join('sales', 'sales.id', '=', 'sale_items.sale_id')
+            ->when(Auth::user()?->shop_id, fn ($q, $shopId) => $q->where('sale_items.shop_id', $shopId))
             ->when($dateFrom, fn ($q) => $q->whereDate('sales.created_at', '>=', $dateFrom))
             ->when($dateTo, fn ($q) => $q->whereDate('sales.created_at', '<=', $dateTo))
             ->when($customerId, fn ($q) => $q->where('sales.customer_id', $customerId))
@@ -46,6 +48,7 @@ class SalesReportService
         $query = DB::table('sale_items')
             ->join('sales', 'sales.id', '=', 'sale_items.sale_id')
             ->join('batches', 'batches.id', '=', 'sale_items.batch_id')
+            ->when(Auth::user()?->shop_id, fn ($q, $shopId) => $q->where('sale_items.shop_id', $shopId))
             ->where('batches.product_id', $productId)
             ->when($dateFrom, fn ($q) => $q->whereDate('sales.created_at', '>=', $dateFrom))
             ->when($dateTo, fn ($q) => $q->whereDate('sales.created_at', '<=', $dateTo))

@@ -3,6 +3,7 @@
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
+use App\Services\ShopService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Volt\Volt;
 use Tests\TestCase;
@@ -13,7 +14,13 @@ class AuthenticationTest extends TestCase
 
     public function test_login_screen_can_be_rendered(): void
     {
-        $response = $this->get('/login');
+        // Shop::factory() alone has no theme_settings row (only
+        // ShopService::createShop() sets one up, matching how a real shop is
+        // actually provisioned) — needed since the login page renders the
+        // full layout, which requires ThemeSetting::current() to resolve.
+        $shop = app(ShopService::class)->createShop('A Shop', 'An Admin', 'anadmin@example.com')['shop'];
+
+        $response = $this->get('/'.$shop->slug.'/login');
 
         $response
             ->assertOk()
@@ -60,7 +67,7 @@ class AuthenticationTest extends TestCase
 
         $this->actingAs($user);
 
-        $response = $this->get('/dashboard');
+        $response = $this->get($this->shopPath($user, 'dashboard'));
 
         $response
             ->assertOk()
@@ -73,9 +80,9 @@ class AuthenticationTest extends TestCase
 
         $this->actingAs($user);
 
-        $response = $this->post('/logout');
+        $response = $this->post($this->shopPath($user, 'logout'));
 
-        $response->assertRedirect('/');
+        $response->assertRedirect($this->shopPath($user, 'login'));
 
         $this->assertGuest();
     }

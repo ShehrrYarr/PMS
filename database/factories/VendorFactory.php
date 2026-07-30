@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
+use App\Models\Shop;
 use App\Models\Vendor;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -20,6 +21,8 @@ class VendorFactory extends Factory
     public function definition(): array
     {
         return [
+            // See UserFactory for why this reuses the existing shop.
+            'shop_id' => Shop::query()->value('id') ?? Shop::factory()->create()->id,
             'name' => fake()->company(),
             'phone' => fake()->numerify('03##-#######'),
             'address' => fake()->address(),

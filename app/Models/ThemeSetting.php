@@ -4,11 +4,15 @@ declare(strict_types=1);
 
 namespace App\Models;
 
+use App\Models\Concerns\BelongsToShop;
 use Illuminate\Database\Eloquent\Model;
 
 class ThemeSetting extends Model
 {
+    use BelongsToShop;
+
     protected $fillable = [
+        'shop_id',
         'logo_path',
         'shop_name',
         'navbar_primary_color',

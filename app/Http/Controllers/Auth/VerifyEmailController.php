@@ -14,14 +14,20 @@ class VerifyEmailController extends Controller
      */
     public function __invoke(EmailVerificationRequest $request): RedirectResponse
     {
+        // Derived explicitly from the authenticated user rather than relying
+        // on ambient URL::defaults(['shop' => ...]) (set via the Authenticated
+        // event in AppServiceProvider) — that mechanism doesn't fire under
+        // Event::fake(), which this flow is commonly tested with.
+        $dashboardUrl = route('dashboard', ['shop' => $request->user()->shop->slug], absolute: false);
+
         if ($request->user()->hasVerifiedEmail()) {
-            return redirect()->intended(route('dashboard', absolute: false).'?verified=1');
+            return redirect()->intended($dashboardUrl.'?verified=1');
         }
 
         if ($request->user()->markEmailAsVerified()) {
             event(new Verified($request->user()));
         }
 
-        return redirect()->intended(route('dashboard', absolute: false).'?verified=1');
+        return redirect()->intended($dashboardUrl.'?verified=1');
     }
 }

@@ -63,6 +63,7 @@ class SaleReturnService
             }
 
             $saleReturn = SaleReturn::query()->create([
+                'shop_id' => $user->shop_id,
                 'sale_id' => $sale->id,
                 'customer_id' => $sale->customer_id,
                 'reason' => $reason,
@@ -71,7 +72,7 @@ class SaleReturnService
             ]);
 
             foreach ($itemsData as $data) {
-                SaleReturnItem::query()->create([...$data, 'sale_return_id' => $saleReturn->id]);
+                SaleReturnItem::query()->create([...$data, 'shop_id' => $user->shop_id, 'sale_return_id' => $saleReturn->id]);
             }
 
             if ($sale->customer_id !== null) {

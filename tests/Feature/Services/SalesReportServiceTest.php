@@ -31,17 +31,17 @@ class SalesReportServiceTest extends TestCase
         $customerB = Customer::factory()->create();
         $product = Product::factory()->create();
 
-        $batch = Batch::query()->create(['product_id' => $product->id, 'barcode' => 'BC-1', 'manufacturing_date' => '2026-01-01', 'expiry_date' => '2027-01-01', 'cost_price' => '60.00', 'quantity_received' => '100', 'quantity_remaining' => '80']);
+        $batch = Batch::query()->create(['shop_id' => $user->shop_id, 'product_id' => $product->id, 'barcode' => 'BC-1', 'manufacturing_date' => '2026-01-01', 'expiry_date' => '2027-01-01', 'cost_price' => '60.00', 'quantity_received' => '100', 'quantity_remaining' => '80']);
 
-        $saleA = Sale::query()->create(['invoice_number' => 'SL-1', 'customer_id' => $customerA->id, 'user_id' => $user->id, 'total_amount' => '1000.00', 'status' => 'completed']);
-        SaleItem::query()->create(['sale_id' => $saleA->id, 'batch_id' => $batch->id, 'quantity' => '10', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '1000.00']);
+        $saleA = Sale::query()->create(['shop_id' => $user->shop_id, 'invoice_number' => 'SL-1', 'customer_id' => $customerA->id, 'user_id' => $user->id, 'total_amount' => '1000.00', 'status' => 'completed']);
+        SaleItem::query()->create(['shop_id' => $user->shop_id, 'sale_id' => $saleA->id, 'batch_id' => $batch->id, 'quantity' => '10', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '1000.00']);
 
-        $saleB = Sale::query()->create(['invoice_number' => 'SL-2', 'customer_id' => $customerB->id, 'user_id' => $user->id, 'total_amount' => '500.00', 'status' => 'completed']);
-        SaleItem::query()->create(['sale_id' => $saleB->id, 'batch_id' => $batch->id, 'quantity' => '5', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '500.00']);
+        $saleB = Sale::query()->create(['shop_id' => $user->shop_id, 'invoice_number' => 'SL-2', 'customer_id' => $customerB->id, 'user_id' => $user->id, 'total_amount' => '500.00', 'status' => 'completed']);
+        SaleItem::query()->create(['shop_id' => $user->shop_id, 'sale_id' => $saleB->id, 'batch_id' => $batch->id, 'quantity' => '5', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '500.00']);
 
-        $saleOld = Sale::query()->create(['invoice_number' => 'SL-3', 'customer_id' => $customerA->id, 'user_id' => $user->id, 'total_amount' => '9999.00', 'status' => 'completed']);
+        $saleOld = Sale::query()->create(['shop_id' => $user->shop_id, 'invoice_number' => 'SL-3', 'customer_id' => $customerA->id, 'user_id' => $user->id, 'total_amount' => '9999.00', 'status' => 'completed']);
         $this->backdate($saleOld, Carbon::today()->subDays(10));
-        SaleItem::query()->create(['sale_id' => $saleOld->id, 'batch_id' => $batch->id, 'quantity' => '1', 'unit_price' => '9999.00', 'cost_price' => '60.00', 'line_total' => '9999.00']);
+        SaleItem::query()->create(['shop_id' => $user->shop_id, 'sale_id' => $saleOld->id, 'batch_id' => $batch->id, 'quantity' => '1', 'unit_price' => '9999.00', 'cost_price' => '60.00', 'line_total' => '9999.00']);
 
         $unfiltered = app(SalesReportService::class)->summary(null, null, null);
         $this->assertSame('11499.00', $unfiltered['sales_total']);
@@ -73,12 +73,12 @@ class SalesReportServiceTest extends TestCase
         $productA = Product::factory()->create();
         $productB = Product::factory()->create();
 
-        $batchA = Batch::query()->create(['product_id' => $productA->id, 'barcode' => 'BC-A', 'manufacturing_date' => '2026-01-01', 'expiry_date' => '2027-01-01', 'cost_price' => '60.00', 'quantity_received' => '100', 'quantity_remaining' => '80']);
-        $batchB = Batch::query()->create(['product_id' => $productB->id, 'barcode' => 'BC-B', 'manufacturing_date' => '2026-01-01', 'expiry_date' => '2027-01-01', 'cost_price' => '20.00', 'quantity_received' => '100', 'quantity_remaining' => '90']);
+        $batchA = Batch::query()->create(['shop_id' => $user->shop_id, 'product_id' => $productA->id, 'barcode' => 'BC-A', 'manufacturing_date' => '2026-01-01', 'expiry_date' => '2027-01-01', 'cost_price' => '60.00', 'quantity_received' => '100', 'quantity_remaining' => '80']);
+        $batchB = Batch::query()->create(['shop_id' => $user->shop_id, 'product_id' => $productB->id, 'barcode' => 'BC-B', 'manufacturing_date' => '2026-01-01', 'expiry_date' => '2027-01-01', 'cost_price' => '20.00', 'quantity_received' => '100', 'quantity_remaining' => '90']);
 
-        $sale = Sale::query()->create(['invoice_number' => 'SL-1', 'customer_id' => $customer->id, 'user_id' => $user->id, 'total_amount' => '1500.00', 'status' => 'completed']);
-        SaleItem::query()->create(['sale_id' => $sale->id, 'batch_id' => $batchA->id, 'quantity' => '10', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '1000.00']);
-        SaleItem::query()->create(['sale_id' => $sale->id, 'batch_id' => $batchB->id, 'quantity' => '25', 'unit_price' => '20.00', 'cost_price' => '20.00', 'line_total' => '500.00']);
+        $sale = Sale::query()->create(['shop_id' => $user->shop_id, 'invoice_number' => 'SL-1', 'customer_id' => $customer->id, 'user_id' => $user->id, 'total_amount' => '1500.00', 'status' => 'completed']);
+        SaleItem::query()->create(['shop_id' => $user->shop_id, 'sale_id' => $sale->id, 'batch_id' => $batchA->id, 'quantity' => '10', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '1000.00']);
+        SaleItem::query()->create(['shop_id' => $user->shop_id, 'sale_id' => $sale->id, 'batch_id' => $batchB->id, 'quantity' => '25', 'unit_price' => '20.00', 'cost_price' => '20.00', 'line_total' => '500.00']);
 
         $summary = app(SalesReportService::class)->summary(null, null, null, $productA->id);
 
@@ -95,17 +95,17 @@ class SalesReportServiceTest extends TestCase
         $customerA = Customer::factory()->create();
         $customerB = Customer::factory()->create();
         $product = Product::factory()->create();
-        $batch = Batch::query()->create(['product_id' => $product->id, 'barcode' => 'BC-P', 'manufacturing_date' => '2026-01-01', 'expiry_date' => '2027-01-01', 'cost_price' => '60.00', 'quantity_received' => '100', 'quantity_remaining' => '80']);
+        $batch = Batch::query()->create(['shop_id' => $user->shop_id, 'product_id' => $product->id, 'barcode' => 'BC-P', 'manufacturing_date' => '2026-01-01', 'expiry_date' => '2027-01-01', 'cost_price' => '60.00', 'quantity_received' => '100', 'quantity_remaining' => '80']);
 
-        $saleToday = Sale::query()->create(['invoice_number' => 'SL-1', 'customer_id' => $customerA->id, 'user_id' => $user->id, 'total_amount' => '1000.00', 'status' => 'completed']);
-        SaleItem::query()->create(['sale_id' => $saleToday->id, 'batch_id' => $batch->id, 'quantity' => '10', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '1000.00']);
+        $saleToday = Sale::query()->create(['shop_id' => $user->shop_id, 'invoice_number' => 'SL-1', 'customer_id' => $customerA->id, 'user_id' => $user->id, 'total_amount' => '1000.00', 'status' => 'completed']);
+        SaleItem::query()->create(['shop_id' => $user->shop_id, 'sale_id' => $saleToday->id, 'batch_id' => $batch->id, 'quantity' => '10', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '1000.00']);
 
-        $saleOtherCustomer = Sale::query()->create(['invoice_number' => 'SL-2', 'customer_id' => $customerB->id, 'user_id' => $user->id, 'total_amount' => '500.00', 'status' => 'completed']);
-        SaleItem::query()->create(['sale_id' => $saleOtherCustomer->id, 'batch_id' => $batch->id, 'quantity' => '5', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '500.00']);
+        $saleOtherCustomer = Sale::query()->create(['shop_id' => $user->shop_id, 'invoice_number' => 'SL-2', 'customer_id' => $customerB->id, 'user_id' => $user->id, 'total_amount' => '500.00', 'status' => 'completed']);
+        SaleItem::query()->create(['shop_id' => $user->shop_id, 'sale_id' => $saleOtherCustomer->id, 'batch_id' => $batch->id, 'quantity' => '5', 'unit_price' => '100.00', 'cost_price' => '60.00', 'line_total' => '500.00']);
 
-        $saleOld = Sale::query()->create(['invoice_number' => 'SL-3', 'customer_id' => $customerA->id, 'user_id' => $user->id, 'total_amount' => '9999.00', 'status' => 'completed']);
+        $saleOld = Sale::query()->create(['shop_id' => $user->shop_id, 'invoice_number' => 'SL-3', 'customer_id' => $customerA->id, 'user_id' => $user->id, 'total_amount' => '9999.00', 'status' => 'completed']);
         $this->backdate($saleOld, Carbon::today()->subDays(10));
-        SaleItem::query()->create(['sale_id' => $saleOld->id, 'batch_id' => $batch->id, 'quantity' => '1', 'unit_price' => '9999.00', 'cost_price' => '60.00', 'line_total' => '9999.00']);
+        SaleItem::query()->create(['shop_id' => $user->shop_id, 'sale_id' => $saleOld->id, 'batch_id' => $batch->id, 'quantity' => '1', 'unit_price' => '9999.00', 'cost_price' => '60.00', 'line_total' => '9999.00']);
 
         $byDate = app(SalesReportService::class)->summary(Carbon::today()->format('Y-m-d'), null, null, $product->id);
         $this->assertSame('1500.00', $byDate['sales_total']);

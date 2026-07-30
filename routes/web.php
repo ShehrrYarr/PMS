@@ -25,62 +25,96 @@ use App\Models\Batch;
 use App\Models\Sale;
 use App\Services\BarcodeService;
 use App\Services\ReceiptRenderService;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Livewire\Volt\Volt;
 
-Route::get('/', fn () => auth()->check() ? redirect()->route('dashboard') : redirect()->route('login'));
+// No shop segment at all — there's no single shop to send a guest to, so
+// this is a minimal, DB-query-free landing page. An authenticated user is
+// sent straight to their own shop.
+Route::get('/', function () {
+    $user = Auth::guard('web')->user();
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+    return $user !== null
+        ? redirect()->route('dashboard', ['shop' => $user->shop->slug])
+        : view('shop-landing');
+})->name('home');
 
-Route::view('profile', 'profile')
-    ->middleware(['auth'])
-    ->name('profile');
-
-Route::post('logout', function (Logout $logout) {
-    $logout();
-
-    return redirect('/');
-})->middleware('auth')->name('logout');
-
-Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('vendors', VendorList::class)->middleware('can:viewAny,App\Models\Vendor')->name('vendors.index');
-    Route::get('vendors/{vendor}/ledger', VendorLedger::class)->middleware('can:vendor-ledger.view')->name('vendors.ledger');
-
-    Route::get('customers', CustomerList::class)->middleware('can:viewAny,App\Models\Customer')->name('customers.index');
-    Route::get('customers/{customer}/ledger', CustomerLedger::class)->middleware('can:customer-ledger.view')->name('customers.ledger');
-
-    Route::get('settings', SettingsPage::class)->middleware('can:branding.manage')->name('settings.index');
-
-    Route::get('products', ProductList::class)->middleware('can:products.view')->name('products.index');
-    Route::get('categories', CategoryManager::class)->middleware('can:products.manage')->name('categories.index');
-    Route::get('companies', CompanyManager::class)->middleware('can:products.manage')->name('companies.index');
-    Route::get('batches', BatchList::class)->middleware('can:batches.view')->name('batches.index');
-    Route::get('batches/{batch}/label', function (Batch $batch, BarcodeService $barcodeService) {
-        return view('batches.label', [
-            'batch' => $batch->load('product'),
-            'barcodeSvg' => $barcodeService->renderSvg($batch->barcode),
-        ]);
-    })->middleware('can:batches.view')->name('batches.label');
-
-    Route::get('expiry-alerts', ExpiryAlertsDashboard::class)->middleware('can:expiry-alerts.view')->name('expiry-alerts.index');
-
-    Route::get('expenses', ExpenseList::class)->middleware('can:expenses.manage')->name('expenses.index');
-    Route::get('expense-categories', ExpenseCategoryManager::class)->middleware('can:expenses.manage')->name('expense-categories.index');
-
-    Route::get('purchases', PurchaseList::class)->middleware('can:viewAny,App\Models\Purchase')->name('purchases.index');
-    Route::get('purchases/create', PurchaseCreate::class)->middleware('can:create,App\Models\Purchase')->name('purchases.create');
-    Route::get('purchases/{purchase}', PurchaseShow::class)->middleware('can:view,purchase')->name('purchases.show');
-
-    Route::get('pos', Pos::class)->middleware('can:create,App\Models\Sale')->name('pos.index');
-    Route::get('sales', SaleList::class)->middleware('can:viewAny,App\Models\Sale')->name('sales.index');
-    Route::get('sales/{sale}', SaleShow::class)->middleware('can:view,sale')->name('sales.show');
-    Route::get('sales/{sale}/receipt', function (Sale $sale, ReceiptRenderService $receiptRenderService) {
-        return $receiptRenderService->render($sale);
-    })->middleware('can:view,sale')->name('sales.receipt');
-
-    Route::get('reports/sales', SalesReport::class)->middleware('can:reports.view')->name('reports.sales');
-    Route::get('reports/purchases', PurchaseReport::class)->middleware('can:reports.view')->name('reports.purchases');
-});
-
+// Must be required before the {shop} prefix group below — see the note in
+// bootstrap/app.php on why registration order matters here.
+require __DIR__.'/super_admin.php';
 require __DIR__.'/auth.php';
+
+/**
+ * Every shop gets its own URL segment (e.g. /shop1/dashboard) — resolved by
+ * ResolveShopFromSlug (aliased 'shop.context'), which also 403s a logged-in
+ * user who navigates to a shop that isn't theirs. Route *names* are
+ * unchanged from the pre-per-shop-URL app (dashboard, vendors.index, ...) —
+ * only the URI gained a {shop} prefix, so the vast majority of existing
+ * route('...') calls throughout sidebar/nav/redirects need no changes at
+ * all (see AppServiceProvider's Authenticated-event listener + this
+ * middleware, both of which set URL::defaults(['shop' => ...])).
+ */
+Route::prefix('{shop}')->middleware(['shop.context'])->group(function () {
+    Route::get('/', fn () => Auth::guard('web')->check()
+        ? redirect()->route('dashboard')
+        : redirect()->route('login'))->name('shop.home');
+
+    Route::middleware('guest:web')->group(function () {
+        Volt::route('login', 'pages.auth.login')->name('login');
+    });
+
+    Route::view('dashboard', 'dashboard')
+        ->middleware(['auth:web', 'verified', 'shop.active'])
+        ->name('dashboard');
+
+    Route::view('profile', 'profile')
+        ->middleware(['auth:web', 'shop.active'])
+        ->name('profile');
+
+    Route::post('logout', function (Logout $logout) {
+        $logout();
+
+        return redirect()->route('login');
+    })->middleware('auth:web')->name('logout');
+
+    Route::middleware(['auth:web', 'verified', 'shop.active'])->group(function () {
+        Route::get('vendors', VendorList::class)->middleware('can:viewAny,App\Models\Vendor')->name('vendors.index');
+        Route::get('vendors/{vendor}/ledger', VendorLedger::class)->middleware('can:vendor-ledger.view')->name('vendors.ledger');
+
+        Route::get('customers', CustomerList::class)->middleware('can:viewAny,App\Models\Customer')->name('customers.index');
+        Route::get('customers/{customer}/ledger', CustomerLedger::class)->middleware('can:customer-ledger.view')->name('customers.ledger');
+
+        Route::get('settings', SettingsPage::class)->middleware('can:branding.manage')->name('settings.index');
+
+        Route::get('products', ProductList::class)->middleware('can:products.view')->name('products.index');
+        Route::get('categories', CategoryManager::class)->middleware('can:products.manage')->name('categories.index');
+        Route::get('companies', CompanyManager::class)->middleware('can:products.manage')->name('companies.index');
+        Route::get('batches', BatchList::class)->middleware('can:batches.view')->name('batches.index');
+        Route::get('batches/{batch}/label', function (Batch $batch, BarcodeService $barcodeService) {
+            return view('batches.label', [
+                'batch' => $batch->load('product'),
+                'barcodeSvg' => $barcodeService->renderSvg($batch->barcode),
+            ]);
+        })->middleware('can:batches.view')->name('batches.label');
+
+        Route::get('expiry-alerts', ExpiryAlertsDashboard::class)->middleware('can:expiry-alerts.view')->name('expiry-alerts.index');
+
+        Route::get('expenses', ExpenseList::class)->middleware('can:expenses.manage')->name('expenses.index');
+        Route::get('expense-categories', ExpenseCategoryManager::class)->middleware('can:expenses.manage')->name('expense-categories.index');
+
+        Route::get('purchases', PurchaseList::class)->middleware('can:viewAny,App\Models\Purchase')->name('purchases.index');
+        Route::get('purchases/create', PurchaseCreate::class)->middleware('can:create,App\Models\Purchase')->name('purchases.create');
+        Route::get('purchases/{purchase}', PurchaseShow::class)->middleware('can:view,purchase')->name('purchases.show');
+
+        Route::get('pos', Pos::class)->middleware('can:create,App\Models\Sale')->name('pos.index');
+        Route::get('sales', SaleList::class)->middleware('can:viewAny,App\Models\Sale')->name('sales.index');
+        Route::get('sales/{sale}', SaleShow::class)->middleware('can:view,sale')->name('sales.show');
+        Route::get('sales/{sale}/receipt', function (Sale $sale, ReceiptRenderService $receiptRenderService) {
+            return $receiptRenderService->render($sale);
+        })->middleware('can:view,sale')->name('sales.receipt');
+
+        Route::get('reports/sales', SalesReport::class)->middleware('can:reports.view')->name('reports.sales');
+        Route::get('reports/purchases', PurchaseReport::class)->middleware('can:reports.view')->name('reports.purchases');
+    });
+});
