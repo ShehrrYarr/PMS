@@ -42,6 +42,7 @@ class ShopService
                 'sidebar_gradient_from' => '#1f4d38',
                 'sidebar_gradient_to' => '#1f4d38',
                 'default_locale' => 'en',
+                'font_size_percent' => 100,
             ]);
 
             ReceiptSetting::query()->create([

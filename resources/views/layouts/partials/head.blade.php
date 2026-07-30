@@ -31,4 +31,12 @@
         --sidebar-gradient-from: {{ $theme->sidebar_gradient_from }};
         --sidebar-gradient-to: {{ $theme->sidebar_gradient_to }};
     }
+
+    {{-- Tailwind's text-* sizes are rem-based, so scaling the root font-size
+         here scales every bit of on-screen text in the app proportionally,
+         with no per-component changes needed. Printed receipts render
+         through a separate view/stylesheet and are unaffected. --}}
+    html {
+        font-size: {{ $theme->font_size_percent }}%;
+    }
 </style>

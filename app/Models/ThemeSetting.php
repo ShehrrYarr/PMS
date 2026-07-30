@@ -23,12 +23,14 @@ class ThemeSetting extends Model
         'sidebar_gradient_to',
         'default_locale',
         'banner_interval_seconds',
+        'font_size_percent',
     ];
 
     protected function casts(): array
     {
         return [
             'banner_interval_seconds' => 'integer',
+            'font_size_percent' => 'integer',
         ];
     }
 

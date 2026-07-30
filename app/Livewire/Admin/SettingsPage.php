@@ -98,6 +98,21 @@ class SettingsPage extends Component
     #[Validate('required|regex:/^#[0-9a-fA-F]{6}$/')]
     public string $sidebarGradientTo = '#1f4d38';
 
+    /**
+     * A free +/- stepper, not named presets — clamped to a range that keeps
+     * text from becoming illegibly small or breaking layouts at the top end.
+     */
+    private const MIN_FONT_SIZE_PERCENT = 80;
+
+    private const MAX_FONT_SIZE_PERCENT = 150;
+
+    private const FONT_SIZE_STEP = 10;
+
+    // Keep in sync with MIN/MAX_FONT_SIZE_PERCENT above — Livewire's
+    // #[Validate] attribute needs a literal string, not a class constant.
+    #[Validate('required|integer|min:80|max:150')]
+    public int $fontSizePercent = 100;
+
     #[Validate('nullable|image|max:1024')]
     public ?TemporaryUploadedFile $logo = null;
 
@@ -117,6 +132,7 @@ class SettingsPage extends Component
         $this->sidebarAccentColor = $theme->sidebar_accent_color;
         $this->sidebarGradientFrom = $theme->sidebar_gradient_from;
         $this->sidebarGradientTo = $theme->sidebar_gradient_to;
+        $this->fontSizePercent = $theme->font_size_percent;
 
         $this->receiptHeaderText = (string) $receipt->header_text;
         $this->receiptFooterText = (string) $receipt->footer_text;
@@ -234,6 +250,7 @@ class SettingsPage extends Component
             'sidebarAccentColor' => 'required|regex:/^#[0-9a-fA-F]{6}$/',
             'sidebarGradientFrom' => 'required|regex:/^#[0-9a-fA-F]{6}$/',
             'sidebarGradientTo' => 'required|regex:/^#[0-9a-fA-F]{6}$/',
+            'fontSizePercent' => 'required|integer|min:'.self::MIN_FONT_SIZE_PERCENT.'|max:'.self::MAX_FONT_SIZE_PERCENT,
         ]);
 
         ThemeSetting::current()->update([
@@ -243,10 +260,25 @@ class SettingsPage extends Component
             'sidebar_accent_color' => $this->sidebarAccentColor,
             'sidebar_gradient_from' => $this->sidebarGradientFrom,
             'sidebar_gradient_to' => $this->sidebarGradientTo,
+            'font_size_percent' => $this->fontSizePercent,
         ]);
 
         session()->flash('success', __('settings.saved'));
         $this->dispatch('branding-updated');
+    }
+
+    public function increaseFontSize(): void
+    {
+        $this->authorize('branding.manage');
+
+        $this->fontSizePercent = min(self::MAX_FONT_SIZE_PERCENT, $this->fontSizePercent + self::FONT_SIZE_STEP);
+    }
+
+    public function decreaseFontSize(): void
+    {
+        $this->authorize('branding.manage');
+
+        $this->fontSizePercent = max(self::MIN_FONT_SIZE_PERCENT, $this->fontSizePercent - self::FONT_SIZE_STEP);
     }
 
     public function render(): View

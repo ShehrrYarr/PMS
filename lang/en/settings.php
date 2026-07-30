@@ -42,6 +42,12 @@ return [
     'sidebar_gradient_to' => 'Gradient End',
     'preview' => 'Preview',
 
+    'font_size' => 'Font Size',
+    'font_size_hint' => 'Scales all on-screen text across the app for everyone in this shop. Printed receipts are unaffected.',
+    'font_size_decrease' => 'Decrease font size',
+    'font_size_increase' => 'Increase font size',
+    'font_size_preview_text' => 'This is a preview of the app\'s text at this size.',
+
     'banner_upload' => 'Add a Banner',
     'banner_dimensions_hint' => 'Recommended size: 1200×400px (3:1 ratio). Banners are shown full-width and crop to fit — this ratio looks good on both desktop and mobile screens.',
     'banner_add' => 'Add Banner',

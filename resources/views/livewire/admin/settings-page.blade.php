@@ -199,6 +199,38 @@
                     </div>
                 </div>
 
+                <div>
+                    <h4 class="mb-3 text-base font-bold text-[var(--text-primary)]">{{ __('settings.font_size') }}</h4>
+                    <p class="mb-3 text-sm text-[var(--text-secondary)]">{{ __('settings.font_size_hint') }}</p>
+
+                    <div class="flex items-center gap-3">
+                        <button
+                            type="button"
+                            wire:click="decreaseFontSize"
+                            {{ $fontSizePercent <= 80 ? 'disabled' : '' }}
+                            aria-label="{{ __('settings.font_size_decrease') }}"
+                            class="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border border-black/10 bg-white/70 text-xl font-bold text-[var(--text-primary)] hover:bg-black/5 disabled:cursor-not-allowed disabled:opacity-40"
+                        >&minus;</button>
+
+                        <span class="w-16 text-center text-base font-bold text-[var(--text-primary)]">{{ $fontSizePercent }}%</span>
+
+                        <button
+                            type="button"
+                            wire:click="increaseFontSize"
+                            {{ $fontSizePercent >= 150 ? 'disabled' : '' }}
+                            aria-label="{{ __('settings.font_size_increase') }}"
+                            class="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border border-black/10 bg-white/70 text-xl font-bold text-[var(--text-primary)] hover:bg-black/5 disabled:cursor-not-allowed disabled:opacity-40"
+                        >+</button>
+                    </div>
+
+                    <div class="mt-4">
+                        <x-input-label :value="__('settings.preview')" />
+                        <div class="mt-1 rounded-xl border border-black/10 bg-white/70 p-4">
+                            <p style="font-size: {{ $fontSizePercent }}%;" class="text-[var(--text-primary)]">{{ __('settings.font_size_preview_text') }}</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="flex justify-end">
                     <x-primary-button>{{ __('settings.save') }}</x-primary-button>
                 </div>
