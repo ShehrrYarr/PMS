@@ -58,6 +58,31 @@ class PurchaseServiceTest extends TestCase
         $this->assertNotEmpty($batch->barcode);
     }
 
+    public function test_a_manually_entered_barcode_is_used_for_the_batch(): void
+    {
+        $vendor = Vendor::factory()->create();
+        $user = User::factory()->create();
+        $product = Product::factory()->create();
+
+        app(PurchaseService::class)->create(
+            vendor: $vendor,
+            items: [[
+                'product_id' => $product->id,
+                'manufacturing_date' => '2026-01-01',
+                'expiry_date' => '2027-01-01',
+                'cost_price' => '400.00',
+                'quantity' => '10',
+                'barcode' => 'MFR-CODE-9999',
+            ]],
+            paymentLines: [
+                ['method' => 'cash', 'amount' => '4000.00', 'bank_id' => null],
+            ],
+            user: $user,
+        );
+
+        $this->assertSame('MFR-CODE-9999', Batch::query()->first()->barcode);
+    }
+
     public function test_an_unbalanced_split_writes_nothing(): void
     {
         $vendor = Vendor::factory()->create();

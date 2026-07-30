@@ -7,7 +7,6 @@ namespace App\Livewire\Inventory;
 use App\Livewire\Forms\BatchForm;
 use App\Models\Batch;
 use App\Models\Product;
-use App\Services\BarcodeService;
 use Illuminate\Contracts\View\View;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Url;
@@ -26,19 +25,6 @@ class BatchList extends Component
 
     public bool $showModal = false;
 
-    public function create(): void
-    {
-        $this->authorize('batches.manage');
-
-        $this->form->resetForm();
-
-        if ($this->productFilter !== null) {
-            $this->form->product_id = $this->productFilter;
-        }
-
-        $this->showModal = true;
-    }
-
     public function edit(int $batchId): void
     {
         $this->authorize('batches.manage');
@@ -47,17 +33,17 @@ class BatchList extends Component
         $this->showModal = true;
     }
 
-    public function save(BarcodeService $barcodeService): void
+    public function save(): void
     {
         $this->authorize('batches.manage');
 
+        if ($this->form->batch === null) {
+            return;
+        }
+
         $this->form->validate();
 
-        if ($this->form->batch === null) {
-            $barcodeService->createBatchWithBarcode($this->form->attributesForCreate());
-        } else {
-            $this->form->batch->update($this->form->attributesForUpdate());
-        }
+        $this->form->batch->update($this->form->attributesForUpdate());
 
         $this->showModal = false;
         $this->form->resetForm();
@@ -79,7 +65,6 @@ class BatchList extends Component
 
         return view('livewire.inventory.batch-list', [
             'batches' => $batches,
-            'products' => Product::query()->where('is_active', true)->orderBy('name')->get(),
             'filteredProduct' => $this->productFilter !== null ? Product::query()->find($this->productFilter) : null,
         ]);
     }

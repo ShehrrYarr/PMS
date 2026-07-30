@@ -20,7 +20,7 @@ class PurchaseCreate extends Component
 {
     public ?int $vendor_id = null;
 
-    /** @var list<array{product_id: ?int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string}> */
+    /** @var list<array{product_id: ?int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string, barcode: string}> */
     public array $items = [];
 
     /** @var list<array{method: string, amount: string, bank_id: ?int}> */
@@ -42,6 +42,7 @@ class PurchaseCreate extends Component
             'expiry_date' => '',
             'cost_price' => '',
             'quantity' => '',
+            'barcode' => '',
         ];
     }
 
@@ -88,6 +89,7 @@ class PurchaseCreate extends Component
             'items.*.expiry_date' => 'required|date|after:items.*.manufacturing_date',
             'items.*.cost_price' => 'required|numeric|min:0.01',
             'items.*.quantity' => 'required|numeric|min:0.01',
+            'items.*.barcode' => ['nullable', 'string', 'max:100', 'unique:batches,barcode'],
             'paymentLines' => 'required|array|min:1',
             'paymentLines.*.method' => 'required|in:cash,bank,ledger',
             'paymentLines.*.amount' => 'required|numeric|min:0.01',
@@ -98,6 +100,16 @@ class PurchaseCreate extends Component
     public function save(PurchaseService $purchaseService): void
     {
         $this->authorize('create', Purchase::class);
+
+        $this->withValidator(function ($validator) {
+            $validator->after(function ($validator) {
+                $barcodes = collect($this->items)->pluck('barcode')->filter(fn ($barcode) => $barcode !== null && $barcode !== '');
+
+                if ($barcodes->duplicates()->isNotEmpty()) {
+                    $validator->errors()->add('items', __('purchases.duplicate_barcode'));
+                }
+            });
+        });
 
         $validated = $this->validate();
 

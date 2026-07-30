@@ -31,7 +31,7 @@ class PurchaseService
     ) {}
 
     /**
-     * @param  list<array{product_id: int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string}>  $items
+     * @param  list<array{product_id: int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string, barcode?: ?string}>  $items
      * @param  list<array{method: string, amount: string, bank_id: ?int}>  $paymentLines
      */
     public function create(Vendor $vendor, array $items, array $paymentLines, User $user): Purchase
@@ -76,6 +76,7 @@ class PurchaseService
                     'quantity_received' => $item['quantity'],
                     'quantity_remaining' => $item['quantity'],
                     'purchase_item_id' => $purchaseItem->id,
+                    'barcode' => $item['barcode'] ?? null,
                 ]);
             }
 

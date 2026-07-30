@@ -12,11 +12,6 @@
                     </p>
                 @endif
             </div>
-            @can('batches.manage')
-                <button type="button" wire:click="create" class="inline-flex min-h-[44px] items-center rounded-xl bg-[var(--navbar-primary-color)] px-5 py-2 text-base font-bold text-white shadow-sm hover:opacity-90">
-                    {{ __('batches.add') }}
-                </button>
-            @endcan
         </div>
     </x-page-header>
 
@@ -86,18 +81,14 @@
     <x-glass-modal show="showModal">
         <form wire:submit="save" class="space-y-4">
             <h3 class="text-xl font-bold text-[var(--text-primary)]">
-                {{ $form->batch ? __('batches.edit') : __('batches.add') }}
+                {{ __('batches.edit') }}
             </h3>
 
             <div>
-                <x-input-label for="product_id" :value="__('batches.product')" />
-                <select id="product_id" wire:model="form.product_id" @disabled($form->batch) class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-4 py-2 text-base font-medium text-[var(--text-primary)] disabled:opacity-60">
-                    <option value="">{{ __('batches.select_product') }}</option>
-                    @foreach ($products as $product)
-                        <option value="{{ $product->id }}">{{ $product->name }} ({{ $product->sku }})</option>
-                    @endforeach
-                </select>
-                <x-input-error :messages="$errors->get('form.product_id')" class="mt-1" />
+                <x-input-label :value="__('batches.product')" />
+                <p class="mt-1 flex min-h-[44px] items-center rounded-xl border border-black/10 bg-black/5 px-4 py-2 text-base font-medium text-[var(--text-primary)]">
+                    {{ $form->batch?->product->name }}
+                </p>
             </div>
 
             <div class="grid grid-cols-2 gap-4">
@@ -119,13 +110,6 @@
                 <x-input-error :messages="$errors->get('form.cost_price')" class="mt-1" />
             </div>
 
-            @unless ($form->batch)
-                <div>
-                    <x-input-label for="quantity_received" :value="__('batches.quantity_received')" />
-                    <x-text-input id="quantity_received" type="number" step="0.01" min="0.01" class="mt-1" wire:model="form.quantity_received" />
-                    <x-input-error :messages="$errors->get('form.quantity_received')" class="mt-1" />
-                </div>
-            @endunless
 
             <div class="flex justify-end gap-3 pt-2">
                 <button type="button" wire:click="$set('showModal', false)" class="min-h-[44px] rounded-xl px-5 py-2 text-base font-semibold text-[var(--text-secondary)] hover:bg-black/5">

@@ -20,6 +20,8 @@
                 </button>
             </div>
 
+            <x-input-error :messages="$errors->get('items')" class="mb-3" />
+
             <div class="space-y-4">
                 @foreach ($items as $index => $item)
                     <div class="grid grid-cols-1 gap-3 rounded-xl border border-black/10 bg-white/50 p-4 sm:grid-cols-6">
@@ -56,6 +58,11 @@
                                     &times;
                                 </button>
                             @endif
+                        </div>
+                        <div class="sm:col-span-6">
+                            <x-input-label :value="__('purchases.barcode')" />
+                            <x-text-input type="text" wire:model="items.{{ $index }}.barcode" placeholder="{{ __('purchases.barcode_placeholder') }}" class="mt-1 font-mono text-sm" />
+                            <x-input-error :messages="$errors->get('items.'.$index.'.barcode')" class="mt-1" />
                         </div>
                     </div>
                 @endforeach

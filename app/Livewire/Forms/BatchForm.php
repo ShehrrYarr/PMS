@@ -19,8 +19,6 @@ class BatchForm extends Form
 
     public string $cost_price = '';
 
-    public string $quantity_received = '';
-
     /**
      * @return array<string, mixed>
      */
@@ -31,7 +29,6 @@ class BatchForm extends Form
             'manufacturing_date' => 'required|date',
             'expiry_date' => 'required|date|after:manufacturing_date',
             'cost_price' => 'required|numeric|min:0',
-            'quantity_received' => 'required|numeric|min:0.01',
         ];
     }
 
@@ -42,22 +39,6 @@ class BatchForm extends Form
         $this->manufacturing_date = $batch->manufacturing_date->toDateString();
         $this->expiry_date = $batch->expiry_date->toDateString();
         $this->cost_price = (string) $batch->cost_price;
-        $this->quantity_received = (string) $batch->quantity_received;
-    }
-
-    /**
-     * @return array<string, mixed>
-     */
-    public function attributesForCreate(): array
-    {
-        return [
-            'product_id' => $this->product_id,
-            'manufacturing_date' => $this->manufacturing_date,
-            'expiry_date' => $this->expiry_date,
-            'cost_price' => $this->cost_price,
-            'quantity_received' => $this->quantity_received,
-            'quantity_remaining' => $this->quantity_received,
-        ];
     }
 
     /**

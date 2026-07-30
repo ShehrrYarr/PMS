@@ -19,14 +19,27 @@ class BarcodeService
     public function __construct(private readonly DNS1D $barcodeGenerator) {}
 
     /**
-     * Create a batch and assign it a permanent barcode in one step, since the
-     * barcode value is derived from the batch's own (post-insert) id.
+     * Create a batch and assign it a barcode in one step. If the caller
+     * supplies a non-empty 'barcode' attribute (e.g. the manufacturer's own
+     * printed barcode, entered manually during a purchase), that value is
+     * used as-is. Otherwise a permanent barcode is derived from the batch's
+     * own (post-insert) id, same as always.
      *
      * @param  array<string, mixed>  $attributes
      */
     public function createBatchWithBarcode(array $attributes): Batch
     {
-        return DB::transaction(function () use ($attributes) {
+        $manualBarcode = $attributes['barcode'] ?? null;
+        unset($attributes['barcode']);
+
+        return DB::transaction(function () use ($attributes, $manualBarcode) {
+            if ($manualBarcode !== null && $manualBarcode !== '') {
+                return Batch::query()->create([
+                    ...$attributes,
+                    'barcode' => $manualBarcode,
+                ]);
+            }
+
             $batch = Batch::query()->create([
                 ...$attributes,
                 'barcode' => (string) Str::uuid(),
