@@ -25,12 +25,14 @@ class Shop extends Model
         'name',
         'slug',
         'is_active',
+        'is_demo',
     ];
 
     protected function casts(): array
     {
         return [
             'is_active' => 'boolean',
+            'is_demo' => 'boolean',
         ];
     }
 

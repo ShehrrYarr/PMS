@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleAndPermissionSeeder::class);
         $this->call(SuperAdminSeeder::class);
 
-        $shop = Shop::factory()->create(['name' => 'Demo Shop']);
+        $shop = Shop::factory()->create(['name' => 'Demo Shop', 'is_demo' => true]);
 
         $this->callWith(ThemeSettingSeeder::class, ['shopId' => $shop->id]);
         $this->callWith(ReceiptSettingSeeder::class, ['shopId' => $shop->id]);

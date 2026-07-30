@@ -6,6 +6,7 @@ namespace App\Livewire\Expenses;
 
 use App\Models\ExpenseCategory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
@@ -51,7 +52,7 @@ class ExpenseCategoryManager extends Component
                 'required',
                 'string',
                 'max:255',
-                Rule::unique('expense_categories', 'name')->ignore($this->editingCategoryId),
+                Rule::unique('expense_categories', 'name')->where('shop_id', Auth::user()->shop_id)->ignore($this->editingCategoryId),
             ],
         ]);
 

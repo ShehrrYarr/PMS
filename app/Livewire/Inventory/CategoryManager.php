@@ -6,6 +6,7 @@ namespace App\Livewire\Inventory;
 
 use App\Models\Category;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
@@ -46,7 +47,7 @@ class CategoryManager extends Component
                 'required',
                 'string',
                 'max:255',
-                Rule::unique('categories', 'name')->ignore($this->editingCategoryId),
+                Rule::unique('categories', 'name')->where('shop_id', Auth::user()->shop_id)->ignore($this->editingCategoryId),
             ],
         ]);
 

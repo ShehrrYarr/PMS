@@ -9,6 +9,7 @@
         <div style="text-align: center; max-width: 28rem; padding: 2rem;">
             <h1 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Pesticides Management System</h1>
             <p style="color: #4a5568;">This system is organized by shop. Please use your shop's own link to sign in (e.g. <code>/your-shop-name</code>).</p>
+            <a href="{{ route('demo.login') }}" style="display: inline-block; margin-top: 1.25rem; padding: 0.625rem 1.5rem; border-radius: 0.5rem; background: #2f6f4f; color: #fff; font-weight: 600; text-decoration: none;">See Demo</a>
         </div>
     </body>
 </html>

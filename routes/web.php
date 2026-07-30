@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DemoLoginController;
 use App\Livewire\Actions\Logout;
 use App\Livewire\Admin\SettingsPage;
 use App\Livewire\Customers\CustomerLedger;
@@ -40,6 +41,12 @@ Route::get('/', function () {
         ? redirect()->route('dashboard', ['shop' => $user->shop->slug])
         : view('shop-landing');
 })->name('home');
+
+// Single-segment, unprefixed like '/' above — must stay registered before
+// the {shop} prefix group's own bare '/' route, which is a wildcard that
+// would otherwise swallow this literal path (see bootstrap/app.php's note
+// on route registration order).
+Route::get('/demo-login', DemoLoginController::class)->name('demo.login');
 
 // Must be required before the {shop} prefix group below — see the note in
 // bootstrap/app.php on why registration order matters here.
