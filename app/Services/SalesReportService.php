@@ -14,10 +14,14 @@ use Illuminate\Support\Facades\DB;
 class SalesReportService
 {
     /**
-     * @return array{sales_total: string, cost_total: string, profit_total: string, margin_percent: string}
+     * @return array{sales_total: string, cost_total: string, profit_total: string, margin_percent: string, quantity_sold: ?string}
      */
-    public function summary(?string $dateFrom, ?string $dateTo, ?int $customerId): array
+    public function summary(?string $dateFrom, ?string $dateTo, ?int $customerId, ?int $productId = null): array
     {
+        if ($productId !== null) {
+            return $this->productSummary($dateFrom, $dateTo, $customerId, $productId);
+        }
+
         $salesTotal = (string) Sale::query()
             ->when($dateFrom, fn ($q) => $q->whereDate('created_at', '>=', $dateFrom))
             ->when($dateTo, fn ($q) => $q->whereDate('created_at', '<=', $dateTo))
@@ -31,6 +35,34 @@ class SalesReportService
             ->when($customerId, fn ($q) => $q->where('sales.customer_id', $customerId))
             ->sum(DB::raw('sale_items.quantity * COALESCE(sale_items.cost_price, 0)'));
 
+        return $this->normalizeSummary($salesTotal, $costTotal, null);
+    }
+
+    /**
+     * @return array{sales_total: string, cost_total: string, profit_total: string, margin_percent: string, quantity_sold: string}
+     */
+    private function productSummary(?string $dateFrom, ?string $dateTo, ?int $customerId, int $productId): array
+    {
+        $query = DB::table('sale_items')
+            ->join('sales', 'sales.id', '=', 'sale_items.sale_id')
+            ->join('batches', 'batches.id', '=', 'sale_items.batch_id')
+            ->where('batches.product_id', $productId)
+            ->when($dateFrom, fn ($q) => $q->whereDate('sales.created_at', '>=', $dateFrom))
+            ->when($dateTo, fn ($q) => $q->whereDate('sales.created_at', '<=', $dateTo))
+            ->when($customerId, fn ($q) => $q->where('sales.customer_id', $customerId));
+
+        $salesTotal = (string) (clone $query)->sum('sale_items.line_total');
+        $costTotal = (string) (clone $query)->sum(DB::raw('sale_items.quantity * COALESCE(sale_items.cost_price, 0)'));
+        $quantitySold = (string) (clone $query)->sum('sale_items.quantity');
+
+        return $this->normalizeSummary($salesTotal, $costTotal, bcadd($quantitySold, '0.00', 2));
+    }
+
+    /**
+     * @return array{sales_total: string, cost_total: string, profit_total: string, margin_percent: string, quantity_sold: ?string}
+     */
+    private function normalizeSummary(string $salesTotal, string $costTotal, ?string $quantitySold): array
+    {
         $salesTotal = bcadd($salesTotal, '0.00', 2);
         $costTotal = bcadd($costTotal, '0.00', 2);
         $profitTotal = bcsub($salesTotal, $costTotal, 2);
@@ -44,6 +76,7 @@ class SalesReportService
             'cost_total' => $costTotal,
             'profit_total' => $profitTotal,
             'margin_percent' => $marginPercent,
+            'quantity_sold' => $quantitySold,
         ];
     }
 }

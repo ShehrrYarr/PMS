@@ -50,4 +50,27 @@ class SaleItem extends Model
     {
         return bcsub((string) $this->quantity, (string) $this->quantity_returned, 2);
     }
+
+    /**
+     * Cost basis of this line, from the cost_price snapshot captured at sale
+     * time (see SaleService::create()).
+     */
+    public function costTotal(): string
+    {
+        return bcmul((string) $this->quantity, (string) ($this->cost_price ?? '0'), 2);
+    }
+
+    public function profit(): string
+    {
+        return bcsub((string) $this->line_total, $this->costTotal(), 2);
+    }
+
+    public function profitMarginPercent(): string
+    {
+        if (bccomp((string) $this->line_total, '0.00', 2) <= 0) {
+            return '0.00';
+        }
+
+        return bcmul(bcdiv($this->profit(), (string) $this->line_total, 4), '100', 2);
+    }
 }
