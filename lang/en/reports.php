@@ -13,6 +13,8 @@ return [
     'all_vendors' => 'All vendors',
     'date' => 'Date',
     'invoice' => 'Invoice',
+    'invoice_pdf' => 'Invoice PDF',
+    'download' => 'Download',
     'sale_total' => 'Sale Total',
     'cost' => 'Cost',
     'profit' => 'Profit',

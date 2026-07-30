@@ -24,6 +24,7 @@ use App\Livewire\Vendors\VendorList;
 use App\Models\Batch;
 use App\Models\Sale;
 use App\Services\BarcodeService;
+use App\Services\InvoicePdfService;
 use App\Services\ReceiptRenderService;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -110,9 +111,16 @@ Route::prefix('{shop}')->middleware(['shop.context'])->group(function () {
         Route::get('pos', Pos::class)->middleware('can:create,App\Models\Sale')->name('pos.index');
         Route::get('sales', SaleList::class)->middleware('can:viewAny,App\Models\Sale')->name('sales.index');
         Route::get('sales/{sale}', SaleShow::class)->middleware('can:view,sale')->name('sales.show');
-        Route::get('sales/{sale}/receipt', function (Sale $sale, ReceiptRenderService $receiptRenderService) {
+        // The unused leading $shop parameter keeps this closure's parameter
+        // order aligned with the route's {shop}/{sale} URI order — without
+        // it, Laravel's positional dependency-splicing (CallableDispatcher)
+        // binds the shop slug string to $sale instead of the resolved model.
+        Route::get('sales/{sale}/receipt', function (string $shop, Sale $sale, ReceiptRenderService $receiptRenderService) {
             return $receiptRenderService->render($sale);
         })->middleware('can:view,sale')->name('sales.receipt');
+        Route::get('sales/{sale}/invoice', function (string $shop, Sale $sale, InvoicePdfService $invoicePdfService) {
+            return $invoicePdfService->download($sale);
+        })->middleware('can:reports.view')->name('sales.invoice');
 
         Route::get('reports/sales', SalesReport::class)->middleware('can:reports.view')->name('reports.sales');
         Route::get('reports/purchases', PurchaseReport::class)->middleware('can:reports.view')->name('reports.purchases');

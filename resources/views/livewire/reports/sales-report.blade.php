@@ -88,6 +88,7 @@
                             <th class="px-3 py-2 text-end">{{ __('reports.cost') }}</th>
                             <th class="px-3 py-2 text-end">{{ __('reports.profit') }}</th>
                             <th class="px-3 py-2 text-end">{{ __('reports.margin') }}</th>
+                            <th class="px-3 py-2 text-end">{{ __('reports.invoice_pdf') }}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -104,10 +105,15 @@
                                 <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ money($sale->costTotal()) }}</td>
                                 <td class="px-3 py-3 text-end text-[var(--color-success)]">{{ money($sale->profit()) }}</td>
                                 <td class="px-3 py-3 text-end">{{ number_format((float) $sale->profitMarginPercent(), 2) }}%</td>
+                                <td class="px-3 py-3 text-end">
+                                    <a href="{{ route('sales.invoice', $sale) }}" class="rounded-lg bg-black/5 px-3 py-1.5 text-sm font-semibold text-[var(--text-primary)] hover:bg-black/10">
+                                        {{ __('reports.download') }}
+                                    </a>
+                                </td>
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="7" class="px-3 py-6 text-center text-[var(--text-secondary)]">{{ __('reports.none') }}</td>
+                                <td colspan="8" class="px-3 py-6 text-center text-[var(--text-secondary)]">{{ __('reports.none') }}</td>
                             </tr>
                         @endforelse
                     </tbody>
@@ -131,6 +137,7 @@
                             <th class="px-3 py-2 text-end">{{ __('reports.cost') }}</th>
                             <th class="px-3 py-2 text-end">{{ __('reports.profit') }}</th>
                             <th class="px-3 py-2 text-end">{{ __('reports.margin') }}</th>
+                            <th class="px-3 py-2 text-end">{{ __('reports.invoice_pdf') }}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -149,10 +156,15 @@
                                 <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ money($item->costTotal()) }}</td>
                                 <td class="px-3 py-3 text-end text-[var(--color-success)]">{{ money($item->profit()) }}</td>
                                 <td class="px-3 py-3 text-end">{{ number_format((float) $item->profitMarginPercent(), 2) }}%</td>
+                                <td class="px-3 py-3 text-end">
+                                    <a href="{{ route('sales.invoice', $item->sale) }}" class="rounded-lg bg-black/5 px-3 py-1.5 text-sm font-semibold text-[var(--text-primary)] hover:bg-black/10">
+                                        {{ __('reports.download') }}
+                                    </a>
+                                </td>
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="9" class="px-3 py-6 text-center text-[var(--text-secondary)]">{{ __('reports.none') }}</td>
+                                <td colspan="10" class="px-3 py-6 text-center text-[var(--text-secondary)]">{{ __('reports.none') }}</td>
                             </tr>
                         @endforelse
                     </tbody>

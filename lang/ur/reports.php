@@ -13,6 +13,8 @@ return [
     'all_vendors' => 'تمام وینڈرز',
     'date' => 'تاریخ',
     'invoice' => 'انوائس',
+    'invoice_pdf' => 'انوائس پی ڈی ایف',
+    'download' => 'ڈاؤن لوڈ',
     'sale_total' => 'فروخت کی رقم',
     'cost' => 'لاگت',
     'profit' => 'منافع',
