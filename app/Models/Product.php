@@ -17,6 +17,7 @@ class Product extends Model
         'name',
         'sku',
         'category_id',
+        'company_id',
         'unit',
         'default_sale_price',
         'is_active',
@@ -36,6 +37,14 @@ class Product extends Model
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
+    }
+
+    /**
+     * @return BelongsTo<Company, $this>
+     */
+    public function company(): BelongsTo
+    {
+        return $this->belongsTo(Company::class);
     }
 
     /**

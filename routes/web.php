@@ -8,6 +8,7 @@ use App\Livewire\Expenses\ExpenseCategoryManager;
 use App\Livewire\Expenses\ExpenseList;
 use App\Livewire\Inventory\BatchList;
 use App\Livewire\Inventory\CategoryManager;
+use App\Livewire\Inventory\CompanyManager;
 use App\Livewire\Inventory\ExpiryAlertsDashboard;
 use App\Livewire\Inventory\ProductList;
 use App\Livewire\Pos\Pos;
@@ -53,6 +54,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('products', ProductList::class)->middleware('can:products.view')->name('products.index');
     Route::get('categories', CategoryManager::class)->middleware('can:products.manage')->name('categories.index');
+    Route::get('companies', CompanyManager::class)->middleware('can:products.manage')->name('companies.index');
     Route::get('batches', BatchList::class)->middleware('can:batches.view')->name('batches.index');
     Route::get('batches/{batch}/label', function (Batch $batch, BarcodeService $barcodeService) {
         return view('batches.label', [

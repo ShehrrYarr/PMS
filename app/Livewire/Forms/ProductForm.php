@@ -18,6 +18,8 @@ class ProductForm extends Form
 
     public ?int $category_id = null;
 
+    public ?int $company_id = null;
+
     public string $unit = '';
 
     public string $default_sale_price = '0';
@@ -36,6 +38,7 @@ class ProductForm extends Form
                 Rule::unique('products', 'sku')->ignore($this->product?->id),
             ],
             'category_id' => 'nullable|exists:categories,id',
+            'company_id' => 'nullable|exists:companies,id',
             'unit' => 'required|string|max:50',
             'default_sale_price' => 'required|numeric|min:0',
         ];
@@ -47,6 +50,7 @@ class ProductForm extends Form
         $this->name = $product->name;
         $this->sku = $product->sku;
         $this->category_id = $product->category_id;
+        $this->company_id = $product->company_id;
         $this->unit = $product->unit;
         $this->default_sale_price = (string) $product->default_sale_price;
     }
@@ -60,6 +64,7 @@ class ProductForm extends Form
             'name' => $this->name,
             'sku' => $this->sku,
             'category_id' => $this->category_id,
+            'company_id' => $this->company_id,
             'unit' => $this->unit,
             'default_sale_price' => $this->default_sale_price,
         ];
@@ -68,7 +73,7 @@ class ProductForm extends Form
     public function resetForm(): void
     {
         $this->product = null;
-        $this->reset(['name', 'sku', 'category_id', 'unit']);
+        $this->reset(['name', 'sku', 'category_id', 'company_id', 'unit']);
         $this->default_sale_price = '0';
     }
 }

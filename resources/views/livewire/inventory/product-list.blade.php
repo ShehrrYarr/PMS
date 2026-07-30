@@ -7,6 +7,9 @@
                     <a href="{{ route('categories.index') }}" wire:navigate class="inline-flex min-h-[44px] items-center rounded-xl px-4 py-2 text-base font-semibold text-[var(--text-secondary)] hover:bg-black/5">
                         {{ __('categories.manage') }}
                     </a>
+                    <a href="{{ route('companies.index') }}" wire:navigate class="inline-flex min-h-[44px] items-center rounded-xl px-4 py-2 text-base font-semibold text-[var(--text-secondary)] hover:bg-black/5">
+                        {{ __('companies.manage') }}
+                    </a>
                     <button type="button" wire:click="create" class="inline-flex min-h-[44px] items-center rounded-xl bg-[var(--navbar-primary-color)] px-5 py-2 text-base font-bold text-white shadow-sm hover:opacity-90">
                         {{ __('products.add') }}
                     </button>
@@ -16,12 +19,20 @@
     </x-page-header>
 
     <div class="glass-panel p-4 sm:p-6">
-        <input
-            type="text"
-            wire:model.live.debounce.300ms="search"
-            placeholder="{{ __('products.search') }}"
-            class="mb-4 min-h-[44px] w-full max-w-sm rounded-xl border border-black/10 bg-white/70 px-4 py-2 text-base font-medium text-[var(--text-primary)] shadow-sm focus:border-[var(--navbar-primary-color)] focus:ring-[var(--navbar-primary-color)]"
-        >
+        <div class="mb-4 flex flex-wrap items-end gap-3">
+            <input
+                type="text"
+                wire:model.live.debounce.300ms="search"
+                placeholder="{{ __('products.search') }}"
+                class="min-h-[44px] w-full max-w-sm rounded-xl border border-black/10 bg-white/70 px-4 py-2 text-base font-medium text-[var(--text-primary)] shadow-sm focus:border-[var(--navbar-primary-color)] focus:ring-[var(--navbar-primary-color)]"
+            >
+            <select wire:model.live="companyId" class="min-h-[44px] rounded-xl border border-black/10 bg-white/70 px-4 py-2 text-base font-medium text-[var(--text-primary)] shadow-sm focus:border-[var(--navbar-primary-color)] focus:ring-[var(--navbar-primary-color)]">
+                <option value="">{{ __('products.search_company') }}</option>
+                @foreach ($companies as $companyOption)
+                    <option value="{{ $companyOption->id }}">{{ $companyOption->name }}</option>
+                @endforeach
+            </select>
+        </div>
 
         <div class="overflow-x-auto">
             <table class="w-full min-w-[720px] text-start">
@@ -30,6 +41,7 @@
                         <th class="px-3 py-2 text-start">{{ __('products.name') }}</th>
                         <th class="px-3 py-2 text-start">{{ __('products.sku') }}</th>
                         <th class="px-3 py-2 text-start">{{ __('products.category') }}</th>
+                        <th class="px-3 py-2 text-start">{{ __('products.company') }}</th>
                         <th class="px-3 py-2 text-start">{{ __('products.unit') }}</th>
                         <th class="px-3 py-2 text-end">{{ __('products.price') }}</th>
                         <th class="px-3 py-2 text-end">{{ __('products.stock') }}</th>
@@ -43,6 +55,7 @@
                             <td class="px-3 py-3">{{ $product->name }}</td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->sku }}</td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->category?->name ?? '—' }}</td>
+                            <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->company?->name ?? '—' }}</td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->unit }}</td>
                             <td class="px-3 py-3 text-end">{{ money($product->default_sale_price) }}</td>
                             <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $product->totalRemainingQuantity(), 2) }}</td>
@@ -69,7 +82,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="8" class="px-3 py-6 text-center text-[var(--text-secondary)]">{{ __('products.none') }}</td>
+                            <td colspan="9" class="px-3 py-6 text-center text-[var(--text-secondary)]">{{ __('products.none') }}</td>
                         </tr>
                     @endforelse
                 </tbody>
@@ -108,6 +121,17 @@
                     @endforeach
                 </select>
                 <x-input-error :messages="$errors->get('form.category_id')" class="mt-1" />
+            </div>
+
+            <div>
+                <x-input-label for="company_id" :value="__('products.company')" />
+                <select id="company_id" wire:model="form.company_id" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-4 py-2 text-base font-medium text-[var(--text-primary)]">
+                    <option value="">{{ __('products.no_company') }}</option>
+                    @foreach ($companies as $company)
+                        <option value="{{ $company->id }}">{{ $company->name }}</option>
+                    @endforeach
+                </select>
+                <x-input-error :messages="$errors->get('form.company_id')" class="mt-1" />
             </div>
 
             <div>
