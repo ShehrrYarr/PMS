@@ -6,6 +6,8 @@ namespace App\Livewire\Pos;
 
 use App\Enums\PaymentMethod;
 use App\Exceptions\InsufficientStockException;
+use App\Exceptions\InvalidSaleItemException;
+use App\Exceptions\InvalidSalePaymentException;
 use App\Exceptions\UnbalancedPaymentSplitException;
 use App\Models\Bank;
 use App\Models\Batch;
@@ -188,6 +190,9 @@ class Pos extends Component
         $this->authorize('create', Sale::class);
 
         $this->validate([
+            'cart' => 'required|array|min:1',
+            'cart.*.quantity' => 'required|numeric|min:0.01',
+            'cart.*.unit_price' => 'required|numeric|min:0',
             'paymentLines' => 'required|array|min:1',
             'paymentLines.*.method' => 'required|in:cash,bank,ledger',
             'paymentLines.*.amount' => 'required|numeric|min:0.01',
@@ -225,7 +230,7 @@ class Pos extends Component
                 user: auth()->user(),
                 photo: $this->capturedPhoto,
             );
-        } catch (InsufficientStockException|UnbalancedPaymentSplitException $e) {
+        } catch (InsufficientStockException|UnbalancedPaymentSplitException|InvalidSaleItemException|InvalidSalePaymentException $e) {
             $this->addError('paymentLines', $e->getMessage());
 
             return;

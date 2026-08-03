@@ -13,6 +13,7 @@ use App\Models\User;
 use App\Models\Vendor;
 use App\Services\PurchaseReturnService;
 use App\Services\PurchaseService;
+use App\Services\SaleService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -110,5 +111,48 @@ class PurchaseReturnServiceTest extends TestCase
             reason: 'Second return exceeds remaining 4',
             user: $user,
         );
+    }
+
+    public function test_a_return_is_capped_by_batch_stock_actually_remaining_after_some_was_resold(): void
+    {
+        $vendor = Vendor::factory()->create();
+        $user = User::factory()->create();
+        $purchaseItem = $this->makePurchase($vendor, $user, '10');
+        $purchase = $purchaseItem->purchase;
+        $batch = $purchaseItem->batch;
+
+        // Sell 7 of the 10 units before any return — only 3 remain in
+        // stock, even though all 10 are still "returnable" from the
+        // purchase's own perspective (nothing has been returned yet).
+        app(SaleService::class)->create(
+            customer: null,
+            items: [['batch_id' => $batch->id, 'quantity' => '7', 'unit_price' => '500.00']],
+            paymentLines: [['method' => 'cash', 'amount' => '3500.00', 'bank_id' => null]],
+            user: $user,
+        );
+
+        $this->assertSame('3.00', $batch->fresh()->quantity_remaining);
+
+        try {
+            app(PurchaseReturnService::class)->create(
+                purchase: $purchase,
+                lines: [['purchase_item_id' => $purchaseItem->id, 'quantity' => '5']],
+                reason: 'Return more than remains in stock',
+                user: $user,
+            );
+
+            $this->fail('Expected InvalidReturnQuantityException was not thrown.');
+        } catch (InvalidReturnQuantityException) {
+            // expected
+        }
+
+        app(PurchaseReturnService::class)->create(
+            purchase: $purchase,
+            lines: [['purchase_item_id' => $purchaseItem->id, 'quantity' => '3']],
+            reason: 'Return exactly what remains',
+            user: $user,
+        );
+
+        $this->assertSame('0.00', $batch->fresh()->quantity_remaining);
     }
 }

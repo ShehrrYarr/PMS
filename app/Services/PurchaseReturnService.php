@@ -37,13 +37,13 @@ class PurchaseReturnService
                 $purchaseItem = PurchaseItem::query()->lockForUpdate()->findOrFail($line['purchase_item_id']);
                 $batch = Batch::query()->lockForUpdate()->findOrFail($purchaseItem->batch->id);
 
-                $returnable = min(
-                    (float) $purchaseItem->returnableQuantity(),
-                    (float) $batch->quantity_remaining,
-                );
+                $returnableFromPurchase = $purchaseItem->returnableQuantity();
+                $returnable = bccomp($returnableFromPurchase, (string) $batch->quantity_remaining, 2) <= 0
+                    ? $returnableFromPurchase
+                    : (string) $batch->quantity_remaining;
 
-                if (bccomp($line['quantity'], (string) $returnable, 2) > 0) {
-                    throw InvalidReturnQuantityException::exceedsReturnable($line['quantity'], (string) $returnable);
+                if (bccomp($line['quantity'], $returnable, 2) > 0) {
+                    throw InvalidReturnQuantityException::exceedsReturnable($line['quantity'], $returnable);
                 }
 
                 $lineTotal = bcmul((string) $purchaseItem->cost_price, $line['quantity'], 2);

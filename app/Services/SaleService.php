@@ -9,6 +9,8 @@ use App\Enums\PayableType;
 use App\Enums\PaymentMethod;
 use App\Enums\TransactionReferenceType;
 use App\Exceptions\InsufficientStockException;
+use App\Exceptions\InvalidSaleItemException;
+use App\Exceptions\InvalidSalePaymentException;
 use App\Models\Batch;
 use App\Models\Customer;
 use App\Models\Payment;
@@ -46,6 +48,14 @@ class SaleService
 
         $this->paymentSplitService->assertBalanced($paymentLines, $totalAmount);
 
+        if ($customer === null) {
+            foreach ($paymentLines as $line) {
+                if ($line['method'] === PaymentMethod::Ledger->value) {
+                    throw InvalidSalePaymentException::ledgerPaymentRequiresCustomer();
+                }
+            }
+        }
+
         return DB::transaction(function () use ($customer, $items, $paymentLines, $totalAmount, $user, $photo) {
             $sale = Sale::query()->create([
                 'shop_id' => $user->shop_id,
@@ -63,6 +73,14 @@ class SaleService
 
             foreach ($items as $item) {
                 $batch = Batch::query()->lockForUpdate()->findOrFail($item['batch_id']);
+
+                if (bccomp($item['quantity'], '0.01', 2) < 0) {
+                    throw InvalidSaleItemException::forNonPositiveQuantity($batch->barcode, $item['quantity']);
+                }
+
+                if (bccomp($item['unit_price'], '0', 2) < 0) {
+                    throw InvalidSaleItemException::forNegativeUnitPrice($batch->barcode, $item['unit_price']);
+                }
 
                 if (bccomp($item['quantity'], (string) $batch->quantity_remaining, 2) > 0) {
                     throw InsufficientStockException::forBatch($batch->barcode, $item['quantity'], (string) $batch->quantity_remaining);

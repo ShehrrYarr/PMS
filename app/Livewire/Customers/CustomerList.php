@@ -57,9 +57,15 @@ class CustomerList extends Component
         DB::transaction(function () use ($ledgerService) {
             $isNew = $this->form->customer === null;
 
+            // opening_balance is only ever meaningful at creation, where it
+            // seeds the customer's first ledger entry below — the running
+            // balance shown everywhere else is computed from ledger entries,
+            // never from this column. Excluding it from the update path
+            // keeps it immutable once set, since there's no way to "edit" it
+            // afterwards without an offsetting ledger adjustment.
             $customer = $isNew
                 ? Customer::query()->create($this->form->attributesForSave())
-                : tap($this->form->customer)->update($this->form->attributesForSave());
+                : tap($this->form->customer)->update(collect($this->form->attributesForSave())->except('opening_balance')->all());
 
             if ($isNew && bccomp($this->form->opening_balance, '0', 2) !== 0) {
                 $ledgerService->postCustomerEntry(

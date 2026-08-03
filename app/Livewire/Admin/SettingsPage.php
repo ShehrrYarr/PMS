@@ -113,7 +113,20 @@ class SettingsPage extends Component
     #[Validate('required|integer|min:80|max:150')]
     public int $fontSizePercent = 100;
 
-    #[Validate('nullable|image|max:1024')]
+    /**
+     * Deliberately excludes svg: the generic `image` rule accepts
+     * image/svg+xml, and an SVG can embed a <script> tag that executes when
+     * its stored URL is opened directly (not just used inside an <img> tag)
+     * — a stored-XSS vector on the app's own origin.
+     */
+    private const ALLOWED_LOGO_EXTENSIONS = [
+        'image/jpeg' => 'jpg',
+        'image/png' => 'png',
+        'image/webp' => 'webp',
+        'image/gif' => 'gif',
+    ];
+
+    #[Validate('nullable|mimes:jpg,jpeg,png,webp,gif|max:1024')]
     public ?TemporaryUploadedFile $logo = null;
 
     public ?string $logoPath = null;
@@ -163,7 +176,7 @@ class SettingsPage extends Component
         $this->authorize('branding.manage');
 
         $this->validate([
-            'logo' => 'required|image|max:1024',
+            'logo' => 'required|mimes:jpg,jpeg,png,webp,gif|max:1024',
         ]);
 
         $theme = ThemeSetting::current();
@@ -172,7 +185,12 @@ class SettingsPage extends Component
             Storage::disk('public')->delete($theme->logo_path);
         }
 
-        $path = $this->logo->storeAs('branding', 'shop-logo-'.now()->timestamp.'.'.$this->logo->getClientOriginalExtension(), 'public');
+        // The stored extension is derived from the validated mime type, not
+        // the client-supplied original filename — an attacker can't smuggle
+        // an arbitrary extension (e.g. .phtml) onto a stored file just by
+        // naming their upload that way.
+        $extension = self::ALLOWED_LOGO_EXTENSIONS[$this->logo->getMimeType()] ?? 'jpg';
+        $path = $this->logo->storeAs('branding', 'shop-logo-'.now()->timestamp.'.'.$extension, 'public');
 
         $theme->update(['logo_path' => $path]);
 

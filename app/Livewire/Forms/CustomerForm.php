@@ -15,7 +15,7 @@ class CustomerForm extends Form
     #[Validate('required|string|max:255')]
     public string $name = '';
 
-    #[Validate('nullable|string|max:30')]
+    #[Validate('nullable|string|max:30|regex:/^[0-9+\-\s()]+$/')]
     public string $phone = '';
 
     #[Validate('nullable|string|max:1000')]

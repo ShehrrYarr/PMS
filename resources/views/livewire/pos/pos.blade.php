@@ -87,11 +87,13 @@
                                             +
                                         </button>
                                     </div>
+                                    <x-input-error :messages="$errors->get('cart.'.$index.'.quantity')" class="mt-1" />
                                 </div>
 
                                 <div class="w-24">
                                     <x-input-label :value="__('pos.price')" class="text-xs" />
                                     <input type="number" step="0.01" min="0" wire:model.live="cart.{{ $index }}.unit_price" class="mt-1 min-h-[40px] w-full rounded-lg border border-black/10 bg-white px-2 py-1 text-sm font-semibold text-[var(--text-primary)]">
+                                    <x-input-error :messages="$errors->get('cart.'.$index.'.unit_price')" class="mt-1" />
                                 </div>
 
                                 <div class="w-24 text-end">

@@ -59,6 +59,6 @@ class BatchForm extends Form
     public function resetForm(): void
     {
         $this->batch = null;
-        $this->reset(['product_id', 'manufacturing_date', 'expiry_date', 'cost_price', 'quantity_received']);
+        $this->reset(['product_id', 'manufacturing_date', 'expiry_date', 'cost_price']);
     }
 }

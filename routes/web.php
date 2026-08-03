@@ -99,7 +99,10 @@ Route::prefix('{shop}')->middleware(['shop.context'])->group(function () {
         Route::get('categories', CategoryManager::class)->middleware('can:products.manage')->name('categories.index');
         Route::get('companies', CompanyManager::class)->middleware('can:products.manage')->name('companies.index');
         Route::get('batches', BatchList::class)->middleware('can:batches.view')->name('batches.index');
-        Route::get('batches/{batch}/label', function (Batch $batch, BarcodeService $barcodeService) {
+        // Leading unused $shop keeps this closure's parameter order aligned
+        // with the route's {shop}/{batch} URI order — see the identical note
+        // on the sales.receipt/sales.invoice routes below.
+        Route::get('batches/{batch}/label', function (string $shop, Batch $batch, BarcodeService $barcodeService) {
             return view('batches.label', [
                 'batch' => $batch->load('product'),
                 'barcodeSvg' => $barcodeService->renderSvg($batch->barcode),

@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Tests\Feature\Services;
 
 use App\Exceptions\InsufficientStockException;
+use App\Exceptions\InvalidSaleItemException;
+use App\Exceptions\InvalidSalePaymentException;
 use App\Exceptions\UnbalancedPaymentSplitException;
 use App\Models\Batch;
 use App\Models\Customer;
@@ -115,6 +117,98 @@ class SaleServiceTest extends TestCase
 
             $this->fail('Expected UnbalancedPaymentSplitException was not thrown.');
         } catch (UnbalancedPaymentSplitException) {
+            // expected
+        }
+
+        $this->assertSame(0, Sale::query()->count());
+        $this->assertSame('20.00', $batch->fresh()->quantity_remaining);
+    }
+
+    public function test_a_negative_quantity_line_item_is_rejected_and_writes_nothing(): void
+    {
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        try {
+            app(SaleService::class)->create(
+                customer: null,
+                items: [
+                    ['batch_id' => $batch->id, 'quantity' => '10', 'unit_price' => '800.00'],
+                    ['batch_id' => $batch->id, 'quantity' => '-9', 'unit_price' => '800.00'],
+                ],
+                paymentLines: [['method' => 'cash', 'amount' => '800.00', 'bank_id' => null]],
+                user: $user,
+            );
+
+            $this->fail('Expected InvalidSaleItemException was not thrown.');
+        } catch (InvalidSaleItemException) {
+            // expected
+        }
+
+        $this->assertSame(0, Sale::query()->count());
+        $this->assertSame(0, SaleItem::query()->count());
+        $this->assertSame('20.00', $batch->fresh()->quantity_remaining);
+    }
+
+    public function test_a_zero_quantity_line_item_is_rejected(): void
+    {
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        try {
+            app(SaleService::class)->create(
+                customer: null,
+                items: [['batch_id' => $batch->id, 'quantity' => '0', 'unit_price' => '800.00']],
+                paymentLines: [['method' => 'cash', 'amount' => '0.00', 'bank_id' => null]],
+                user: $user,
+            );
+
+            $this->fail('Expected InvalidSaleItemException was not thrown.');
+        } catch (InvalidSaleItemException) {
+            // expected
+        }
+
+        $this->assertSame(0, Sale::query()->count());
+        $this->assertSame('20.00', $batch->fresh()->quantity_remaining);
+    }
+
+    public function test_a_negative_unit_price_is_rejected_and_writes_nothing(): void
+    {
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        try {
+            app(SaleService::class)->create(
+                customer: null,
+                items: [['batch_id' => $batch->id, 'quantity' => '5', 'unit_price' => '-800.00']],
+                paymentLines: [['method' => 'cash', 'amount' => '-4000.00', 'bank_id' => null]],
+                user: $user,
+            );
+
+            $this->fail('Expected InvalidSaleItemException was not thrown.');
+        } catch (InvalidSaleItemException) {
+            // expected
+        }
+
+        $this->assertSame(0, Sale::query()->count());
+        $this->assertSame('20.00', $batch->fresh()->quantity_remaining);
+    }
+
+    public function test_a_walk_in_ledger_payment_is_rejected_with_a_clean_exception(): void
+    {
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        try {
+            app(SaleService::class)->create(
+                customer: null,
+                items: [['batch_id' => $batch->id, 'quantity' => '5', 'unit_price' => '800.00']],
+                paymentLines: [['method' => 'ledger', 'amount' => '4000.00', 'bank_id' => null]],
+                user: $user,
+            );
+
+            $this->fail('Expected InvalidSalePaymentException was not thrown.');
+        } catch (InvalidSalePaymentException) {
             // expected
         }
 

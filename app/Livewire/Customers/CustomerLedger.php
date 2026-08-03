@@ -49,6 +49,16 @@ class CustomerLedger extends Component
         $this->customer = $customer;
     }
 
+    public function updatingDateFrom(): void
+    {
+        $this->resetPage();
+    }
+
+    public function updatingDateTo(): void
+    {
+        $this->resetPage();
+    }
+
     public function openPaymentForm(): void
     {
         $this->authorize('payments.manage');

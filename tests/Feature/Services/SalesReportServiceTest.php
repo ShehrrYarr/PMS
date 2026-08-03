@@ -13,6 +13,7 @@ use App\Models\User;
 use App\Services\SalesReportService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Carbon;
+use RuntimeException;
 use Tests\TestCase;
 
 class SalesReportServiceTest extends TestCase
@@ -27,6 +28,7 @@ class SalesReportServiceTest extends TestCase
     public function test_summary_computes_profit_and_margin_across_filtered_sales(): void
     {
         $user = User::factory()->create();
+        $this->actingAs($user);
         $customerA = Customer::factory()->create();
         $customerB = Customer::factory()->create();
         $product = Product::factory()->create();
@@ -58,6 +60,8 @@ class SalesReportServiceTest extends TestCase
 
     public function test_summary_is_all_zero_with_no_sales(): void
     {
+        $this->actingAs(User::factory()->create());
+
         $summary = app(SalesReportService::class)->summary(null, null, null);
 
         $this->assertSame('0.00', $summary['sales_total']);
@@ -69,6 +73,7 @@ class SalesReportServiceTest extends TestCase
     public function test_product_scoped_summary_only_counts_that_products_line_items(): void
     {
         $user = User::factory()->create();
+        $this->actingAs($user);
         $customer = Customer::factory()->create();
         $productA = Product::factory()->create();
         $productB = Product::factory()->create();
@@ -92,6 +97,7 @@ class SalesReportServiceTest extends TestCase
     public function test_product_scoped_summary_respects_date_and_customer_filters(): void
     {
         $user = User::factory()->create();
+        $this->actingAs($user);
         $customerA = Customer::factory()->create();
         $customerB = Customer::factory()->create();
         $product = Product::factory()->create();
@@ -113,5 +119,12 @@ class SalesReportServiceTest extends TestCase
         $byCustomer = app(SalesReportService::class)->summary(Carbon::today()->format('Y-m-d'), null, $customerA->id, $product->id);
         $this->assertSame('1000.00', $byCustomer['sales_total']);
         $this->assertSame('10.00', $byCustomer['quantity_sold']);
+    }
+
+    public function test_summary_fails_loudly_with_no_authenticated_user_instead_of_aggregating_unscoped(): void
+    {
+        $this->expectException(RuntimeException::class);
+
+        app(SalesReportService::class)->summary(null, null, null);
     }
 }
