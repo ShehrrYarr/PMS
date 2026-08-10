@@ -8,7 +8,7 @@
  * without protecting anything the device's own login doesn't already cover.
  */
 
-import { fetchOfflineData, ping, syncQueue } from './api';
+import { basePath, fetchOfflineData, ping, syncQueue } from './api';
 import { createConnectivityMonitor } from './connectivity';
 import { subtract } from './money';
 import {
@@ -59,7 +59,7 @@ export function createOfflineSession(shopSlug, userId) {
 
         registration?.active?.postMessage({
             type: 'cache-offline-shell',
-            url: `/${shopSlug}/pos/offline`,
+            url: `${basePath(shopSlug)}/${shopSlug}/pos/offline`,
         });
     }
 
@@ -297,7 +297,7 @@ export function createOfflineSession(shopSlug, userId) {
         body.append('photo', blob, `${result.client_uuid}.jpg`);
 
         try {
-            const response = await fetch(`/${shopSlug}/sales/${result.sale_id}/photo`, {
+            const response = await fetch(`${basePath(shopSlug)}/${shopSlug}/sales/${result.sale_id}/photo`, {
                 method: 'POST',
                 redirect: 'manual',
                 credentials: 'same-origin',

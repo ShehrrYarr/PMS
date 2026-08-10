@@ -7,6 +7,7 @@
  * queue back.
  */
 
+import { basePath } from './api';
 import { createOfflineSession, STALE_WARNING_HOURS } from './session';
 
 document.addEventListener('alpine:init', () => {
@@ -115,7 +116,7 @@ document.addEventListener('alpine:init', () => {
                     ? this.translations.offline_ready
                     : this.translations.offline_ready_not_persisted;
 
-                window.location.href = `/${this.shopSlug}/pos/offline`;
+                window.location.href = `${basePath(this.shopSlug)}/${this.shopSlug}/pos/offline`;
             } catch (error) {
                 this.error = error.needsLogin
                     ? this.translations.sign_in_to_sync
@@ -126,7 +127,7 @@ document.addEventListener('alpine:init', () => {
         },
 
         openOfflineTill() {
-            window.location.href = `/${this.shopSlug}/pos/offline`;
+            window.location.href = `${basePath(this.shopSlug)}/${this.shopSlug}/pos/offline`;
         },
 
         async syncNow() {

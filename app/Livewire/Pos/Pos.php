@@ -421,8 +421,8 @@ class Pos extends Component
             'batch_id' => $line['batch_id'],
             'quantity' => $line['quantity'],
             'unit_price' => $line['unit_price'],
-            'discount_type' => $line['discount_type'],
-            'discount_value' => $line['discount_value'],
+            'discount_type' => $line['discount_type'] ?? null,
+            'discount_value' => $line['discount_value'] ?? null,
         ], $this->cart);
 
         try {

@@ -18,8 +18,21 @@ export class OfflineApiError extends Error {
     }
 }
 
+/**
+ * Whatever precedes "/{shopSlug}/" in the current page's own URL, so every
+ * hand-built app URL keeps working whether the app is hosted at a domain
+ * root or under a subdirectory (e.g. "/pms") — no deployment-specific
+ * config needed.
+ */
+export function basePath(shopSlug) {
+    const marker = `/${shopSlug}/`;
+    const markerIndex = window.location.pathname.indexOf(marker);
+
+    return markerIndex === -1 ? '' : window.location.pathname.slice(0, markerIndex);
+}
+
 function shopUrl(shopSlug, path) {
-    return `/${shopSlug}/${path}`;
+    return `${basePath(shopSlug)}/${shopSlug}/${path}`;
 }
 
 async function readJson(response) {
