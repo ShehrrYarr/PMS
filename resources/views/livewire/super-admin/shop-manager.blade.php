@@ -46,7 +46,11 @@
                     @forelse ($shops as $shop)
                         <tr class="border-b border-black/5 text-base font-medium text-[var(--text-primary)]">
                             <td class="px-3 py-3">{{ $shop->name }}</td>
-                            <td class="px-3 py-3 font-mono text-sm text-[var(--text-secondary)]">/{{ $shop->slug }}</td>
+                            <td class="px-3 py-3 font-mono text-sm text-[var(--text-secondary)]">
+                                <a href="{{ route('login', ['shop' => $shop->slug]) }}" target="_blank" class="text-[var(--color-info)] hover:underline">
+                                    {{ route('login', ['shop' => $shop->slug]) }}
+                                </a>
+                            </td>
                             <td class="px-3 py-3 text-end">{{ $shop->users_count }}</td>
                             <td class="px-3 py-3 text-center">
                                 <span class="rounded-full px-3 py-1 text-xs font-bold {{ $shop->is_active ? 'bg-[var(--color-success)]/10 text-[var(--color-success)]' : 'bg-[var(--color-danger)]/10 text-[var(--color-danger)]' }}">
