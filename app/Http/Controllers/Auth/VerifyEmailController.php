@@ -18,7 +18,7 @@ class VerifyEmailController extends Controller
         // on ambient URL::defaults(['shop' => ...]) (set via the Authenticated
         // event in AppServiceProvider) — that mechanism doesn't fire under
         // Event::fake(), which this flow is commonly tested with.
-        $dashboardUrl = route('dashboard', ['shop' => $request->user()->shop->slug], absolute: false);
+        $dashboardUrl = route('dashboard', ['shop' => $request->user()->shop->slug]);
 
         if ($request->user()->hasVerifiedEmail()) {
             return redirect()->intended($dashboardUrl.'?verified=1');
