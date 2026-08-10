@@ -48,6 +48,7 @@ class RoleAndPermissionSeeder extends Seeder
             'payments.manage',
             'reports.view',
             'expenses.manage',
+            'sync-conflicts.manage',
         ],
         UserRole::InventoryManager->value => [
             'vendors.manage',

@@ -63,5 +63,15 @@ return Application::configure(basePath: dirname(__DIR__))
         });
     })
     ->withExceptions(function (Exceptions $exceptions) {
-        //
+        // The offline POS endpoints must always answer in JSON, never with a
+        // redirect to an HTML login page. fetch() follows redirects silently,
+        // so a 302 arrives at the till looking like a successful 200 — a
+        // client that trusted that would mark a whole queue of real sales as
+        // synced and clear them. Forcing JSON here means an expired session
+        // or suspended shop surfaces as a status code the till can actually
+        // detect and refuse to act on.
+        $exceptions->shouldRenderJsonWhen(
+            fn ($request) => $request->is('*/pos/sync', '*/pos/offline-data', '*/pos/ping')
+                || $request->expectsJson()
+        );
     })->create();

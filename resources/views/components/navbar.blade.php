@@ -42,7 +42,17 @@
                         {{ __('nav.manage_account') }}
                     </a>
 
-                    <form method="POST" action="{{ route('logout') }}">
+                    {{-- Guarded: the offline queue lives in this browser, tied
+                         to this login, so signing out with sales still pending
+                         would strand real money records on the device. --}}
+                    <form
+                        method="POST"
+                        action="{{ route('logout') }}"
+                        data-logout-guard
+                        data-shop-slug="{{ request()->route('shop') }}"
+                        data-user-id="{{ auth()->id() }}"
+                        data-pending-message="{{ __('offline.logout_blocked') }}"
+                    >
                         @csrf
                         <button
                             type="submit"

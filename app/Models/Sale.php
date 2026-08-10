@@ -16,18 +16,40 @@ class Sale extends Model
     protected $fillable = [
         'shop_id',
         'invoice_number',
+        'client_uuid',
         'customer_id',
         'user_id',
         'total_amount',
         'status',
         'photo_path',
+        'synced_at',
     ];
 
     protected function casts(): array
     {
         return [
             'total_amount' => 'decimal:2',
+            'synced_at' => 'datetime',
         ];
+    }
+
+    /**
+     * @return HasMany<SaleSyncConflict, $this>
+     */
+    public function syncConflicts(): HasMany
+    {
+        return $this->hasMany(SaleSyncConflict::class);
+    }
+
+    /**
+     * True for a sale that was rung up while the till was offline and
+     * replayed later — those keep the SL-OFF… number printed on the
+     * customer's receipt rather than being renumbered into the online
+     * sequence.
+     */
+    public function wasMadeOffline(): bool
+    {
+        return $this->client_uuid !== null;
     }
 
     /**

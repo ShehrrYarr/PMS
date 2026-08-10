@@ -11,6 +11,7 @@ use App\Models\CustomerLedger;
 use App\Models\User;
 use App\Models\Vendor;
 use App\Models\VendorLedger;
+use Carbon\CarbonInterface;
 use Illuminate\Support\Facades\DB;
 
 /**
@@ -56,6 +57,13 @@ class LedgerService
         });
     }
 
+    /**
+     * @param  ?CarbonInterface  $occurredAt When the underlying transaction actually happened.
+     *                                       Only passed for a sale replayed from an offline queue,
+     *                                       so its ledger row is dated to the sale rather than to
+     *                                       the sync — otherwise a whole offline day's entries
+     *                                       would bunch up on the statement under the sync date.
+     */
     public function postCustomerEntry(
         Customer $customer,
         LedgerEntryType $type,
@@ -64,8 +72,9 @@ class LedgerService
         int $referenceId,
         ?string $description,
         User $user,
+        ?CarbonInterface $occurredAt = null,
     ): CustomerLedger {
-        return DB::transaction(function () use ($customer, $type, $amount, $referenceType, $referenceId, $description, $user) {
+        return DB::transaction(function () use ($customer, $type, $amount, $referenceType, $referenceId, $description, $user, $occurredAt) {
             Customer::query()->whereKey($customer->id)->lockForUpdate()->firstOrFail();
 
             $previousBalance = (string) (CustomerLedger::query()
@@ -77,7 +86,7 @@ class LedgerService
                 ? bcadd($previousBalance, $amount, 2)
                 : bcsub($previousBalance, $amount, 2);
 
-            return CustomerLedger::create([
+            $entry = new CustomerLedger([
                 'shop_id' => $customer->shop_id,
                 'customer_id' => $customer->id,
                 'debit' => $type === LedgerEntryType::Debit ? $amount : '0.00',
@@ -88,6 +97,18 @@ class LedgerService
                 'description' => $description,
                 'created_by' => $user->id,
             ]);
+
+            // created_at is deliberately not fillable, and this model's
+            // update() throws by design — but save() on a brand-new instance
+            // inserts rather than updates, so back-dating here is safe and
+            // still leaves posted rows immutable.
+            if ($occurredAt !== null) {
+                $entry->forceFill(['created_at' => $occurredAt]);
+            }
+
+            $entry->save();
+
+            return $entry;
         });
     }
 }

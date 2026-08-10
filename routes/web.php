@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\DemoLoginController;
+use App\Http\Controllers\Pos\OfflineDataController;
+use App\Http\Controllers\Pos\PingController;
+use App\Http\Controllers\Pos\SalePhotoController;
+use App\Http\Controllers\Pos\SyncController;
 use App\Livewire\Actions\Logout;
 use App\Livewire\Admin\SettingsPage;
 use App\Livewire\Customers\CustomerLedger;
@@ -15,6 +19,7 @@ use App\Livewire\Inventory\ProductList;
 use App\Livewire\Pos\Pos;
 use App\Livewire\Pos\SaleList;
 use App\Livewire\Pos\SaleShow;
+use App\Livewire\Pos\SyncConflicts;
 use App\Livewire\Purchases\PurchaseCreate;
 use App\Livewire\Purchases\PurchaseList;
 use App\Livewire\Purchases\PurchaseShow;
@@ -119,6 +124,22 @@ Route::prefix('{shop}')->middleware(['shop.context'])->group(function () {
         Route::get('purchases/{purchase}', PurchaseShow::class)->middleware('can:view,purchase')->name('purchases.show');
 
         Route::get('pos', Pos::class)->middleware('can:create,App\Models\Sale')->name('pos.index');
+
+        // Offline POS support. Invokable controllers rather than closures so
+        // there's no route-model binding to mis-splice against the {shop}
+        // segment (see the note on sales.receipt below). All three answer in
+        // JSON — see bootstrap/app.php's shouldRenderJsonWhen.
+        Route::middleware('can:create,App\Models\Sale')->group(function () {
+            Route::get('pos/ping', PingController::class)->name('pos.ping');
+            Route::get('pos/offline-data', OfflineDataController::class)->name('pos.offline-data');
+            Route::post('pos/sync', SyncController::class)->name('pos.sync');
+            Route::post('sales/{sale}/photo', SalePhotoController::class)->name('sales.photo');
+
+            // The offline till itself. A plain Blade view with no Livewire
+            // component and no per-request data, so the service worker can
+            // cache one copy that never goes stale.
+            Route::view('pos/offline', 'pos.offline')->name('pos.offline');
+        });
         Route::get('sales', SaleList::class)->middleware('can:viewAny,App\Models\Sale')->name('sales.index');
         Route::get('sales/{sale}', SaleShow::class)->middleware('can:view,sale')->name('sales.show');
         // The unused leading $shop parameter keeps this closure's parameter
@@ -131,6 +152,8 @@ Route::prefix('{shop}')->middleware(['shop.context'])->group(function () {
         Route::get('sales/{sale}/invoice', function (string $shop, Sale $sale, InvoicePdfService $invoicePdfService) {
             return $invoicePdfService->download($sale);
         })->middleware('can:reports.view')->name('sales.invoice');
+
+        Route::get('sync-conflicts', SyncConflicts::class)->middleware('can:sync-conflicts.manage')->name('sync-conflicts.index');
 
         Route::get('reports/sales', SalesReport::class)->middleware('can:reports.view')->name('reports.sales');
         Route::get('reports/purchases', PurchaseReport::class)->middleware('can:reports.view')->name('reports.purchases');

@@ -24,7 +24,7 @@
 
             <div class="space-y-4">
                 @foreach ($items as $index => $item)
-                    <div class="grid grid-cols-1 gap-3 rounded-xl border border-black/10 bg-white/50 p-4 sm:grid-cols-6">
+                    <div wire:key="purchase-item-{{ $index }}" class="grid grid-cols-1 gap-3 rounded-xl border border-black/10 bg-white/50 p-4 sm:grid-cols-6">
                         <div class="sm:col-span-2">
                             <x-input-label :value="__('purchases.product')" />
                             <div class="mt-1">
@@ -77,7 +77,7 @@
 
             <div class="space-y-3">
                 @foreach ($paymentLines as $index => $line)
-                    <div class="grid grid-cols-1 gap-3 rounded-xl border border-black/10 bg-white/50 p-4 sm:grid-cols-4">
+                    <div wire:key="purchase-payment-line-{{ $index }}" class="grid grid-cols-1 gap-3 rounded-xl border border-black/10 bg-white/50 p-4 sm:grid-cols-4">
                         <div>
                             <x-input-label :value="__('ledger.method')" />
                             <select wire:model.live="paymentLines.{{ $index }}.method" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-3 py-2 text-sm font-medium text-[var(--text-primary)]">
@@ -85,6 +85,7 @@
                                 <option value="bank">{{ __('ledger.bank') }}</option>
                                 <option value="ledger">{{ __('purchases.on_account') }}</option>
                             </select>
+                            <x-input-error :messages="$errors->get('paymentLines.'.$index.'.method')" class="mt-1" />
                         </div>
                         @if ($line['method'] === 'bank')
                             <div>
@@ -95,11 +96,13 @@
                                         <option value="{{ $bank->id }}">{{ $bank->name }}</option>
                                     @endforeach
                                 </select>
+                                <x-input-error :messages="$errors->get('paymentLines.'.$index.'.bank_id')" class="mt-1" />
                             </div>
                         @endif
                         <div>
                             <x-input-label :value="__('ledger.amount')" />
                             <input type="number" step="0.01" min="0.01" wire:model="paymentLines.{{ $index }}.amount" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-3 py-2 text-sm font-medium text-[var(--text-primary)]">
+                            <x-input-error :messages="$errors->get('paymentLines.'.$index.'.amount')" class="mt-1" />
                         </div>
                         <div class="flex items-end">
                             @if (count($paymentLines) > 1)

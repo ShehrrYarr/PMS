@@ -40,6 +40,12 @@ body {
     color: var(--text-primary);
 }
 
+/* Hides x-show/x-if content until Alpine has booted, so a page doesn't flash
+   every conditional block at once on first paint. */
+[x-cloak] {
+    display: none !important;
+}
+
 [dir="rtl"] body {
     font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', ui-sans-serif, sans-serif;
 }

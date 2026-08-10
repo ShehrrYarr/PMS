@@ -12,9 +12,11 @@ use App\Exceptions\UnbalancedPaymentSplitException;
 use App\Models\Bank;
 use App\Models\Batch;
 use App\Models\Customer;
+use App\Models\HeldOrder;
 use App\Models\Sale;
 use App\Services\SaleService;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Str;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
@@ -110,6 +112,127 @@ class Pos extends Component
     public function clearCart(): void
     {
         $this->cart = [];
+    }
+
+    /**
+     * Parks the current cart so the cashier can serve someone else — the
+     * classic "customer forgot their wallet, next please" case.
+     */
+    public function holdOrder(): void
+    {
+        $this->authorize('create', Sale::class);
+
+        if ($this->cart === []) {
+            return;
+        }
+
+        HeldOrder::query()->create([
+            'shop_id' => auth()->user()->shop_id,
+            'user_id' => auth()->id(),
+            'client_uuid' => (string) Str::uuid(),
+            'label' => $this->customer_id !== null
+                ? Customer::query()->find($this->customer_id)?->name
+                : null,
+            'payload' => [
+                'cart' => $this->cart,
+                'customer_id' => $this->customer_id,
+            ],
+        ]);
+
+        $this->cart = [];
+        $this->customer_id = null;
+
+        session()->flash('success', __('pos.order_held'));
+    }
+
+    public function resumeHeldOrder(int $heldOrderId): void
+    {
+        $this->authorize('create', Sale::class);
+
+        // Refusing rather than merging or silently overwriting: quietly
+        // discarding whatever is already on screen is the kind of surprise
+        // that costs a shop a sale.
+        if ($this->cart !== []) {
+            $this->addError('cart', __('pos.cart_not_empty_to_resume'));
+
+            return;
+        }
+
+        // Scoped to this cashier, matching how the list is built — otherwise a
+        // guessed id would let one cashier take (and delete) another's parked
+        // cart.
+        $heldOrder = HeldOrder::query()
+            ->where('user_id', auth()->id())
+            ->find($heldOrderId);
+
+        if ($heldOrder === null) {
+            return;
+        }
+
+        // Rebuilt from live batches rather than trusted wholesale: stock and
+        // prices move while an order sits parked, and the payload is JSON
+        // that also arrives from the offline sync path.
+        $this->cart = $this->rehydrateCart($heldOrder->payload['cart'] ?? []);
+        $this->customer_id = $heldOrder->payload['customer_id'] ?? null;
+
+        $heldOrder->delete();
+
+        if ($this->cart === []) {
+            $this->addError('cart', __('pos.held_order_items_unavailable'));
+        }
+    }
+
+    public function discardHeldOrder(int $heldOrderId): void
+    {
+        $this->authorize('create', Sale::class);
+
+        HeldOrder::query()
+            ->where('user_id', auth()->id())
+            ->find($heldOrderId)?->delete();
+    }
+
+    /**
+     * @param  mixed  $lines
+     * @return list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string}>
+     */
+    private function rehydrateCart(mixed $lines): array
+    {
+        if (! is_array($lines)) {
+            return [];
+        }
+
+        $cart = [];
+
+        foreach ($lines as $line) {
+            if (! is_array($line) || ! isset($line['batch_id'])) {
+                continue;
+            }
+
+            $batch = Batch::query()->with('product')->find($line['batch_id']);
+
+            // A batch sold out or deleted while the order was parked simply
+            // drops off, rather than resuming into a cart that can't check out.
+            if ($batch === null || bccomp((string) $batch->quantity_remaining, '0', 2) <= 0) {
+                continue;
+            }
+
+            $quantity = (string) ($line['quantity'] ?? '1');
+
+            $cart[] = [
+                'batch_id' => $batch->id,
+                'barcode' => $batch->barcode,
+                'product_name' => $batch->product->name,
+                'unit_price' => (string) ($line['unit_price'] ?? $batch->product->default_sale_price),
+                // Clamp to what's actually left now, not what was available
+                // when the order was parked.
+                'quantity' => bccomp($quantity, (string) $batch->quantity_remaining, 2) > 0
+                    ? (string) $batch->quantity_remaining
+                    : $quantity,
+                'available' => (string) $batch->quantity_remaining,
+            ];
+        }
+
+        return $cart;
     }
 
     public function incrementQuantity(int $index): void
@@ -251,6 +374,7 @@ class Pos extends Component
         return view('livewire.pos.pos', [
             'customers' => Customer::query()->where('is_active', true)->orderBy('name')->get(),
             'banks' => Bank::query()->where('is_active', true)->orderBy('name')->get(),
+            'heldOrders' => HeldOrder::query()->where('user_id', auth()->id())->latest('id')->get(),
         ]);
     }
 }

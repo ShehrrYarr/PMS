@@ -49,8 +49,8 @@
                         <span class="text-[var(--sidebar-primary-color)]" data-en="from the till to the ledger." data-ur="کاؤنٹر سے لے کر کھاتے تک۔">from the till to the ledger.</span>
                     </h1>
 
-                    <p class="mx-auto mt-5 max-w-2xl text-lg text-[var(--text-secondary)]" data-en="Point of sale, batch &amp; expiry tracking, vendor and customer ledgers, purchases, and reports — all in one place, in English or Urdu." data-ur="پوائنٹ آف سیل، بیچ اور معیاد ختم ہونے کی نگرانی، وینڈر اور کسٹمر کھاتے، خریداری، اور رپورٹس — سب کچھ ایک ہی جگہ، انگریزی یا اردو میں۔">
-                        Point of sale, batch &amp; expiry tracking, vendor and customer ledgers, purchases, and reports — all in one place, in English or Urdu.
+                    <p class="mx-auto mt-5 max-w-2xl text-lg text-[var(--text-secondary)]" data-en="Point of sale, batch &amp; expiry tracking, vendor and customer ledgers, purchases, and reports — all in one place, in English or Urdu. And the till keeps selling even when the internet doesn’t." data-ur="پوائنٹ آف سیل، بیچ اور معیاد ختم ہونے کی نگرانی، وینڈر اور کسٹمر کھاتے، خریداری، اور رپورٹس — سب کچھ ایک ہی جگہ، انگریزی یا اردو میں۔ اور انٹرنیٹ بند ہونے پر بھی کاؤنٹر چلتا رہتا ہے۔">
+                        Point of sale, batch &amp; expiry tracking, vendor and customer ledgers, purchases, and reports — all in one place, in English or Urdu. And the till keeps selling even when the internet doesn’t.
                     </p>
 
                     <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -70,6 +70,46 @@
                     <p class="mx-auto mt-2 max-w-xl text-center text-[var(--text-secondary)]" data-en="One system for the counter, the warehouse, and the books." data-ur="کاؤنٹر، گودام اور حساب کتاب کے لیے ایک ہی نظام۔">One system for the counter, the warehouse, and the books.</p>
 
                     <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                        {{-- Offline POS gets the full row rather than a seventh
+                             card: it's the differentiator for shops on patchy
+                             rural connections, and a 7th card would strand one
+                             tile alone on the last row of a 3-up grid. --}}
+                        <div class="glass-panel-strong p-6 text-start ring-1 ring-[var(--sidebar-primary-color)]/25 sm:col-span-2 sm:p-8 lg:col-span-3">
+                            <div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-10">
+                                <div class="lg:max-w-md">
+                                    <span class="inline-flex items-center rounded-full bg-[var(--sidebar-primary-color)]/10 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[var(--sidebar-primary-color)]" data-en="Works without internet" data-ur="انٹرنیٹ کے بغیر کام کرتا ہے">
+                                        Works without internet
+                                    </span>
+
+                                    <div class="mt-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--sidebar-primary-color)]/10 text-[var(--sidebar-primary-color)]">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25a15 15 0 0 1 4.2-2.73M21 8.25a15 15 0 0 0-6.15-3.15M6.35 11.66A10.5 10.5 0 0 1 9 10.1m6.35.28a10.5 10.5 0 0 1 2.3 1.28M9.67 15.07a5.25 5.25 0 0 1 4.66 0M12 18.75h.008v.008H12v-.008ZM3.5 3.5l17 17"/></svg>
+                                    </div>
+
+                                    <h3 class="mt-4 text-xl font-bold text-[var(--text-primary)]" data-en="Offline Point of Sale" data-ur="آف لائن پوائنٹ آف سیل">Offline Point of Sale</h3>
+                                    <p class="mt-2 text-sm leading-relaxed text-[var(--text-secondary)]" data-en="One click loads your stock and customers onto the till. When the line goes down — or the power comes back after a cut — keep ringing up sales, printing receipts and taking payments exactly as normal." data-ur="ایک کلک میں آپ کا اسٹاک اور کسٹمرز کاؤنٹر پر لوڈ ہو جاتے ہیں۔ انٹرنیٹ بند ہو جائے — یا بجلی جانے کے بعد واپس آئے — فروخت، رسیدیں اور ادائیگیاں معمول کے مطابق جاری رکھیں۔">
+                                        One click loads your stock and customers onto the till. When the line goes down — or the power comes back after a cut — keep ringing up sales, printing receipts and taking payments exactly as normal.
+                                    </p>
+                                </div>
+
+                                @php
+                                    $offlinePoints = [
+                                        ['en' => 'Sell, print receipts and take cash, bank or on-account payments with no connection at all.', 'ur' => 'بغیر کسی کنکشن کے فروخت کریں، رسیدیں پرنٹ کریں اور نقد، بینک یا ادھار ادائیگی لیں۔'],
+                                        ['en' => 'Hold a customer’s order, serve the next person, and pick it back up in seconds.', 'ur' => 'کسی کسٹمر کا آرڈر روکیں، اگلے گاہک کو نمٹائیں، اور سیکنڈوں میں واپس شروع کریں۔'],
+                                        ['en' => 'Every sale queues safely on the till and posts itself when you reconnect — the sync button shows red offline, green online, with the pending count.', 'ur' => 'ہر سیل کاؤنٹر پر محفوظ رہتی ہے اور دوبارہ جڑتے ہی خود سرور پر چلی جاتی ہے — سِنک بٹن آف لائن پر سرخ، آن لائن پر سبز، زیر التوا تعداد کے ساتھ۔'],
+                                    ];
+                                @endphp
+
+                                <ul class="flex-1 space-y-3">
+                                    @foreach ($offlinePoints as $point)
+                                        <li class="flex items-start gap-3">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 h-5 w-5 shrink-0 text-[var(--sidebar-primary-color)]" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                                            <span class="text-sm leading-relaxed text-[var(--text-secondary)]" data-en="{{ $point['en'] }}" data-ur="{{ $point['ur'] }}">{{ $point['en'] }}</span>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+
                         @php
                             $features = [
                                 ['icon' => 'cart', 'title' => 'Point of Sale', 'title_ur' => 'پوائنٹ آف سیل', 'body' => 'Fast, barcode-ready checkout with instant thermal receipts and downloadable PDF invoices.', 'body_ur' => 'بارکوڈ سے تیز چیک آؤٹ، فوری تھرمل رسیدیں اور ڈاؤن لوڈ ایبل پی ڈی ایف انوائسز۔'],

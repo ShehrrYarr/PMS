@@ -27,6 +27,17 @@ class EnsureShopIsActive
             $request->session()->invalidate();
             $request->session()->regenerateToken();
 
+            // A redirect is right for a browser, but wrong for the offline
+            // POS's JSON calls: fetch() follows redirects transparently, so a
+            // 302 would reach the till as a 200 and could be mistaken for a
+            // successful sync — clearing real queued sales. Answer those with
+            // a status code that can't be misread.
+            if ($request->expectsJson()) {
+                return response()->json([
+                    'message' => __('auth.shop_suspended'),
+                ], Response::HTTP_FORBIDDEN);
+            }
+
             return redirect()->route('login', ['shop' => $shopSlug])->withErrors([
                 'form.email' => __('auth.shop_suspended'),
             ]);

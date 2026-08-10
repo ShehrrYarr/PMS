@@ -7,9 +7,49 @@
                     {{ __('pos.items') }}: {{ count($cart) }}
                 </p>
             </div>
-            <a href="{{ route('sales.index') }}" wire:navigate class="inline-flex min-h-[44px] items-center rounded-xl px-4 py-2 text-base font-semibold text-[var(--text-secondary)] hover:bg-black/5">
-                {{ __('pos.sales_history') }}
-            </a>
+            <div
+                class="flex flex-wrap items-center gap-2"
+                x-data="posOfflineControls({
+                    shopSlug: @js(request()->route('shop')),
+                    userId: @js(auth()->id()),
+                    translations: @js([
+                        'sync_sales' => __('offline.sync_sales'),
+                        'sync_sales_count' => __('offline.sync_sales_count'),
+                        'sync_result' => __('offline.sync_result'),
+                        'sync_failed' => __('offline.sync_failed'),
+                        'sign_in_to_sync' => __('offline.sign_in_to_sync'),
+                        'offline_ready' => __('offline.offline_ready'),
+                        'offline_ready_not_persisted' => __('offline.offline_ready_not_persisted'),
+                        'offline_prepare_failed' => __('offline.offline_prepare_failed'),
+                    ]),
+                })"
+            >
+                <button
+                    type="button"
+                    @click="prepared ? openOfflineTill() : goOffline()"
+                    :disabled="busy"
+                    class="inline-flex min-h-[44px] items-center rounded-xl bg-black/5 px-4 py-2 text-sm font-bold text-[var(--text-primary)] hover:bg-black/10 disabled:opacity-60"
+                    x-text="prepared ? @js(__('offline.open_offline_till')) : @js(__('offline.go_offline'))"
+                ></button>
+
+                <p x-show="error" x-cloak x-text="error" role="alert" class="text-sm font-semibold text-[var(--color-danger)]"></p>
+
+                {{-- Red with no usable connection, green when the server is
+                     genuinely reachable. --}}
+                <button
+                    type="button"
+                    @click="syncNow()"
+                    :disabled="busy"
+                    :class="syncButtonClass"
+                    class="inline-flex min-h-[44px] items-center rounded-xl px-4 py-2 text-sm font-bold disabled:opacity-60"
+                    x-text="syncLabel"
+                ></button>
+
+                <a href="{{ route('sales.index') }}" wire:navigate class="inline-flex min-h-[44px] items-center rounded-xl px-4 py-2 text-base font-semibold text-[var(--text-secondary)] hover:bg-black/5">
+                    {{ __('pos.sales_history') }}
+                </a>
+
+            </div>
         </div>
     </x-page-header>
 
@@ -53,11 +93,18 @@
                         @endif
                     </h3>
                     @if (! empty($cart))
-                        <button type="button" wire:click="clearCart" class="min-h-[36px] rounded-lg px-3 text-sm font-semibold text-[var(--color-danger)] hover:bg-black/5">
-                            {{ __('pos.clear_cart') }}
-                        </button>
+                        <div class="flex items-center gap-1">
+                            <button type="button" wire:click="holdOrder" class="min-h-[36px] rounded-lg px-3 text-sm font-semibold text-[var(--color-info)] hover:bg-black/5">
+                                {{ __('pos.hold_order') }}
+                            </button>
+                            <button type="button" wire:click="clearCart" class="min-h-[36px] rounded-lg px-3 text-sm font-semibold text-[var(--color-danger)] hover:bg-black/5">
+                                {{ __('pos.clear_cart') }}
+                            </button>
+                        </div>
                     @endif
                 </div>
+
+                <x-input-error :messages="$errors->get('cart')" class="px-4 pt-3 sm:px-6" />
 
                 @if (empty($cart))
                     <div class="flex flex-col items-center justify-center gap-2 px-4 py-16 text-center">
@@ -111,6 +158,46 @@
                     </div>
                 @endif
             </div>
+
+            {{-- Parked carts, waiting to be picked back up --}}
+            @if ($heldOrders->isNotEmpty())
+                <div class="glass-panel overflow-hidden">
+                    <div class="border-b border-black/10 px-4 py-3 sm:px-6">
+                        <h3 class="flex items-center gap-2 text-lg font-bold text-[var(--text-primary)]">
+                            {{ __('pos.held_orders') }}
+                            <span class="rounded-full bg-[var(--color-info)]/10 px-2.5 py-0.5 text-sm font-bold text-[var(--color-info)]">{{ $heldOrders->count() }}</span>
+                        </h3>
+                    </div>
+
+                    <div class="divide-y divide-black/5">
+                        @foreach ($heldOrders as $heldOrder)
+                            <div class="flex flex-wrap items-center gap-3 px-4 py-3 sm:px-6">
+                                <div class="min-w-[140px] flex-1">
+                                    <p class="text-base font-bold text-[var(--text-primary)]">
+                                        {{ $heldOrder->label ?? __('pos.walk_in') }}
+                                    </p>
+                                    <p class="text-xs text-[var(--text-secondary)]">
+                                        {{ trans_choice('pos.held_items_count', $heldOrder->itemCount(), ['count' => $heldOrder->itemCount()]) }}
+                                        &middot; {{ $heldOrder->created_at->diffForHumans() }}
+                                    </p>
+                                </div>
+
+                                <button type="button" wire:click="resumeHeldOrder({{ $heldOrder->id }})" class="min-h-[40px] rounded-lg bg-[var(--navbar-primary-color)] px-4 py-2 text-sm font-bold text-white hover:opacity-90">
+                                    {{ __('pos.resume_order') }}
+                                </button>
+                                <button
+                                    type="button"
+                                    wire:click="discardHeldOrder({{ $heldOrder->id }})"
+                                    wire:confirm="{{ __('pos.discard_order_confirm') }}"
+                                    class="min-h-[40px] rounded-lg px-3 text-sm font-semibold text-[var(--color-danger)] hover:bg-black/5"
+                                >
+                                    {{ __('pos.discard_order') }}
+                                </button>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
         </div>
 
         {{-- Order summary sidebar --}}
