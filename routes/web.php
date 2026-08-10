@@ -15,6 +15,7 @@ use App\Livewire\Inventory\BatchList;
 use App\Livewire\Inventory\CategoryManager;
 use App\Livewire\Inventory\CompanyManager;
 use App\Livewire\Inventory\ExpiryAlertsDashboard;
+use App\Livewire\Inventory\InventorySummary;
 use App\Livewire\Inventory\ProductList;
 use App\Livewire\Pos\Pos;
 use App\Livewire\Pos\SaleList;
@@ -100,6 +101,7 @@ Route::prefix('{shop}')->middleware(['shop.context'])->group(function () {
 
         Route::get('settings', SettingsPage::class)->middleware('can:branding.manage')->name('settings.index');
 
+        Route::get('inventory', InventorySummary::class)->middleware('can:batches.view')->name('inventory.index');
         Route::get('products', ProductList::class)->middleware('can:products.view')->name('products.index');
         Route::get('categories', CategoryManager::class)->middleware('can:products.manage')->name('categories.index');
         Route::get('companies', CompanyManager::class)->middleware('can:products.manage')->name('companies.index');
