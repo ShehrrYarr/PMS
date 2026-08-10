@@ -12,6 +12,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Database\\Factories',
          'uses' => 
         array (
+          'shop' => 'App\\Models\\Shop',
           'user' => 'App\\Models\\User',
           'factory' => 'Illuminate\\Database\\Eloquent\\Factories\\Factory',
           'hash' => 'Illuminate\\Support\\Facades\\Hash',
@@ -38,6 +39,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Database\\Factories',
          'uses' => 
         array (
+          'shop' => 'App\\Models\\Shop',
           'user' => 'App\\Models\\User',
           'factory' => 'Illuminate\\Database\\Eloquent\\Factories\\Factory',
           'hash' => 'Illuminate\\Support\\Facades\\Hash',
@@ -53,6 +55,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'Database\\Factories',
            'uses' => 
           array (
+            'shop' => 'App\\Models\\Shop',
             'user' => 'App\\Models\\User',
             'factory' => 'Illuminate\\Database\\Eloquent\\Factories\\Factory',
             'hash' => 'Illuminate\\Support\\Facades\\Hash',
@@ -89,6 +92,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'Database\\Factories',
          'uses' => 
         array (
+          'shop' => 'App\\Models\\Shop',
           'user' => 'App\\Models\\User',
           'factory' => 'Illuminate\\Database\\Eloquent\\Factories\\Factory',
           'hash' => 'Illuminate\\Support\\Facades\\Hash',
@@ -104,6 +108,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'Database\\Factories',
            'uses' => 
           array (
+            'shop' => 'App\\Models\\Shop',
             'user' => 'App\\Models\\User',
             'factory' => 'Illuminate\\Database\\Eloquent\\Factories\\Factory',
             'hash' => 'Illuminate\\Support\\Facades\\Hash',
@@ -138,7 +143,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\database\\factories\\UserFactory.php' => '50bdc543f1b09d1a57260be55ad0e1a68aee4b34f63e1109dc94d9bcd3080526',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\database\\factories\\UserFactory.php' => 'ada187a59e944c87603b1f2025ae46dd64d9ddd844994c7e748f080fc75ea2b6',
     ),
   ),
 ));

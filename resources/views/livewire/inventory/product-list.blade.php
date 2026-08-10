@@ -58,7 +58,7 @@
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->company?->name ?? '—' }}</td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->unit }}</td>
                             <td class="px-3 py-3 text-end">{{ money($product->default_sale_price) }}</td>
-                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $product->totalRemainingQuantity(), 2) }}</td>
+                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $product->totalRemainingQuantity(), 0) }}</td>
                             <td class="px-3 py-3 text-center">
                                 <span class="rounded-full px-3 py-1 text-xs font-bold {{ $product->is_active ? 'bg-[var(--color-success)]/10 text-[var(--color-success)]' : 'bg-[var(--color-danger)]/10 text-[var(--color-danger)]' }}">
                                     {{ $product->is_active ? __('products.active') : __('products.inactive') }}

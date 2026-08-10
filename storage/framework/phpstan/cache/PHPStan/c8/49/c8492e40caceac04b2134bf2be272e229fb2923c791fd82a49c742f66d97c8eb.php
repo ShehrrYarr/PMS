@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Http\Controllers\Auth\VerifyEmailController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\Auth\VerifyEmailController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-5f6080a239709740135d9138085ceb1857c5570a0fea35e62c976fc90929631e',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-86c909f6f9cff96efef0078269da1328f22cbb2840d84e441670585ee96c5291',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 10,
-    'endLine' => 27,
+    'endLine' => 33,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -94,7 +94,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * Mark the authenticated user\'s email address as verified.
  */',
         'startLine' => 15,
-        'endLine' => 26,
+        'endLine' => 32,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

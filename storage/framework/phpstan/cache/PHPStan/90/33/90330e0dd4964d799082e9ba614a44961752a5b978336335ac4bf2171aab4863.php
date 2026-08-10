@@ -12,6 +12,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Forms',
          'uses' => 
         array (
+          'shop' => 'App\\Models\\Shop',
           'lockout' => 'Illuminate\\Auth\\Events\\Lockout',
           'auth' => 'Illuminate\\Support\\Facades\\Auth',
           'ratelimiter' => 'Illuminate\\Support\\Facades\\RateLimiter',
@@ -41,6 +42,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Forms',
          'uses' => 
         array (
+          'shop' => 'App\\Models\\Shop',
           'lockout' => 'Illuminate\\Auth\\Events\\Lockout',
           'auth' => 'Illuminate\\Support\\Facades\\Auth',
           'ratelimiter' => 'Illuminate\\Support\\Facades\\RateLimiter',
@@ -70,6 +72,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Forms',
          'uses' => 
         array (
+          'shop' => 'App\\Models\\Shop',
           'lockout' => 'Illuminate\\Auth\\Events\\Lockout',
           'auth' => 'Illuminate\\Support\\Facades\\Auth',
           'ratelimiter' => 'Illuminate\\Support\\Facades\\RateLimiter',
@@ -99,6 +102,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Forms',
          'uses' => 
         array (
+          'shop' => 'App\\Models\\Shop',
           'lockout' => 'Illuminate\\Auth\\Events\\Lockout',
           'auth' => 'Illuminate\\Support\\Facades\\Auth',
           'ratelimiter' => 'Illuminate\\Support\\Facades\\RateLimiter',
@@ -126,7 +130,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php' => 'ee0f249f099995a399a40e8ed86ec12dad1a39085ab199462a67a47b36476663',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php' => '24c6d35ce5936edc78b0f4ca4760fe7ca374eafbf4a5a0fd4f51e216215072d8',
     ),
   ),
 ));

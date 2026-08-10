@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Customers\CustomerLedger.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Customers\CustomerLedger
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-eea485f9447233cf4e9a94196d755dac7ee763490fac9a7bc9481bdc785dea75',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-e239221d9df72b4a6ef76c839ca78d509d486cb7390a7c6d90ff521324b27636',
    'data' => 
   array (
     'locatedSource' => 
@@ -48,7 +48,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       ),
     ),
     'startLine' => 23,
-    'endLine' => 134,
+    'endLine' => 144,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -499,6 +499,76 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'currentClassName' => 'App\\Livewire\\Customers\\CustomerLedger',
         'aliasName' => NULL,
       ),
+      'updatingDateFrom' => 
+      array (
+        'name' => 'updatingDateFrom',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 52,
+        'endLine' => 55,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Customers',
+        'declaringClassName' => 'App\\Livewire\\Customers\\CustomerLedger',
+        'implementingClassName' => 'App\\Livewire\\Customers\\CustomerLedger',
+        'currentClassName' => 'App\\Livewire\\Customers\\CustomerLedger',
+        'aliasName' => NULL,
+      ),
+      'updatingDateTo' => 
+      array (
+        'name' => 'updatingDateTo',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 57,
+        'endLine' => 60,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Customers',
+        'declaringClassName' => 'App\\Livewire\\Customers\\CustomerLedger',
+        'implementingClassName' => 'App\\Livewire\\Customers\\CustomerLedger',
+        'currentClassName' => 'App\\Livewire\\Customers\\CustomerLedger',
+        'aliasName' => NULL,
+      ),
       'openPaymentForm' => 
       array (
         'name' => 'openPaymentForm',
@@ -519,8 +589,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 52,
-        'endLine' => 59,
+        'startLine' => 62,
+        'endLine' => 69,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -558,8 +628,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 61,
-            'endLine' => 61,
+            'startLine' => 71,
+            'endLine' => 71,
             'startColumn' => 35,
             'endColumn' => 62,
             'parameterIndex' => 0,
@@ -580,8 +650,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 61,
-        'endLine' => 96,
+        'startLine' => 71,
+        'endLine' => 106,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -615,8 +685,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 98,
-        'endLine' => 112,
+        'startLine' => 108,
+        'endLine' => 122,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -646,8 +716,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 122,
-            'endLine' => 122,
+            'startLine' => 132,
+            'endLine' => 132,
             'startColumn' => 47,
             'endColumn' => 54,
             'parameterIndex' => 0,
@@ -675,8 +745,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  \\Illuminate\\Contracts\\Pagination\\LengthAwarePaginator<int, \\App\\Models\\CustomerLedger>  $entries
  * @return array<int, int>
  */',
-        'startLine' => 122,
-        'endLine' => 133,
+        'startLine' => 132,
+        'endLine' => 143,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

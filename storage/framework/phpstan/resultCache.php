@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1785287522,
+	'lastFullAnalysisTime' => 1786336289,
 	'meta' => array (
   'cacheVersion' => 'v13-packageDependencies',
   'phpstanVersion' => '2.2.6',
@@ -20,7 +20,7 @@ return [
   ),
   'composerLocks' => 
   array (
-    'C:/Users/shehr/OneDrive/Desktop/Personal Projects/PesticidesManagmentSystem/composer.lock' => '2cb06b0880514c149cb74915d36a31e12a851a4317698cbe903ca30b0adc6ca7',
+    'C:/Users/shehr/OneDrive/Desktop/Personal Projects/PesticidesManagmentSystem/composer.lock' => '6e30cc7c579429ecc025f97a5644c307afc02299466362aa83b49c1bb95738af',
   ),
   'composerInstalled' => 
   array (
@@ -28,6 +28,18 @@ return [
     array (
       'versions' => 
       array (
+        'barryvdh/laravel-dompdf' => 
+        array (
+          'pretty_version' => 'v3.1.2',
+          'version' => '3.1.2.0',
+          'reference' => 'ee3b72b19ccdf57d0243116ecb2b90261344dedc',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../barryvdh/laravel-dompdf',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
         'brick/math' => 
         array (
           'pretty_version' => '0.14.8',
@@ -80,6 +92,30 @@ return [
           ),
           'dev_requirement' => false,
         ),
+        'doctrine/dbal' => 
+        array (
+          'pretty_version' => '4.4.4',
+          'version' => '4.4.4.0',
+          'reference' => 'fb9e0ffe15e1590e24dc61c0c0a23f9a33ee42ce',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../doctrine/dbal',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
+        'doctrine/deprecations' => 
+        array (
+          'pretty_version' => '1.1.6',
+          'version' => '1.1.6.0',
+          'reference' => 'd4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../doctrine/deprecations',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
         'doctrine/inflector' => 
         array (
           'pretty_version' => '2.1.0',
@@ -99,6 +135,42 @@ return [
           'reference' => '31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd',
           'type' => 'library',
           'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../doctrine/lexer',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
+        'dompdf/dompdf' => 
+        array (
+          'pretty_version' => 'v3.1.6',
+          'version' => '3.1.6.0',
+          'reference' => '6d4b4eb8500f7a786da8868ba463a71b725a4005',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../dompdf/dompdf',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
+        'dompdf/php-font-lib' => 
+        array (
+          'pretty_version' => '1.0.2',
+          'version' => '1.0.2.0',
+          'reference' => 'a6e9a688a2a80016ac080b97be73d3e10c444c9a',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../dompdf/php-font-lib',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
+        'dompdf/php-svg-lib' => 
+        array (
+          'pretty_version' => '1.0.2',
+          'version' => '1.0.2.0',
+          'reference' => '8259ffb930817e72b1ff1caef5d226501f3dfeb1',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../dompdf/php-svg-lib',
           'aliases' => 
           array (
           ),
@@ -760,6 +832,18 @@ return [
           ),
           'dev_requirement' => false,
         ),
+        'masterminds/html5' => 
+        array (
+          'pretty_version' => '2.10.1',
+          'version' => '2.10.1.0',
+          'reference' => 'fd5018f6815fff903946d0564977b44ce8010e29',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../masterminds/html5',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
         'milon/barcode' => 
         array (
           'pretty_version' => 'v13.1',
@@ -1008,6 +1092,18 @@ return [
           ),
           'dev_requirement' => true,
         ),
+        'psr/cache' => 
+        array (
+          'pretty_version' => '3.0.0',
+          'version' => '3.0.0.0',
+          'reference' => 'aa5030cfa5405eccfdcb1083ce040c2cb8d253bf',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../psr/cache',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
         'psr/clock' => 
         array (
           'pretty_version' => '1.0.0',
@@ -1224,6 +1320,18 @@ return [
           array (
             0 => '4.9.3',
           ),
+        ),
+        'sabberworm/php-css-parser' => 
+        array (
+          'pretty_version' => 'v9.4.0',
+          'version' => '9.4.0.0',
+          'reference' => 'fd3bf9fb173e0df649bc4e3e0d088a1b2417c08f',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../sabberworm/php-css-parser',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
         ),
         'sebastian/cli-parser' => 
         array (
@@ -1825,6 +1933,18 @@ return [
           ),
           'dev_requirement' => true,
         ),
+        'thecodingmachine/safe' => 
+        array (
+          'pretty_version' => 'v3.4.0',
+          'version' => '3.4.0.0',
+          'reference' => '705683a25bacf0d4860c7dea4d7947bfd09eea19',
+          'type' => 'library',
+          'install_path' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer/../thecodingmachine/safe',
+          'aliases' => 
+          array (
+          ),
+          'dev_requirement' => false,
+        ),
         'theseer/tokenizer' => 
         array (
           'pretty_version' => '1.3.1',
@@ -1943,18 +2063,118 @@ return [
 	'projectExtensionFiles' => array (
 ),
 	'errorsCallback' => static function (): array { return array (
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\SuperAdmin|App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php',
+       'line' => 30,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 30,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Call to an undefined method App\\Http\\Controllers\\Pos\\SalePhotoController::authorize().',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php',
+       'line' => 25,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 25,
+       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
+       'identifier' => 'method.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\SuperAdmin|App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php',
+       'line' => 57,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 57,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php',
+       'line' => 46,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 46,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\SuperAdmin|App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php' => 
   array (
     0 => 
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Cannot call method toDateString() on string.',
        'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php',
-       'line' => 42,
+       'line' => 39,
        'canBeIgnored' => true,
        'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 42,
+       'nodeLine' => 39,
        'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
        'identifier' => 'method.nonObject',
        'metadata' => 
@@ -1966,14 +2186,4441 @@ return [
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Cannot call method toDateString() on string.',
        'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php',
-       'line' => 43,
+       'line' => 40,
        'canBeIgnored' => true,
        'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php',
        'traitFilePath' => NULL,
        'tip' => NULL,
-       'nodeLine' => 43,
+       'nodeLine' => 40,
        'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
        'identifier' => 'method.nonObject',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Cannot call method format() on string.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
+       'identifier' => 'method.nonObject',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\SuperAdmin|App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php',
+       'line' => 48,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 48,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\SuperAdmin|App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php',
+       'line' => 50,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 50,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\SuperAdmin|App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+       'line' => 142,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 142,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Method App\\Livewire\\Purchases\\PurchaseCreate::rules() should return array<string, string> but returns array<string, list<string>|string>.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
+       'line' => 84,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 84,
+       'nodeType' => 'PhpParser\\Node\\Stmt\\Return_',
+       'identifier' => 'return.type',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Bank::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Bank)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Bank)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Bank::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Bank)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Bank::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Bank)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Bank::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Bank)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Bank)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Bank)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Bank::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Bank)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Banner::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Banner)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Banner)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Banner::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Banner)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Banner::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Banner)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Banner::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Banner)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Banner)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Banner)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Banner::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Banner)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Batch::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Batch)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Batch)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Batch::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Batch)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Batch::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Batch)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Batch::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Batch)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Batch)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Batch)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Batch::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Batch)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Category::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Category)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Category)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Category::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Category)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Category::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Category)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Category::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Category)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Category)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Category)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Category::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Category)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Company::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Company)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Company)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Company::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Company)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Company::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Company)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Company::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Company)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Company)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Company)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Company::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Company)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Customer::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Customer)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Customer)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Customer::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Customer)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Customer::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Customer)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Customer::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Customer)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Customer)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Customer)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Customer::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Customer)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\CustomerLedger::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\CustomerLedger)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\CustomerLedger)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\CustomerLedger::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\CustomerLedger)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\CustomerLedger::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\CustomerLedger)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\CustomerLedger::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\CustomerLedger)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\CustomerLedger)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\CustomerLedger)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\CustomerLedger::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\CustomerLedger)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Expense::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Expense)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Expense)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Expense::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Expense)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Expense::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Expense)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Expense::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Expense)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Expense)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Expense)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Expense::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Expense)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\ExpenseCategory::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ExpenseCategory)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ExpenseCategory)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\ExpenseCategory::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ExpenseCategory)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ExpenseCategory::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ExpenseCategory)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ExpenseCategory::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ExpenseCategory)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ExpenseCategory)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ExpenseCategory)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ExpenseCategory::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ExpenseCategory)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\HeldOrder::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\HeldOrder)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\HeldOrder)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\HeldOrder::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\HeldOrder)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\HeldOrder::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\HeldOrder)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\HeldOrder::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\HeldOrder)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\HeldOrder)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\HeldOrder)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\HeldOrder::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\HeldOrder)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Payment::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Payment)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Payment)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Payment::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Payment)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Payment::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Payment)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Payment::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Payment)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Payment)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Payment)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Payment::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Payment)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\PosDevice::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PosDevice)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PosDevice)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\PosDevice::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PosDevice)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PosDevice::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PosDevice)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PosDevice::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PosDevice)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PosDevice)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PosDevice)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PosDevice::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PosDevice)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Product::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Product)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Product)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Product::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Product)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Product::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Product)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Product::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Product)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Product)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Product)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Product::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Product)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Purchase::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Purchase)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Purchase)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Purchase::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Purchase)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Purchase::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Purchase)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Purchase::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Purchase)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Purchase)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Purchase)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Purchase::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Purchase)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\PurchaseItem::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseItem)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseItem)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\PurchaseItem::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseItem)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseItem)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseItem)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseItem)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseItem)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseItem)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\PurchaseReturn::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturn)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturn)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\PurchaseReturn::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturn)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseReturn::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturn)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseReturn::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturn)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturn)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturn)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseReturn::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturn)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\PurchaseReturnItem::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturnItem)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturnItem)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\PurchaseReturnItem::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturnItem)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseReturnItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturnItem)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseReturnItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturnItem)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturnItem)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturnItem)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\PurchaseReturnItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\PurchaseReturnItem)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\ReceiptSetting::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ReceiptSetting)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ReceiptSetting)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\ReceiptSetting::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ReceiptSetting)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ReceiptSetting::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ReceiptSetting)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ReceiptSetting::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ReceiptSetting)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ReceiptSetting)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ReceiptSetting)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ReceiptSetting::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ReceiptSetting)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Sale::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Sale)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Sale)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Sale::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Sale)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Sale::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Sale)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Sale::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Sale)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Sale)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Sale)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Sale::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Sale)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\SaleItem::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleItem)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleItem)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\SaleItem::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleItem)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleItem)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleItem)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleItem)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleItem)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleItem)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\SaleReturn::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturn)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturn)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\SaleReturn::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturn)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleReturn::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturn)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleReturn::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturn)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturn)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturn)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleReturn::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturn)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\SaleReturnItem::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturnItem)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturnItem)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\SaleReturnItem::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturnItem)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleReturnItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturnItem)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleReturnItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturnItem)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturnItem)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturnItem)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleReturnItem::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleReturnItem)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\SaleSyncConflict::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleSyncConflict)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleSyncConflict)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\SaleSyncConflict::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleSyncConflict)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleSyncConflict::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleSyncConflict)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleSyncConflict::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleSyncConflict)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleSyncConflict)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleSyncConflict)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\SaleSyncConflict::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\SaleSyncConflict)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\ThemeSetting::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ThemeSetting)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ThemeSetting)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\ThemeSetting::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ThemeSetting)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ThemeSetting::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ThemeSetting)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ThemeSetting::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ThemeSetting)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ThemeSetting)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ThemeSetting)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\ThemeSetting::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\ThemeSetting)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\User::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\User)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\User)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\User::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\User)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\User::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\User)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\User::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\User)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\User)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\User)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\User::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\User)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Vendor::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Vendor)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Vendor)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\Vendor::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Vendor)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Vendor::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Vendor)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Vendor::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Vendor)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Vendor)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Vendor)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\Vendor::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\Vendor)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\VendorLedger::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\VendorLedger)',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\VendorLedger)',
+       'line' => 55,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 55,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe call to private method App\\Models\\VendorLedger::currentShopId() through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\VendorLedger)',
+       'line' => 56,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 56,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticCall',
+       'identifier' => 'staticClassAccess.privateMethod',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\VendorLedger::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\VendorLedger)',
+       'line' => 63,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 63,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\VendorLedger::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\VendorLedger)',
+       'line' => 67,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 67,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\VendorLedger)',
+       'line' => 73,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 73,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access on non-nullable type Illuminate\\Http\\Request. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\VendorLedger)',
+       'line' => 81,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 81,
+       'nodeType' => 'PhpParser\\Node\\Expr\\NullsafePropertyFetch',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Unsafe access to private property App\\Models\\VendorLedger::$resolvingShopId through static::.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php (in context of class App\\Models\\VendorLedger)',
+       'line' => 85,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+       'traitFilePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php',
+       'tip' => NULL,
+       'nodeLine' => 85,
+       'nodeType' => 'PhpParser\\Node\\Expr\\StaticPropertyFetch',
+       'identifier' => 'staticClassAccess.privateProperty',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Product|Illuminate\\Database\\Eloquent\\Collection<int, App\\Models\\Product>::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php',
+       'line' => 38,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 38,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Strict comparison using === between string and App\\Enums\\PaymentMethod::Cash will always evaluate to false.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 59,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 59,
+       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Identical',
+       'identifier' => 'identical.alwaysFalse',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Result of && is always false.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 61,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 61,
+       'nodeType' => 'PHPStan\\Node\\BooleanAndNode',
+       'identifier' => 'booleanAnd.alwaysFalse',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Strict comparison using === between string and App\\Enums\\PaymentMethod::Bank will always evaluate to false.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 61,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 61,
+       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Identical',
+       'identifier' => 'identical.alwaysFalse',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$name.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 64,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 64,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access "?->name" on left side of ?? is unnecessary. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 64,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 64,
+       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Coalesce',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Strict comparison using === between string and App\\Enums\\PaymentMethod::Cash will always evaluate to false.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 135,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 135,
+       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Identical',
+       'identifier' => 'identical.alwaysFalse',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Result of && is always false.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 137,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 137,
+       'nodeType' => 'PHPStan\\Node\\BooleanAndNode',
+       'identifier' => 'booleanAnd.alwaysFalse',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Strict comparison using === between string and App\\Enums\\PaymentMethod::Bank will always evaluate to false.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 137,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Because the type is coming from a PHPDoc, you can turn off this check by setting <fg=cyan>treatPhpDocTypesAsCertain: false</> in your <fg=cyan>%configurationFile%</>.',
+       'nodeLine' => 137,
+       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Identical',
+       'identifier' => 'identical.alwaysFalse',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    8 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property Illuminate\\Database\\Eloquent\\Model::$name.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 138,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 138,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    9 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access "?->name" on left side of ?? is unnecessary. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 138,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 138,
+       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Coalesce',
+       'identifier' => 'nullsafe.neverNull',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    10 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\SaleItem::$name.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 168,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 168,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    11 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Parameter #1 $callback of method Illuminate\\Database\\Eloquent\\Collection<int,App\\Models\\SaleItem>::map() contains unresolvable type.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'line' => 168,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 158,
+       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
+       'identifier' => 'argument.unresolvableType',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Vendor::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+       'line' => 47,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 47,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Customer::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+       'line' => 90,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 90,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Parameter #1 $callback of method Illuminate\\Database\\Eloquent\\Collection<int,App\\Models\\Batch>::map() contains unresolvable type.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+       'line' => 69,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 64,
+       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
+       'identifier' => 'argument.unresolvableType',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Cannot call method toDateString() on string.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+       'line' => 76,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 76,
+       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
+       'identifier' => 'method.nonObject',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+       'line' => 117,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 117,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+       'line' => 305,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 305,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+       'line' => 339,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 339,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+       'line' => 69,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 69,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+       'line' => 78,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 78,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+       'line' => 49,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 49,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+       'line' => 65,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 65,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+       'line' => 89,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 89,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+       'line' => 66,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 66,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+       'line' => 75,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 75,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+       'line' => 121,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 121,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+       'line' => 172,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 172,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+       'line' => 201,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 201,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php' => 
+  array (
+    0 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\SuperAdmin|App\\Models\\User::$shop_id.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php',
+       'line' => 29,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 29,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    1 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Using nullsafe property access "?->shop_id" on left side of ?? is unnecessary. Use -> instead.',
+       'file' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php',
+       'line' => 29,
+       'canBeIgnored' => true,
+       'filePath' => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php',
+       'traitFilePath' => NULL,
+       'tip' => NULL,
+       'nodeLine' => 29,
+       'nodeType' => 'PhpParser\\Node\\Expr\\BinaryOp\\Coalesce',
+       'identifier' => 'nullsafe.neverNull',
        'metadata' => 
       array (
       ),
@@ -2051,6 +6698,72 @@ return [
       ),
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidSaleItemException.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Exceptions\\InvalidSaleItemException',
+        1 => 'forNonPositiveQuantity',
+        2 => 'App\\Exceptions\\InvalidSaleItemException',
+        3 => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        0 => 'App\\Exceptions\\InvalidSaleItemException',
+        1 => 'forNegativeUnitPrice',
+        2 => 'App\\Exceptions\\InvalidSaleItemException',
+        3 => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        0 => 'App\\Exceptions\\InvalidSaleItemException',
+        1 => 'forNegativeDiscountValue',
+        2 => 'App\\Exceptions\\InvalidSaleItemException',
+        3 => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        0 => 'App\\Exceptions\\InvalidSaleItemException',
+        1 => 'forInvalidDiscountPercentage',
+        2 => 'App\\Exceptions\\InvalidSaleItemException',
+        3 => 
+        array (
+        ),
+      ),
+      4 => 
+      array (
+        0 => 'App\\Exceptions\\InvalidSaleItemException',
+        1 => 'forDiscountExceedsSubtotal',
+        2 => 'App\\Exceptions\\InvalidSaleItemException',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidSalePaymentException.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Exceptions\\InvalidSalePaymentException',
+        1 => 'ledgerPaymentRequiresCustomer',
+        2 => 'App\\Exceptions\\InvalidSalePaymentException',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\UnbalancedPaymentSplitException.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
@@ -2066,6 +6779,19 @@ return [
       ),
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Helpers\\money.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\FunctionWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'money',
+        1 => 
+        array (
+        ),
+      ),
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
@@ -2073,11 +6799,66 @@ return [
       0 => 
       array (
         0 => 'event',
-        1 => 22,
+        1 => 28,
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'abort',
+        1 => 29,
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\EnsureShopIsActive.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'auth.shop_suspended',
+        1 => 37,
+      ),
+      1 => 
+      array (
+        0 => 'auth.shop_suspended',
+        1 => 42,
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'abort',
+        1 => 38,
+      ),
+      1 => 
+      array (
+        0 => 'abort',
+        1 => 47,
       ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Actions\\Logout.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Support\\Facades\\Session',
+        1 => 'invalidate',
+        2 => 17,
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Actions\\SuperAdminLogout.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -2096,76 +6877,25 @@ return [
       0 => 'livewire.admin.bank-account-manager',
     ),
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\DeveloperTools.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BannerManager.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
     array (
       0 => 
       array (
-        0 => 'settings.dev_migrate',
-        1 => 42,
-      ),
-      1 => 
-      array (
-        0 => 'settings.dev_migrate',
-        1 => 44,
-      ),
-      2 => 
-      array (
-        0 => 'settings.dev_optimize',
-        1 => 54,
-      ),
-      3 => 
-      array (
-        0 => 'settings.dev_optimize',
-        1 => 56,
-      ),
-      4 => 
-      array (
-        0 => 'settings.dev_config_cache',
+        0 => 'settings.saved',
         1 => 66,
-      ),
-      5 => 
-      array (
-        0 => 'settings.dev_config_cache',
-        1 => 68,
-      ),
-      6 => 
-      array (
-        0 => 'settings.dev_git_pull',
-        1 => 77,
-      ),
-      7 => 
-      array (
-        0 => 'settings.dev_git_not_a_repo',
-        1 => 77,
-      ),
-      8 => 
-      array (
-        0 => 'settings.dev_git_pull',
-        1 => 85,
-      ),
-      9 => 
-      array (
-        0 => 'settings.dev_no_output',
-        1 => 92,
       ),
     ),
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
     array (
-      0 => 'livewire.admin.developer-tools',
+      0 => 'livewire.admin.banner-manager',
     ),
-    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
       array (
-        0 => 'App\\Livewire\\Admin\\DeveloperTools',
-        1 => 'render',
-        2 => 'App\\Livewire\\Admin\\DeveloperTools',
-        3 => 
-        array (
-          0 => 'f' . "\0" . 'view',
-        ),
+        0 => 'Livewire\\WithFileUploads',
       ),
     ),
   ),
@@ -2176,17 +6906,22 @@ return [
       0 => 
       array (
         0 => 'settings.saved',
-        1 => 129,
+        1 => 170,
       ),
       1 => 
       array (
         0 => 'settings.saved',
-        1 => 150,
+        1 => 200,
       ),
       2 => 
       array (
         0 => 'settings.saved',
-        1 => 193,
+        1 => 239,
+      ),
+      3 => 
+      array (
+        0 => 'settings.saved',
+        1 => 284,
       ),
     ),
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
@@ -2206,6 +6941,13 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Livewire\\WithFileUploads',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php' => 
   array (
@@ -2214,12 +6956,12 @@ return [
       0 => 
       array (
         0 => 'ledger.bank_required',
-        1 => 68,
+        1 => 78,
       ),
       1 => 
       array (
         0 => 'ledger.payment_received',
-        1 => 89,
+        1 => 99,
       ),
     ),
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
@@ -2232,7 +6974,7 @@ return [
       array (
         0 => 'Illuminate\\Database\\Connection',
         1 => 'transaction',
-        2 => 73,
+        2 => 83,
       ),
     ),
     'PHPStan\\Rules\\Methods\\NamedArgumentParameterMethodCallsCollector' => 
@@ -2242,49 +6984,49 @@ return [
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'customer',
-        3 => 84,
+        3 => 94,
       ),
       1 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'type',
-        3 => 85,
+        3 => 95,
       ),
       2 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'amount',
-        3 => 86,
+        3 => 96,
       ),
       3 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'referenceType',
-        3 => 87,
+        3 => 97,
       ),
       4 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'referenceId',
-        3 => 88,
+        3 => 98,
       ),
       5 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'description',
-        3 => 89,
+        3 => 99,
       ),
       6 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'user',
-        3 => 90,
+        3 => 100,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2317,54 +7059,88 @@ return [
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'customer',
-        3 => 66,
+        3 => 72,
       ),
       1 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'type',
-        3 => 67,
+        3 => 73,
       ),
       2 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'amount',
-        3 => 68,
+        3 => 74,
       ),
       3 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'referenceType',
-        3 => 69,
+        3 => 75,
       ),
       4 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'referenceId',
-        3 => 70,
+        3 => 76,
       ),
       5 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'description',
-        3 => 71,
+        3 => 77,
       ),
       6 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'user',
-        3 => 72,
+        3 => 78,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
+      array (
+        0 => 'Livewire\\WithPagination',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.expenses.expense-category-manager',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.expenses.expense-list',
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Connection',
+        1 => 'transaction',
+        2 => 72,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Livewire\\WithFileUploads',
+      ),
+      1 => 
       array (
         0 => 'Livewire\\WithPagination',
       ),
@@ -2384,15 +7160,6 @@ return [
         ),
       ),
       1 => 
-      array (
-        0 => 'App\\Livewire\\Forms\\BatchForm',
-        1 => 'attributesForCreate',
-        2 => 'App\\Livewire\\Forms\\BatchForm',
-        3 => 
-        array (
-        ),
-      ),
-      2 => 
       array (
         0 => 'App\\Livewire\\Forms\\BatchForm',
         1 => 'attributesForUpdate',
@@ -2418,6 +7185,31 @@ return [
       ),
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Livewire\\Forms\\ExpenseForm',
+        1 => 'rules',
+        2 => 'App\\Livewire\\Forms\\ExpenseForm',
+        3 => 
+        array (
+          0 => 'm' . "\0" . 'illuminate\\validation\\rule' . "\0" . 'requiredif',
+        ),
+      ),
+      1 => 
+      array (
+        0 => 'App\\Livewire\\Forms\\ExpenseForm',
+        1 => 'attributesForSave',
+        2 => 'App\\Livewire\\Forms\\ExpenseForm',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
@@ -2425,12 +7217,22 @@ return [
       0 => 
       array (
         0 => 'auth.failed',
-        1 => 37,
+        1 => 38,
       ),
       1 => 
       array (
+        0 => 'auth.failed',
+        1 => 52,
+      ),
+      2 => 
+      array (
+        0 => 'auth.shop_suspended',
+        1 => 60,
+      ),
+      3 => 
+      array (
         0 => 'auth.throttle',
-        1 => 58,
+        1 => 81,
       ),
     ),
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
@@ -2438,7 +7240,7 @@ return [
       0 => 
       array (
         0 => 'event',
-        1 => 53,
+        1 => 76,
       ),
     ),
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
@@ -2447,7 +7249,7 @@ return [
       array (
         0 => 'Illuminate\\Support\\Facades\\RateLimiter',
         1 => 'hit',
-        2 => 34,
+        2 => 35,
       ),
     ),
   ),
@@ -2463,6 +7265,39 @@ return [
         3 => 
         array (
         ),
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\SuperAdminLoginForm.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'auth.failed',
+        1 => 39,
+      ),
+      1 => 
+      array (
+        0 => 'auth.throttle',
+        1 => 60,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'event',
+        1 => 55,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Support\\Facades\\RateLimiter',
+        1 => 'hit',
+        2 => 36,
       ),
     ),
   ),
@@ -2502,6 +7337,13 @@ return [
       0 => 'livewire.inventory.category-manager',
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CompanyManager.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.inventory.company-manager',
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ExpiryAlertsDashboard.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
@@ -2530,32 +7372,47 @@ return [
       0 => 
       array (
         0 => 'pos.barcode_not_found',
-        1 => 63,
+        1 => 77,
       ),
       1 => 
       array (
         0 => 'pos.out_of_stock',
-        1 => 69,
+        1 => 83,
       ),
       2 => 
       array (
         0 => 'pos.out_of_stock',
-        1 => 80,
+        1 => 94,
       ),
       3 => 
       array (
-        0 => 'ledger.bank_required',
-        1 => 200,
+        0 => 'pos.order_held',
+        1 => 161,
       ),
       4 => 
       array (
-        0 => 'pos.customer_required_for_ledger',
-        1 => 206,
+        0 => 'pos.cart_not_empty_to_resume',
+        1 => 172,
       ),
       5 => 
       array (
+        0 => 'pos.held_order_items_unavailable',
+        1 => 199,
+      ),
+      6 => 
+      array (
+        0 => 'ledger.bank_required',
+        1 => 406,
+      ),
+      7 => 
+      array (
+        0 => 'pos.customer_required_for_ledger',
+        1 => 412,
+      ),
+      8 => 
+      array (
         0 => 'pos.sale_completed',
-        1 => 241,
+        1 => 453,
       ),
     ),
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
@@ -2567,10 +7424,41 @@ return [
       0 => 
       array (
         0 => 'App\\Livewire\\Pos\\Pos',
+        1 => 'lineSubtotal',
+        2 => 'App\\Livewire\\Pos\\Pos',
+        3 => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        0 => 'App\\Livewire\\Pos\\Pos',
+        1 => 'subtotalAfterItemDiscounts',
+        2 => 'App\\Livewire\\Pos\\Pos',
+        3 => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        0 => 'App\\Livewire\\Pos\\Pos',
+        1 => 'getSaleDiscountAmountProperty',
+        2 => 'App\\Livewire\\Pos\\Pos',
+        3 => 
+        array (
+          0 => 'f' . "\0" . 'app',
+          1 => 'm' . "\0" . 'app\\services\\discountcalculator' . "\0" . 'amount',
+          2 => 'm' . "\0" . 'app\\livewire\\pos\\pos' . "\0" . 'subtotalafteritemdiscounts',
+        ),
+      ),
+      3 => 
+      array (
+        0 => 'App\\Livewire\\Pos\\Pos',
         1 => 'getCartTotalProperty',
         2 => 'App\\Livewire\\Pos\\Pos',
         3 => 
         array (
+          0 => 'm' . "\0" . 'app\\livewire\\pos\\pos' . "\0" . 'subtotalafteritemdiscounts',
         ),
       ),
     ),
@@ -2581,42 +7469,56 @@ return [
         0 => 'App\\Services\\SaleService',
         1 => 'create',
         2 => 'customer',
-        3 => 222,
+        3 => 430,
       ),
       1 => 
       array (
         0 => 'App\\Services\\SaleService',
         1 => 'create',
         2 => 'items',
-        3 => 223,
+        3 => 431,
       ),
       2 => 
       array (
         0 => 'App\\Services\\SaleService',
         1 => 'create',
         2 => 'paymentLines',
-        3 => 224,
+        3 => 432,
       ),
       3 => 
       array (
         0 => 'App\\Services\\SaleService',
         1 => 'create',
         2 => 'user',
-        3 => 225,
+        3 => 433,
       ),
       4 => 
       array (
         0 => 'App\\Services\\SaleService',
         1 => 'create',
         2 => 'photo',
-        3 => 226,
+        3 => 434,
       ),
       5 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'discountType',
+        3 => 435,
+      ),
+      6 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'discountValue',
+        3 => 436,
+      ),
+      7 => 
       array (
         0 => 'Livewire\\Component',
         1 => 'dispatch',
         2 => 'params',
-        3 => 240,
+        3 => 452,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2700,19 +7602,46 @@ return [
       ),
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SyncConflicts.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'sync.conflict_resolved',
+        1 => 53,
+      ),
+    ),
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.pos.sync-conflicts',
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Livewire\\WithPagination',
+      ),
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
     array (
       0 => 
       array (
-        0 => 'ledger.bank_required',
-        1 => 106,
+        0 => 'purchases.duplicate_barcode',
+        1 => 109,
       ),
       1 => 
       array (
+        0 => 'ledger.bank_required',
+        1 => 118,
+      ),
+      2 => 
+      array (
         0 => 'purchases.created',
-        1 => 127,
+        1 => 139,
       ),
     ),
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
@@ -2747,35 +7676,35 @@ return [
         0 => 'App\\Services\\PurchaseService',
         1 => 'create',
         2 => 'vendor',
-        3 => 116,
+        3 => 128,
       ),
       1 => 
       array (
         0 => 'App\\Services\\PurchaseService',
         1 => 'create',
         2 => 'items',
-        3 => 117,
+        3 => 129,
       ),
       2 => 
       array (
         0 => 'App\\Services\\PurchaseService',
         1 => 'create',
         2 => 'paymentLines',
-        3 => 118,
+        3 => 130,
       ),
       3 => 
       array (
         0 => 'App\\Services\\PurchaseService',
         1 => 'create',
         2 => 'user',
-        3 => 119,
+        3 => 131,
       ),
       4 => 
       array (
         0 => 'Livewire\\Component',
         1 => 'redirect',
         2 => 'navigate',
-        3 => 129,
+        3 => 141,
       ),
     ),
   ),
@@ -2852,6 +7781,34 @@ return [
       ),
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\PurchaseReport.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.reports.purchase-report',
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Livewire\\WithPagination',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.reports.sales-report',
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Livewire\\WithPagination',
+      ),
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Shared\\LanguageSwitcher.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
@@ -2877,6 +7834,86 @@ return [
       ),
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\DeveloperTools.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'super_admin.dev_migrate',
+        1 => 38,
+      ),
+      1 => 
+      array (
+        0 => 'super_admin.dev_migrate',
+        1 => 40,
+      ),
+      2 => 
+      array (
+        0 => 'super_admin.dev_optimize',
+        1 => 48,
+      ),
+      3 => 
+      array (
+        0 => 'super_admin.dev_optimize',
+        1 => 50,
+      ),
+      4 => 
+      array (
+        0 => 'super_admin.dev_config_cache',
+        1 => 58,
+      ),
+      5 => 
+      array (
+        0 => 'super_admin.dev_config_cache',
+        1 => 60,
+      ),
+      6 => 
+      array (
+        0 => 'super_admin.dev_git_pull',
+        1 => 67,
+      ),
+      7 => 
+      array (
+        0 => 'super_admin.dev_git_not_a_repo',
+        1 => 67,
+      ),
+      8 => 
+      array (
+        0 => 'super_admin.dev_git_pull',
+        1 => 75,
+      ),
+      9 => 
+      array (
+        0 => 'super_admin.dev_no_output',
+        1 => 82,
+      ),
+    ),
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.super-admin.developer-tools',
+    ),
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Livewire\\SuperAdmin\\DeveloperTools',
+        1 => 'render',
+        2 => 'App\\Livewire\\SuperAdmin\\DeveloperTools',
+        3 => 
+        array (
+          0 => 'f' . "\0" . 'view',
+        ),
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\ShopManager.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
+    array (
+      0 => 'livewire.super-admin.shop-manager',
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
@@ -2884,12 +7921,12 @@ return [
       0 => 
       array (
         0 => 'ledger.bank_required',
-        1 => 67,
+        1 => 77,
       ),
       1 => 
       array (
         0 => 'ledger.payment_made',
-        1 => 88,
+        1 => 98,
       ),
     ),
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
@@ -2902,7 +7939,7 @@ return [
       array (
         0 => 'Illuminate\\Database\\Connection',
         1 => 'transaction',
-        2 => 72,
+        2 => 82,
       ),
     ),
     'PHPStan\\Rules\\Methods\\NamedArgumentParameterMethodCallsCollector' => 
@@ -2912,49 +7949,49 @@ return [
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'vendor',
-        3 => 83,
+        3 => 93,
       ),
       1 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'type',
-        3 => 84,
+        3 => 94,
       ),
       2 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'amount',
-        3 => 85,
+        3 => 95,
       ),
       3 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'referenceType',
-        3 => 86,
+        3 => 96,
       ),
       4 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'referenceId',
-        3 => 87,
+        3 => 97,
       ),
       5 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'description',
-        3 => 88,
+        3 => 98,
       ),
       6 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'user',
-        3 => 89,
+        3 => 99,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -2987,49 +8024,49 @@ return [
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'vendor',
-        3 => 66,
+        3 => 72,
       ),
       1 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'type',
-        3 => 67,
+        3 => 73,
       ),
       2 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'amount',
-        3 => 68,
+        3 => 74,
       ),
       3 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'referenceType',
-        3 => 69,
+        3 => 75,
       ),
       4 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'referenceId',
-        3 => 70,
+        3 => 76,
       ),
       5 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'description',
-        3 => 71,
+        3 => 77,
       ),
       6 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'user',
-        3 => 72,
+        3 => 78,
       ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
@@ -3042,6 +8079,158 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3054,16 +8243,349 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php' => 
+  array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3076,16 +8598,178 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3098,16 +8782,373 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php' => 
+  array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Company',
+        1 => 'casts',
+        2 => 'App\\Models\\Company',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitDeclarationCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 30,
       ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3120,16 +9161,178 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3142,9 +9345,737 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php' => 
+  array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Expense',
+        1 => 'casts',
+        2 => 'App\\Models\\Expense',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php' => 
+  array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\ExpenseCategory',
+        1 => 'casts',
+        2 => 'App\\Models\\ExpenseCategory',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php' => 
+  array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\HeldOrder',
+        1 => 'casts',
+        2 => 'App\\Models\\HeldOrder',
+        3 => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        0 => 'App\\Models\\HeldOrder',
+        1 => 'itemCount',
+        2 => 'App\\Models\\HeldOrder',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3157,9 +10088,369 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php' => 
+  array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\PosDevice',
+        1 => 'casts',
+        2 => 'App\\Models\\PosDevice',
+        3 => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        0 => 'App\\Models\\PosDevice',
+        1 => 'formatInvoiceNumber',
+        2 => 'App\\Models\\PosDevice',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3172,16 +10463,178 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3194,9 +10647,177 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3218,9 +10839,177 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3233,9 +11022,177 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3248,9 +11205,177 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3263,9 +11388,177 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3277,10 +11570,187 @@ return [
         array (
         ),
       ),
+      1 => 
+      array (
+        0 => 'App\\Models\\Sale',
+        1 => 'wasMadeOffline',
+        2 => 'App\\Models\\Sale',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3301,10 +11771,187 @@ return [
         array (
         ),
       ),
+      2 => 
+      array (
+        0 => 'App\\Models\\SaleItem',
+        1 => 'costTotal',
+        2 => 'App\\Models\\SaleItem',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3317,9 +11964,177 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3332,6 +12147,250 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php' => 
+  array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\SaleSyncConflict',
+        1 => 'casts',
+        2 => 'App\\Models\\SaleSyncConflict',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Shop.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Shop',
+        1 => 'casts',
+        2 => 'App\\Models\\Shop',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SuperAdmin.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\SuperAdmin',
+        1 => 'casts',
+        2 => 'App\\Models\\SuperAdmin',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        1 => 'Illuminate\\Notifications\\Notifiable',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php' => 
   array (
@@ -3340,12 +12399,173 @@ return [
       0 => 
       array (
         0 => 'nav.app_name',
-        1 => 37,
+        1 => 51,
+      ),
+    ),
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
       ),
     ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
+      array (
+        0 => 'App\\Models\\ThemeSetting',
+        1 => 'casts',
+        2 => 'App\\Models\\ThemeSetting',
+        3 => 
+        array (
+        ),
+      ),
+      1 => 
       array (
         0 => 'App\\Models\\ThemeSetting',
         1 => 'displayName',
@@ -3356,9 +12576,177 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+    ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3371,18 +12759,180 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
-        1 => 'Spatie\\Permission\\Traits\\HasRoles',
-        2 => 'Illuminate\\Notifications\\Notifiable',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        2 => 'Spatie\\Permission\\Traits\\HasRoles',
+        3 => 'Illuminate\\Notifications\\Notifiable',
       ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3395,16 +12945,178 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
       0 => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php' => 
   array (
+    'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      1 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shopId !== null:49',
+        3 => NULL,
+      ),
+      2 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel()->getTable():50',
+        3 => NULL,
+      ),
+      3 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->getModel():50',
+        3 => NULL,
+      ),
+      4 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId):50',
+        3 => NULL,
+      ),
+      5 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::addGlobalScope(\'shop\', function (\\Illuminate\\Database\\Eloquent\\Builder $builder) {
+    $shopId = static::currentShopId();
+    if ($shopId !== null) {
+        $builder->where($builder->getModel()->getTable() . \'.shop_id\', $shopId);
+    }
+}):46',
+        3 => NULL,
+      ),
+      6 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():47',
+        3 => NULL,
+      ),
+      7 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      8 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\StrictComparisonOfDifferentTypesRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$model->shop_id === null:55',
+        3 => NULL,
+      ),
+      9 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::creating(function (\\Illuminate\\Database\\Eloquent\\Model $model) {
+    if ($model->shop_id === null) {
+        $model->shop_id = static::currentShopId();
+    }
+}):54',
+        3 => NULL,
+      ),
+      10 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::currentShopId():56',
+        3 => NULL,
+      ),
+      11 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'static::$resolvingShopId:63',
+        3 => NULL,
+      ),
+      12 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\')->user():70',
+        3 => NULL,
+      ),
+      13 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\IfConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      14 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$user instanceof \\App\\Models\\User:72',
+        3 => NULL,
+      ),
+      15 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeStaticMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '\\Illuminate\\Support\\Facades\\Auth::guard(\'web\'):70',
+        3 => NULL,
+      ),
+      16 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeFunctionCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request():81',
+        3 => NULL,
+      ),
+      17 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\TernaryOperatorConstantConditionRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      18 => 
+      array (
+        0 => 'PHPStan\\Rules\\Classes\\ImpossibleInstanceOfRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => '$shop instanceof \\App\\Models\\Shop:83',
+        3 => NULL,
+      ),
+      19 => 
+      array (
+        0 => 'PHPStan\\Rules\\Comparison\\ImpossibleCheckTypeMethodCallRule',
+        1 => 'App\\Models\\Concerns\\BelongsToShop',
+        2 => 'request()?->attributes->get(\'currentShop\'):81',
+        3 => NULL,
+      ),
+    ),
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
@@ -3415,6 +13127,22 @@ return [
         3 => 
         array (
         ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Model',
+        1 => 'addGlobalScope',
+        2 => 46,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
     ),
   ),
@@ -3443,6 +13171,169 @@ return [
       ),
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Services\\DashboardReportService',
+        1 => 'normalize',
+        2 => 'App\\Services\\DashboardReportService',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Connection',
+        1 => 'transaction',
+        2 => 83,
+      ),
+      1 => 
+      array (
+        0 => 'Illuminate\\Database\\Connection',
+        1 => 'statement',
+        2 => 84,
+      ),
+      2 => 
+      array (
+        0 => 'Illuminate\\Database\\Connection',
+        1 => 'statement',
+        2 => 90,
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureMethodCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 
+        array (
+          0 => 'Illuminate\\Database\\Eloquent\\Model',
+        ),
+        1 => 'save',
+        2 => 109,
+      ),
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php' => 
+  array (
+    'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'sync.replay_failed',
+        1 => 165,
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Services\\OfflineSyncService',
+        1 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'usort',
+        1 => 50,
+      ),
+    ),
+    'PHPStan\\Rules\\Methods\\NamedArgumentParameterMethodCallsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'customer',
+        3 => 102,
+      ),
+      1 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'items',
+        3 => 103,
+      ),
+      2 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'paymentLines',
+        3 => 104,
+      ),
+      3 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'user',
+        3 => 105,
+      ),
+      4 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'photo',
+        3 => 106,
+      ),
+      5 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'clientUuid',
+        3 => 107,
+      ),
+      6 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'invoiceNumber',
+        3 => 108,
+      ),
+      7 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'occurredAt',
+        3 => 109,
+      ),
+      8 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'allowOverdraw',
+        3 => 110,
+      ),
+      9 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'discountType',
+        3 => 111,
+      ),
+      10 => 
+      array (
+        0 => 'App\\Services\\SaleService',
+        1 => 'create',
+        2 => 'discountValue',
+        3 => 112,
+      ),
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
@@ -3462,49 +13353,49 @@ return [
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'vendor',
-        3 => 81,
+        3 => 82,
       ),
       1 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'type',
-        3 => 82,
+        3 => 83,
       ),
       2 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'amount',
-        3 => 83,
+        3 => 84,
       ),
       3 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'referenceType',
-        3 => 84,
+        3 => 85,
       ),
       4 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'referenceId',
-        3 => 85,
+        3 => 86,
       ),
       5 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'description',
-        3 => 86,
+        3 => 87,
       ),
       6 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'user',
-        3 => 87,
+        3 => 88,
       ),
     ),
   ),
@@ -3527,49 +13418,49 @@ return [
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'vendor',
-        3 => 101,
+        3 => 105,
       ),
       1 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'type',
-        3 => 102,
+        3 => 106,
       ),
       2 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'amount',
-        3 => 103,
+        3 => 107,
       ),
       3 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'referenceType',
-        3 => 104,
+        3 => 108,
       ),
       4 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'referenceId',
-        3 => 105,
+        3 => 109,
       ),
       5 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'description',
-        3 => 106,
+        3 => 110,
       ),
       6 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postVendorEntry',
         2 => 'user',
-        3 => 107,
+        3 => 111,
       ),
     ),
   ),
@@ -3599,49 +13490,49 @@ return [
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'customer',
-        3 => 79,
+        3 => 80,
       ),
       1 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'type',
-        3 => 80,
+        3 => 81,
       ),
       2 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'amount',
-        3 => 81,
+        3 => 82,
       ),
       3 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'referenceType',
-        3 => 82,
+        3 => 83,
       ),
       4 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'referenceId',
-        3 => 83,
+        3 => 84,
       ),
       5 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'description',
-        3 => 84,
+        3 => 85,
       ),
       6 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'user',
-        3 => 85,
+        3 => 86,
       ),
     ),
   ),
@@ -3664,49 +13555,56 @@ return [
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'customer',
-        3 => 104,
+        3 => 225,
       ),
       1 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'type',
-        3 => 105,
+        3 => 226,
       ),
       2 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'amount',
-        3 => 106,
+        3 => 227,
       ),
       3 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'referenceType',
-        3 => 107,
+        3 => 228,
       ),
       4 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'referenceId',
-        3 => 108,
+        3 => 229,
       ),
       5 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'description',
-        3 => 109,
+        3 => 230,
       ),
       6 => 
       array (
         0 => 'App\\Services\\LedgerService',
         1 => 'postCustomerEntry',
         2 => 'user',
-        3 => 110,
+        3 => 231,
+      ),
+      7 => 
+      array (
+        0 => 'App\\Services\\LedgerService',
+        1 => 'postCustomerEntry',
+        2 => 'occurredAt',
+        3 => 232,
       ),
     ),
   ),
@@ -3759,6 +13657,25 @@ return [
     array (
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Console\\Commands\\ResetDemoShop.php' => 
+  array (
+    'fileHash' => 'ed65cebc50bee7cd2efd6a56800faa7e64de883348d8ea8a27a7c4f8ebef8ea7',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\DiscountType.php' => 
+  array (
+    'fileHash' => 'b69456b0d160d67d18c43e730ca23293a02ccec0597cf60ae0da30e1410ea7a0',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DiscountCalculator.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\LedgerEntryType.php' => 
   array (
     'fileHash' => 'b8c8a7497c7609f822db75a7f5db4bd45869e6ea25b2dc2342e9addef5556714',
@@ -3783,9 +13700,11 @@ return [
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\PaymentMethod.php' => 
@@ -3794,12 +13713,14 @@ return [
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
-      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\TransactionReferenceType.php' => 
@@ -3823,6 +13744,8 @@ return [
     'fileHash' => 'a20d432a09e03d5a055c74acf6c8720a4bdeb0874f4d6c292c4712dd3d3564b8',
     'dependentFiles' => 
     array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Events\\BatchExpiringSoon.php' => 
@@ -3840,7 +13763,8 @@ return [
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidReturnQuantityException.php' => 
@@ -3854,6 +13778,26 @@ return [
       3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidSaleItemException.php' => 
+  array (
+    'fileHash' => '73b29ce98518390d3d7924f2aab531b97bb4186dbff244cbec95b64fd2ec10ee',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidSalePaymentException.php' => 
+  array (
+    'fileHash' => 'e4c4cbf87717ff0bd43fd0843ee79982cf10add802c0d06ee38787b509d97374',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\UnbalancedPaymentSplitException.php' => 
   array (
     'fileHash' => 'dba714d2547b3e570d4e4c7bcaeef6776c2d0daa89918d7ac6d91329141b4d02',
@@ -3861,12 +13805,20 @@ return [
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PaymentSplitService.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PaymentSplitService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Helpers\\money.php' => 
+  array (
+    'fileHash' => '3603ff95dfb2853de5c5dec485538c867032f2734e791a0d56ff5078db4a0db9',
+    'dependentFiles' => 
+    array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php' => 
   array (
-    'fileHash' => '5f6080a239709740135d9138085ceb1857c5570a0fea35e62c976fc90929631e',
+    'fileHash' => '86c909f6f9cff96efef0078269da1328f22cbb2840d84e441670585ee96c5291',
     'dependentFiles' => 
     array (
     ),
@@ -3877,6 +13829,60 @@ return [
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\PingController.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php' => 
+  array (
+    'fileHash' => '8de8c2df3688b9f371440da2f87749e6c44d0b0673ea67bb201d8d63baffd76a',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php' => 
+  array (
+    'fileHash' => '5189b6709e3db7c18184ffc006316618498cf9def2ef2f77108620ef8af73034',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\PingController.php' => 
+  array (
+    'fileHash' => '8b2d99cd576f6253429c411298da5153ba6879718385f1c706ca469006b43642',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php' => 
+  array (
+    'fileHash' => '2b6792ad8994aa43754e534fc69cc383b02da55283e43d935ec60374f1f9b99a',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php' => 
+  array (
+    'fileHash' => '5bcd688d73b0aa8ef82c6ea310437b1c3b64223cc6b4e85fc580b7326c08debf',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\EnsureShopIsActive.php' => 
+  array (
+    'fileHash' => '2dd29b1849f797d1a673187447f2cb97e7fb3e29225686d5c2f2c5ff3e8d136c',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php' => 
+  array (
+    'fileHash' => '47eb2c83238abaff92e3d1eb0a330bd2196c07bde6848520565ffde1b0b131ea',
+    'dependentFiles' => 
+    array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\SetLocale.php' => 
@@ -3893,6 +13899,13 @@ return [
     array (
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Actions\\SuperAdminLogout.php' => 
+  array (
+    'fileHash' => '907fa13698f9a3ddccdd1295a88f3f01dd02d11532766c1270563ef785aeca0f',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BankAccountManager.php' => 
   array (
     'fileHash' => '10185b246a7e19d769f14dd4d6c31c928e74d4343d021a03bb56d1e81d3c70e4',
@@ -3900,37 +13913,51 @@ return [
     array (
     ),
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\DeveloperTools.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BannerManager.php' => 
   array (
-    'fileHash' => '5107446e1c27db2cd00de15d0f025d62232942d9e99b893c1d42014c08a7152f',
+    'fileHash' => 'ad26c083e49c56737e2f8b1d10eb3abc5a49b5e07cc10804211e7d28a9883c36',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\SettingsPage.php' => 
   array (
-    'fileHash' => 'fe652f83009c475a303db595c9f05fb1cf65d4d3f9a15bb1c687f0f97b739c41',
+    'fileHash' => 'f0dbc8a7ee45164ec10bc377c721b636607b68b43693df3c5412d3b3dadc879e',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php' => 
   array (
-    'fileHash' => 'eea485f9447233cf4e9a94196d755dac7ee763490fac9a7bc9481bdc785dea75',
+    'fileHash' => 'e239221d9df72b4a6ef76c839ca78d509d486cb7390a7c6d90ff521324b27636',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php' => 
   array (
-    'fileHash' => 'ec04dcd30ecf666afd16f106a026b62aa82b1c97313cd0f6ac7fb24d53cbf07e',
+    'fileHash' => '5dd99993965327a120e4c0be21054a9efc7b9180df646b9ded547ddf9cc44f48',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php' => 
+  array (
+    'fileHash' => 'f93e72e6286645265cd7672c649f64814ac89a546f6e7dc331d157bebda15949',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php' => 
+  array (
+    'fileHash' => '8c93313e40940912ff3cebd1e2fdff0c7bfc9f1ed5e8738cdeb483431952e57a',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php' => 
   array (
-    'fileHash' => 'a6b9009f95761a4a22a8324e87ec7666896f9b27ea3e0ec1c2742d1cba1e948b',
+    'fileHash' => '024f16a5d61116e944f5809d4791621f4fa0e48b407fe5deb918d11d0f415a5e',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\BatchList.php',
@@ -3938,30 +13965,45 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\CustomerForm.php' => 
   array (
-    'fileHash' => '0dd8c772181094266cb86a72192026425b00f842d82d4b3ce2b71e9ba6d61b60',
+    'fileHash' => '584fafcae78643f6b274538309ce457daaa925b77a705563ca0ba1bef272dd1c',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php',
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php' => 
+  array (
+    'fileHash' => 'a198c58e7aa0a0a977b54a7c435a5d4c4df6b1f04914c73733889cea44ee209f',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php',
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php' => 
   array (
-    'fileHash' => 'ee0f249f099995a399a40e8ed86ec12dad1a39085ab199462a67a47b36476663',
+    'fileHash' => '24c6d35ce5936edc78b0f4ca4760fe7ca374eafbf4a5a0fd4f51e216215072d8',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ProductForm.php' => 
   array (
-    'fileHash' => '4042a73f84d218032ef131ef3861fa1c26ff81346446268e7fbc41f9f7f5b393',
+    'fileHash' => 'b28614ef6558a61a1f5f24886e54e0015d6d0978f7f43660c204fa8c9e9877b6',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ProductList.php',
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\SuperAdminLoginForm.php' => 
+  array (
+    'fileHash' => '99f08d15cbc98e88b467b8411cefbae06308132214291ae8f93264a58acf50c0',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\VendorForm.php' => 
   array (
-    'fileHash' => '7a8a104205b7253eaa83540805641f2fb21ea1b0a3fc9ad3f00bf7f659c3ff9b',
+    'fileHash' => 'f7ec1fb97e6d3370ee8ef340d77bc8b73b798108a78c1dc57daf2255f2ef7e24',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php',
@@ -3969,14 +14011,21 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\BatchList.php' => 
   array (
-    'fileHash' => 'e0189d125ec638803edeb1279b73f97689cb9e950fa3be8b1bd12b7b7ef837af',
+    'fileHash' => '251565af7413d21dbc855789b8a0b7804b9d5ccbe02be1f5a8d009ca422fe985',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php' => 
   array (
-    'fileHash' => '57683245d77f272391444608c2702358fd291f6dcf652d4febfa107289de36a3',
+    'fileHash' => '2defae128a17320e426df03ca2ed81cbfdd93ee09f758fac75bccb50b0066959',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CompanyManager.php' => 
+  array (
+    'fileHash' => 'b7de0b812dda1e6985cd2477d2bb454c9a35f197aa6ae13ee1c576bbbb002e6e',
     'dependentFiles' => 
     array (
     ),
@@ -3990,14 +14039,14 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ProductList.php' => 
   array (
-    'fileHash' => '7276eff03851f2dfd843aac47edc58cfb5002239647823d2d355621d37b0176a',
+    'fileHash' => '39546bea8e7cb8faa899b0b5908ad82255f43bcb5c65cce9e3eb7e662c2971f7',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php' => 
   array (
-    'fileHash' => '34db9954afd7a62321bfa65654fa0f3a9a2b6fafa903975271bfe31d114ada2e',
+    'fileHash' => 'ebb9a93ca3b08eaf2fd5dbce61624cb992eb3e00c96fe7f273793fb669cffdb8',
     'dependentFiles' => 
     array (
     ),
@@ -4011,14 +14060,21 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php' => 
   array (
-    'fileHash' => '4f385fd9e892f6d1934a8fa4773b793be69c5573bcb2959522b40b62a2bc39ef',
+    'fileHash' => '51a9d1d3ec67590ff3ab6f03084bf4c34fac1f1d1692c0ba97d953a71f518457',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SyncConflicts.php' => 
+  array (
+    'fileHash' => 'd19a175b6ac0f44ca88d4a2c133078467ddac341136475ff9b78aa266a2cd59c',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php' => 
   array (
-    'fileHash' => 'ea02093acdaf21e9f4f499fe21eb8ea5b0491a47b519d64d5a4d239480a59bf9',
+    'fileHash' => '7e61e0b12be6159debdf937636794616dbb547ceeed606891612d86f65b6be8e',
     'dependentFiles' => 
     array (
     ),
@@ -4032,7 +14088,21 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php' => 
   array (
-    'fileHash' => '0bd5c974d27bee6b6643e827d5da9b48d706302e1f51b1844d710c512e951ada',
+    'fileHash' => '4e1862225a41637b9a9425d369c272c25f69d52a47cb33cad6acf05ff25cf544',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\PurchaseReport.php' => 
+  array (
+    'fileHash' => 'd92848f93ef5ecf9b26896916d71c4dddd204cf36a8eee355956c70d771c6323',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php' => 
+  array (
+    'fileHash' => '51cd1f467be6ea954708205175ff654cdd973f5603251ea7214c99d87d4651da',
     'dependentFiles' => 
     array (
     ),
@@ -4044,36 +14114,63 @@ return [
     array (
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\DeveloperTools.php' => 
+  array (
+    'fileHash' => 'bfe2ee8e002533da9fb142de82a99fdcfa2137fb9e067851bcec762391eb547b',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\ShopManager.php' => 
+  array (
+    'fileHash' => '9414cb25a828d7c34e7594977a14233aa3deee5b37fab5de2374e9b839c2ab5d',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php' => 
   array (
-    'fileHash' => '07768ec26da3090010fede90e529108bcb88c06677704e4c710e9d4a9c39930f',
+    'fileHash' => 'cfe79e43ec4145cc7aa35ceb259633e3d9bcaf3b99bd312fdec6b0f7287f3551',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php' => 
   array (
-    'fileHash' => '37d4b8670a8c494a31b5dc69ce097af69ca7c24261173c6ffdcef55e5d92c0be',
+    'fileHash' => '20ed1d0690b75f12ef7d35514e1073e34459bd0717509c07a54ac5c30db06feb',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php' => 
   array (
-    'fileHash' => 'c46dc4e14793f9fb02a01320d86157dd131ee4e3e86848cd1a2551e1a10cc799',
+    'fileHash' => 'c6d42dcec6858859b4df35b324fecee9eea600462a71040eb05d172d87e34d0e',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BankAccountManager.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php' => 
+  array (
+    'fileHash' => 'f997931280e43f3783e2c747606fad25fb3031f35da7fc33aa4bff990ca8800e',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BannerManager.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php' => 
   array (
-    'fileHash' => '4700e942629920eaa8ca4481dc87073964e5ceb9cdd9929740f210611f7c0f38',
+    'fileHash' => 'ca1df1f0c91fdcf91b061d6fae1d47ce7964c49c6a649481fcbfca795b24999d',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Console\\Commands\\CheckExpiringBatches.php',
@@ -4087,72 +14184,267 @@ return [
       8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
       9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
       10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
-      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Observers\\BatchObserver.php',
-      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php',
-      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php',
-      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ExpiryAlertService.php',
-      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
-      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
-      17 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
-      18 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Observers\\BatchObserver.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php',
+      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ExpiryAlertService.php',
+      17 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+      18 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      19 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      20 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      21 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      22 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php' => 
   array (
-    'fileHash' => '56a5370e69560f41af3250741faa57ff53fd2ede25c41d3784dc7ad173e0ae85',
+    'fileHash' => '8a8bd411bf7a929ed0bf048cb774be13ce21034e19db8c251f501431bf2da417',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ProductList.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php' => 
+  array (
+    'fileHash' => '94573232a73cb21c8ed9f90e35845da02e8f7d6ba6a8da6f687a579ce942a878',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CompanyManager.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ProductList.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php' => 
+  array (
+    'fileHash' => '3708db7209115b37a0288f18d258c5573a4b13da79c901154a241684cbed5a16',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Console\\Commands\\CheckExpiringBatches.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Events\\BatchExpiringSoon.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\PingController.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\EnsureShopIsActive.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\SetLocale.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BankAccountManager.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BannerManager.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\SettingsPage.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
+      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php',
+      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php',
+      17 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php',
+      18 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php',
+      19 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\CustomerForm.php',
+      20 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php',
+      21 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php',
+      22 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ProductForm.php',
+      23 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\VendorForm.php',
+      24 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\BatchList.php',
+      25 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php',
+      26 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CompanyManager.php',
+      27 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ExpiryAlertsDashboard.php',
+      28 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ProductList.php',
+      29 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      30 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleList.php',
+      31 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php',
+      32 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SyncConflicts.php',
+      33 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
+      34 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseList.php',
+      35 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php',
+      36 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\PurchaseReport.php',
+      37 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php',
+      38 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\ShopManager.php',
+      39 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
+      40 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php',
+      41 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+      42 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+      43 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+      44 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+      45 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+      46 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+      47 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+      48 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+      49 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+      50 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+      51 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+      52 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+      53 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+      54 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+      55 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+      56 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+      57 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+      58 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+      59 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+      60 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+      61 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+      62 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+      63 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+      64 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Shop.php',
+      65 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+      66 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+      67 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+      68 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+      69 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Observers\\BatchObserver.php',
+      70 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\CustomerPolicy.php',
+      71 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\PurchasePolicy.php',
+      72 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\SalePolicy.php',
+      73 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\VendorPolicy.php',
+      74 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php',
+      75 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php',
+      76 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+      77 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      78 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ExpiryAlertService.php',
+      79 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php',
+      80 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+      81 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+      82 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      83 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      84 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      85 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
+      86 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      87 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      88 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php',
+      89 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php',
+    ),
+    'usedTraitDependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+      17 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+      18 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+      19 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+      20 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+      21 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+      22 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+      23 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+      24 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+      25 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+      26 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php' => 
   array (
-    'fileHash' => 'ffa747fe6ee1bd449b80d9905af0bc9b07eaf9216fd4643f187b73560f70ef9f',
+    'fileHash' => '5e152e869d2a34ef4a5bbdba98e9332cd56e3777e113383c8390bd4059e95c2a',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\CustomerForm.php',
       3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
-      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
-      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\CustomerPolicy.php',
-      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
-      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
-      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\CustomerPolicy.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php' => 
   array (
-    'fileHash' => '9c61af823a1455b16a51827779e626cdaf697a7ef1fbf2e9899abd1051374128',
+    'fileHash' => '6c0085ecd2d3652e08e767374ccf5872541deebfb3e595fa4b03a897218baf31',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php' => 
+  array (
+    'fileHash' => 'acf912e8a60ee3d27d6364456b917eba41fe851e05691b787ebccc4dfbc4e23e',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php' => 
+  array (
+    'fileHash' => '51447c5ccfbc112bcefdb318fd55350ea37c326265d0479b8ed0fbf2111854c1',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php' => 
+  array (
+    'fileHash' => '77cc2a8785c2e8e03fb68e2b34799261d49b87e347de39a8ab3def594b0a9adb',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php' => 
   array (
-    'fileHash' => '7cc5d69859cc53257624b4dc484d89e2e4aacbe4bf8236e97219f8e5619a5cee',
+    'fileHash' => '1815ad4ea50d7907c279eb8c43754cea745e9c8bfb3d330fde6ee1e241616fe3',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php' => 
+  array (
+    'fileHash' => '6f57003f883fc7c3c7630d4edb8e37f9e2a9a1bfb49f2447178f2a3fbbe11f04',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php' => 
   array (
-    'fileHash' => '244bab63260e3de25e9efb0182a81c05ac4e61d986643be106f713d65f574aff',
+    'fileHash' => '03b96cc7efbff71b439b6517b3aff3dca9d6d2fa4ed8cd128111fe02510866a3',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ProductForm.php',
@@ -4160,187 +14452,334 @@ return [
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ProductList.php',
       3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
       4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
-      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
-      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php' => 
   array (
-    'fileHash' => 'e9885382f145bba91ea679f4875a6ebae593f78b4567e2df2554dfc6bd163712',
+    'fileHash' => '03ce29d81f53d2035cb84f7461c21beb06aa2de71275e8200dbb55584d36d7a3',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseList.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\PurchasePolicy.php',
-      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
-      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\PurchaseReport.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\PurchasePolicy.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php' => 
   array (
-    'fileHash' => 'b9afd26c3a6be10feb2a1df01bea3ab5fd38901585c945d61f50769676981652',
+    'fileHash' => '93e2590b12beb468d845b33c21c3bb1a4a5e802b7182b02bc1ac4b93ab563825',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php' => 
   array (
-    'fileHash' => '77a1b1348bea8521a70584d8d34984fcc52725f55e2e0e6adac8d2dce96b268b',
+    'fileHash' => 'b03e842ab07081c556c9a882352c5849ff75d56a343763eaf9a11f2b0b929392',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php' => 
   array (
-    'fileHash' => 'ce49c5e09c403cf3d97c1c6ad41fa3e5bf2bbe75a6ceae742c1d2c2fbe63a2db',
+    'fileHash' => 'aae47e12cee40e97003c91e3e8adcc3650779bc052279268901abb11f2aec6f5',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php' => 
   array (
-    'fileHash' => '0f9da687b7c3c7955d56c64af95a4657c80ac835848e3a6b6c2ef47b3c572010',
+    'fileHash' => '7e07fe55ebe99b09ddedd0d0c145bb0ab5bfa5dbfe8c113fb1a0dd4e1379ec03',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\SettingsPage.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php' => 
   array (
-    'fileHash' => 'e72a101eabf8b29c045d9687243033ff046643b9fe353237a3d78c583c6629a8',
+    'fileHash' => '25538f9a6bc4684ff754af8b394e13003a63413dce51f77248f4cdf06c3ca129',
     'dependentFiles' => 
     array (
-      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleList.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\SalePolicy.php',
-      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
-      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
-      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleList.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\SalePolicy.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php' => 
   array (
-    'fileHash' => 'd2e61234fe9cc36e2e896e2d295f6e5bf2f60d564f2bb630c9a496a8f0292749',
+    'fileHash' => '4d5ccb4bdc9de1d308f5be7efed13d2f0eb355c0e5851d17ac43b174628e072b',
     'dependentFiles' => 
     array (
-      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php' => 
   array (
-    'fileHash' => '3b15420d5193757cbc12aa46852873987bd5092ca6157bbe834db50b26232cdc',
+    'fileHash' => '91c1ef914c5f374b5d011e3378337a0b79e6a1d737b13ffb74ded54eb17d30d4',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
       3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php' => 
   array (
-    'fileHash' => 'a697af289d133e4becd85e1be7c38386bfa6f4bc3c8808779a984070bef2e740',
+    'fileHash' => '3b0c6adbd3239c14978799da748adda2e17629c8144351bcc635a04d333eccf5',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php' => 
+  array (
+    'fileHash' => 'ff2824169ce0971362140fee76de6a1942b754bd961c9fd9d7329d80f006ad67',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SyncConflicts.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Shop.php' => 
+  array (
+    'fileHash' => '33d96184475f39ed7c9f5fdbc1226345774191b92efbf9c0ea24480af05514e1',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\EnsureShopIsActive.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\ShopManager.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+      17 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+      18 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+      19 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+      20 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+      21 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+      22 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+      23 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+      24 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+      25 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+      26 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+      27 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+      28 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+      29 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+      30 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+      31 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+      32 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+      33 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php',
+      34 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      35 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SuperAdmin.php' => 
+  array (
+    'fileHash' => 'a8a56bd4a1f2fcac184e7fd8a75518f77891b23b8e2545c01399e6742ed04927',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\PingController.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\DeveloperTools.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
+      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php',
+      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php' => 
   array (
-    'fileHash' => 'd6c2197f4e34501874675aa4cc86abef1636f4afbd3210b449dfbb3b1872c716',
+    'fileHash' => 'c7bfc875976a4e4933abca62f8d76bb705444eb57e5b878527c029b4e17f5950',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\SetLocale.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\SettingsPage.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BannerManager.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\SettingsPage.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php' => 
   array (
-    'fileHash' => '9ca319a73f3746671252922b9cbd0d31fb35e0a1362a0c4861e85ec5939880fe',
+    'fileHash' => '43fee44b76a6853a014d2634cece86e465124a243eb41df04118c450df9d749b',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\DeveloperTools.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php',
-      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
-      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php',
-      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
-      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php',
-      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
-      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
-      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
-      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
-      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
-      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
-      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
-      17 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\CustomerPolicy.php',
-      18 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\PurchasePolicy.php',
-      19 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\SalePolicy.php',
-      20 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\VendorPolicy.php',
-      21 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
-      22 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
-      23 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
-      24 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
-      25 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\PingController.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\EnsureShopIsActive.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
+      15 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php',
+      16 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\ShopManager.php',
+      17 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
+      18 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php',
+      19 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php',
+      20 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php',
+      21 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php',
+      22 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php',
+      23 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php',
+      24 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php',
+      25 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+      26 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+      27 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php',
+      28 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php',
+      29 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php',
+      30 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php',
+      31 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php',
+      32 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+      33 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php',
+      34 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+      35 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php',
+      36 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php',
+      37 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php',
+      38 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php',
+      39 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php',
+      40 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php',
+      41 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php',
+      42 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Shop.php',
+      43 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+      44 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
+      45 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+      46 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\CustomerPolicy.php',
+      47 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\PurchasePolicy.php',
+      48 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\SalePolicy.php',
+      49 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\VendorPolicy.php',
+      50 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php',
+      51 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+      52 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php',
+      53 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+      54 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      55 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      56 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
+      57 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+      58 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php',
+      59 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php' => 
   array (
-    'fileHash' => '7d6205adceb4ac6934547f302ead6a38034c729403f872e40c51c4a5d759d9ab',
+    'fileHash' => 'd571e245bae68eb21b0b60b7afdc176458164f1408300b1df8888d172c659bc4',
     'dependentFiles' => 
     array (
-      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\VendorForm.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
-      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
-      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
-      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\VendorPolicy.php',
-      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
-      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
-      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\VendorForm.php',
+      2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\PurchaseReport.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php',
+      7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php',
+      8 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php',
+      9 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php',
+      10 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\VendorPolicy.php',
+      11 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      12 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+      13 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      14 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php' => 
   array (
-    'fileHash' => '089113385745d107fc6bfc74de464f59cca14872badb05a71c72b980766f44ba',
+    'fileHash' => '0f494eaa6da690a2b19dc34f4310ab19ce65470f87e734705ceba3e2bb499515',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorLedger.php',
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php',
       2 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php',
-      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
-      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
-      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      3 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php',
+      4 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php',
+      5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php',
+      6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Observers\\BatchObserver.php' => 
@@ -4381,7 +14820,7 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php' => 
   array (
-    'fileHash' => '101f39a8e73fdf94dfdfbeca29175c9023f0dc11bf3965263a00d3b8059a557c',
+    'fileHash' => 'f1e18ee1690dbefb0be84c628de7e29a2f18e07202db2dec838a21b3ea4ee0ab',
     'dependentFiles' => 
     array (
     ),
@@ -4395,11 +14834,34 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php' => 
   array (
-    'fileHash' => '3afc3952787f77f92d7fdf6df0abacb0a58326a5dbae45d85a4092ae867d231b',
+    'fileHash' => 'cac2cf40fd73bb015ac116bd92697a55bf1f9a5aff4b46cfbbc4ea906a859c69',
     'dependentFiles' => 
     array (
-      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\BatchList.php',
-      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php' => 
+  array (
+    'fileHash' => '656104793dc3ba4344e8a13d1af5b0f55adcf4a64e159484cbf3595228094476',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php' => 
+  array (
+    'fileHash' => '4623538d4fbe5d0f1eb7219a96bf298453e57c58087f8368a9993e54ee6e29b3',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Console\\Commands\\ResetDemoShop.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DiscountCalculator.php' => 
+  array (
+    'fileHash' => '86dd14c54eaf40d91e9b16be7b38de35a65fa37d3674780acadc23f9177d33ed',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ExpiryAlertService.php' => 
@@ -4411,9 +14873,16 @@ return [
       1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ExpiryAlertsDashboard.php',
     ),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php' => 
+  array (
+    'fileHash' => 'ca577c9848a182789fa072afed8d2f170679b672f773e7df45c6af671df88f1e',
+    'dependentFiles' => 
+    array (
+    ),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php' => 
   array (
-    'fileHash' => '5fbbef7b45819ac2f64011455088b03e3309d62a69e4f7897a1c30a43ac9e220',
+    'fileHash' => '9a8083b31fcd83d4f3228fd31ca096ee130d29e2891ad9d8008c68725ab0b4ff',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php',
@@ -4424,6 +14893,22 @@ return [
       5 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php',
       6 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php',
       7 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php' => 
+  array (
+    'fileHash' => '9900f3ee8b3d8dc8fd5dbfcbe89b1f2dde198b7dbbf066fb4ca434f60e56bcf2',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php' => 
+  array (
+    'fileHash' => 'db3583196ad6e539a04b170ede4abfeb440634b82ed409ba084fa299aa0eb937',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PaymentSplitService.php' => 
@@ -4437,7 +14922,7 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php' => 
   array (
-    'fileHash' => '6e1619602616f0b486a921054ff922912a4f4d31bc4c2008ccd9e1e82e7ecc75',
+    'fileHash' => '6860e4c6646298f573c7ff0d70cfbd113bf02a996f150fdfe518245483edd0d1',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php',
@@ -4445,7 +14930,7 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php' => 
   array (
-    'fileHash' => '538b99b2b572a7aec26ea06ec648a07ad3fecda4dbe50588dfc88a854bd12640',
+    'fileHash' => '24ad3f19d1402c645dccbe96f727314cc978be6d22eb380e9e569918b62a40ad',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php',
@@ -4460,7 +14945,7 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php' => 
   array (
-    'fileHash' => '26094b7d9d4875c9625c0d2097f7d9d2cc4e89540925138625222a518e83935d',
+    'fileHash' => 'c87fcad8bcd60bcba1c8b06d83949b45dc5f011aa4f9b980a4d4bbd91c6ceff4',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php',
@@ -4468,10 +14953,27 @@ return [
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php' => 
   array (
-    'fileHash' => 'ab5c8b264148f2043488cc1b0207a8e3cea9a066a4722fac558dc8b721a202b8',
+    'fileHash' => '8cc2d9e834bb650e7f891bb9546b223b8bde687671b2edd80aa4a60dc4bf4971',
     'dependentFiles' => 
     array (
       0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php',
+      1 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php' => 
+  array (
+    'fileHash' => '2b4145b1918f32d7904eebea67b0cd8936cb76775c10cb78eb21caa7b4c2c79c',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php',
+    ),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php' => 
+  array (
+    'fileHash' => 'e94fec3f1a3232bccbdcd654f23dd8a086c2319e08c96885c04cd5ec68e954de',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\ShopManager.php',
     ),
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\View\\Components\\AppLayout.php' => 
@@ -4490,7 +14992,7 @@ return [
   ),
 ),
 	'packageDependencies' => array (
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Console\\Commands\\CheckExpiringBatches.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Console\\Commands\\ResetDemoShop.php' => 
   array (
     0 => 'symfony/console',
     1 => 'laravel/framework',
@@ -4498,11 +15000,26 @@ return [
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\LedgerEntryType.php' => 
   array (
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\PayableType.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidReturnQuantityException.php' => 
   array (
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\UnbalancedPaymentSplitException.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidSaleItemException.php' => 
   array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Helpers\\money.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\EnsureShopIsActive.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-permission',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerList.php' => 
   array (
@@ -4510,21 +15027,32 @@ return [
     1 => 'laravel/framework',
     2 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\CustomerForm.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
     2 => 'symfony/http-foundation',
+    3 => 'nesbot/carbon',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleList.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php' => 
   array (
     0 => 'livewire/livewire',
     1 => 'laravel/framework',
+    2 => 'spatie/laravel-permission',
+    3 => 'ramsey/uuid',
+    4 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SyncConflicts.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'spatie/laravel-permission',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseShow.php' => 
   array (
@@ -4532,61 +15060,176 @@ return [
     1 => 'livewire/livewire',
     2 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\CustomerPolicy.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PaymentSplitService.php' => 
-  array (
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-    2 => 'ramsey/uuid',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\View\\Components\\AppLayout.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\PaymentMethod.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\TransactionReferenceType.php' => 
   array (
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Events\\BatchExpiringSoon.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InsufficientStockException.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidReturnQuantityException.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\PingController.php' => 
   array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'nesbot/carbon',
+    3 => 'spatie/laravel-permission',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\SetLocale.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'symfony/console',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/http-foundation',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\VendorForm.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'spatie/laravel-permission',
+    3 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CompanyManager.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+    3 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Observers\\BatchObserver.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PaymentSplitService.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+    3 => 'nesbot/carbon',
+    4 => 'ramsey/uuid',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\PayableType.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\UserRole.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidSalePaymentException.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-permission',
+    3 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BankAccountManager.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\SettingsPage.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+    2 => 'league/flysystem',
+    3 => 'psr/http-message',
+    4 => 'symfony/http-foundation',
+    5 => 'nesbot/carbon',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\BatchList.php' => 
   array (
@@ -4598,96 +15241,216 @@ return [
     0 => 'livewire/livewire',
     1 => 'laravel/framework',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php' => 
-  array (
-    0 => 'livewire/livewire',
-    1 => 'laravel/framework',
-    2 => 'symfony/http-foundation',
-    3 => 'spatie/laravel-permission',
-  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseList.php' => 
   array (
     0 => 'livewire/livewire',
     1 => 'laravel/framework',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php' => 
   array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Vendor.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\SalePolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php' => 
-  array (
-    0 => 'milon/barcode',
+    0 => 'livewire/livewire',
     1 => 'laravel/framework',
-    2 => 'ramsey/uuid',
+    2 => 'nesbot/carbon',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturnItem.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Shop.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SuperAdmin.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\PurchasePolicy.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\UserRole.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DiscountCalculator.php' => 
   array (
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Console\\Commands\\CheckExpiringBatches.php' => 
+  array (
+    0 => 'symfony/console',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\PaymentMethod.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Actions\\Logout.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Actions\\SuperAdminLogout.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'spatie/laravel-permission',
+    3 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+    2 => 'league/flysystem',
+    3 => 'psr/http-message',
+    4 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ProductForm.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\VendorForm.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\SuperAdminLoginForm.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
+    2 => 'symfony/http-foundation',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ExpiryAlertsDashboard.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Shared\\LanguageSwitcher.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/http-kernel',
+    3 => 'psr/container',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\VendorLedger.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'barryvdh/laravel-dompdf',
+    3 => 'dompdf/dompdf',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'nesbot/carbon',
+    3 => 'league/flysystem',
+    4 => 'psr/http-message',
+    5 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleReturnService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\View\\Components\\GuestLayout.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\DiscountType.php' => 
+  array (
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Events\\BatchExpiringSoon.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Actions\\Logout.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BannerManager.php' => 
+  array (
+    0 => 'livewire/livewire',
+    1 => 'laravel/framework',
+    2 => 'symfony/http-foundation',
+    3 => 'league/flysystem',
+    4 => 'psr/http-message',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SaleShow.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\DeveloperTools.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'livewire/livewire',
+    2 => 'symfony/finder',
+    3 => 'psr/log',
+    4 => 'monolog/monolog',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\ShopManager.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
@@ -4699,87 +15462,88 @@ return [
     1 => 'laravel/framework',
     2 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseReturn.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturn.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Observers\\BatchObserver.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\VoltServiceProvider.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/volt',
-    2 => 'livewire/livewire',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ReceiptRenderService.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SaleService.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
     2 => 'symfony/http-foundation',
-    3 => 'ramsey/uuid',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\View\\Components\\GuestLayout.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\TransactionReferenceType.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Purchase.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleReturnItem.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\CustomerPolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\SalePolicy.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php' => 
+  array (
+    0 => 'milon/barcode',
+    1 => 'laravel/framework',
+    2 => 'ramsey/uuid',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ExpiryAlertService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\UnbalancedPaymentSplitException.php' => 
   array (
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InsufficientStockException.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php' => 
   array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-permission',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Controller.php' => 
   array (
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BankAccountManager.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\CustomerForm.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'livewire/livewire',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\PurchaseReport.php' => 
   array (
     0 => 'livewire/livewire',
     1 => 'laravel/framework',
-    2 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ProductForm.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'spatie/laravel-permission',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Shared\\LanguageSwitcher.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'symfony/http-kernel',
-    3 => 'psr/container',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Vendors\\VendorList.php' => 
   array (
@@ -4787,69 +15551,80 @@ return [
     1 => 'laravel/framework',
     2 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Bank.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PurchaseItem.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Sale.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ReceiptSetting.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleItem.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php' => 
   array (
     0 => 'laravel/framework',
-  ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\PurchasePolicy.php' => 
-  array (
-    0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
   ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Policies\\VendorPolicy.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ExpiryAlertService.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
+    1 => 'spatie/laravel-permission',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CategoryManager.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\VoltServiceProvider.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'livewire/livewire',
+    1 => 'livewire/volt',
+    2 => 'livewire/livewire',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Category.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\SettingsPage.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'livewire/livewire',
+    1 => 'spatie/laravel-permission',
+    2 => 'nesbot/carbon',
+    3 => 'psr/log',
+    4 => 'monolog/monolog',
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\DeveloperTools.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseReturnService.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'livewire/livewire',
-    2 => 'symfony/finder',
-    3 => 'spatie/laravel-permission',
-    4 => 'psr/log',
-    5 => 'monolog/monolog',
+    1 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\PurchaseService.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'ramsey/uuid',
   ),
 ),
 	'exportedNodesCallback' => static function (): array { return array (
@@ -4987,6 +15762,175 @@ return [
            'attributes' => 
           array (
           ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Console\\Commands\\ResetDemoShop.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Console\\Commands\\ResetDemoShop',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Console\\Command',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'signature',
+          ),
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */',
+             'namespace' => 'App\\Console\\Commands',
+             'uses' => 
+            array (
+              'demoshopresetservice' => 'App\\Services\\DemoShopResetService',
+              'command' => 'Illuminate\\Console\\Command',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'description',
+          ),
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * The console command description.
+     *
+     * @var string
+     */',
+             'namespace' => 'App\\Console\\Commands',
+             'uses' => 
+            array (
+              'demoshopresetservice' => 'App\\Services\\DemoShopResetService',
+              'command' => 'Illuminate\\Console\\Command',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'int',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'demoShopResetService',
+               'type' => 'App\\Services\\DemoShopResetService',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Enums\\DiscountType.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
+       'name' => 'App\\Enums\\DiscountType',
+       'scalarType' => 'string',
+       'phpDoc' => NULL,
+       'implements' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedEnumCaseNode::__set_state(array(
+           'name' => 'Flat',
+           'value' => '\'flat\'',
+           'phpDoc' => NULL,
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedEnumCaseNode::__set_state(array(
+           'name' => 'Percentage',
+           'value' => '\'percentage\'',
+           'phpDoc' => NULL,
         )),
       ),
        'attributes' => 
@@ -5418,6 +16362,323 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidSaleItemException.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Exceptions\\InvalidSaleItemException',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Exception',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'forNonPositiveQuantity',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'self',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'barcode',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'quantity',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'forNegativeUnitPrice',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'self',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'barcode',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'unitPrice',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'forNegativeDiscountValue',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * $context is a batch barcode for a per-item discount, or the literal
+     * string "sale" for the whole-cart discount.
+     */',
+             'namespace' => 'App\\Exceptions',
+             'uses' => 
+            array (
+              'exception' => 'Exception',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'self',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'context',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'value',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'forInvalidDiscountPercentage',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'self',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'context',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'value',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'forDiscountExceedsSubtotal',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'self',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'context',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'discountAmount',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'subtotal',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\InvalidSalePaymentException.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Exceptions\\InvalidSalePaymentException',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Exception',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'ledgerPaymentRequiresCustomer',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'self',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Exceptions\\UnbalancedPaymentSplitException.php' => 
   array (
     0 => 
@@ -5481,6 +16742,51 @@ return [
            'attributes' => 
           array (
           ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Helpers\\money.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedFunctionNode::__set_state(array(
+       'name' => 'money',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+     * Formats a monetary amount for display as whole-number PKR (e.g. "PKR 1,500").
+     *
+     * Storage and calculations stay bcmath/decimal:2-precise everywhere else
+     * (see rules.md §2) — this only rounds what\'s shown to the user, since
+     * PKR amounts are conventionally displayed without paisa.
+     */',
+         'namespace' => NULL,
+         'uses' => 
+        array (
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'byRef' => false,
+       'returnType' => 'string',
+       'parameters' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+           'name' => 'amount',
+           'type' => 'string|int|float',
+           'byRef' => false,
+           'variadic' => false,
+           'hasDefault' => false,
+           'attributes' => 
+          array (
+          ),
+           'phpDoc' => NULL,
+           'flags' => 0,
         )),
       ),
        'attributes' => 
@@ -5581,6 +16887,631 @@ return [
       ),
        'statements' => 
       array (
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\DemoLoginController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Http\\Controllers\\DemoLoginController',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * The landing page\'s "See Demo" button — one click into a shared, always-on
+ * demo tenant as its Admin, no credentials shown or typed. There is
+ * intentionally no password/CSRF gate here: this is the public entry point,
+ * equivalent in spirit to a signed emailed link. The demo shop\'s data is
+ * expected to be reset on a schedule (see DemoShopResetService) rather than
+ * protected from writes, so this controller doesn\'t need to care what a
+ * visitor does with the session.
+ */',
+         'namespace' => 'App\\Http\\Controllers',
+         'uses' => 
+        array (
+          'userrole' => 'App\\Enums\\UserRole',
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'redirectresponse' => 'Illuminate\\Http\\RedirectResponse',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Http\\RedirectResponse',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\OfflineDataController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Http\\Controllers\\Pos\\OfflineDataController',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Serves the snapshot a till caches when it goes offline, registering the
+ * device on first use.
+ *
+ * Also called on a timer while online, to keep an already-prepared till\'s
+ * copy of stock and balances from drifting too far.
+ */',
+         'namespace' => 'App\\Http\\Controllers\\Pos',
+         'uses' => 
+        array (
+          'controller' => 'App\\Http\\Controllers\\Controller',
+          'posdevice' => 'App\\Models\\PosDevice',
+          'offlinedataservice' => 'App\\Services\\OfflineDataService',
+          'jsonresponse' => 'Illuminate\\Http\\JsonResponse',
+          'request' => 'Illuminate\\Http\\Request',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Http\\JsonResponse',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'offlineDataService',
+               'type' => 'App\\Services\\OfflineDataService',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\PingController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Http\\Controllers\\Pos\\PingController',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * The till\'s "are we really online?" probe.
+ *
+ * navigator.onLine only reports whether a network interface is up — it says
+ * true on a router with no working internet — so the offline POS confirms
+ * reachability by actually hitting this.
+ *
+ * It also hands back a fresh CSRF token. The till must never store one: a
+ * token is tied to the session and rotates on login, so a token cached with
+ * the offline page would be stale by the time a queue is finally synced.
+ */',
+         'namespace' => 'App\\Http\\Controllers\\Pos',
+         'uses' => 
+        array (
+          'controller' => 'App\\Http\\Controllers\\Controller',
+          'jsonresponse' => 'Illuminate\\Http\\JsonResponse',
+          'request' => 'Illuminate\\Http\\Request',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Http\\JsonResponse',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SalePhotoController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Http\\Controllers\\Pos\\SalePhotoController',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Attaches a customer photo captured during an offline credit sale.
+ *
+ * Deliberately a separate request per sale, made only after the sale row
+ * exists: cPanel\'s stock PHP limits (upload_max_filesize 2M, post_max_size 8M,
+ * max_file_uploads 20) would quietly truncate a multi-day batch of photos sent
+ * alongside the sales themselves. Keeping it separate also means a failed
+ * photo upload can never cost us the sale.
+ */',
+         'namespace' => 'App\\Http\\Controllers\\Pos',
+         'uses' => 
+        array (
+          'controller' => 'App\\Http\\Controllers\\Controller',
+          'sale' => 'App\\Models\\Sale',
+          'jsonresponse' => 'Illuminate\\Http\\JsonResponse',
+          'request' => 'Illuminate\\Http\\Request',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Http\\JsonResponse',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shop',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'sale',
+               'type' => 'App\\Models\\Sale',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Controllers\\Pos\\SyncController.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Http\\Controllers\\Pos\\SyncController',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Receives a till\'s queued offline sales and held orders.
+ *
+ * Every queued sale comes back with its own result keyed by client_uuid. The
+ * till clears only the entries explicitly acknowledged here — never the whole
+ * queue on a "looks like it worked" response — so a partial failure strands
+ * nothing.
+ */',
+         'namespace' => 'App\\Http\\Controllers\\Pos',
+         'uses' => 
+        array (
+          'controller' => 'App\\Http\\Controllers\\Controller',
+          'posdevice' => 'App\\Models\\PosDevice',
+          'offlinesyncservice' => 'App\\Services\\OfflineSyncService',
+          'jsonresponse' => 'Illuminate\\Http\\JsonResponse',
+          'request' => 'Illuminate\\Http\\Request',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'App\\Http\\Controllers\\Controller',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Http\\JsonResponse',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'offlineSyncService',
+               'type' => 'App\\Services\\OfflineSyncService',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\EnsureShopIsActive.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Http\\Middleware\\EnsureShopIsActive',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Suspending a shop from the Super Admin panel should take effect
+ * immediately, not just block the next login — this middleware kicks an
+ * already-logged-in user out mid-session the moment their shop is inactive.
+ */',
+         'namespace' => 'App\\Http\\Middleware',
+         'uses' => 
+        array (
+          'closure' => 'Closure',
+          'request' => 'Illuminate\\Http\\Request',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          'response' => 'Symfony\\Component\\HttpFoundation\\Response',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Symfony\\Component\\HttpFoundation\\Response',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'next',
+               'type' => 'Closure',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Http\\Middleware\\ResolveShopFromSlug.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Http\\Middleware\\ResolveShopFromSlug',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Resolves the {shop} URL segment (e.g. /shop1/dashboard) into a Shop —
+ * manually, not via Eloquent route-model binding, since most routes in this
+ * group target Livewire component classes rather than closures/controllers
+ * with a typed Shop $shop parameter.
+ *
+ * Sets URL::defaults([\'shop\' => ...]) so every existing route(\'vendors.index\')-
+ * style call across the app\'s sidebar/nav/redirects keeps generating a
+ * correctly-prefixed URL without being touched individually (see the
+ * Authenticated event listener in AppServiceProvider for the equivalent
+ * mechanism covering requests that never go through this middleware, e.g.
+ * Livewire::test()).
+ *
+ * A logged-in user hitting a URL for a DIFFERENT shop than their own is a
+ * hard 403 — never silently redirected, since that would blur the boundary
+ * this whole feature exists to draw.
+ */',
+         'namespace' => 'App\\Http\\Middleware',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'closure' => 'Closure',
+          'request' => 'Illuminate\\Http\\Request',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          'url' => 'Illuminate\\Support\\Facades\\URL',
+          'response' => 'Symfony\\Component\\HttpFoundation\\Response',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'handle',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Symfony\\Component\\HttpFoundation\\Response',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'next',
+               'type' => 'Closure',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
       ),
        'attributes' => 
       array (
@@ -5703,6 +17634,64 @@ return [
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
      * Log the current user out of the application.
+     */',
+             'namespace' => 'App\\Livewire\\Actions',
+             'uses' => 
+            array (
+              'auth' => 'Illuminate\\Support\\Facades\\Auth',
+              'session' => 'Illuminate\\Support\\Facades\\Session',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Actions\\SuperAdminLogout.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Actions\\SuperAdminLogout',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__invoke',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Log the current super admin out of the control panel.
      */',
              'namespace' => 'App\\Livewire\\Actions',
              'uses' => 
@@ -6000,34 +17989,12 @@ return [
       ),
     )),
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\DeveloperTools.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Admin\\BannerManager.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
-       'name' => 'App\\Livewire\\Admin\\DeveloperTools',
-       'phpDoc' => 
-      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-         'phpDocString' => '/**
- * Admin-only server maintenance actions, each a fixed, hardcoded command —
- * none of these ever take user input, so there is no injection surface.
- * Every action re-checks \'developer-tools.manage\' itself (not just the
- * parent Settings page) as defense in depth, and is logged with who ran it.
- */',
-         'namespace' => 'App\\Livewire\\Admin',
-         'uses' => 
-        array (
-          'view' => 'Illuminate\\Contracts\\View\\View',
-          'artisan' => 'Illuminate\\Support\\Facades\\Artisan',
-          'file' => 'Illuminate\\Support\\Facades\\File',
-          'log' => 'Illuminate\\Support\\Facades\\Log',
-          'process' => 'Illuminate\\Support\\Facades\\Process',
-          'component' => 'Livewire\\Component',
-          'throwable' => 'Throwable',
-        ),
-         'constUses' => 
-        array (
-        ),
-      )),
+       'name' => 'App\\Livewire\\Admin\\BannerManager',
+       'phpDoc' => NULL,
        'abstract' => false,
        'final' => false,
        'extends' => 'Livewire\\Component',
@@ -6036,6 +18003,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'Livewire\\WithFileUploads',
       ),
        'traitUseAdaptations' => 
       array (
@@ -6046,10 +18014,10 @@ return [
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
-            0 => 'lastLabel',
+            0 => 'banner',
           ),
            'phpDoc' => NULL,
-           'type' => 'string',
+           'type' => '?Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
            'public' => true,
            'private' => false,
            'static' => false,
@@ -6062,6 +18030,14 @@ return [
            'virtual' => false,
            'attributes' => 
           array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'nullable|image|max:2048\'',
+              ),
+            )),
           ),
            'hooks' => 
           array (
@@ -6071,10 +18047,10 @@ return [
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
-            0 => 'output',
+            0 => 'intervalSeconds',
           ),
            'phpDoc' => NULL,
-           'type' => 'string',
+           'type' => 'int',
            'public' => true,
            'private' => false,
            'static' => false,
@@ -6087,62 +18063,20 @@ return [
            'virtual' => false,
            'attributes' => 
           array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'required|integer|min:2|max:60\'',
+              ),
+            )),
           ),
            'hooks' => 
           array (
           ),
         )),
         2 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'success',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'bool',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        3 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'hasRun',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'bool',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'mount',
            'phpDoc' => NULL,
@@ -6160,9 +18094,58 @@ return [
           array (
           ),
         )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'addBanner',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'delete',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'bannerId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
         5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'runMigrate',
+           'name' => 'saveInterval',
            'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
@@ -6179,60 +18162,6 @@ return [
           ),
         )),
         6 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'runOptimize',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'void',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        7 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'runConfigCache',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'void',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        8 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'runGitPull',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'void',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        9 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -6253,6 +18182,14 @@ return [
       ),
        'attributes' => 
       array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.app\'',
+          ),
+        )),
       ),
     )),
   ),
@@ -6270,6 +18207,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'Livewire\\WithFileUploads',
       ),
        'traitUseAdaptations' => 
       array (
@@ -6307,9 +18245,12 @@ return [
               'receiptsetting' => 'App\\Models\\ReceiptSetting',
               'themesetting' => 'App\\Models\\ThemeSetting',
               'view' => 'Illuminate\\Contracts\\View\\View',
+              'storage' => 'Illuminate\\Support\\Facades\\Storage',
               'layout' => 'Livewire\\Attributes\\Layout',
               'validate' => 'Livewire\\Attributes\\Validate',
               'component' => 'Livewire\\Component',
+              'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+              'withfileuploads' => 'Livewire\\WithFileUploads',
             ),
              'constUses' => 
             array (
@@ -6680,6 +18621,97 @@ return [
           ),
         )),
         12 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fontSizePercent',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'required|integer|min:80|max:150\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        13 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'logo',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'nullable|mimes:jpg,jpeg,png,webp,gif|max:1024\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        14 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'logoPath',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        15 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'mount',
            'phpDoc' => NULL,
@@ -6697,7 +18729,7 @@ return [
           array (
           ),
         )),
-        13 => 
+        16 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'saveGeneral',
            'phpDoc' => NULL,
@@ -6715,7 +18747,43 @@ return [
           array (
           ),
         )),
-        14 => 
+        17 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'saveLogo',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        18 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'removeLogo',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        19 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'saveReceipt',
            'phpDoc' => NULL,
@@ -6733,7 +18801,7 @@ return [
           array (
           ),
         )),
-        15 => 
+        20 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'applyPreset',
            'phpDoc' => NULL,
@@ -6764,7 +18832,7 @@ return [
           array (
           ),
         )),
-        16 => 
+        21 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'saveTheme',
            'phpDoc' => NULL,
@@ -6782,7 +18850,43 @@ return [
           array (
           ),
         )),
-        17 => 
+        22 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'increaseFontSize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        23 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'decreaseFontSize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        24 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -7067,7 +19171,7 @@ return [
         )),
         8 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'openPaymentForm',
+           'name' => 'updatingDateFrom',
            'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
@@ -7084,6 +19188,42 @@ return [
           ),
         )),
         9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingDateTo',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'openPaymentForm',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        11 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'recordPayment',
            'phpDoc' => NULL,
@@ -7114,7 +19254,7 @@ return [
           array (
           ),
         )),
-        10 => 
+        12 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -7403,6 +19543,555 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseCategoryManager.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Expenses\\ExpenseCategoryManager',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'editingCategoryId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'name',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'showModal',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'mount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'create',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'edit',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'categoryId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'save',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'toggleActive',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'categoryId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Contracts\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.app\'',
+          ),
+        )),
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Expenses\\ExpenseList.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Expenses\\ExpenseList',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Livewire\\WithFileUploads',
+        1 => 'Livewire\\WithPagination',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'form',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'App\\Livewire\\Forms\\ExpenseForm',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'showModal',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'filterFrom',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'filterTo',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'mount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingFilterFrom',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingFilterTo',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'create',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'edit',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'expenseId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'save',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'delete',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'expenseId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        11 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Contracts\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.app\'',
+          ),
+        )),
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php' => 
   array (
     0 => 
@@ -7549,31 +20238,6 @@ return [
           ),
         )),
         5 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'quantity_received',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'string',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'rules',
            'phpDoc' => 
@@ -7605,7 +20269,7 @@ return [
           array (
           ),
         )),
-        7 => 
+        6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'setBatch',
            'phpDoc' => NULL,
@@ -7636,39 +20300,7 @@ return [
           array (
           ),
         )),
-        8 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'attributesForCreate',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * @return array<string, mixed>
-     */',
-             'namespace' => 'App\\Livewire\\Forms',
-             'uses' => 
-            array (
-              'batch' => 'App\\Models\\Batch',
-              'form' => 'Livewire\\Form',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'array',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        9 => 
+        7 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'attributesForUpdate',
            'phpDoc' => 
@@ -7703,7 +20335,7 @@ return [
           array (
           ),
         )),
-        10 => 
+        8 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'resetForm',
            'phpDoc' => NULL,
@@ -7830,7 +20462,7 @@ return [
                'name' => 'Livewire\\Attributes\\Validate',
                'args' => 
               array (
-                0 => '\'nullable|string|max:30\'',
+                0 => '\'nullable|string|max:30|regex:/^[0-9+\\-\\s()]+$/\'',
               ),
             )),
           ),
@@ -7992,11 +20624,1017 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ExpenseForm.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Forms\\ExpenseForm',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Form',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'expense',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?App\\Models\\Expense',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'date',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'required|date\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'amount',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'required|numeric|min:0.01\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'expense_category_id',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'required|exists:expense_categories,id\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'payment_method',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'required|in:cash,bank\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'bank_id',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'nullable|exists:banks,id\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'vendor_id',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'nullable|exists:vendors,id\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'description',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'nullable|string|max:1000\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'receiptPhoto',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'nullable|image|max:5120\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'setExpense',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'expense',
+               'type' => 'App\\Models\\Expense',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        11 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'attributesForSave',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, mixed>
+     */',
+             'namespace' => 'App\\Livewire\\Forms',
+             'uses' => 
+            array (
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'expense' => 'App\\Models\\Expense',
+              'rule' => 'Illuminate\\Validation\\Rule',
+              'validate' => 'Livewire\\Attributes\\Validate',
+              'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+              'form' => 'Livewire\\Form',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        12 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'storePhotoFor',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'expense',
+               'type' => 'App\\Models\\Expense',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        13 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'resetForm',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\LoginForm.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'App\\Livewire\\Forms\\LoginForm',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Form',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'email',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'required|string|email\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'password',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'required|string\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'remember',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+               'name' => 'Livewire\\Attributes\\Validate',
+               'args' => 
+              array (
+                0 => '\'boolean\'',
+              ),
+            )),
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'authenticate',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Attempt to authenticate the request\'s credentials.
+     *
+     * @throws ValidationException
+     */',
+             'namespace' => 'App\\Livewire\\Forms',
+             'uses' => 
+            array (
+              'shop' => 'App\\Models\\Shop',
+              'lockout' => 'Illuminate\\Auth\\Events\\Lockout',
+              'auth' => 'Illuminate\\Support\\Facades\\Auth',
+              'ratelimiter' => 'Illuminate\\Support\\Facades\\RateLimiter',
+              'str' => 'Illuminate\\Support\\Str',
+              'validationexception' => 'Illuminate\\Validation\\ValidationException',
+              'validate' => 'Livewire\\Attributes\\Validate',
+              'form' => 'Livewire\\Form',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'ensureIsNotRateLimited',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Ensure the authentication request is not rate limited.
+     */',
+             'namespace' => 'App\\Livewire\\Forms',
+             'uses' => 
+            array (
+              'shop' => 'App\\Models\\Shop',
+              'lockout' => 'Illuminate\\Auth\\Events\\Lockout',
+              'auth' => 'Illuminate\\Support\\Facades\\Auth',
+              'ratelimiter' => 'Illuminate\\Support\\Facades\\RateLimiter',
+              'str' => 'Illuminate\\Support\\Str',
+              'validationexception' => 'Illuminate\\Validation\\ValidationException',
+              'validate' => 'Livewire\\Attributes\\Validate',
+              'form' => 'Livewire\\Form',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'throttleKey',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Get the authentication rate limiting throttle key.
+     */',
+             'namespace' => 'App\\Livewire\\Forms',
+             'uses' => 
+            array (
+              'shop' => 'App\\Models\\Shop',
+              'lockout' => 'Illuminate\\Auth\\Events\\Lockout',
+              'auth' => 'Illuminate\\Support\\Facades\\Auth',
+              'ratelimiter' => 'Illuminate\\Support\\Facades\\RateLimiter',
+              'str' => 'Illuminate\\Support\\Str',
+              'validationexception' => 'Illuminate\\Validation\\ValidationException',
+              'validate' => 'Livewire\\Attributes\\Validate',
+              'form' => 'Livewire\\Form',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ProductForm.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Forms\\ProductForm',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Form',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'product',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?App\\Models\\Product',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'name',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'sku',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'category_id',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'company_id',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'unit',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'default_sale_price',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'rules',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, mixed>
+     */',
+             'namespace' => 'App\\Livewire\\Forms',
+             'uses' => 
+            array (
+              'product' => 'App\\Models\\Product',
+              'rule' => 'Illuminate\\Validation\\Rule',
+              'form' => 'Livewire\\Form',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'setProduct',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'product',
+               'type' => 'App\\Models\\Product',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'attributesForSave',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, mixed>
+     */',
+             'namespace' => 'App\\Livewire\\Forms',
+             'uses' => 
+            array (
+              'product' => 'App\\Models\\Product',
+              'rule' => 'Illuminate\\Validation\\Rule',
+              'form' => 'Livewire\\Form',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'resetForm',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\SuperAdminLoginForm.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Forms\\SuperAdminLoginForm',
        'phpDoc' => NULL,
        'abstract' => false,
        'final' => false,
@@ -8230,297 +21868,6 @@ return [
       ),
     )),
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\ProductForm.php' => 
-  array (
-    0 => 
-    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
-       'name' => 'App\\Livewire\\Forms\\ProductForm',
-       'phpDoc' => NULL,
-       'abstract' => false,
-       'final' => false,
-       'extends' => 'Livewire\\Form',
-       'implements' => 
-      array (
-      ),
-       'usedTraits' => 
-      array (
-      ),
-       'traitUseAdaptations' => 
-      array (
-      ),
-       'statements' => 
-      array (
-        0 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'product',
-          ),
-           'phpDoc' => NULL,
-           'type' => '?App\\Models\\Product',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        1 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'name',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'string',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        2 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'sku',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'string',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        3 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'category_id',
-          ),
-           'phpDoc' => NULL,
-           'type' => '?int',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        4 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'unit',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'string',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        5 => 
-        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
-           'names' => 
-          array (
-            0 => 'default_sale_price',
-          ),
-           'phpDoc' => NULL,
-           'type' => 'string',
-           'public' => true,
-           'private' => false,
-           'static' => false,
-           'readonly' => false,
-           'abstract' => false,
-           'final' => false,
-           'publicSet' => false,
-           'protectedSet' => false,
-           'privateSet' => false,
-           'virtual' => false,
-           'attributes' => 
-          array (
-          ),
-           'hooks' => 
-          array (
-          ),
-        )),
-        6 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'rules',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * @return array<string, mixed>
-     */',
-             'namespace' => 'App\\Livewire\\Forms',
-             'uses' => 
-            array (
-              'product' => 'App\\Models\\Product',
-              'rule' => 'Illuminate\\Validation\\Rule',
-              'form' => 'Livewire\\Form',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'array',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        7 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'setProduct',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'void',
-           'parameters' => 
-          array (
-            0 => 
-            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
-               'name' => 'product',
-               'type' => 'App\\Models\\Product',
-               'byRef' => false,
-               'variadic' => false,
-               'hasDefault' => false,
-               'attributes' => 
-              array (
-              ),
-               'phpDoc' => NULL,
-               'flags' => 0,
-            )),
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        8 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'attributesForSave',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * @return array<string, mixed>
-     */',
-             'namespace' => 'App\\Livewire\\Forms',
-             'uses' => 
-            array (
-              'product' => 'App\\Models\\Product',
-              'rule' => 'Illuminate\\Validation\\Rule',
-              'form' => 'Livewire\\Form',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'array',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        9 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'resetForm',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'void',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-      ),
-       'attributes' => 
-      array (
-      ),
-    )),
-  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\VendorForm.php' => 
   array (
     0 => 
@@ -8624,7 +21971,7 @@ return [
                'name' => 'Livewire\\Attributes\\Validate',
                'args' => 
               array (
-                0 => '\'nullable|string|max:30\'',
+                0 => '\'nullable|string|max:30|regex:/^[0-9+\\-\\s()]+$/\'',
               ),
             )),
           ),
@@ -8892,24 +22239,6 @@ return [
         )),
         3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'create',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'void',
-           'parameters' => 
-          array (
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-        4 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'edit',
            'phpDoc' => NULL,
            'byRef' => false,
@@ -8939,7 +22268,7 @@ return [
           array (
           ),
         )),
-        5 => 
+        4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'save',
            'phpDoc' => NULL,
@@ -8952,25 +22281,12 @@ return [
            'returnType' => 'void',
            'parameters' => 
           array (
-            0 => 
-            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
-               'name' => 'barcodeService',
-               'type' => 'App\\Services\\BarcodeService',
-               'byRef' => false,
-               'variadic' => false,
-               'hasDefault' => false,
-               'attributes' => 
-              array (
-              ),
-               'phpDoc' => NULL,
-               'flags' => 0,
-            )),
           ),
            'attributes' => 
           array (
           ),
         )),
-        6 => 
+        5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'clearFilter',
            'phpDoc' => NULL,
@@ -8988,7 +22304,7 @@ return [
           array (
           ),
         )),
-        7 => 
+        6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -9245,6 +22561,231 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\CompanyManager.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Inventory\\CompanyManager',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'editingCompanyId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'name',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'showModal',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'create',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'edit',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'companyId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'save',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'toggleActive',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'companyId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Contracts\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.app\'',
+          ),
+        )),
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Inventory\\ExpiryAlertsDashboard.php' => 
   array (
     0 => 
@@ -9403,6 +22944,31 @@ return [
         \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
            'names' => 
           array (
+            0 => 'companyId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
             0 => 'showModal',
           ),
            'phpDoc' => NULL,
@@ -9424,7 +22990,7 @@ return [
           array (
           ),
         )),
-        3 => 
+        4 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'updatingSearch',
            'phpDoc' => NULL,
@@ -9442,7 +23008,25 @@ return [
           array (
           ),
         )),
-        4 => 
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingCompanyId',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'create',
            'phpDoc' => NULL,
@@ -9460,7 +23044,7 @@ return [
           array (
           ),
         )),
-        5 => 
+        7 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'edit',
            'phpDoc' => NULL,
@@ -9491,7 +23075,7 @@ return [
           array (
           ),
         )),
-        6 => 
+        8 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'save',
            'phpDoc' => NULL,
@@ -9509,7 +23093,7 @@ return [
           array (
           ),
         )),
-        7 => 
+        9 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'toggleActive',
            'phpDoc' => NULL,
@@ -9540,7 +23124,7 @@ return [
           array (
           ),
         )),
-        8 => 
+        10 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -9581,19 +23165,28 @@ return [
       \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
          'phpDocString' => '/**
  * @property-read string $cartTotal Livewire computed property backed by getCartTotalProperty().
+ * @property-read string $cartSubtotal Livewire computed property backed by getCartSubtotalProperty().
+ * @property-read string $cartItemDiscountTotal Livewire computed property backed by getCartItemDiscountTotalProperty().
+ * @property-read string $saleDiscountAmount Livewire computed property backed by getSaleDiscountAmountProperty().
  */',
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -9676,19 +23269,25 @@ return [
           ),
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/** @var list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string}> */',
+             'phpDocString' => '/** @var list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}> */',
              'namespace' => 'App\\Livewire\\Pos',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
               'paymentmethod' => 'App\\Enums\\PaymentMethod',
               'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
               'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
               'bank' => 'App\\Models\\Bank',
               'batch' => 'App\\Models\\Batch',
               'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
               'sale' => 'App\\Models\\Sale',
+              'discountcalculator' => 'App\\Services\\DiscountCalculator',
               'saleservice' => 'App\\Services\\SaleService',
               'view' => 'Illuminate\\Contracts\\View\\View',
+              'str' => 'Illuminate\\Support\\Str',
               'layout' => 'Livewire\\Attributes\\Layout',
               'component' => 'Livewire\\Component',
               'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -9778,15 +23377,21 @@ return [
              'namespace' => 'App\\Livewire\\Pos',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
               'paymentmethod' => 'App\\Enums\\PaymentMethod',
               'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
               'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
               'bank' => 'App\\Models\\Bank',
               'batch' => 'App\\Models\\Batch',
               'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
               'sale' => 'App\\Models\\Sale',
+              'discountcalculator' => 'App\\Services\\DiscountCalculator',
               'saleservice' => 'App\\Services\\SaleService',
               'view' => 'Illuminate\\Contracts\\View\\View',
+              'str' => 'Illuminate\\Support\\Str',
               'layout' => 'Livewire\\Attributes\\Layout',
               'component' => 'Livewire\\Component',
               'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -9840,6 +23445,85 @@ return [
           ),
         )),
         7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'discountType',
+          ),
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** Whole-sale discount, applied on top of any per-item discounts already folded into each line. */',
+             'namespace' => 'App\\Livewire\\Pos',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+              'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+              'bank' => 'App\\Models\\Bank',
+              'batch' => 'App\\Models\\Batch',
+              'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
+              'sale' => 'App\\Models\\Sale',
+              'discountcalculator' => 'App\\Services\\DiscountCalculator',
+              'saleservice' => 'App\\Services\\SaleService',
+              'view' => 'Illuminate\\Contracts\\View\\View',
+              'str' => 'Illuminate\\Support\\Str',
+              'layout' => 'Livewire\\Attributes\\Layout',
+              'component' => 'Livewire\\Component',
+              'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+              'withfileuploads' => 'Livewire\\WithFileUploads',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'type' => '?string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'discountValue',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        9 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'mount',
            'phpDoc' => NULL,
@@ -9857,7 +23541,7 @@ return [
           array (
           ),
         )),
-        8 => 
+        10 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'scanBarcode',
            'phpDoc' => NULL,
@@ -9875,7 +23559,7 @@ return [
           array (
           ),
         )),
-        9 => 
+        11 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'removeCartItem',
            'phpDoc' => NULL,
@@ -9906,7 +23590,7 @@ return [
           array (
           ),
         )),
-        10 => 
+        12 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'clearCart',
            'phpDoc' => NULL,
@@ -9924,7 +23608,119 @@ return [
           array (
           ),
         )),
-        11 => 
+        13 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'holdOrder',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Parks the current cart so the cashier can serve someone else — the
+     * classic "customer forgot their wallet, next please" case.
+     */',
+             'namespace' => 'App\\Livewire\\Pos',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+              'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+              'bank' => 'App\\Models\\Bank',
+              'batch' => 'App\\Models\\Batch',
+              'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
+              'sale' => 'App\\Models\\Sale',
+              'discountcalculator' => 'App\\Services\\DiscountCalculator',
+              'saleservice' => 'App\\Services\\SaleService',
+              'view' => 'Illuminate\\Contracts\\View\\View',
+              'str' => 'Illuminate\\Support\\Str',
+              'layout' => 'Livewire\\Attributes\\Layout',
+              'component' => 'Livewire\\Component',
+              'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+              'withfileuploads' => 'Livewire\\WithFileUploads',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        14 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'resumeHeldOrder',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'heldOrderId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        15 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'discardHeldOrder',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'heldOrderId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        16 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'incrementQuantity',
            'phpDoc' => NULL,
@@ -9955,7 +23751,7 @@ return [
           array (
           ),
         )),
-        12 => 
+        17 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'decrementQuantity',
            'phpDoc' => NULL,
@@ -9986,9 +23782,178 @@ return [
           array (
           ),
         )),
-        13 => 
+        18 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'getCartTotalProperty',
+           'name' => 'lineSubtotal',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'line',
+               'type' => 'array',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        19 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'lineDiscountAmount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'line',
+               'type' => 'array',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        20 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'lineTotal',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** The line\'s total after its own per-item discount, before the sale-level discount. */',
+             'namespace' => 'App\\Livewire\\Pos',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+              'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+              'bank' => 'App\\Models\\Bank',
+              'batch' => 'App\\Models\\Batch',
+              'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
+              'sale' => 'App\\Models\\Sale',
+              'discountcalculator' => 'App\\Services\\DiscountCalculator',
+              'saleservice' => 'App\\Services\\SaleService',
+              'view' => 'Illuminate\\Contracts\\View\\View',
+              'str' => 'Illuminate\\Support\\Str',
+              'layout' => 'Livewire\\Attributes\\Layout',
+              'component' => 'Livewire\\Component',
+              'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+              'withfileuploads' => 'Livewire\\WithFileUploads',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'line',
+               'type' => 'array',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        21 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'getCartSubtotalProperty',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** Sum of every line\'s pre-discount subtotal — the receipt\'s "Subtotal" figure. */',
+             'namespace' => 'App\\Livewire\\Pos',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+              'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+              'bank' => 'App\\Models\\Bank',
+              'batch' => 'App\\Models\\Batch',
+              'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
+              'sale' => 'App\\Models\\Sale',
+              'discountcalculator' => 'App\\Services\\DiscountCalculator',
+              'saleservice' => 'App\\Services\\SaleService',
+              'view' => 'Illuminate\\Contracts\\View\\View',
+              'str' => 'Illuminate\\Support\\Str',
+              'layout' => 'Livewire\\Attributes\\Layout',
+              'component' => 'Livewire\\Component',
+              'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+              'withfileuploads' => 'Livewire\\WithFileUploads',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        22 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'getCartItemDiscountTotalProperty',
            'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
@@ -10004,7 +23969,72 @@ return [
           array (
           ),
         )),
-        14 => 
+        23 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'getSaleDiscountAmountProperty',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        24 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'getCartTotalProperty',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/** Subtotal minus every item discount minus the sale-level discount — what the customer actually owes. */',
+             'namespace' => 'App\\Livewire\\Pos',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+              'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+              'bank' => 'App\\Models\\Bank',
+              'batch' => 'App\\Models\\Batch',
+              'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
+              'sale' => 'App\\Models\\Sale',
+              'discountcalculator' => 'App\\Services\\DiscountCalculator',
+              'saleservice' => 'App\\Services\\SaleService',
+              'view' => 'Illuminate\\Contracts\\View\\View',
+              'str' => 'Illuminate\\Support\\Str',
+              'layout' => 'Livewire\\Attributes\\Layout',
+              'component' => 'Livewire\\Component',
+              'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+              'withfileuploads' => 'Livewire\\WithFileUploads',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        25 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'openCheckout',
            'phpDoc' => NULL,
@@ -10022,7 +24052,7 @@ return [
           array (
           ),
         )),
-        15 => 
+        26 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'addPaymentLine',
            'phpDoc' => NULL,
@@ -10040,7 +24070,7 @@ return [
           array (
           ),
         )),
-        16 => 
+        27 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'removePaymentLine',
            'phpDoc' => NULL,
@@ -10071,7 +24101,7 @@ return [
           array (
           ),
         )),
-        17 => 
+        28 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'removePhoto',
            'phpDoc' => NULL,
@@ -10089,7 +24119,7 @@ return [
           array (
           ),
         )),
-        18 => 
+        29 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'checkout',
            'phpDoc' => NULL,
@@ -10120,7 +24150,7 @@ return [
           array (
           ),
         )),
-        19 => 
+        30 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -10493,6 +24523,173 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\SyncConflicts.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Pos\\SyncConflicts',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Admin review of offline sales that oversold their batch on sync.
+ *
+ * These are never errors to be dismissed blindly: each one means the shop
+ * physically handed over stock it didn\'t have on record, so the batch is now
+ * negative until a purchase or a stock correction squares it up.
+ */',
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'salesyncconflict' => 'App\\Models\\SaleSyncConflict',
+          'lengthawarepaginator' => 'Illuminate\\Contracts\\Pagination\\LengthAwarePaginator',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'withpagination' => 'Livewire\\WithPagination',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Livewire\\WithPagination',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'showResolved',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'mount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingShowResolved',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'resolve',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'conflictId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Contracts\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.app\'',
+          ),
+        )),
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Purchases\\PurchaseCreate.php' => 
   array (
     0 => 
@@ -10546,7 +24743,7 @@ return [
           ),
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/** @var list<array{product_id: ?int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string}> */',
+             'phpDocString' => '/** @var list<array{product_id: ?int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string, barcode: string}> */',
              'namespace' => 'App\\Livewire\\Purchases',
              'uses' => 
             array (
@@ -11206,6 +25403,480 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\PurchaseReport.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Reports\\PurchaseReport',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Livewire\\WithPagination',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'dateFrom',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'dateTo',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'vendorId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'mount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingDateFrom',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingDateTo',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingVendorId',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Contracts\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.app\'',
+          ),
+        )),
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Reports\\SalesReport.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\Reports\\SalesReport',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Livewire\\WithPagination',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'dateFrom',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'dateTo',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'customerId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'productId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'mount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingDateFrom',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingDateTo',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingCustomerId',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingProductId',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'applyPreset',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'preset',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Contracts\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.app\'',
+          ),
+        )),
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Shared\\LanguageSwitcher.php' => 
   array (
     0 => 
@@ -11293,6 +25964,760 @@ return [
       ),
        'attributes' => 
       array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\DeveloperTools.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\SuperAdmin\\DeveloperTools',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Server maintenance actions (migrate/optimize/config:cache/git pull) affect
+ * the whole platform, not a single shop — so this lives behind the
+ * auth:super_admin route middleware (see routes/super_admin.php) rather than
+ * a per-shop permission. That guard is the only authorization boundary
+ * needed here, same as the rest of the Super Admin panel.
+ */',
+         'namespace' => 'App\\Livewire\\SuperAdmin',
+         'uses' => 
+        array (
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'artisan' => 'Illuminate\\Support\\Facades\\Artisan',
+          'file' => 'Illuminate\\Support\\Facades\\File',
+          'log' => 'Illuminate\\Support\\Facades\\Log',
+          'process' => 'Illuminate\\Support\\Facades\\Process',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'throwable' => 'Throwable',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'lastLabel',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'output',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'success',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'hasRun',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'runMigrate',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'runOptimize',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'runConfigCache',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'runGitPull',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Contracts\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.super-admin\'',
+          ),
+        )),
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\SuperAdmin\\ShopManager.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Livewire\\SuperAdmin\\ShopManager',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Livewire\\Component',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'showCreateModal',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'name',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'adminName',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'adminEmail',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'justCreatedAdminEmail',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'justCreatedTemporaryPassword',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'showEditModal',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'bool',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'editingShopId',
+          ),
+           'phpDoc' => NULL,
+           'type' => '?int',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'editName',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'editSlug',
+          ),
+           'phpDoc' => NULL,
+           'type' => 'string',
+           'public' => true,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'create',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        11 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'save',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shopService',
+               'type' => 'App\\Services\\ShopService',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        12 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'dismissTemporaryPassword',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        13 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'toggleActive',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shopId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        14 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'edit',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shopId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        15 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'saveEdit',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shopService',
+               'type' => 'App\\Services\\ShopService',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        16 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'resetAdminPassword',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shopId',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shopService',
+               'type' => 'App\\Services\\ShopService',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        17 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'render',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Contracts\\View\\View',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedAttributeNode::__set_state(array(
+           'name' => 'Livewire\\Attributes\\Layout',
+           'args' => 
+          array (
+            0 => '\'layouts.super-admin\'',
+          ),
+        )),
       ),
     )),
   ),
@@ -11549,7 +26974,7 @@ return [
         )),
         8 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'openPaymentForm',
+           'name' => 'updatingDateFrom',
            'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
@@ -11566,6 +26991,42 @@ return [
           ),
         )),
         9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updatingDateTo',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'openPaymentForm',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        11 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'recordPayment',
            'phpDoc' => NULL,
@@ -11596,7 +27057,7 @@ return [
           array (
           ),
         )),
-        10 => 
+        12 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'render',
            'phpDoc' => NULL,
@@ -11899,7 +27360,8 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
        'traitUseAdaptations' => 
       array (
@@ -11955,6 +27417,58 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Banner.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\Banner',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Batch.php' => 
   array (
     0 => 
@@ -11969,7 +27483,8 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
        'traitUseAdaptations' => 
       array (
@@ -12030,6 +27545,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -12063,6 +27579,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -12172,7 +27689,8 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
        'traitUseAdaptations' => 
       array (
@@ -12233,6 +27751,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -12261,6 +27780,180 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Company.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\Company',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'products',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return HasMany<Product, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedTraitNode::__set_state(array(
+       'name' => 'App\\Models\\Concerns\\BelongsToShop',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Applied to every tenant-scoped model. Two effects:
+ *
+ * 1. A global scope that narrows every query to the logged-in shop user\'s
+ *    own shop_id. Only ever applies when there IS a logged-in web-guard
+ *    user with a shop_id — it\'s a deliberate no-op for artisan commands,
+ *    seeders, and tests that aren\'t acting as a user, since those need to
+ *    see/create rows across shops explicitly rather than have data silently
+ *    hidden from them.
+ * 2. Auto-fills shop_id on create from that same user, unless the caller
+ *    already set it explicitly (e.g. ShopService seeding a brand-new shop\'s
+ *    settings rows before that shop has any logged-in user at all).
+ *
+ * The query-builder side is the real security boundary here: table-qualify
+ * the column so this doesn\'t break on any query that joins another
+ * shop-scoped table (which would otherwise throw an ambiguous-column error).
+ */',
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'bootBelongsToShop',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Customer.php' => 
   array (
     0 => 
@@ -12275,7 +27968,8 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
        'traitUseAdaptations' => 
       array (
@@ -12336,6 +28030,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -12396,6 +28091,7 @@ return [
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'logicexception' => 'LogicException',
@@ -12412,6 +28108,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -12526,6 +28223,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'logicexception' => 'LogicException',
@@ -12598,6 +28296,476 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Expense.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\Expense',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'category',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<ExpenseCategory, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'bank',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<Bank, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'vendor',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<Vendor, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'user',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<User, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ExpenseCategory.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\ExpenseCategory',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'expenses',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return HasMany<Expense, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\HeldOrder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\HeldOrder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * A parked cart. Not a financial record — nothing reports on it and it\'s
+ * deleted the moment it\'s resumed or discarded, which is why the cart lives
+ * in a JSON payload rather than normalised line-item tables.
+ *
+ * @property array<string, mixed> $payload Larastan otherwise infers this as
+ *                                          string from an unrelated `payload`
+ *                                          column elsewhere in the schema.
+ */',
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'user',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<User, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'itemCount',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Number of cart lines, for the "3 items" hint on the held-orders list —
+     * guarded because the payload is client-supplied JSON.
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'int',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Payment.php' => 
   array (
     0 => 
@@ -12612,6 +28780,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -12703,6 +28872,177 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\PosDevice.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\PosDevice',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * A browser that has been put into offline POS mode. Its id doubles as the
+ * device number inside offline invoice numbers — see nextInvoiceNumber().
+ */',
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'user',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<User, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'formatInvoiceNumber',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Formats an offline invoice number for this device, e.g. SL-OFF3-0007.
+     *
+     * The device id is a global auto-increment, so these can never collide
+     * across shops — which matters because sales.invoice_number is unique on
+     * the column alone. The sequence is deliberately NOT zero-padded beyond
+     * four digits: a till that somehow rings up more than 9999 sales in one
+     * offline stretch keeps working, it just prints a longer number.
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'sequence',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Product.php' => 
   array (
     0 => 
@@ -12717,7 +29057,8 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
        'traitUseAdaptations' => 
       array (
@@ -12778,6 +29119,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -12803,6 +29145,41 @@ return [
         )),
         3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'company',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<Company, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'batches',
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
@@ -12812,6 +29189,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
@@ -12835,7 +29213,7 @@ return [
           array (
           ),
         )),
-        4 => 
+        5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'totalRemainingQuantity',
            'phpDoc' => NULL,
@@ -12873,6 +29251,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -12933,6 +29312,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -12966,6 +29346,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -12999,6 +29380,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -13032,6 +29414,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -13074,6 +29457,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -13134,6 +29518,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasone' => 'Illuminate\\Database\\Eloquent\\Relations\\HasOne',
@@ -13167,6 +29552,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasone' => 'Illuminate\\Database\\Eloquent\\Relations\\HasOne',
@@ -13200,6 +29586,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasone' => 'Illuminate\\Database\\Eloquent\\Relations\\HasOne',
@@ -13260,6 +29647,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -13401,6 +29789,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -13524,6 +29913,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -13584,6 +29974,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
             ),
              'constUses' => 
@@ -13624,6 +30015,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -13675,6 +30067,79 @@ return [
         )),
         2 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'syncConflicts',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return HasMany<SaleSyncConflict, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'wasMadeOffline',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * True for a sale that was rung up while the till was offline and
+     * replayed later — those keep the SL-OFF… number printed on the
+     * customer\'s receipt rather than being renumbered into the online
+     * sequence.
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'bool',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'customer',
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
@@ -13684,6 +30149,8 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -13706,7 +30173,7 @@ return [
           array (
           ),
         )),
-        3 => 
+        5 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'user',
            'phpDoc' => 
@@ -13717,6 +30184,8 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -13739,7 +30208,7 @@ return [
           array (
           ),
         )),
-        4 => 
+        6 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'items',
            'phpDoc' => 
@@ -13750,6 +30219,8 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -13772,7 +30243,7 @@ return [
           array (
           ),
         )),
-        5 => 
+        7 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'returns',
            'phpDoc' => 
@@ -13783,6 +30254,8 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
@@ -13798,6 +30271,155 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        8 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'costTotal',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Total cost basis of this sale\'s items, from each item\'s cost_price
+     * snapshot (captured at sale time — see rules.md\'s "create-then-update"
+     * pattern discussion and SaleService::create()). Assumes items is
+     * already eager-loaded to avoid N+1 queries.
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        9 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'profit',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        10 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'profitMarginPercent',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        11 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'totalDiscountAmount',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Sum of every item\'s discount_amount plus this sale\'s own discount_amount
+     * — the total ever taken off, regardless of which layer it came from.
+     * Assumes items is already eager-loaded.
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        12 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'subtotalBeforeDiscount',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * What the sale would have cost before any discount — the receipt/invoice
+     * "Subtotal" line. Derived from total_amount + discounts rather than
+     * re-summing unit_price*quantity, so it always agrees with what was
+     * actually charged even if a future edit changes how items are priced.
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
            'parameters' => 
           array (
           ),
@@ -13825,6 +30447,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -13885,6 +30508,8 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
             ),
@@ -13917,6 +30542,8 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
             ),
@@ -13956,6 +30583,77 @@ return [
           array (
           ),
         )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'costTotal',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Cost basis of this line, from the cost_price snapshot captured at sale
+     * time (see SaleService::create()).
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'discounttype' => 'App\\Enums\\DiscountType',
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        6 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'profit',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        7 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'profitMarginPercent',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
       ),
        'attributes' => 
       array (
@@ -13976,6 +30674,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -14117,6 +30816,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -14226,12 +30926,31 @@ return [
       ),
     )),
   ),
-  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php' => 
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SaleSyncConflict.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
-       'name' => 'App\\Models\\ThemeSetting',
-       'phpDoc' => NULL,
+       'name' => 'App\\Models\\SaleSyncConflict',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * An offline sale that, on sync, sold more of a batch than the server still
+ * had. The sale is always created anyway — see the migration\'s note — so this
+ * row exists purely to make the resulting stock discrepancy visible to an
+ * admin rather than silent.
+ */',
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
        'abstract' => false,
        'final' => false,
        'extends' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -14240,6 +30959,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -14273,6 +30993,546 @@ return [
         )),
         1 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'sale',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<Sale, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'batch',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<Batch, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        4 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'resolver',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<User, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        5 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'scopeUnresolved',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @param  Builder<SaleSyncConflict>  $query
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'query',
+               'type' => 'Illuminate\\Database\\Eloquent\\Builder',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Shop.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\Shop',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * A tenant on the platform. Every business-data table (see BelongsToShop)
+ * carries a shop_id and is scoped to exactly one Shop — this is the row
+ * Super Admin creates via ShopService::createShop(). The slug is this
+ * shop\'s own URL segment (e.g. /shop1/dashboard) — see routes/web.php\'s
+ * {shop} prefix group and App\\Http\\Middleware\\ResolveShopFromSlug.
+ */',
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'db' => 'Illuminate\\Support\\Facades\\DB',
+          'str' => 'Illuminate\\Support\\Str',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'users',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return HasMany<User, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+              'str' => 'Illuminate\\Support\\Str',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'uniqueSlug',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Derive a URL-safe, unique slug from a shop name — \'shop\' as a
+     * fallback base if the name slugifies to nothing (e.g. all emoji),
+     * appending -2, -3, ... on collision. $ignoreShopId excludes the shop
+     * being edited from its own collision check.
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'model' => 'Illuminate\\Database\\Eloquent\\Model',
+              'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+              'str' => 'Illuminate\\Support\\Str',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => true,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'name',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'ignoreShopId',
+               'type' => '?int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\SuperAdmin.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\SuperAdmin',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * A platform-level operator who manages Shops. Deliberately separate from
+ * App\\Models\\User (a shop\'s own staff) — different table, different auth
+ * guard (\'super_admin\', see config/auth.php), never shop-scoped.
+ */',
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Foundation\\Auth\\User',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        1 => 'Illuminate\\Notifications\\Notifiable',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'hidden',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Models\\ThemeSetting',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Eloquent\\Model',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedPropertiesNode::__set_state(array(
+           'names' => 
+          array (
+            0 => 'fillable',
+          ),
+           'phpDoc' => NULL,
+           'type' => NULL,
+           'public' => false,
+           'private' => false,
+           'static' => false,
+           'readonly' => false,
+           'abstract' => false,
+           'final' => false,
+           'publicSet' => false,
+           'protectedSet' => false,
+           'privateSet' => false,
+           'virtual' => false,
+           'attributes' => 
+          array (
+          ),
+           'hooks' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'casts',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => false,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'current',
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
@@ -14282,6 +31542,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
             ),
              'constUses' => 
@@ -14302,7 +31563,7 @@ return [
           array (
           ),
         )),
-        2 => 
+        3 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'displayName',
            'phpDoc' => 
@@ -14314,6 +31575,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
             ),
              'constUses' => 
@@ -14355,9 +31617,10 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
-        1 => 'Spatie\\Permission\\Traits\\HasRoles',
-        2 => 'Illuminate\\Notifications\\Notifiable',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        2 => 'Spatie\\Permission\\Traits\\HasRoles',
+        3 => 'Illuminate\\Notifications\\Notifiable',
       ),
        'traitUseAdaptations' => 
       array (
@@ -14380,9 +31643,11 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'userfactory' => 'Database\\Factories\\UserFactory',
               'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
               'notifiable' => 'Illuminate\\Notifications\\Notifiable',
               'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
@@ -14425,9 +31690,11 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'userfactory' => 'Database\\Factories\\UserFactory',
               'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
               'notifiable' => 'Illuminate\\Notifications\\Notifiable',
               'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
@@ -14467,9 +31734,11 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'userfactory' => 'Database\\Factories\\UserFactory',
               'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
               'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
               'notifiable' => 'Illuminate\\Notifications\\Notifiable',
               'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
@@ -14485,6 +31754,44 @@ return [
            'final' => false,
            'static' => false,
            'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'shop',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return BelongsTo<Shop, $this>
+     */',
+             'namespace' => 'App\\Models',
+             'uses' => 
+            array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+              'userfactory' => 'Database\\Factories\\UserFactory',
+              'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+              'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+              'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+              'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+              'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+              'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
            'parameters' => 
           array (
           ),
@@ -14512,7 +31819,8 @@ return [
       ),
        'usedTraits' => 
       array (
-        0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
+        1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
       ),
        'traitUseAdaptations' => 
       array (
@@ -14618,6 +31926,7 @@ return [
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'logicexception' => 'LogicException',
@@ -14634,6 +31943,7 @@ return [
       ),
        'usedTraits' => 
       array (
+        0 => 'App\\Models\\Concerns\\BelongsToShop',
       ),
        'traitUseAdaptations' => 
       array (
@@ -14748,6 +32058,7 @@ return [
              'namespace' => 'App\\Models',
              'uses' => 
             array (
+              'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
               'model' => 'Illuminate\\Database\\Eloquent\\Model',
               'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
               'logicexception' => 'LogicException',
@@ -15603,7 +32914,12 @@ return [
              'uses' => 
             array (
               'batch' => 'App\\Models\\Batch',
+              'user' => 'App\\Models\\User',
               'batchobserver' => 'App\\Observers\\BatchObserver',
+              'authenticated' => 'Illuminate\\Auth\\Events\\Authenticated',
+              'resetpassword' => 'Illuminate\\Auth\\Notifications\\ResetPassword',
+              'event' => 'Illuminate\\Support\\Facades\\Event',
+              'url' => 'Illuminate\\Support\\Facades\\URL',
               'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
             ),
              'constUses' => 
@@ -15636,7 +32952,12 @@ return [
              'uses' => 
             array (
               'batch' => 'App\\Models\\Batch',
+              'user' => 'App\\Models\\User',
               'batchobserver' => 'App\\Observers\\BatchObserver',
+              'authenticated' => 'Illuminate\\Auth\\Events\\Authenticated',
+              'resetpassword' => 'Illuminate\\Auth\\Notifications\\ResetPassword',
+              'event' => 'Illuminate\\Support\\Facades\\Event',
+              'url' => 'Illuminate\\Support\\Facades\\URL',
               'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
             ),
              'constUses' => 
@@ -15769,6 +33090,7 @@ return [
          'uses' => 
         array (
           'batch' => 'App\\Models\\Batch',
+          'product' => 'App\\Models\\Product',
           'db' => 'Illuminate\\Support\\Facades\\DB',
           'str' => 'Illuminate\\Support\\Str',
           'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -15828,8 +33150,11 @@ return [
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
-     * Create a batch and assign it a permanent barcode in one step, since the
-     * barcode value is derived from the batch\'s own (post-insert) id.
+     * Create a batch and assign it a barcode in one step. If the caller
+     * supplies a non-empty \'barcode\' attribute (e.g. the manufacturer\'s own
+     * printed barcode, entered manually during a purchase), that value is
+     * used as-is. Otherwise a permanent barcode is derived from the batch\'s
+     * own (post-insert) id, same as always.
      *
      * @param  array<string, mixed>  $attributes
      */',
@@ -15837,6 +33162,7 @@ return [
              'uses' => 
             array (
               'batch' => 'App\\Models\\Batch',
+              'product' => 'App\\Models\\Product',
               'db' => 'Illuminate\\Support\\Facades\\DB',
               'str' => 'Illuminate\\Support\\Str',
               'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -15889,6 +33215,468 @@ return [
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'code',
                'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DashboardReportService.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\DashboardReportService',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Powers the dashboard\'s "Today\'s Report" widget. All money values are
+ * bcmath-normalized strings (see rules.md §2), never floats.
+ */',
+         'namespace' => 'App\\Services',
+         'uses' => 
+        array (
+          'payabletype' => 'App\\Enums\\PayableType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'expense' => 'App\\Models\\Expense',
+          'payment' => 'App\\Models\\Payment',
+          'sale' => 'App\\Models\\Sale',
+          'saleitem' => 'App\\Models\\SaleItem',
+          'salereturn' => 'App\\Models\\SaleReturn',
+          'carbon' => 'Illuminate\\Support\\Carbon',
+          'db' => 'Illuminate\\Support\\Facades\\DB',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'todaysSummary',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array{
+     *     sales_total: string,
+     *     returns_total: string,
+     *     payment_ins_total: string,
+     *     expenses_total: string,
+     *     cash_total: string,
+     *     bank_total: string,
+     *     bank_breakdown: list<array{bank_id: int, name: string, amount: string}>,
+     * }
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'payabletype' => 'App\\Enums\\PayableType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'expense' => 'App\\Models\\Expense',
+              'payment' => 'App\\Models\\Payment',
+              'sale' => 'App\\Models\\Sale',
+              'saleitem' => 'App\\Models\\SaleItem',
+              'salereturn' => 'App\\Models\\SaleReturn',
+              'carbon' => 'Illuminate\\Support\\Carbon',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'salesTrend',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Daily sales totals for the trailing $days days (oldest first), with
+     * zero-filled entries for any day that had no sales.
+     *
+     * @return list<array{date: string, total: string}>
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'payabletype' => 'App\\Enums\\PayableType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'expense' => 'App\\Models\\Expense',
+              'payment' => 'App\\Models\\Payment',
+              'sale' => 'App\\Models\\Sale',
+              'saleitem' => 'App\\Models\\SaleItem',
+              'salereturn' => 'App\\Models\\SaleReturn',
+              'carbon' => 'Illuminate\\Support\\Carbon',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'days',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'cashVsBankBreakdown',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Cash vs. per-bank totals for sale payments over the trailing $days days.
+     *
+     * @return array{cash: string, banks: list<array{name: string, amount: string}>}
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'payabletype' => 'App\\Enums\\PayableType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'expense' => 'App\\Models\\Expense',
+              'payment' => 'App\\Models\\Payment',
+              'sale' => 'App\\Models\\Sale',
+              'saleitem' => 'App\\Models\\SaleItem',
+              'salereturn' => 'App\\Models\\SaleReturn',
+              'carbon' => 'Illuminate\\Support\\Carbon',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'days',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'topSellingProducts',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Best-selling products by quantity sold over the trailing $days days.
+     *
+     * @return list<array{name: string, quantity: string}>
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'payabletype' => 'App\\Enums\\PayableType',
+              'paymentmethod' => 'App\\Enums\\PaymentMethod',
+              'expense' => 'App\\Models\\Expense',
+              'payment' => 'App\\Models\\Payment',
+              'sale' => 'App\\Models\\Sale',
+              'saleitem' => 'App\\Models\\SaleItem',
+              'salereturn' => 'App\\Models\\SaleReturn',
+              'carbon' => 'Illuminate\\Support\\Carbon',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'days',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'limit',
+               'type' => 'int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DemoShopResetService.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\DemoShopResetService',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Wipes every bit of business data (products, batches, sales, purchases,
+ * vendors, customers, ledgers, expenses, ...) out of the shared public demo
+ * shop and reseeds a clean baseline — the shop row itself, its role users,
+ * and its theme/receipt settings are left untouched so the "See Demo" login
+ * and branding keep working. Run on a schedule (routes/console.php) so
+ * whatever a visitor does to the demo is only ever temporary.
+ */',
+         'namespace' => 'App\\Services',
+         'uses' => 
+        array (
+          'bank' => 'App\\Models\\Bank',
+          'banner' => 'App\\Models\\Banner',
+          'batch' => 'App\\Models\\Batch',
+          'category' => 'App\\Models\\Category',
+          'company' => 'App\\Models\\Company',
+          'customer' => 'App\\Models\\Customer',
+          'customerledger' => 'App\\Models\\CustomerLedger',
+          'expense' => 'App\\Models\\Expense',
+          'expensecategory' => 'App\\Models\\ExpenseCategory',
+          'payment' => 'App\\Models\\Payment',
+          'product' => 'App\\Models\\Product',
+          'purchase' => 'App\\Models\\Purchase',
+          'purchaseitem' => 'App\\Models\\PurchaseItem',
+          'purchasereturn' => 'App\\Models\\PurchaseReturn',
+          'purchasereturnitem' => 'App\\Models\\PurchaseReturnItem',
+          'sale' => 'App\\Models\\Sale',
+          'saleitem' => 'App\\Models\\SaleItem',
+          'salereturn' => 'App\\Models\\SaleReturn',
+          'salereturnitem' => 'App\\Models\\SaleReturnItem',
+          'shop' => 'App\\Models\\Shop',
+          'vendor' => 'App\\Models\\Vendor',
+          'vendorledger' => 'App\\Models\\VendorLedger',
+          'categoryseeder' => 'Database\\Seeders\\CategorySeeder',
+          'db' => 'Illuminate\\Support\\Facades\\DB',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'reset',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\DiscountCalculator.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\DiscountCalculator',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Turns a discount type + the value a cashier typed into the actual PKR
+ * amount to subtract, at bcmath scale 2.
+ *
+ * The percentage formula mirrors the existing bcmul(bcdiv($profit, $total, 4),
+ * \'100\', 2) idiom already used by Sale::profitMarginPercent() — multiply at
+ * scale 4 first (exact, since both operands are already ≤2dp so the product
+ * has ≤4dp and nothing is lost), then divide by 100 truncating to scale 2,
+ * which is where real truncation happens. resources/js/offline/money.js\'s
+ * percentOf() must produce byte-identical results to this method — a
+ * mismatch here is the exact bug class that once made money.js reject a
+ * paid-for offline sale as "unbalanced" after the fact.
+ */',
+         'namespace' => 'App\\Services',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => true,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'amount',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'string',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'subtotal',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'type',
+               'type' => '?string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'value',
+               'type' => '?string',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
@@ -16002,6 +33790,85 @@ return [
       ),
     )),
   ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\InvoicePdfService.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\InvoicePdfService',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Renders a formal A4 invoice for a sale — distinct from ReceiptRenderService\'s
+ * thermal (58mm/80mm) POS receipt, which stays print-in-browser only. This
+ * produces an actual downloadable PDF file, for a customer\'s own records or
+ * accounting rather than a till printout.
+ */',
+         'namespace' => 'App\\Services',
+         'uses' => 
+        array (
+          'payabletype' => 'App\\Enums\\PayableType',
+          'payment' => 'App\\Models\\Payment',
+          'receiptsetting' => 'App\\Models\\ReceiptSetting',
+          'sale' => 'App\\Models\\Sale',
+          'themesetting' => 'App\\Models\\ThemeSetting',
+          'pdf' => 'Barryvdh\\DomPDF\\Facade\\Pdf',
+          'response' => 'Symfony\\Component\\HttpFoundation\\Response',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'download',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'Symfony\\Component\\HttpFoundation\\Response',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'sale',
+               'type' => 'App\\Models\\Sale',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
   'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php' => 
   array (
     0 => 
@@ -16025,6 +33892,7 @@ return [
           'user' => 'App\\Models\\User',
           'vendor' => 'App\\Models\\Vendor',
           'vendorledger' => 'App\\Models\\VendorLedger',
+          'carboninterface' => 'Carbon\\CarbonInterface',
           'db' => 'Illuminate\\Support\\Facades\\DB',
         ),
          'constUses' => 
@@ -16157,7 +34025,32 @@ return [
         1 => 
         \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
            'name' => 'postCustomerEntry',
-           'phpDoc' => NULL,
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @param  ?CarbonInterface  $occurredAt When the underlying transaction actually happened.
+     *                                       Only passed for a sale replayed from an offline queue,
+     *                                       so its ledger row is dated to the sale rather than to
+     *                                       the sync — otherwise a whole offline day\'s entries
+     *                                       would bunch up on the statement under the sync date.
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'ledgerentrytype' => 'App\\Enums\\LedgerEntryType',
+              'transactionreferencetype' => 'App\\Enums\\TransactionReferenceType',
+              'customer' => 'App\\Models\\Customer',
+              'customerledger' => 'App\\Models\\CustomerLedger',
+              'user' => 'App\\Models\\User',
+              'vendor' => 'App\\Models\\Vendor',
+              'vendorledger' => 'App\\Models\\VendorLedger',
+              'carboninterface' => 'Carbon\\CarbonInterface',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
            'byRef' => false,
            'public' => true,
            'private' => false,
@@ -16246,6 +34139,398 @@ return [
                'flags' => 0,
             )),
             6 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'user',
+               'type' => 'App\\Models\\User',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            7 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'occurredAt',
+               'type' => '?Carbon\\CarbonInterface',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineDataService.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\OfflineDataService',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Builds the snapshot a till downloads when it goes offline: everything the
+ * client-side POS needs to ring up a sale with no server — stock, customers
+ * and their balances, banks, and the branding used on printed receipts.
+ *
+ * Deliberately excludes anything the offline POS can\'t act on (vendors,
+ * purchases, reports), both to keep the payload small and to keep the
+ * blast radius small if a till is ever stolen.
+ */',
+         'namespace' => 'App\\Services',
+         'uses' => 
+        array (
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'customerledger' => 'App\\Models\\CustomerLedger',
+          'posdevice' => 'App\\Models\\PosDevice',
+          'receiptsetting' => 'App\\Models\\ReceiptSetting',
+          'themesetting' => 'App\\Models\\ThemeSetting',
+          'user' => 'App\\Models\\User',
+          'storage' => 'Illuminate\\Support\\Facades\\Storage',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'snapshotFor',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array<string, mixed>
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'bank' => 'App\\Models\\Bank',
+              'batch' => 'App\\Models\\Batch',
+              'customer' => 'App\\Models\\Customer',
+              'customerledger' => 'App\\Models\\CustomerLedger',
+              'posdevice' => 'App\\Models\\PosDevice',
+              'receiptsetting' => 'App\\Models\\ReceiptSetting',
+              'themesetting' => 'App\\Models\\ThemeSetting',
+              'user' => 'App\\Models\\User',
+              'storage' => 'Illuminate\\Support\\Facades\\Storage',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'user',
+               'type' => 'App\\Models\\User',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'device',
+               'type' => 'App\\Models\\PosDevice',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\OfflineSyncService.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\OfflineSyncService',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Replays sales that were rung up while the till had no connection.
+ *
+ * The governing rule is that a queued sale is never silently dropped: the
+ * customer already paid and walked out with the goods, so losing the money
+ * record is worse than any stock discrepancy that replaying it causes. A sale
+ * that oversells its batch is still written, the batch is allowed to go
+ * negative (which self-corrects when the next purchase of that batch lands),
+ * and a SaleSyncConflict row is raised so an admin sees it.
+ */',
+         'namespace' => 'App\\Services',
+         'uses' => 
+        array (
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'posdevice' => 'App\\Models\\PosDevice',
+          'sale' => 'App\\Models\\Sale',
+          'salesyncconflict' => 'App\\Models\\SaleSyncConflict',
+          'user' => 'App\\Models\\User',
+          'carbonimmutable' => 'Carbon\\CarbonImmutable',
+          'uniqueconstraintviolationexception' => 'Illuminate\\Database\\UniqueConstraintViolationException',
+          'db' => 'Illuminate\\Support\\Facades\\DB',
+          'log' => 'Illuminate\\Support\\Facades\\Log',
+          'throwable' => 'Throwable',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => '__construct',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => NULL,
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'saleService',
+               'type' => 'App\\Services\\SaleService',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 68,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'syncSales',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @param  list<array<string, mixed>>  $queuedSales
+     * @return list<array<string, mixed>> One result per queued sale, keyed back to its
+     *                                    client_uuid so the till clears only what the
+     *                                    server actually confirmed.
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+              'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+              'batch' => 'App\\Models\\Batch',
+              'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
+              'posdevice' => 'App\\Models\\PosDevice',
+              'sale' => 'App\\Models\\Sale',
+              'salesyncconflict' => 'App\\Models\\SaleSyncConflict',
+              'user' => 'App\\Models\\User',
+              'carbonimmutable' => 'Carbon\\CarbonImmutable',
+              'uniqueconstraintviolationexception' => 'Illuminate\\Database\\UniqueConstraintViolationException',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+              'log' => 'Illuminate\\Support\\Facades\\Log',
+              'throwable' => 'Throwable',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'queuedSales',
+               'type' => 'array',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'user',
+               'type' => 'App\\Models\\User',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'device',
+               'type' => 'App\\Models\\PosDevice',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'syncHeldOrders',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Merges held orders, treating the till\'s list as authoritative for its
+     * own user.
+     *
+     * The till sends everything it currently holds, so anything the server has
+     * that the till does NOT is an order that was resumed or discarded offline
+     * and must be deleted. Only creating would resurrect a parked cart that
+     * has already been sold, letting the cashier ring it a second time.
+     *
+     * @param  list<array<string, mixed>>  $heldOrders
+     * @return list<array<string, mixed>>
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+              'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+              'batch' => 'App\\Models\\Batch',
+              'customer' => 'App\\Models\\Customer',
+              'heldorder' => 'App\\Models\\HeldOrder',
+              'posdevice' => 'App\\Models\\PosDevice',
+              'sale' => 'App\\Models\\Sale',
+              'salesyncconflict' => 'App\\Models\\SaleSyncConflict',
+              'user' => 'App\\Models\\User',
+              'carbonimmutable' => 'Carbon\\CarbonImmutable',
+              'uniqueconstraintviolationexception' => 'Illuminate\\Database\\UniqueConstraintViolationException',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+              'log' => 'Illuminate\\Support\\Facades\\Log',
+              'throwable' => 'Throwable',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'heldOrders',
+               'type' => 'array',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'user',
                'type' => 'App\\Models\\User',
@@ -16651,7 +34936,7 @@ return [
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
-     * @param  list<array{product_id: int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string}>  $items
+     * @param  list<array{product_id: int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string, barcode?: ?string}>  $items
      * @param  list<array{method: string, amount: string, bank_id: ?int}>  $paymentLines
      */',
              'namespace' => 'App\\Services',
@@ -17010,17 +35295,21 @@ return [
          'namespace' => 'App\\Services',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'ledgerentrytype' => 'App\\Enums\\LedgerEntryType',
           'payabletype' => 'App\\Enums\\PayableType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'transactionreferencetype' => 'App\\Enums\\TransactionReferenceType',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
           'payment' => 'App\\Models\\Payment',
           'sale' => 'App\\Models\\Sale',
           'saleitem' => 'App\\Models\\SaleItem',
           'user' => 'App\\Models\\User',
+          'carboninterface' => 'Carbon\\CarbonInterface',
           'uploadedfile' => 'Illuminate\\Http\\UploadedFile',
           'db' => 'Illuminate\\Support\\Facades\\DB',
           'str' => 'Illuminate\\Support\\Str',
@@ -17082,6 +35371,19 @@ return [
                'phpDoc' => NULL,
                'flags' => 68,
             )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'discountCalculator',
+               'type' => 'App\\Services\\DiscountCalculator',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 68,
+            )),
           ),
            'attributes' => 
           array (
@@ -17093,23 +35395,38 @@ return [
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
-     * @param  list<array{batch_id: int, quantity: string, unit_price: string}>  $items
+     * @param  list<array{batch_id: int, quantity: string, unit_price: string, discount_type?: ?string, discount_value?: ?string}>  $items
      * @param  list<array{method: string, amount: string, bank_id: ?int}>  $paymentLines
+     * @param  ?string  $clientUuid Idempotency key for a sale replayed from an offline queue.
+     * @param  ?string  $invoiceNumber Pre-assigned number (offline sales keep the SL-OFF… number
+     *                                 already printed on the customer\'s receipt); null derives the
+     *                                 usual SL-###### from the new row\'s id.
+     * @param  ?CarbonInterface  $occurredAt When the sale actually happened at the till. Offline
+     *                                       sales pass this so they aren\'t all dated to sync time.
+     * @param  bool  $allowOverdraw Skip the stock-availability check only. Passed true solely by
+     *                              OfflineSyncService — see the guard comment below.
+     * @param  ?string  $discountType \'flat\' or \'percentage\', applied to the whole sale on top of
+     *                                any per-item discounts already folded into each line.
+     * @param  ?string  $discountValue The PKR amount (\'flat\') or percentage number (\'percentage\').
      */',
              'namespace' => 'App\\Services',
              'uses' => 
             array (
+              'discounttype' => 'App\\Enums\\DiscountType',
               'ledgerentrytype' => 'App\\Enums\\LedgerEntryType',
               'payabletype' => 'App\\Enums\\PayableType',
               'paymentmethod' => 'App\\Enums\\PaymentMethod',
               'transactionreferencetype' => 'App\\Enums\\TransactionReferenceType',
               'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+              'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+              'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
               'batch' => 'App\\Models\\Batch',
               'customer' => 'App\\Models\\Customer',
               'payment' => 'App\\Models\\Payment',
               'sale' => 'App\\Models\\Sale',
               'saleitem' => 'App\\Models\\SaleItem',
               'user' => 'App\\Models\\User',
+              'carboninterface' => 'Carbon\\CarbonInterface',
               'uploadedfile' => 'Illuminate\\Http\\UploadedFile',
               'db' => 'Illuminate\\Support\\Facades\\DB',
               'str' => 'Illuminate\\Support\\Str',
@@ -17186,6 +35503,450 @@ return [
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            5 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'clientUuid',
+               'type' => '?string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            6 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'invoiceNumber',
+               'type' => '?string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            7 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'occurredAt',
+               'type' => '?Carbon\\CarbonInterface',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            8 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'allowOverdraw',
+               'type' => 'bool',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            9 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'discountType',
+               'type' => '?string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            10 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'discountValue',
+               'type' => '?string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\SalesReportService.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\SalesReportService',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Aggregate totals for the Sales Report page, computed across the full
+ * filtered result set (not just the current pagination page).
+ */',
+         'namespace' => 'App\\Services',
+         'uses' => 
+        array (
+          'sale' => 'App\\Models\\Sale',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          'db' => 'Illuminate\\Support\\Facades\\DB',
+          'runtimeexception' => 'RuntimeException',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'summary',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array{sales_total: string, cost_total: string, profit_total: string, margin_percent: string, quantity_sold: ?string}
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'sale' => 'App\\Models\\Sale',
+              'auth' => 'Illuminate\\Support\\Facades\\Auth',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+              'runtimeexception' => 'RuntimeException',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'dateFrom',
+               'type' => '?string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'dateTo',
+               'type' => '?string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'customerId',
+               'type' => '?int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            3 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'productId',
+               'type' => '?int',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\ShopService.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'App\\Services\\ShopService',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Only the Super Admin panel calls this — a brand-new shop has no logged-in
+ * web-guard user yet, so every row below sets shop_id explicitly rather than
+ * relying on BelongsToShop\'s auth-based auto-fill.
+ */',
+         'namespace' => 'App\\Services',
+         'uses' => 
+        array (
+          'userrole' => 'App\\Enums\\UserRole',
+          'receiptsetting' => 'App\\Models\\ReceiptSetting',
+          'shop' => 'App\\Models\\Shop',
+          'themesetting' => 'App\\Models\\ThemeSetting',
+          'user' => 'App\\Models\\User',
+          'db' => 'Illuminate\\Support\\Facades\\DB',
+          'str' => 'Illuminate\\Support\\Str',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => NULL,
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'createShop',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * @return array{shop: Shop, admin: User, temporaryPassword: string}
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'userrole' => 'App\\Enums\\UserRole',
+              'receiptsetting' => 'App\\Models\\ReceiptSetting',
+              'shop' => 'App\\Models\\Shop',
+              'themesetting' => 'App\\Models\\ThemeSetting',
+              'user' => 'App\\Models\\User',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+              'str' => 'Illuminate\\Support\\Str',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'name',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'adminName',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'adminEmail',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        1 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'updateShop',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'App\\Models\\Shop',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shop',
+               'type' => 'App\\Models\\Shop',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'name',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            2 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'slug',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        2 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'resetAdminPassword',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+     * Resets the password for a shop\'s Admin-role user (the oldest one, if
+     * there happens to be more than one) — the secure equivalent of "Super
+     * Admin can see a shop\'s password": passwords are one-way hashed and
+     * genuinely unrecoverable, so the only legitimate way to help a locked-
+     * out shop back in is to issue a fresh one, shown once, exactly like at
+     * shop-creation time.
+     *
+     * @return array{admin: User, temporaryPassword: string}
+     */',
+             'namespace' => 'App\\Services',
+             'uses' => 
+            array (
+              'userrole' => 'App\\Enums\\UserRole',
+              'receiptsetting' => 'App\\Models\\ReceiptSetting',
+              'shop' => 'App\\Models\\Shop',
+              'themesetting' => 'App\\Models\\ThemeSetting',
+              'user' => 'App\\Models\\User',
+              'db' => 'Illuminate\\Support\\Facades\\DB',
+              'str' => 'Illuminate\\Support\\Str',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'array',
+           'parameters' => 
+          array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'shop',
+               'type' => 'App\\Models\\Shop',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
                'attributes' => 
               array (
               ),

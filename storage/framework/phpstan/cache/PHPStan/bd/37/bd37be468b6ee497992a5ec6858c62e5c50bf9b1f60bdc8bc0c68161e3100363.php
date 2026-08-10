@@ -12,10 +12,189 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
         ),
          'className' => 'App\\Models\\ThemeSetting',
          'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'ec2cc24ebb727b0fefcca81f98089456' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\ThemeSetting',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+          1 => 'App\\Models\\ThemeSetting',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      '7d2a942fe5452151f5160d7dd11d3f75' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\ThemeSetting',
+         'functionName' => 'bootBelongsToShop',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Models\\Concerns',
+           'uses' => 
+          array (
+            'shop' => 'App\\Models\\Shop',
+            'user' => 'App\\Models\\User',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          ),
+           'className' => 'App\\Models\\ThemeSetting',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+          1 => 'App\\Models\\ThemeSetting',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      '999d5fce718026dfae512d0b8ec4c06e' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\ThemeSetting',
+         'functionName' => 'currentShopId',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Models\\Concerns',
+           'uses' => 
+          array (
+            'shop' => 'App\\Models\\Shop',
+            'user' => 'App\\Models\\User',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          ),
+           'className' => 'App\\Models\\ThemeSetting',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php',
+          1 => 'App\\Models\\ThemeSetting',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      '8e15252a10b4ff1972fbffdad5b3dd55' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+        ),
+         'className' => 'App\\Models\\ThemeSetting',
+         'functionName' => 'casts',
          'templatePhpDocNodes' => 
         array (
         ),
@@ -35,6 +214,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
         ),
          'className' => 'App\\Models\\ThemeSetting',
@@ -58,6 +238,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
         ),
          'className' => 'App\\Models\\ThemeSetting',
@@ -79,7 +260,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php' => 'd6c2197f4e34501874675aa4cc86abef1636f4afbd3210b449dfbb3b1872c716',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\ThemeSetting.php' => 'c7bfc875976a4e4933abca62f8d76bb705444eb57e5b878527c029b4e17f5950',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php' => '3708db7209115b37a0288f18d258c5573a4b13da79c901154a241684cbed5a16',
     ),
   ),
 ));

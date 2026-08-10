@@ -13,6 +13,8 @@ return [
     'quantity' => 'Quantity',
     'unit_price' => 'Unit Price',
     'line_total' => 'Line Total',
+    'subtotal' => 'Subtotal',
+    'discount' => 'Discount',
     'total' => 'Total',
     'payment' => 'Payment',
 ];

@@ -13,7 +13,7 @@
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 
-import { formatMoney } from './money';
+import { compare, formatMoney } from './money';
 
 const PAYMENT_LABELS = {
     cash: 'Cash',
@@ -109,6 +109,18 @@ export function buildInvoicePdf(sale, snapshot) {
     });
 
     let afterTableY = doc.lastAutoTable.finalY + 20;
+
+    if (compare(sale.display.discount_amount ?? '0', '0') > 0) {
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(10);
+        doc.setTextColor(...MUTED);
+        doc.text('Subtotal', 360, afterTableY);
+        doc.text(formatMoney(sale.display.subtotal), 555, afterTableY, { align: 'right' });
+        afterTableY += 16;
+        doc.text('Discount', 360, afterTableY);
+        doc.text(`-${formatMoney(sale.display.discount_amount)}`, 555, afterTableY, { align: 'right' });
+        afterTableY += 14;
+    }
 
     doc.setLineWidth(1.5);
     doc.line(360, afterTableY - 10, 555, afterTableY - 10);

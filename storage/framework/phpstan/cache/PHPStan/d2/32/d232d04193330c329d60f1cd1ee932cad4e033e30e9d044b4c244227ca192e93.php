@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Pos\Pos.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Pos\Pos
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-34db9954afd7a62321bfa65654fa0f3a9a2b6fafa903975271bfe31d114ada2e',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-ebb9a93ca3b08eaf2fd5dbce61624cb992eb3e00c96fe7f273793fb669cffdb8',
    'data' => 
   array (
     'locatedSource' => 
@@ -24,6 +24,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'modifiers' => 0,
     'docComment' => '/**
  * @property-read string $cartTotal Livewire computed property backed by getCartTotalProperty().
+ * @property-read string $cartSubtotal Livewire computed property backed by getCartSubtotalProperty().
+ * @property-read string $cartItemDiscountTotal Livewire computed property backed by getCartItemDiscountTotalProperty().
+ * @property-read string $saleDiscountAmount Livewire computed property backed by getSaleDiscountAmountProperty().
  */',
     'attributes' => 
     array (
@@ -38,19 +41,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'code' => '\'layouts.app\'',
             'attributes' => 
             array (
-              'startLine' => 24,
-              'endLine' => 24,
-              'startTokenPos' => 85,
-              'startFilePos' => 610,
-              'endTokenPos' => 85,
-              'endFilePos' => 622,
+              'startLine' => 33,
+              'endLine' => 33,
+              'startTokenPos' => 115,
+              'startFilePos' => 1161,
+              'endTokenPos' => 115,
+              'endFilePos' => 1173,
             ),
           ),
         ),
       ),
     ),
-    'startLine' => 24,
-    'endLine' => 251,
+    'startLine' => 33,
+    'endLine' => 464,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -86,20 +89,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 29,
-            'endLine' => 29,
-            'startTokenPos' => 112,
-            'startFilePos' => 716,
-            'endTokenPos' => 112,
-            'endFilePos' => 717,
+            'startLine' => 38,
+            'endLine' => 38,
+            'startTokenPos' => 142,
+            'startFilePos' => 1267,
+            'endTokenPos' => 142,
+            'endFilePos' => 1268,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 29,
-        'endLine' => 29,
+        'startLine' => 38,
+        'endLine' => 38,
         'startColumn' => 5,
         'endColumn' => 37,
         'isPromoted' => false,
@@ -148,20 +151,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'null',
           'attributes' => 
           array (
-            'startLine' => 31,
-            'endLine' => 31,
-            'startTokenPos' => 124,
-            'startFilePos' => 753,
-            'endTokenPos' => 124,
-            'endFilePos' => 756,
+            'startLine' => 40,
+            'endLine' => 40,
+            'startTokenPos' => 154,
+            'startFilePos' => 1304,
+            'endTokenPos' => 154,
+            'endFilePos' => 1307,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 31,
-        'endLine' => 31,
+        'startLine' => 40,
+        'endLine' => 40,
         'startColumn' => 5,
         'endColumn' => 37,
         'isPromoted' => false,
@@ -191,20 +194,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[]',
           'attributes' => 
           array (
-            'startLine' => 34,
-            'endLine' => 34,
-            'startTokenPos' => 137,
-            'startFilePos' => 924,
-            'endTokenPos' => 138,
-            'endFilePos' => 925,
+            'startLine' => 43,
+            'endLine' => 43,
+            'startTokenPos' => 167,
+            'startFilePos' => 1523,
+            'endTokenPos' => 168,
+            'endFilePos' => 1524,
           ),
         ),
-        'docComment' => '/** @var list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string}> */',
+        'docComment' => '/** @var list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}> */',
         'attributes' => 
         array (
         ),
-        'startLine' => 34,
-        'endLine' => 34,
+        'startLine' => 43,
+        'endLine' => 43,
         'startColumn' => 5,
         'endColumn' => 28,
         'isPromoted' => false,
@@ -253,20 +256,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'null',
           'attributes' => 
           array (
-            'startLine' => 36,
-            'endLine' => 36,
-            'startTokenPos' => 150,
-            'startFilePos' => 960,
-            'endTokenPos' => 150,
-            'endFilePos' => 963,
+            'startLine' => 45,
+            'endLine' => 45,
+            'startTokenPos' => 180,
+            'startFilePos' => 1559,
+            'endTokenPos' => 180,
+            'endFilePos' => 1562,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 36,
-        'endLine' => 36,
+        'startLine' => 45,
+        'endLine' => 45,
         'startColumn' => 5,
         'endColumn' => 36,
         'isPromoted' => false,
@@ -296,20 +299,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'false',
           'attributes' => 
           array (
-            'startLine' => 38,
-            'endLine' => 38,
-            'startTokenPos' => 161,
-            'startFilePos' => 1004,
-            'endTokenPos' => 161,
-            'endFilePos' => 1008,
+            'startLine' => 47,
+            'endLine' => 47,
+            'startTokenPos' => 191,
+            'startFilePos' => 1603,
+            'endTokenPos' => 191,
+            'endFilePos' => 1607,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 38,
-        'endLine' => 38,
+        'startLine' => 47,
+        'endLine' => 47,
         'startColumn' => 5,
         'endColumn' => 43,
         'isPromoted' => false,
@@ -339,20 +342,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[]',
           'attributes' => 
           array (
-            'startLine' => 41,
-            'endLine' => 41,
-            'startTokenPos' => 174,
-            'startFilePos' => 1120,
-            'endTokenPos' => 175,
-            'endFilePos' => 1121,
+            'startLine' => 50,
+            'endLine' => 50,
+            'startTokenPos' => 204,
+            'startFilePos' => 1719,
+            'endTokenPos' => 205,
+            'endFilePos' => 1720,
           ),
         ),
         'docComment' => '/** @var list<array{method: string, amount: string, bank_id: ?int}> */',
         'attributes' => 
         array (
         ),
-        'startLine' => 41,
-        'endLine' => 41,
+        'startLine' => 50,
+        'endLine' => 50,
         'startColumn' => 5,
         'endColumn' => 36,
         'isPromoted' => false,
@@ -401,22 +404,127 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'null',
           'attributes' => 
           array (
-            'startLine' => 43,
-            'endLine' => 43,
-            'startTokenPos' => 187,
-            'startFilePos' => 1176,
-            'endTokenPos' => 187,
-            'endFilePos' => 1179,
+            'startLine' => 52,
+            'endLine' => 52,
+            'startTokenPos' => 217,
+            'startFilePos' => 1775,
+            'endTokenPos' => 217,
+            'endFilePos' => 1778,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 43,
-        'endLine' => 43,
+        'startLine' => 52,
+        'endLine' => 52,
         'startColumn' => 5,
         'endColumn' => 56,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'discountType' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'name' => 'discountType',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionUnionType',
+          'data' => 
+          array (
+            'types' => 
+            array (
+              0 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'string',
+                  'isIdentifier' => true,
+                ),
+              ),
+              1 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'null',
+                  'isIdentifier' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => 'null',
+          'attributes' => 
+          array (
+            'startLine' => 55,
+            'endLine' => 55,
+            'startTokenPos' => 231,
+            'startFilePos' => 1921,
+            'endTokenPos' => 231,
+            'endFilePos' => 1924,
+          ),
+        ),
+        'docComment' => '/** Whole-sale discount, applied on top of any per-item discounts already folded into each line. */',
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 55,
+        'endLine' => 55,
+        'startColumn' => 5,
+        'endColumn' => 40,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'discountValue' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'name' => 'discountValue',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '\'0\'',
+          'attributes' => 
+          array (
+            'startLine' => 57,
+            'endLine' => 57,
+            'startTokenPos' => 242,
+            'startFilePos' => 1963,
+            'endTokenPos' => 242,
+            'endFilePos' => 1965,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 57,
+        'endLine' => 57,
+        'startColumn' => 5,
+        'endColumn' => 39,
         'isPromoted' => false,
         'declaredAtCompileTime' => true,
         'immediateVirtual' => false,
@@ -447,8 +555,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 45,
-        'endLine' => 48,
+        'startLine' => 59,
+        'endLine' => 62,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -482,8 +590,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 50,
-        'endLine' => 100,
+        'startLine' => 64,
+        'endLine' => 116,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -521,8 +629,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 102,
-            'endLine' => 102,
+            'startLine' => 118,
+            'endLine' => 118,
             'startColumn' => 36,
             'endColumn' => 45,
             'parameterIndex' => 0,
@@ -543,8 +651,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 102,
-        'endLine' => 106,
+        'startLine' => 118,
+        'endLine' => 122,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -578,8 +686,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 108,
-        'endLine' => 111,
+        'startLine' => 124,
+        'endLine' => 127,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -587,6 +695,230 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isGenerator' => false,
         'isVariadic' => false,
         'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'holdOrder' => 
+      array (
+        'name' => 'holdOrder',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * Parks the current cart so the cashier can serve someone else — the
+ * classic "customer forgot their wallet, next please" case.
+ */',
+        'startLine' => 133,
+        'endLine' => 162,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'resumeHeldOrder' => 
+      array (
+        'name' => 'resumeHeldOrder',
+        'parameters' => 
+        array (
+          'heldOrderId' => 
+          array (
+            'name' => 'heldOrderId',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'int',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 164,
+            'endLine' => 164,
+            'startColumn' => 37,
+            'endColumn' => 52,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 164,
+        'endLine' => 201,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'discardHeldOrder' => 
+      array (
+        'name' => 'discardHeldOrder',
+        'parameters' => 
+        array (
+          'heldOrderId' => 
+          array (
+            'name' => 'heldOrderId',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'int',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 203,
+            'endLine' => 203,
+            'startColumn' => 38,
+            'endColumn' => 53,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 203,
+        'endLine' => 210,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'rehydrateCart' => 
+      array (
+        'name' => 'rehydrateCart',
+        'parameters' => 
+        array (
+          'lines' => 
+          array (
+            'name' => 'lines',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'mixed',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 216,
+            'endLine' => 216,
+            'startColumn' => 36,
+            'endColumn' => 47,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'array',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @param  mixed  $lines
+ * @return list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}>
+ */',
+        'startLine' => 216,
+        'endLine' => 258,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 4,
         'namespace' => 'App\\Livewire\\Pos',
         'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
         'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
@@ -617,8 +949,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 113,
-            'endLine' => 113,
+            'startLine' => 260,
+            'endLine' => 260,
             'startColumn' => 39,
             'endColumn' => 48,
             'parameterIndex' => 0,
@@ -639,8 +971,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 113,
-        'endLine' => 126,
+        'startLine' => 260,
+        'endLine' => 273,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -678,8 +1010,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 128,
-            'endLine' => 128,
+            'startLine' => 275,
+            'endLine' => 275,
             'startColumn' => 39,
             'endColumn' => 48,
             'parameterIndex' => 0,
@@ -700,8 +1032,331 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 128,
-        'endLine' => 141,
+        'startLine' => 275,
+        'endLine' => 290,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'lineSubtotal' => 
+      array (
+        'name' => 'lineSubtotal',
+        'parameters' => 
+        array (
+          'line' => 
+          array (
+            'name' => 'line',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'array',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 292,
+            'endLine' => 292,
+            'startColumn' => 34,
+            'endColumn' => 44,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 292,
+        'endLine' => 295,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'lineDiscountAmount' => 
+      array (
+        'name' => 'lineDiscountAmount',
+        'parameters' => 
+        array (
+          'line' => 
+          array (
+            'name' => 'line',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'array',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 297,
+            'endLine' => 297,
+            'startColumn' => 40,
+            'endColumn' => 50,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 297,
+        'endLine' => 304,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'lineTotal' => 
+      array (
+        'name' => 'lineTotal',
+        'parameters' => 
+        array (
+          'line' => 
+          array (
+            'name' => 'line',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'array',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 307,
+            'endLine' => 307,
+            'startColumn' => 31,
+            'endColumn' => 41,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/** The line\'s total after its own per-item discount, before the sale-level discount. */',
+        'startLine' => 307,
+        'endLine' => 310,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'getCartSubtotalProperty' => 
+      array (
+        'name' => 'getCartSubtotalProperty',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/** Sum of every line\'s pre-discount subtotal — the receipt\'s "Subtotal" figure. */',
+        'startLine' => 313,
+        'endLine' => 320,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'getCartItemDiscountTotalProperty' => 
+      array (
+        'name' => 'getCartItemDiscountTotalProperty',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 322,
+        'endLine' => 329,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'subtotalAfterItemDiscounts' => 
+      array (
+        'name' => 'subtotalAfterItemDiscounts',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 331,
+        'endLine' => 334,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 4,
+        'namespace' => 'App\\Livewire\\Pos',
+        'declaringClassName' => 'App\\Livewire\\Pos\\Pos',
+        'implementingClassName' => 'App\\Livewire\\Pos\\Pos',
+        'currentClassName' => 'App\\Livewire\\Pos\\Pos',
+        'aliasName' => NULL,
+      ),
+      'getSaleDiscountAmountProperty' => 
+      array (
+        'name' => 'getSaleDiscountAmountProperty',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 336,
+        'endLine' => 343,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -734,9 +1389,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'docComment' => NULL,
-        'startLine' => 143,
-        'endLine' => 150,
+        'docComment' => '/** Subtotal minus every item discount minus the sale-level discount — what the customer actually owes. */',
+        'startLine' => 346,
+        'endLine' => 349,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -770,8 +1425,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 152,
-        'endLine' => 164,
+        'startLine' => 351,
+        'endLine' => 363,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -805,8 +1460,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 166,
-        'endLine' => 173,
+        'startLine' => 365,
+        'endLine' => 372,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -844,8 +1499,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 175,
-            'endLine' => 175,
+            'startLine' => 374,
+            'endLine' => 374,
             'startColumn' => 39,
             'endColumn' => 48,
             'parameterIndex' => 0,
@@ -866,8 +1521,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 175,
-        'endLine' => 179,
+        'startLine' => 374,
+        'endLine' => 378,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -901,8 +1556,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 181,
-        'endLine' => 184,
+        'startLine' => 380,
+        'endLine' => 383,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -940,8 +1595,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 186,
-            'endLine' => 186,
+            'startLine' => 385,
+            'endLine' => 385,
             'startColumn' => 30,
             'endColumn' => 53,
             'parameterIndex' => 0,
@@ -962,8 +1617,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 186,
-        'endLine' => 242,
+        'startLine' => 385,
+        'endLine' => 454,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -997,8 +1652,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 244,
-        'endLine' => 250,
+        'startLine' => 456,
+        'endLine' => 463,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

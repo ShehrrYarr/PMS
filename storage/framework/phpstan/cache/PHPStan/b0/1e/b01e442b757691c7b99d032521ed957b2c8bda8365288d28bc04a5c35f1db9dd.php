@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Models\SaleItem.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\SaleItem
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-d2e61234fe9cc36e2e896e2d295f6e5bf2f60d564f2bb630c9a496a8f0292749',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-4d5ccb4bdc9de1d308f5be7efed13d2f0eb355c0e5851d17ac43b174628e072b',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 10,
-    'endLine' => 51,
+    'startLine' => 12,
+    'endLine' => 87,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -36,6 +36,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
+      0 => 'App\\Models\\Concerns\\BelongsToShop',
     ),
     'immediateConstants' => 
     array (
@@ -51,23 +52,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'sale_id\', \'batch_id\', \'quantity\', \'unit_price\', \'line_total\', \'quantity_returned\']',
+          'code' => '[\'shop_id\', \'sale_id\', \'batch_id\', \'quantity\', \'unit_price\', \'discount_type\', \'discount_value\', \'discount_amount\', \'cost_price\', \'line_total\', \'quantity_returned\']',
           'attributes' => 
           array (
-            'startLine' => 12,
-            'endLine' => 19,
-            'startTokenPos' => 41,
-            'startFilePos' => 208,
-            'endTokenPos' => 61,
-            'endFilePos' => 346,
+            'startLine' => 16,
+            'endLine' => 28,
+            'startTokenPos' => 56,
+            'startFilePos' => 299,
+            'endTokenPos' => 91,
+            'endFilePos' => 556,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 12,
-        'endLine' => 19,
+        'startLine' => 16,
+        'endLine' => 28,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -100,8 +101,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 21,
-        'endLine' => 29,
+        'startLine' => 30,
+        'endLine' => 42,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -137,8 +138,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Sale, $this>
  */',
-        'startLine' => 34,
-        'endLine' => 37,
+        'startLine' => 47,
+        'endLine' => 50,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -174,8 +175,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Batch, $this>
  */',
-        'startLine' => 42,
-        'endLine' => 45,
+        'startLine' => 55,
+        'endLine' => 58,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -209,8 +210,116 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 47,
-        'endLine' => 50,
+        'startLine' => 60,
+        'endLine' => 63,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\SaleItem',
+        'implementingClassName' => 'App\\Models\\SaleItem',
+        'currentClassName' => 'App\\Models\\SaleItem',
+        'aliasName' => NULL,
+      ),
+      'costTotal' => 
+      array (
+        'name' => 'costTotal',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * Cost basis of this line, from the cost_price snapshot captured at sale
+ * time (see SaleService::create()).
+ */',
+        'startLine' => 69,
+        'endLine' => 72,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\SaleItem',
+        'implementingClassName' => 'App\\Models\\SaleItem',
+        'currentClassName' => 'App\\Models\\SaleItem',
+        'aliasName' => NULL,
+      ),
+      'profit' => 
+      array (
+        'name' => 'profit',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 74,
+        'endLine' => 77,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\SaleItem',
+        'implementingClassName' => 'App\\Models\\SaleItem',
+        'currentClassName' => 'App\\Models\\SaleItem',
+        'aliasName' => NULL,
+      ),
+      'profitMarginPercent' => 
+      array (
+        'name' => 'profitMarginPercent',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 79,
+        'endLine' => 86,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

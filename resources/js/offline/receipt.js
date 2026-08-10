@@ -7,7 +7,7 @@
  * does — and "Save as PDF" there works as a fallback.
  */
 
-import { formatMoney } from './money';
+import { compare, formatMoney } from './money';
 
 /**
  * Falls back to English only if the page somehow failed to pass its
@@ -24,6 +24,8 @@ const FALLBACK = {
     item: 'Item',
     qty: 'Qty',
     amount: 'Amount',
+    subtotal: 'Subtotal',
+    discount: 'Discount',
     total: 'Total',
     payment: 'Payment',
     walk_in: 'Walk-in Customer',
@@ -122,6 +124,16 @@ export function buildReceiptHtml(sale, snapshot, translations = {}) {
             <tbody>${itemRows}</tbody>
         </table>
         <div class="divider"></div>
+        ${
+            compare(sale.display.discount_amount ?? '0', '0') > 0
+                ? `<div class="totals-row">
+            <span>${escapeHtml(t.subtotal)}</span><span>${escapeHtml(formatMoney(sale.display.subtotal))}</span>
+        </div>
+        <div class="totals-row">
+            <span>${escapeHtml(t.discount)}</span><span>-${escapeHtml(formatMoney(sale.display.discount_amount))}</span>
+        </div>`
+                : ''
+        }
         <div class="totals-row grand-total">
             <span>${escapeHtml(t.total)}</span><span>${escapeHtml(formatMoney(sale.total_amount))}</span>
         </div>

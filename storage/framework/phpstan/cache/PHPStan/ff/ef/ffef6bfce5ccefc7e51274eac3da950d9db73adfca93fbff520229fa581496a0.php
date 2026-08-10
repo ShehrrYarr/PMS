@@ -2,7 +2,7 @@
 
 // osfsl-C:/Users/shehr/OneDrive/Desktop/Personal Projects/PesticidesManagmentSystem/database/factories/UserFactory.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Database\Factories\UserFactory
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-50bdc543f1b09d1a57260be55ad0e1a68aee4b34f63e1109dc94d9bcd3080526-8.2.26-6.70.0.3',
+   'variableKey' => 'v2-ada187a59e944c87603b1f2025ae46dd64d9ddd844994c7e748f080fc75ea2b6-8.2.26-6.70.0.3',
    'data' => 
   array (
     'locatedSource' => 
@@ -28,8 +28,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 13,
-    'endLine' => 45,
+    'startLine' => 14,
+    'endLine' => 53,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Factories\\Factory',
@@ -85,8 +85,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 18,
-        'endLine' => 18,
+        'startLine' => 19,
+        'endLine' => 19,
         'startColumn' => 5,
         'endColumn' => 39,
         'isPromoted' => false,
@@ -123,8 +123,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, mixed>
  */',
-        'startLine' => 25,
-        'endLine' => 34,
+        'startLine' => 26,
+        'endLine' => 42,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -160,8 +160,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Indicate that the model\'s email address should be unverified.
  */',
-        'startLine' => 39,
-        'endLine' => 44,
+        'startLine' => 47,
+        'endLine' => 52,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

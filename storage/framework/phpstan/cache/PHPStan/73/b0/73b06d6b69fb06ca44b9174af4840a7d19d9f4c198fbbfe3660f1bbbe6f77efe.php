@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Services\PurchaseReturnService.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Services\PurchaseReturnService
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-6e1619602616f0b486a921054ff922912a4f4d31bc4c2008ccd9e1e82e7ecc75',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-6860e4c6646298f573c7ff0d70cfbd113bf02a996f150fdfe518245483edd0d1',
    'data' => 
   array (
     'locatedSource' => 
@@ -31,7 +31,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 23,
-    'endLine' => 99,
+    'endLine' => 100,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -260,7 +260,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  list<array{purchase_item_id: int, quantity: string}>  $lines
  */',
         'startLine' => 30,
-        'endLine' => 98,
+        'endLine' => 99,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => true,

@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Inventory\BatchList.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Inventory\BatchList
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-e0189d125ec638803edeb1279b73f97689cb9e950fa3be8b1bd12b7b7ef837af',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-251565af7413d21dbc855789b8a0b7804b9d5ccbe02be1f5a8d009ca422fe985',
    'data' => 
   array (
     'locatedSource' => 
@@ -36,19 +36,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'code' => '\'layouts.app\'',
             'attributes' => 
             array (
-              'startLine' => 17,
-              'endLine' => 17,
-              'startTokenPos' => 63,
-              'startFilePos' => 341,
-              'endTokenPos' => 63,
-              'endFilePos' => 353,
+              'startLine' => 16,
+              'endLine' => 16,
+              'startTokenPos' => 58,
+              'startFilePos' => 308,
+              'endTokenPos' => 58,
+              'endFilePos' => 320,
             ),
           ),
         ),
       ),
     ),
-    'startLine' => 17,
-    'endLine' => 86,
+    'startLine' => 16,
+    'endLine' => 71,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -84,8 +84,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 22,
-        'endLine' => 22,
+        'startLine' => 21,
+        'endLine' => 21,
         'startColumn' => 5,
         'endColumn' => 27,
         'isPromoted' => false,
@@ -134,12 +134,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'null',
           'attributes' => 
           array (
-            'startLine' => 25,
-            'endLine' => 25,
-            'startTokenPos' => 108,
-            'startFilePos' => 506,
-            'endTokenPos' => 108,
-            'endFilePos' => 509,
+            'startLine' => 24,
+            'endLine' => 24,
+            'startTokenPos' => 103,
+            'startFilePos' => 473,
+            'endTokenPos' => 103,
+            'endFilePos' => 476,
           ),
         ),
         'docComment' => NULL,
@@ -156,19 +156,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'product\'',
                 'attributes' => 
                 array (
-                  'startLine' => 24,
-                  'endLine' => 24,
-                  'startTokenPos' => 95,
-                  'startFilePos' => 461,
-                  'endTokenPos' => 95,
-                  'endFilePos' => 469,
+                  'startLine' => 23,
+                  'endLine' => 23,
+                  'startTokenPos' => 90,
+                  'startFilePos' => 428,
+                  'endTokenPos' => 90,
+                  'endFilePos' => 436,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 24,
-        'endLine' => 25,
+        'startLine' => 23,
+        'endLine' => 24,
         'startColumn' => 5,
         'endColumn' => 38,
         'isPromoted' => false,
@@ -198,20 +198,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'false',
           'attributes' => 
           array (
-            'startLine' => 27,
-            'endLine' => 27,
-            'startTokenPos' => 119,
-            'startFilePos' => 542,
-            'endTokenPos' => 119,
-            'endFilePos' => 546,
+            'startLine' => 26,
+            'endLine' => 26,
+            'startTokenPos' => 114,
+            'startFilePos' => 509,
+            'endTokenPos' => 114,
+            'endFilePos' => 513,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 27,
-        'endLine' => 27,
+        'startLine' => 26,
+        'endLine' => 26,
         'startColumn' => 5,
         'endColumn' => 35,
         'isPromoted' => false,
@@ -224,41 +224,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'immediateMethods' => 
     array (
-      'create' => 
-      array (
-        'name' => 'create',
-        'parameters' => 
-        array (
-        ),
-        'returnsReference' => false,
-        'returnType' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'void',
-            'isIdentifier' => true,
-          ),
-        ),
-        'attributes' => 
-        array (
-        ),
-        'docComment' => NULL,
-        'startLine' => 29,
-        'endLine' => 40,
-        'startColumn' => 5,
-        'endColumn' => 5,
-        'couldThrow' => false,
-        'isClosure' => false,
-        'isGenerator' => false,
-        'isVariadic' => false,
-        'modifiers' => 1,
-        'namespace' => 'App\\Livewire\\Inventory',
-        'declaringClassName' => 'App\\Livewire\\Inventory\\BatchList',
-        'implementingClassName' => 'App\\Livewire\\Inventory\\BatchList',
-        'currentClassName' => 'App\\Livewire\\Inventory\\BatchList',
-        'aliasName' => NULL,
-      ),
       'edit' => 
       array (
         'name' => 'edit',
@@ -283,8 +248,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 42,
-            'endLine' => 42,
+            'startLine' => 28,
+            'endLine' => 28,
             'startColumn' => 26,
             'endColumn' => 37,
             'parameterIndex' => 0,
@@ -305,8 +270,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 42,
-        'endLine' => 48,
+        'startLine' => 28,
+        'endLine' => 34,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -325,32 +290,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'name' => 'save',
         'parameters' => 
         array (
-          'barcodeService' => 
-          array (
-            'name' => 'barcodeService',
-            'default' => NULL,
-            'type' => 
-            array (
-              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-              'data' => 
-              array (
-                'name' => 'App\\Services\\BarcodeService',
-                'isIdentifier' => false,
-              ),
-            ),
-            'isVariadic' => false,
-            'byRef' => false,
-            'isPromoted' => false,
-            'attributes' => 
-            array (
-            ),
-            'startLine' => 50,
-            'endLine' => 50,
-            'startColumn' => 26,
-            'endColumn' => 55,
-            'parameterIndex' => 0,
-            'isOptional' => false,
-          ),
         ),
         'returnsReference' => false,
         'returnType' => 
@@ -366,8 +305,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 50,
-        'endLine' => 64,
+        'startLine' => 36,
+        'endLine' => 50,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -401,8 +340,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 66,
-        'endLine' => 70,
+        'startLine' => 52,
+        'endLine' => 56,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -436,8 +375,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 72,
-        'endLine' => 85,
+        'startLine' => 58,
+        'endLine' => 70,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

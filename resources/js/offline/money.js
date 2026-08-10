@@ -140,6 +140,24 @@ export function multiply(a, b) {
     return fromCents(Math.trunc(product / 10 ** (places - SCALE)));
 }
 
+/**
+ * Mirrors bcdiv(bcmul($base, $percent, 4), '100', 2) — the same formula
+ * DiscountCalculator::amount() uses server-side for a percentage discount.
+ *
+ * toCents(base) * toCents(percent) equals base*percent*10000 exactly (both
+ * operands have at most 2dp, so their real-number product has at most 4dp —
+ * nothing is lost multiplying at this step, same as bcmul(...,4)). Dividing
+ * by 10000 and truncating then recovers exactly the same truncated-cents
+ * result as dividing the 4dp product by 100 and truncating to 2dp — because
+ * the "/100 to turn a percentage into a fraction" and the "×100 to turn PKR
+ * into cents" cancel out, leaving base_real * percent_real = the answer in
+ * cents directly. Verified by hand against DiscountCalculator's own example
+ * (base 3333.00, percent 15.50 → 516.61) before this was trusted.
+ */
+export function percentOf(base, percent) {
+    return fromCents(Math.trunc((toCents(base) * toCents(percent)) / 10000));
+}
+
 export function compare(a, b) {
     const left = toCents(a);
     const right = toCents(b);
@@ -160,11 +178,7 @@ export function formatMoney(value) {
     return `PKR ${Math.round(toCents(value) / SCALE_FACTOR).toLocaleString('en-US')}`;
 }
 
-/** Trims trailing zeros the way the receipt view does. */
+/** Quantities are always whole numbers — strip the decimal part. */
 export function formatQuantity(value) {
-    const normalized = normalize(value);
-
-    return normalized.includes('.')
-        ? normalized.replace(/\.?0+$/, '') || '0'
-        : normalized;
+    return normalize(value).split('.')[0];
 }

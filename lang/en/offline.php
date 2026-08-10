@@ -28,9 +28,11 @@ return [
     'sign_in_to_sync' => 'Your session expired. Sign in again to sync — your sales are safe on this device.',
 
     'unbalanced_payment' => 'The payment amounts must add up to the sale total.',
-    'invalid_quantity' => 'Quantity for :product must be at least 0.01.',
+    'invalid_quantity' => 'Quantity for :product must be a whole number of at least 1.',
     'invalid_price' => 'Price for :product cannot be negative.',
     'insufficient_stock' => 'Not enough stock cached for :product.',
+    'invalid_discount' => 'Discount on :product is invalid — check it is not negative, not over 100%, and not more than the item costs.',
+    'invalid_sale_discount' => 'The sale discount is invalid — check it is not negative, not over 100%, and not more than the total.',
     'payment_required' => 'Add at least one payment line with a valid amount.',
     'balance_as_of' => 'Balance :balance (as of download)',
     'download_invoice' => 'Download Invoice PDF',

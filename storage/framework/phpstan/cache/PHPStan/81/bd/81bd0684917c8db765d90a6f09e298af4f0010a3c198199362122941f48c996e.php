@@ -359,6 +359,80 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
+      'b5784e0e4966cbf60df31cb7f000a047' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Customers',
+         'uses' => 
+        array (
+          'ledgerentrytype' => 'App\\Enums\\LedgerEntryType',
+          'payabletype' => 'App\\Enums\\PayableType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'transactionreferencetype' => 'App\\Enums\\TransactionReferenceType',
+          'bank' => 'App\\Models\\Bank',
+          'customer' => 'App\\Models\\Customer',
+          'payment' => 'App\\Models\\Payment',
+          'salereturn' => 'App\\Models\\SaleReturn',
+          'ledgerservice' => 'App\\Services\\LedgerService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'db' => 'Illuminate\\Support\\Facades\\DB',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'validate' => 'Livewire\\Attributes\\Validate',
+          'component' => 'Livewire\\Component',
+          'withpagination' => 'Livewire\\WithPagination',
+        ),
+         'className' => 'App\\Livewire\\Customers\\CustomerLedger',
+         'functionName' => 'updatingDateFrom',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '5a8d347e389b41afb7f0ceca77081589' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Customers',
+         'uses' => 
+        array (
+          'ledgerentrytype' => 'App\\Enums\\LedgerEntryType',
+          'payabletype' => 'App\\Enums\\PayableType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'transactionreferencetype' => 'App\\Enums\\TransactionReferenceType',
+          'bank' => 'App\\Models\\Bank',
+          'customer' => 'App\\Models\\Customer',
+          'payment' => 'App\\Models\\Payment',
+          'salereturn' => 'App\\Models\\SaleReturn',
+          'ledgerservice' => 'App\\Services\\LedgerService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'db' => 'Illuminate\\Support\\Facades\\DB',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'validate' => 'Livewire\\Attributes\\Validate',
+          'component' => 'Livewire\\Component',
+          'withpagination' => 'Livewire\\WithPagination',
+        ),
+         'className' => 'App\\Livewire\\Customers\\CustomerLedger',
+         'functionName' => 'updatingDateTo',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
       'e84a4c40f3a16680c9ff713b2df82f95' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'App\\Livewire\\Customers',
@@ -510,7 +584,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php' => 'eea485f9447233cf4e9a94196d755dac7ee763490fac9a7bc9481bdc785dea75',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Customers\\CustomerLedger.php' => 'e239221d9df72b4a6ef76c839ca78d509d486cb7390a7c6d90ff521324b27636',
       'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer\\..\\livewire\\livewire\\src\\WithPagination.php' => 'c8c850c3c8cf6cb7ad7db178e4fdaa80684fb8f39f469ab0214850f38ca81685',
       'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer\\..\\livewire\\livewire\\src\\Features\\SupportPagination\\HandlesPagination.php' => 'c8d57a18f39c033305ac92cea61d42ebb9a377e28abe3ed243185a51e4f4cfb3',
     ),

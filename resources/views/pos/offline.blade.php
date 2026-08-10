@@ -40,6 +40,8 @@
                 'invalid_quantity' => __('offline.invalid_quantity'),
                 'invalid_price' => __('offline.invalid_price'),
                 'insufficient_stock' => __('offline.insufficient_stock'),
+                'invalid_discount' => __('offline.invalid_discount'),
+                'invalid_sale_discount' => __('offline.invalid_sale_discount'),
                 'payment_required' => __('offline.payment_required'),
                 'bank_required' => __('ledger.bank_required'),
                 'customer_required_for_ledger' => __('pos.customer_required_for_ledger'),
@@ -65,6 +67,8 @@
                     'item' => __('receipt.item'),
                     'qty' => __('receipt.qty'),
                     'amount' => __('receipt.amount'),
+                    'subtotal' => __('receipt.subtotal'),
+                    'discount' => __('receipt.discount'),
                     'total' => __('receipt.total'),
                     'payment' => __('receipt.payment'),
                     'walk_in' => __('pos.walk_in'),
@@ -196,11 +200,31 @@
                                     </div>
                                     <div class="w-20">
                                         <label class="block text-xs font-semibold" :for="'qty-' + line.batch_id">{{ __('pos.qty') }}</label>
-                                        <input :id="'qty-' + line.batch_id" type="number" step="0.01" min="0.01" :max="line.available" x-model="line.quantity" class="mt-1 min-h-[44px] w-full rounded-lg border border-black/10 px-2 py-1 text-sm font-bold">
+                                        <input :id="'qty-' + line.batch_id" type="number" step="1" min="1" :max="line.available" x-model="line.quantity" class="mt-1 min-h-[44px] w-full rounded-lg border border-black/10 px-2 py-1 text-sm font-bold">
                                     </div>
                                     <div class="w-24">
                                         <label class="block text-xs font-semibold" :for="'price-' + line.batch_id">{{ __('pos.price') }}</label>
                                         <input :id="'price-' + line.batch_id" type="number" step="0.01" min="0" x-model="line.unit_price" class="mt-1 min-h-[44px] w-full rounded-lg border border-black/10 px-2 py-1 text-sm font-semibold">
+                                    </div>
+                                    <div class="w-28">
+                                        <label class="block text-xs font-semibold" :for="'discount-type-' + line.batch_id">{{ __('pos.discount') }}</label>
+                                        <select :id="'discount-type-' + line.batch_id" x-model="line.discount_type" class="mt-1 min-h-[44px] w-full rounded-lg border border-black/10 px-1 py-1 text-xs font-semibold">
+                                            <option value="">{{ __('pos.no_discount') }}</option>
+                                            <option value="flat">{{ __('pos.discount_type_flat') }}</option>
+                                            <option value="percentage">{{ __('pos.discount_type_percentage') }}</option>
+                                        </select>
+                                        <input
+                                            x-show="line.discount_type === 'flat'"
+                                            type="number" step="1" min="0"
+                                            x-model="line.discount_value"
+                                            class="mt-1 min-h-[44px] w-full rounded-lg border border-black/10 px-2 py-1 text-sm font-semibold"
+                                        >
+                                        <input
+                                            x-show="line.discount_type === 'percentage'"
+                                            type="number" step="0.01" min="0" max="100"
+                                            x-model="line.discount_value"
+                                            class="mt-1 min-h-[44px] w-full rounded-lg border border-black/10 px-2 py-1 text-sm font-semibold"
+                                        >
                                     </div>
                                     <div class="w-24 text-end">
                                         <span class="block text-xs font-semibold">{{ __('pos.line_total') }}</span>
@@ -262,6 +286,34 @@
                     </div>
 
                     <div class="glass-panel-strong p-5">
+                        <div class="flex items-center justify-between text-sm font-semibold text-[var(--text-secondary)]">
+                            <span>{{ __('pos.subtotal') }}</span>
+                            <span x-text="subtotalLabel"></span>
+                        </div>
+                        <div x-show="hasDiscount" x-cloak class="mt-1 flex items-center justify-between text-sm font-semibold text-[var(--color-danger)]">
+                            <span>{{ __('pos.discount') }}</span>
+                            <span x-text="'-' + discountLabel"></span>
+                        </div>
+
+                        <div class="border-b border-black/10 py-3">
+                            <div class="flex items-end gap-2">
+                                <div class="flex-1">
+                                    <label class="block text-xs font-semibold" for="offline-discount-type">{{ __('pos.discount') }}</label>
+                                    <select id="offline-discount-type" x-model="cart.discountType" class="mt-1 min-h-[44px] w-full rounded-lg border border-black/10 px-2 py-1 text-sm font-semibold">
+                                        <option value="">{{ __('pos.no_discount') }}</option>
+                                        <option value="flat">{{ __('pos.discount_type_flat') }}</option>
+                                        <option value="percentage">{{ __('pos.discount_type_percentage') }}</option>
+                                    </select>
+                                </div>
+                                <div class="w-20" x-show="cart.discountType === 'flat'">
+                                    <input type="number" step="1" min="0" x-model="cart.discountValue" class="min-h-[44px] w-full rounded-lg border border-black/10 px-2 py-1 text-sm font-semibold">
+                                </div>
+                                <div class="w-20" x-show="cart.discountType === 'percentage'">
+                                    <input type="number" step="0.01" min="0" max="100" x-model="cart.discountValue" class="min-h-[44px] w-full rounded-lg border border-black/10 px-2 py-1 text-sm font-semibold">
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="flex items-center justify-between pt-2">
                             <span class="text-lg font-bold text-[var(--text-primary)]">{{ __('pos.total') }}</span>
                             <span class="text-3xl font-bold text-[var(--text-primary)]" x-text="totalLabel"></span>

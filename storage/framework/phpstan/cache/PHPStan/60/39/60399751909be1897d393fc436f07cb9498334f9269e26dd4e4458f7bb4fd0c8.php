@@ -79,30 +79,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
-      '336883f97e89bf352363f7feed8ee587' => 
-      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
-         'namespace' => 'App\\Livewire\\Forms',
-         'uses' => 
-        array (
-          'batch' => 'App\\Models\\Batch',
-          'form' => 'Livewire\\Form',
-        ),
-         'className' => 'App\\Livewire\\Forms\\BatchForm',
-         'functionName' => 'attributesForCreate',
-         'templatePhpDocNodes' => 
-        array (
-        ),
-         'parent' => NULL,
-         'typeAliasesMap' => 
-        array (
-        ),
-         'bypassTypeAliases' => false,
-         'constUses' => 
-        array (
-        ),
-         'typeAliasClassName' => NULL,
-         'traitData' => NULL,
-      )),
       '44f60c9f623a1a5e724ca9980287a8e3' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'App\\Livewire\\Forms',
@@ -154,7 +130,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php' => 'a6b9009f95761a4a22a8324e87ec7666896f9b27ea3e0ec1c2742d1cba1e948b',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Forms\\BatchForm.php' => '024f16a5d61116e944f5809d4791621f4fa0e48b407fe5deb918d11d0f415a5e',
     ),
   ),
 ));

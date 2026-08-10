@@ -13,7 +13,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'batch' => 'App\\Models\\Batch',
+          'user' => 'App\\Models\\User',
           'batchobserver' => 'App\\Observers\\BatchObserver',
+          'authenticated' => 'Illuminate\\Auth\\Events\\Authenticated',
+          'resetpassword' => 'Illuminate\\Auth\\Notifications\\ResetPassword',
+          'event' => 'Illuminate\\Support\\Facades\\Event',
+          'url' => 'Illuminate\\Support\\Facades\\URL',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
          'className' => 'App\\Providers\\AppServiceProvider',
@@ -38,7 +43,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'batch' => 'App\\Models\\Batch',
+          'user' => 'App\\Models\\User',
           'batchobserver' => 'App\\Observers\\BatchObserver',
+          'authenticated' => 'Illuminate\\Auth\\Events\\Authenticated',
+          'resetpassword' => 'Illuminate\\Auth\\Notifications\\ResetPassword',
+          'event' => 'Illuminate\\Support\\Facades\\Event',
+          'url' => 'Illuminate\\Support\\Facades\\URL',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
          'className' => 'App\\Providers\\AppServiceProvider',
@@ -63,7 +73,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'batch' => 'App\\Models\\Batch',
+          'user' => 'App\\Models\\User',
           'batchobserver' => 'App\\Observers\\BatchObserver',
+          'authenticated' => 'Illuminate\\Auth\\Events\\Authenticated',
+          'resetpassword' => 'Illuminate\\Auth\\Notifications\\ResetPassword',
+          'event' => 'Illuminate\\Support\\Facades\\Event',
+          'url' => 'Illuminate\\Support\\Facades\\URL',
           'serviceprovider' => 'Illuminate\\Support\\ServiceProvider',
         ),
          'className' => 'App\\Providers\\AppServiceProvider',
@@ -85,7 +100,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php' => '101f39a8e73fdf94dfdfbeca29175c9023f0dc11bf3965263a00d3b8059a557c',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Providers\\AppServiceProvider.php' => 'f1e18ee1690dbefb0be84c628de7e29a2f18e07202db2dec838a21b3ea4ee0ab',
     ),
   ),
 ));

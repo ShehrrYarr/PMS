@@ -50,7 +50,7 @@
                                     ({{ $days < 0 ? __('batches.expired') : __('batches.days_left', ['days' => $days]) }})
                                 </span>
                             </td>
-                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $batch->quantity_remaining, 2) }} / {{ number_format((float) $batch->quantity_received, 2) }}</td>
+                            <td class="px-3 py-3 text-end font-bold">{{ number_format((float) $batch->quantity_remaining, 0) }} / {{ number_format((float) $batch->quantity_received, 0) }}</td>
                             <td class="px-3 py-3 text-end">
                                 <div class="flex justify-end gap-2">
                                     <a href="{{ route('batches.label', $batch) }}" target="_blank" class="min-h-[44px] rounded-lg px-3 py-2 text-sm font-semibold text-[var(--color-info)] hover:bg-black/5">

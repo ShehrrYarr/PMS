@@ -13,6 +13,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'batch' => 'App\\Models\\Batch',
+          'product' => 'App\\Models\\Product',
           'db' => 'Illuminate\\Support\\Facades\\DB',
           'str' => 'Illuminate\\Support\\Str',
           'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -39,6 +40,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'batch' => 'App\\Models\\Batch',
+          'product' => 'App\\Models\\Product',
           'db' => 'Illuminate\\Support\\Facades\\DB',
           'str' => 'Illuminate\\Support\\Str',
           'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -54,6 +56,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'batch' => 'App\\Models\\Batch',
+            'product' => 'App\\Models\\Product',
             'db' => 'Illuminate\\Support\\Facades\\DB',
             'str' => 'Illuminate\\Support\\Str',
             'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -90,6 +93,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'batch' => 'App\\Models\\Batch',
+          'product' => 'App\\Models\\Product',
           'db' => 'Illuminate\\Support\\Facades\\DB',
           'str' => 'Illuminate\\Support\\Str',
           'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -105,6 +109,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'batch' => 'App\\Models\\Batch',
+            'product' => 'App\\Models\\Product',
             'db' => 'Illuminate\\Support\\Facades\\DB',
             'str' => 'Illuminate\\Support\\Str',
             'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -141,6 +146,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'batch' => 'App\\Models\\Batch',
+          'product' => 'App\\Models\\Product',
           'db' => 'Illuminate\\Support\\Facades\\DB',
           'str' => 'Illuminate\\Support\\Str',
           'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -156,6 +162,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'uses' => 
           array (
             'batch' => 'App\\Models\\Batch',
+            'product' => 'App\\Models\\Product',
             'db' => 'Illuminate\\Support\\Facades\\DB',
             'str' => 'Illuminate\\Support\\Str',
             'dns1d' => 'Milon\\Barcode\\DNS1D',
@@ -189,7 +196,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php' => '3afc3952787f77f92d7fdf6df0abacb0a58326a5dbae45d85a4092ae867d231b',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\BarcodeService.php' => 'cac2cf40fd73bb015ac116bd92697a55bf1f9a5aff4b46cfbbc4ea906a859c69',
     ),
   ),
 ));

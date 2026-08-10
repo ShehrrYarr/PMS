@@ -8,14 +8,18 @@
  * already paid and left. Better to refuse it at the counter.
  */
 
-import { add, compare, formatQuantity, multiply, normalize } from './money';
+import { add, compare, formatQuantity, multiply, normalize, percentOf, subtract } from './money';
 
 export const PAYMENT_METHODS = ['cash', 'bank', 'ledger'];
+export const DISCOUNT_TYPES = ['flat', 'percentage'];
 
 export function createCart() {
     return {
         lines: [],
         customerId: null,
+        // Whole-sale discount, on top of any per-item discounts on the lines.
+        discountType: null,
+        discountValue: '0',
     };
 }
 
@@ -59,13 +63,93 @@ export function addBatch(cart, batch) {
         unit_price: normalize(batch.unit_price),
         quantity: '1.00',
         available: normalize(batch.quantity_remaining),
+        discount_type: null,
+        discount_value: '0',
     });
 
     return { ok: true };
 }
 
+/** Mirrors Pos::lineSubtotal() — unit_price × quantity, before any discount. */
+export function lineSubtotal(line) {
+    return multiply(line.unit_price, line.quantity);
+}
+
+/** Mirrors Pos::lineDiscountAmount() / DiscountCalculator::amount(). */
+export function lineDiscountAmount(line) {
+    return discountAmount(lineSubtotal(line), line.discount_type, line.discount_value);
+}
+
+/** Mirrors Pos::lineTotal() — the line after its own per-item discount. */
+export function lineTotal(line) {
+    return subtract(lineSubtotal(line), lineDiscountAmount(line));
+}
+
+/** Mirrors Pos::getCartSubtotalProperty() — every line's pre-discount subtotal, summed. */
+export function cartSubtotal(cart) {
+    return cart.lines.reduce((carry, line) => add(carry, lineSubtotal(line)), '0.00');
+}
+
+/** Mirrors Pos::getCartItemDiscountTotalProperty(). */
+export function cartItemDiscountTotal(cart) {
+    return cart.lines.reduce((carry, line) => add(carry, lineDiscountAmount(line)), '0.00');
+}
+
+function subtotalAfterItemDiscounts(cart) {
+    return subtract(cartSubtotal(cart), cartItemDiscountTotal(cart));
+}
+
+/** Mirrors Pos::getSaleDiscountAmountProperty(). */
+export function saleDiscountAmount(cart) {
+    return discountAmount(subtotalAfterItemDiscounts(cart), cart.discountType, cart.discountValue);
+}
+
+/**
+ * Turns a discount type + value into the PKR amount to subtract — mirrors
+ * DiscountCalculator::amount() on the server exactly (same truncation rules
+ * as percentOf(), see money.js).
+ */
+function discountAmount(subtotal, type, value) {
+    if (type === null || value === undefined || value === null) {
+        return '0.00';
+    }
+
+    if (type === 'flat') {
+        return normalize(value);
+    }
+
+    if (type === 'percentage') {
+        return percentOf(subtotal, value);
+    }
+
+    return '0.00';
+}
+
+/** Subtotal minus every item discount minus the sale-level discount — mirrors Pos::getCartTotalProperty(). */
 export function cartTotal(cart) {
-    return cart.lines.reduce((carry, line) => add(carry, multiply(line.unit_price, line.quantity)), '0.00');
+    return subtract(subtotalAfterItemDiscounts(cart), saleDiscountAmount(cart));
+}
+
+/** True for a value that is a whole number at the 2dp scale everything else is compared at — e.g. "5.00", not "5.50". */
+function isWholeNumber(value) {
+    return /^-?\d+\.00$/.test(normalize(value));
+}
+
+/** Mirrors SaleService::resolveDiscountAmount()'s three guards. */
+function isValidDiscount(subtotal, type, value) {
+    if (type === null || value === undefined || value === null) {
+        return true;
+    }
+
+    if (type === 'percentage' && (compare(value, '0') < 0 || compare(value, '100') > 0)) {
+        return false;
+    }
+
+    if (type === 'flat' && compare(value, '0') < 0) {
+        return false;
+    }
+
+    return compare(discountAmount(subtotal, type, value), subtotal) <= 0;
 }
 
 export function paymentsTotal(paymentLines) {
@@ -86,8 +170,8 @@ export function validateSale(cart, paymentLines, translations) {
     }
 
     for (const line of cart.lines) {
-        // Matches cart.*.quantity => min:0.01 server-side.
-        if (compare(line.quantity, '0.01') < 0) {
+        // Matches cart.*.quantity => integer|min:1 server-side.
+        if (compare(line.quantity, '1') < 0 || !isWholeNumber(line.quantity)) {
             problems.push(translations.invalid_quantity.replace(':product', line.product_name));
         }
 
@@ -102,6 +186,15 @@ export function validateSale(cart, paymentLines, translations) {
         if (compare(line.quantity, line.available) > 0) {
             problems.push(translations.insufficient_stock.replace(':product', line.product_name));
         }
+
+        // Mirrors SaleService::resolveDiscountAmount()'s three guards.
+        if (!isValidDiscount(lineSubtotal(line), line.discount_type, line.discount_value)) {
+            problems.push(translations.invalid_discount.replace(':product', line.product_name));
+        }
+    }
+
+    if (!isValidDiscount(subtotalAfterItemDiscounts(cart), cart.discountType, cart.discountValue)) {
+        problems.push(translations.invalid_sale_discount);
     }
 
     if (paymentLines.length === 0) {
@@ -137,8 +230,8 @@ export function validateSale(cart, paymentLines, translations) {
 }
 
 /**
- * Builds the record that gets queued and later replayed. Only the three keys
- * the server actually reads are carried on each item — display fields are
+ * Builds the record that gets queued and later replayed. Only the keys the
+ * server actually reads are carried on each item — display fields are
  * re-resolved from the snapshot when a receipt is reprinted.
  */
 export function buildQueuedSale(cart, paymentLines, { clientUuid, invoiceNumber, invoiceSeq, userId }) {
@@ -150,10 +243,14 @@ export function buildQueuedSale(cart, paymentLines, { clientUuid, invoiceNumber,
         customer_id: cart.customerId,
         user_id: userId,
         total_amount: cartTotal(cart),
+        discount_type: cart.discountType,
+        discount_value: cart.discountType === null ? null : normalize(cart.discountValue ?? '0'),
         items: cart.lines.map((line) => ({
             batch_id: line.batch_id,
             quantity: normalize(line.quantity),
             unit_price: normalize(line.unit_price),
+            discount_type: line.discount_type ?? null,
+            discount_value: (line.discount_type ?? null) === null ? null : normalize(line.discount_value ?? '0'),
         })),
         payment_lines: paymentLines.map((line) => ({
             method: line.method,
@@ -163,11 +260,14 @@ export function buildQueuedSale(cart, paymentLines, { clientUuid, invoiceNumber,
         // Kept purely so a receipt can be reprinted from the queue without
         // needing the snapshot decrypted again.
         display: {
+            subtotal: cartSubtotal(cart),
+            discount_amount: add(cartItemDiscountTotal(cart), saleDiscountAmount(cart)),
             lines: cart.lines.map((line) => ({
                 product_name: line.product_name,
                 quantity: formatQuantity(line.quantity),
                 unit_price: line.unit_price,
-                line_total: multiply(line.unit_price, line.quantity),
+                discount_amount: lineDiscountAmount(line),
+                line_total: lineTotal(line),
             })),
         },
     };

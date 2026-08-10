@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Models\User.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\User
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-9ca319a73f3746671252922b9cbd0d31fb35e0a1362a0c4861e85ec5939880fe',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-43fee44b76a6853a014d2634cece86e465124a243eb41df04118c450df9d749b',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 14,
-    'endLine' => 54,
+    'startLine' => 16,
+    'endLine' => 65,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Auth\\User',
@@ -37,9 +37,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
-      0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
-      1 => 'Spatie\\Permission\\Traits\\HasRoles',
-      2 => 'Illuminate\\Notifications\\Notifiable',
+      0 => 'App\\Models\\Concerns\\BelongsToShop',
+      1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      2 => 'Spatie\\Permission\\Traits\\HasRoles',
+      3 => 'Illuminate\\Notifications\\Notifiable',
     ),
     'immediateConstants' => 
     array (
@@ -55,15 +56,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'name\', \'email\', \'password\', \'is_active\']',
+          'code' => '[\'shop_id\', \'name\', \'email\', \'password\', \'is_active\']',
           'attributes' => 
           array (
-            'startLine' => 24,
-            'endLine' => 29,
-            'startTokenPos' => 84,
-            'startFilePos' => 600,
-            'endTokenPos' => 98,
-            'endFilePos' => 680,
+            'startLine' => 26,
+            'endLine' => 32,
+            'startTokenPos' => 97,
+            'startFilePos' => 708,
+            'endTokenPos' => 114,
+            'endFilePos' => 807,
           ),
         ),
         'docComment' => '/**
@@ -74,8 +75,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 24,
-        'endLine' => 29,
+        'startLine' => 26,
+        'endLine' => 32,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -97,12 +98,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'password\', \'remember_token\']',
           'attributes' => 
           array (
-            'startLine' => 36,
-            'endLine' => 39,
-            'startTokenPos' => 109,
-            'startFilePos' => 819,
-            'endTokenPos' => 117,
-            'endFilePos' => 871,
+            'startLine' => 39,
+            'endLine' => 42,
+            'startTokenPos' => 125,
+            'startFilePos' => 946,
+            'endTokenPos' => 133,
+            'endFilePos' => 998,
           ),
         ),
         'docComment' => '/**
@@ -113,8 +114,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 36,
-        'endLine' => 39,
+        'startLine' => 39,
+        'endLine' => 42,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -151,8 +152,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, string>
  */',
-        'startLine' => 46,
-        'endLine' => 53,
+        'startLine' => 49,
+        'endLine' => 56,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -160,6 +161,43 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isGenerator' => false,
         'isVariadic' => false,
         'modifiers' => 2,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\User',
+        'implementingClassName' => 'App\\Models\\User',
+        'currentClassName' => 'App\\Models\\User',
+        'aliasName' => NULL,
+      ),
+      'shop' => 
+      array (
+        'name' => 'shop',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @return BelongsTo<Shop, $this>
+ */',
+        'startLine' => 61,
+        'endLine' => 64,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
         'namespace' => 'App\\Models',
         'declaringClassName' => 'App\\Models\\User',
         'implementingClassName' => 'App\\Models\\User',

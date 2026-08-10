@@ -46,7 +46,7 @@ class SaleShow extends Component
         $this->authorize('sale-returns.manage');
 
         $this->validate([
-            'returnQuantity' => 'required|numeric|min:0.01',
+            'returnQuantity' => 'required|integer|min:1',
             'returnReason' => 'required|string|max:255',
         ]);
 

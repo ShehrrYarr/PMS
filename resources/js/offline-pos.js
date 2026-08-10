@@ -10,14 +10,19 @@ import Alpine from 'alpinejs';
 
 import { downloadInvoicePdf } from './offline/invoice-pdf';
 import { heldOrders, queuedSales, salePhotos } from './offline/db';
-import { compare, formatMoney, formatQuantity, multiply, subtract } from './offline/money';
+import { add, compare, formatMoney, formatQuantity, subtract } from './offline/money';
 import {
     addBatch,
     buildQueuedSale,
+    cartItemDiscountTotal,
+    cartSubtotal,
     cartTotal,
     createCart,
     findBatchByBarcode,
+    lineDiscountAmount,
+    lineTotal,
     paymentsTotal,
+    saleDiscountAmount,
     applyStockToSnapshot,
     validateSale,
 } from './offline/pos-engine';
@@ -221,8 +226,25 @@ document.addEventListener('alpine:init', () => {
             return formatMoney(this.total);
         },
 
+        get subtotalLabel() {
+            return formatMoney(cartSubtotal(this.cart));
+        },
+
+        /** Every discount taken off, item-level plus sale-level — the receipt's "Discount" row. */
+        get discountLabel() {
+            return formatMoney(add(cartItemDiscountTotal(this.cart), saleDiscountAmount(this.cart)));
+        },
+
+        get hasDiscount() {
+            return compare(add(cartItemDiscountTotal(this.cart), saleDiscountAmount(this.cart)), '0') > 0;
+        },
+
         lineTotalLabel(line) {
-            return formatMoney(multiply(line.unit_price, line.quantity));
+            return formatMoney(lineTotal(line));
+        },
+
+        lineDiscountLabel(line) {
+            return formatMoney(lineDiscountAmount(line));
         },
 
         get customerOptions() {
@@ -275,7 +297,12 @@ document.addEventListener('alpine:init', () => {
                 await heldOrders.put({
                     client_uuid: uuid(),
                     label: this.selectedCustomer?.name ?? null,
-                    payload: { cart: this.cart.lines, customer_id: this.cart.customerId },
+                    payload: {
+                        cart: this.cart.lines,
+                        customer_id: this.cart.customerId,
+                        discount_type: this.cart.discountType,
+                        discount_value: this.cart.discountValue,
+                    },
                     origin: 'local',
                     held_at: new Date().toISOString(),
                 });
@@ -310,6 +337,8 @@ document.addEventListener('alpine:init', () => {
                 this.cart = {
                     lines: order.payload.cart ?? [],
                     customerId: order.payload.customer_id ?? null,
+                    discountType: order.payload.discount_type ?? null,
+                    discountValue: order.payload.discount_value ?? '0',
                 };
 
                 await heldOrders.remove(clientUuid);

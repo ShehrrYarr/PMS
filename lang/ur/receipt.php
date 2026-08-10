@@ -11,6 +11,8 @@ return [
     'item' => 'شے',
     'qty' => 'مقدار',
     'amount' => 'رقم',
+    'subtotal' => 'ذیلی مجموعہ',
+    'discount' => 'رعایت',
     'total' => 'کل رقم',
     'payment' => 'ادائیگی',
 ];

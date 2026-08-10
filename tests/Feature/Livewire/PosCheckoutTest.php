@@ -130,4 +130,58 @@ class PosCheckoutTest extends TestCase
         $this->assertSame(1, Sale::query()->count());
         $this->assertSame('15.00', $batch->fresh()->quantity_remaining);
     }
+
+    public function test_checkout_applies_a_per_item_and_sale_level_discount_together(): void
+    {
+        $user = $this->salesman();
+        $batch = $this->makeBatch('20');
+
+        // Line: 5 x 800.00 = 4000.00, minus a flat 500.00 item discount = 3500.00.
+        // Sale-level 10% then takes 350.00 off, leaving 3150.00.
+        Livewire::actingAs($user)
+            ->test(Pos::class)
+            ->set('cart', [[
+                'batch_id' => $batch->id,
+                'barcode' => $batch->barcode,
+                'product_name' => 'Test Product',
+                'unit_price' => '800.00',
+                'quantity' => '5',
+                'available' => '20.00',
+                'discount_type' => 'flat',
+                'discount_value' => '500.00',
+            ]])
+            ->set('discountType', 'percentage')
+            ->set('discountValue', '10')
+            ->set('paymentLines', [['method' => 'cash', 'amount' => '3150.00', 'bank_id' => null]])
+            ->call('checkout')
+            ->assertHasNoErrors();
+
+        $sale = Sale::query()->firstOrFail();
+        $this->assertSame('3150.00', $sale->total_amount);
+        $this->assertSame('350.00', $sale->discount_amount);
+    }
+
+    public function test_checkout_rejects_a_discount_that_exceeds_the_line_subtotal(): void
+    {
+        $user = $this->salesman();
+        $batch = $this->makeBatch('20');
+
+        Livewire::actingAs($user)
+            ->test(Pos::class)
+            ->set('cart', [[
+                'batch_id' => $batch->id,
+                'barcode' => $batch->barcode,
+                'product_name' => 'Test Product',
+                'unit_price' => '100.00',
+                'quantity' => '1',
+                'available' => '20.00',
+                'discount_type' => 'flat',
+                'discount_value' => '150.00',
+            ]])
+            ->set('paymentLines', [['method' => 'cash', 'amount' => '50.00', 'bank_id' => null]])
+            ->call('checkout')
+            ->assertHasErrors(['paymentLines']);
+
+        $this->assertSame(0, Sale::query()->count());
+    }
 }

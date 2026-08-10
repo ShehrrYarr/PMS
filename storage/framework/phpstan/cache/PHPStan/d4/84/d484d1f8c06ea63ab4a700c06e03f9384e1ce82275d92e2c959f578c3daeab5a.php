@@ -12,6 +12,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'logicexception' => 'LogicException',
@@ -32,11 +33,166 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
+      'e18b65618d0655b82cfe0ba3641042df' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\CustomerLedger',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+          1 => 'App\\Models\\CustomerLedger',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      '4c1af652f135d0c1d13c625c66dd5d61' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\CustomerLedger',
+         'functionName' => 'bootBelongsToShop',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Models\\Concerns',
+           'uses' => 
+          array (
+            'shop' => 'App\\Models\\Shop',
+            'user' => 'App\\Models\\User',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          ),
+           'className' => 'App\\Models\\CustomerLedger',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+          1 => 'App\\Models\\CustomerLedger',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      '68865404afda4b8ada4e30f1ed4f42c4' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\CustomerLedger',
+         'functionName' => 'currentShopId',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Models\\Concerns',
+           'uses' => 
+          array (
+            'shop' => 'App\\Models\\Shop',
+            'user' => 'App\\Models\\User',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          ),
+           'className' => 'App\\Models\\CustomerLedger',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php',
+          1 => 'App\\Models\\CustomerLedger',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
       '7b8b247a9f26a35fd53da508f7603964' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'logicexception' => 'LogicException',
@@ -51,6 +207,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
             'model' => 'Illuminate\\Database\\Eloquent\\Model',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
             'logicexception' => 'LogicException',
@@ -86,6 +243,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'logicexception' => 'LogicException',
@@ -100,6 +258,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
             'model' => 'Illuminate\\Database\\Eloquent\\Model',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
             'logicexception' => 'LogicException',
@@ -135,6 +294,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'logicexception' => 'LogicException',
@@ -149,6 +309,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
             'model' => 'Illuminate\\Database\\Eloquent\\Model',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
             'logicexception' => 'LogicException',
@@ -184,6 +345,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'logicexception' => 'LogicException',
@@ -198,6 +360,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
             'model' => 'Illuminate\\Database\\Eloquent\\Model',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
             'logicexception' => 'LogicException',
@@ -233,6 +396,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
           'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'logicexception' => 'LogicException',
@@ -247,6 +411,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
             'model' => 'Illuminate\\Database\\Eloquent\\Model',
             'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
             'logicexception' => 'LogicException',
@@ -280,7 +445,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php' => '9c61af823a1455b16a51827779e626cdaf697a7ef1fbf2e9899abd1051374128',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\CustomerLedger.php' => '6c0085ecd2d3652e08e767374ccf5872541deebfb3e595fa4b03a897218baf31',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php' => '3708db7209115b37a0288f18d258c5573a4b13da79c901154a241684cbed5a16',
     ),
   ),
 ));

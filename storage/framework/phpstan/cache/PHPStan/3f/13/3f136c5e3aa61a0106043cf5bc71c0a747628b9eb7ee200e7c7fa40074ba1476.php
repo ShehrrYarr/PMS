@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Services\SaleReturnService.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Services\SaleReturnService
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-26094b7d9d4875c9625c0d2097f7d9d2cc4e89540925138625222a518e83935d',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-c87fcad8bcd60bcba1c8b06d83949b45dc5f011aa4f9b980a4d4bbd91c6ceff4',
    'data' => 
   array (
     'locatedSource' => 
@@ -31,7 +31,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 23,
-    'endLine' => 98,
+    'endLine' => 99,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -260,7 +260,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  list<array{sale_item_id: int, quantity: string}>  $lines
  */',
         'startLine' => 30,
-        'endLine' => 97,
+        'endLine' => 98,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => true,

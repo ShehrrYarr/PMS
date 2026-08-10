@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Providers\AppServiceProvider.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Providers\AppServiceProvider
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-101f39a8e73fdf94dfdfbeca29175c9023f0dc11bf3965263a00d3b8059a557c',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-f1e18ee1690dbefb0be84c628de7e29a2f18e07202db2dec838a21b3ea4ee0ab',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 11,
-    'endLine' => 28,
+    'startLine' => 16,
+    'endLine' => 56,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Support\\ServiceProvider',
@@ -67,8 +67,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Register any application services.
  */',
-        'startLine' => 16,
-        'endLine' => 19,
+        'startLine' => 21,
+        'endLine' => 24,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -104,8 +104,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Bootstrap any application services.
  */',
-        'startLine' => 24,
-        'endLine' => 27,
+        'startLine' => 29,
+        'endLine' => 55,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

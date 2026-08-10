@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Forms\BatchForm.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Forms\BatchForm
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-a6b9009f95761a4a22a8324e87ec7666896f9b27ea3e0ec1c2742d1cba1e948b',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-024f16a5d61116e944f5809d4791621f4fa0e48b407fe5deb918d11d0f415a5e',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 10,
-    'endLine' => 83,
+    'endLine' => 64,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Form',
@@ -295,49 +295,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
       ),
-      'quantity_received' => 
-      array (
-        'declaringClassName' => 'App\\Livewire\\Forms\\BatchForm',
-        'implementingClassName' => 'App\\Livewire\\Forms\\BatchForm',
-        'name' => 'quantity_received',
-        'modifiers' => 1,
-        'type' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'string',
-            'isIdentifier' => true,
-          ),
-        ),
-        'default' => 
-        array (
-          'code' => '\'\'',
-          'attributes' => 
-          array (
-            'startLine' => 22,
-            'endLine' => 22,
-            'startTokenPos' => 100,
-            'startFilePos' => 367,
-            'endTokenPos' => 100,
-            'endFilePos' => 368,
-          ),
-        ),
-        'docComment' => NULL,
-        'attributes' => 
-        array (
-        ),
-        'startLine' => 22,
-        'endLine' => 22,
-        'startColumn' => 5,
-        'endColumn' => 42,
-        'isPromoted' => false,
-        'declaredAtCompileTime' => true,
-        'immediateVirtual' => false,
-        'immediateHooks' => 
-        array (
-        ),
-      ),
     ),
     'immediateMethods' => 
     array (
@@ -363,8 +320,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return array<string, mixed>
  */',
-        'startLine' => 27,
-        'endLine' => 36,
+        'startLine' => 25,
+        'endLine' => 33,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -402,8 +359,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 38,
-            'endLine' => 38,
+            'startLine' => 35,
+            'endLine' => 35,
             'startColumn' => 30,
             'endColumn' => 41,
             'parameterIndex' => 0,
@@ -424,45 +381,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 38,
-        'endLine' => 46,
-        'startColumn' => 5,
-        'endColumn' => 5,
-        'couldThrow' => false,
-        'isClosure' => false,
-        'isGenerator' => false,
-        'isVariadic' => false,
-        'modifiers' => 1,
-        'namespace' => 'App\\Livewire\\Forms',
-        'declaringClassName' => 'App\\Livewire\\Forms\\BatchForm',
-        'implementingClassName' => 'App\\Livewire\\Forms\\BatchForm',
-        'currentClassName' => 'App\\Livewire\\Forms\\BatchForm',
-        'aliasName' => NULL,
-      ),
-      'attributesForCreate' => 
-      array (
-        'name' => 'attributesForCreate',
-        'parameters' => 
-        array (
-        ),
-        'returnsReference' => false,
-        'returnType' => 
-        array (
-          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
-          'data' => 
-          array (
-            'name' => 'array',
-            'isIdentifier' => true,
-          ),
-        ),
-        'attributes' => 
-        array (
-        ),
-        'docComment' => '/**
- * @return array<string, mixed>
- */',
-        'startLine' => 51,
-        'endLine' => 61,
+        'startLine' => 35,
+        'endLine' => 42,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -501,8 +421,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, mixed>
  */',
-        'startLine' => 69,
-        'endLine' => 76,
+        'startLine' => 50,
+        'endLine' => 57,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -536,8 +456,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 78,
-        'endLine' => 82,
+        'startLine' => 59,
+        'endLine' => 63,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

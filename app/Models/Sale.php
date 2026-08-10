@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models;
 
+use App\Enums\DiscountType;
 use App\Models\Concerns\BelongsToShop;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -20,6 +21,9 @@ class Sale extends Model
         'customer_id',
         'user_id',
         'total_amount',
+        'discount_type',
+        'discount_value',
+        'discount_amount',
         'status',
         'photo_path',
         'synced_at',
@@ -29,6 +33,9 @@ class Sale extends Model
     {
         return [
             'total_amount' => 'decimal:2',
+            'discount_type' => DiscountType::class,
+            'discount_value' => 'decimal:2',
+            'discount_amount' => 'decimal:2',
             'synced_at' => 'datetime',
         ];
     }
@@ -110,5 +117,31 @@ class Sale extends Model
         }
 
         return bcmul(bcdiv($this->profit(), (string) $this->total_amount, 4), '100', 2);
+    }
+
+    /**
+     * Sum of every item's discount_amount plus this sale's own discount_amount
+     * — the total ever taken off, regardless of which layer it came from.
+     * Assumes items is already eager-loaded.
+     */
+    public function totalDiscountAmount(): string
+    {
+        $itemDiscounts = $this->items->reduce(
+            fn (string $carry, SaleItem $item) => bcadd($carry, (string) $item->discount_amount, 2),
+            '0.00'
+        );
+
+        return bcadd($itemDiscounts, (string) $this->discount_amount, 2);
+    }
+
+    /**
+     * What the sale would have cost before any discount — the receipt/invoice
+     * "Subtotal" line. Derived from total_amount + discounts rather than
+     * re-summing unit_price*quantity, so it always agrees with what was
+     * actually charged even if a future edit changes how items are priced.
+     */
+    public function subtotalBeforeDiscount(): string
+    {
+        return bcadd((string) $this->total_amount, $this->totalDiscountAmount(), 2);
     }
 }

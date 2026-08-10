@@ -71,7 +71,7 @@
             @if ($productId !== null)
                 <div class="rounded-xl bg-black/5 px-4 py-3">
                     <p class="text-xs font-semibold uppercase text-[var(--text-secondary)]">{{ __('reports.quantity_sold') }}</p>
-                    <p class="mt-1 text-lg font-bold text-[var(--text-primary)]">{{ number_format((float) $summary['quantity_sold'], 2) }}</p>
+                    <p class="mt-1 text-lg font-bold text-[var(--text-primary)]">{{ number_format((float) $summary['quantity_sold'], 0) }}</p>
                 </div>
             @endif
         </div>
@@ -150,7 +150,7 @@
                                     </a>
                                 </td>
                                 <td class="px-3 py-3">{{ $item->sale->customer->name ?? __('reports.walk_in') }}</td>
-                                <td class="px-3 py-3 text-end">{{ number_format((float) $item->quantity, 2) }}</td>
+                                <td class="px-3 py-3 text-end">{{ number_format((float) $item->quantity, 0) }}</td>
                                 <td class="px-3 py-3 text-end">{{ money($item->unit_price) }}</td>
                                 <td class="px-3 py-3 text-end font-bold">{{ money($item->line_total) }}</td>
                                 <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ money($item->costTotal()) }}</td>

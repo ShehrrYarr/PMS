@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Models;
 
+use App\Enums\DiscountType;
 use App\Models\Concerns\BelongsToShop;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -18,6 +19,9 @@ class SaleItem extends Model
         'batch_id',
         'quantity',
         'unit_price',
+        'discount_type',
+        'discount_value',
+        'discount_amount',
         'cost_price',
         'line_total',
         'quantity_returned',
@@ -28,6 +32,9 @@ class SaleItem extends Model
         return [
             'quantity' => 'decimal:2',
             'unit_price' => 'decimal:2',
+            'discount_type' => DiscountType::class,
+            'discount_value' => 'decimal:2',
+            'discount_amount' => 'decimal:2',
             'cost_price' => 'decimal:2',
             'line_total' => 'decimal:2',
             'quantity_returned' => 'decimal:2',

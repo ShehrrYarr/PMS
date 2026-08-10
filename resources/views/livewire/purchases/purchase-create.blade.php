@@ -50,7 +50,7 @@
                         <div class="flex items-end gap-2">
                             <div class="flex-1">
                                 <x-input-label :value="__('purchases.quantity')" />
-                                <input type="number" step="0.01" min="0.01" wire:model="items.{{ $index }}.quantity" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-3 py-2 text-sm font-medium text-[var(--text-primary)]">
+                                <input type="number" step="1" min="1" wire:model="items.{{ $index }}.quantity" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white/70 px-3 py-2 text-sm font-medium text-[var(--text-primary)]">
                                 <x-input-error :messages="$errors->get('items.'.$index.'.quantity')" class="mt-1" />
                             </div>
                             @if (count($items) > 1)

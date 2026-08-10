@@ -45,9 +45,9 @@
                                 {{ $conflict->batch?->product?->name }}
                                 <span class="block font-mono text-xs text-[var(--text-secondary)]">{{ $conflict->batch?->barcode }}</span>
                             </td>
-                            <td class="px-3 py-3 text-end">{{ number_format((float) $conflict->requested_quantity, 2) }}</td>
-                            <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ number_format((float) $conflict->available_quantity, 2) }}</td>
-                            <td class="px-3 py-3 text-end font-bold text-[var(--color-danger)]">{{ number_format((float) $conflict->shortfall, 2) }}</td>
+                            <td class="px-3 py-3 text-end">{{ number_format((float) $conflict->requested_quantity, 0) }}</td>
+                            <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ number_format((float) $conflict->available_quantity, 0) }}</td>
+                            <td class="px-3 py-3 text-end font-bold text-[var(--color-danger)]">{{ number_format((float) $conflict->shortfall, 0) }}</td>
                             <td class="px-3 py-3">
                                 @if ($conflict->resolved_at)
                                     <span class="text-sm font-semibold text-[var(--color-success)]">

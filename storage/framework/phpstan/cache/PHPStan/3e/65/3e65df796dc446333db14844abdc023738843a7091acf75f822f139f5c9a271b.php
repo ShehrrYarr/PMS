@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Vendors\VendorLedger.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Vendors\VendorLedger
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-07768ec26da3090010fede90e529108bcb88c06677704e4c710e9d4a9c39930f',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-cfe79e43ec4145cc7aa35ceb259633e3d9bcaf3b99bd312fdec6b0f7287f3551',
    'data' => 
   array (
     'locatedSource' => 
@@ -48,7 +48,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       ),
     ),
     'startLine' => 22,
-    'endLine' => 111,
+    'endLine' => 121,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -499,6 +499,76 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'currentClassName' => 'App\\Livewire\\Vendors\\VendorLedger',
         'aliasName' => NULL,
       ),
+      'updatingDateFrom' => 
+      array (
+        'name' => 'updatingDateFrom',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 51,
+        'endLine' => 54,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Vendors',
+        'declaringClassName' => 'App\\Livewire\\Vendors\\VendorLedger',
+        'implementingClassName' => 'App\\Livewire\\Vendors\\VendorLedger',
+        'currentClassName' => 'App\\Livewire\\Vendors\\VendorLedger',
+        'aliasName' => NULL,
+      ),
+      'updatingDateTo' => 
+      array (
+        'name' => 'updatingDateTo',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 56,
+        'endLine' => 59,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Vendors',
+        'declaringClassName' => 'App\\Livewire\\Vendors\\VendorLedger',
+        'implementingClassName' => 'App\\Livewire\\Vendors\\VendorLedger',
+        'currentClassName' => 'App\\Livewire\\Vendors\\VendorLedger',
+        'aliasName' => NULL,
+      ),
       'openPaymentForm' => 
       array (
         'name' => 'openPaymentForm',
@@ -519,8 +589,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 51,
-        'endLine' => 58,
+        'startLine' => 61,
+        'endLine' => 68,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -558,8 +628,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 60,
-            'endLine' => 60,
+            'startLine' => 70,
+            'endLine' => 70,
             'startColumn' => 35,
             'endColumn' => 62,
             'parameterIndex' => 0,
@@ -580,8 +650,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 60,
-        'endLine' => 95,
+        'startLine' => 70,
+        'endLine' => 105,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -615,8 +685,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 97,
-        'endLine' => 110,
+        'startLine' => 107,
+        'endLine' => 120,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

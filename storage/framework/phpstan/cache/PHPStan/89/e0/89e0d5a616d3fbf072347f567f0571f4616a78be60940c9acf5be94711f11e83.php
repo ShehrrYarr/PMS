@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Models\Batch.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Batch
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-4700e942629920eaa8ca4481dc87073964e5ceb9cdd9929740f210611f7c0f38',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-ca1df1f0c91fdcf91b061d6fae1d47ce7964c49c6a649481fcbfca795b24999d',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 11,
-    'endLine' => 67,
+    'startLine' => 12,
+    'endLine' => 69,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -36,7 +36,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
-      0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      0 => 'App\\Models\\Concerns\\BelongsToShop',
+      1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
     ),
     'immediateConstants' => 
     array (
@@ -52,23 +53,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'product_id\', \'barcode\', \'manufacturing_date\', \'expiry_date\', \'cost_price\', \'quantity_received\', \'quantity_remaining\', \'purchase_item_id\']',
+          'code' => '[\'shop_id\', \'product_id\', \'barcode\', \'manufacturing_date\', \'expiry_date\', \'cost_price\', \'quantity_received\', \'quantity_remaining\', \'purchase_item_id\']',
           'attributes' => 
           array (
-            'startLine' => 15,
-            'endLine' => 24,
-            'startTokenPos' => 51,
-            'startFilePos' => 281,
-            'endTokenPos' => 77,
-            'endFilePos' => 490,
+            'startLine' => 16,
+            'endLine' => 26,
+            'startTokenPos' => 59,
+            'startFilePos' => 335,
+            'endTokenPos' => 88,
+            'endFilePos' => 563,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 15,
-        'endLine' => 24,
+        'startLine' => 16,
+        'endLine' => 26,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -101,8 +102,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 26,
-        'endLine' => 35,
+        'startLine' => 28,
+        'endLine' => 37,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -138,8 +139,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Product, $this>
  */',
-        'startLine' => 40,
-        'endLine' => 43,
+        'startLine' => 42,
+        'endLine' => 45,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -175,8 +176,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<PurchaseItem, $this>
  */',
-        'startLine' => 48,
-        'endLine' => 51,
+        'startLine' => 50,
+        'endLine' => 53,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -210,8 +211,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 53,
-        'endLine' => 56,
+        'startLine' => 55,
+        'endLine' => 58,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -245,8 +246,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 58,
-        'endLine' => 61,
+        'startLine' => 60,
+        'endLine' => 63,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -273,12 +274,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
               'code' => '30',
               'attributes' => 
               array (
-                'startLine' => 63,
-                'endLine' => 63,
-                'startTokenPos' => 273,
-                'startFilePos' => 1413,
-                'endTokenPos' => 273,
-                'endFilePos' => 1414,
+                'startLine' => 65,
+                'endLine' => 65,
+                'startTokenPos' => 284,
+                'startFilePos' => 1486,
+                'endTokenPos' => 284,
+                'endFilePos' => 1487,
               ),
             ),
             'type' => 
@@ -296,8 +297,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 63,
-            'endLine' => 63,
+            'startLine' => 65,
+            'endLine' => 65,
             'startColumn' => 36,
             'endColumn' => 55,
             'parameterIndex' => 0,
@@ -318,8 +319,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 63,
-        'endLine' => 66,
+        'startLine' => 65,
+        'endLine' => 68,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

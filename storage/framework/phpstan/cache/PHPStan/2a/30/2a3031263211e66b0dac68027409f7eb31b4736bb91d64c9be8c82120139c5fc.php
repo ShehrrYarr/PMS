@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Forms\VendorForm.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Forms\VendorForm
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-7a8a104205b7253eaa83540805641f2fb21ea1b0a3fc9ad3f00bf7f659c3ff9b',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-f7ec1fb97e6d3370ee8ef340d77bc8b73b798108a78c1dc57daf2255f2ef7e24',
    'data' => 
   array (
     'locatedSource' => 
@@ -191,9 +191,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'startLine' => 19,
             'endLine' => 19,
             'startTokenPos' => 85,
-            'startFilePos' => 352,
+            'startFilePos' => 376,
             'endTokenPos' => 85,
-            'endFilePos' => 353,
+            'endFilePos' => 377,
           ),
         ),
         'docComment' => NULL,
@@ -207,7 +207,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             array (
               0 => 
               array (
-                'code' => '\'nullable|string|max:30\'',
+                'code' => '\'nullable|string|max:30|regex:/^[0-9+\\-\\s()]+$/\'',
                 'attributes' => 
                 array (
                   'startLine' => 18,
@@ -215,7 +215,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                   'startTokenPos' => 73,
                   'startFilePos' => 298,
                   'endTokenPos' => 73,
-                  'endFilePos' => 321,
+                  'endFilePos' => 345,
                 ),
               ),
             ),
@@ -255,9 +255,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'startLine' => 22,
             'endLine' => 22,
             'startTokenPos' => 103,
-            'startFilePos' => 430,
+            'startFilePos' => 454,
             'endTokenPos' => 103,
-            'endFilePos' => 431,
+            'endFilePos' => 455,
           ),
         ),
         'docComment' => NULL,
@@ -277,9 +277,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                   'startLine' => 21,
                   'endLine' => 21,
                   'startTokenPos' => 91,
-                  'startFilePos' => 372,
+                  'startFilePos' => 396,
                   'endTokenPos' => 91,
-                  'endFilePos' => 397,
+                  'endFilePos' => 421,
                 ),
               ),
             ),
@@ -319,9 +319,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'startLine' => 25,
             'endLine' => 25,
             'startTokenPos' => 121,
-            'startFilePos' => 514,
+            'startFilePos' => 538,
             'endTokenPos' => 121,
-            'endFilePos' => 516,
+            'endFilePos' => 540,
           ),
         ),
         'docComment' => NULL,
@@ -341,9 +341,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                   'startLine' => 24,
                   'endLine' => 24,
                   'startTokenPos' => 109,
-                  'startFilePos' => 450,
+                  'startFilePos' => 474,
                   'endTokenPos' => 109,
-                  'endFilePos' => 473,
+                  'endFilePos' => 497,
                 ),
               ),
             ),

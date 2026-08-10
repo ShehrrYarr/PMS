@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Models\ReceiptSetting.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\ReceiptSetting
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-0f9da687b7c3c7955d56c64af95a4657c80ac835848e3a6b6c2ef47b3c572010',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-7e07fe55ebe99b09ddedd0d0c145bb0ab5bfa5dbfe8c113fb1a0dd4e1379ec03',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 9,
-    'endLine' => 32,
+    'startLine' => 10,
+    'endLine' => 36,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -36,6 +36,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
+      0 => 'App\\Models\\Concerns\\BelongsToShop',
     ),
     'immediateConstants' => 
     array (
@@ -51,23 +52,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'header_text\', \'footer_text\', \'show_logo\', \'paper_width\']',
+          'code' => '[\'shop_id\', \'header_text\', \'footer_text\', \'show_logo\', \'paper_width\']',
           'attributes' => 
           array (
-            'startLine' => 11,
-            'endLine' => 16,
-            'startTokenPos' => 36,
-            'startFilePos' => 160,
-            'endTokenPos' => 50,
-            'endFilePos' => 256,
+            'startLine' => 14,
+            'endLine' => 20,
+            'startTokenPos' => 46,
+            'startFilePos' => 223,
+            'endTokenPos' => 63,
+            'endFilePos' => 338,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 11,
-        'endLine' => 16,
+        'startLine' => 14,
+        'endLine' => 20,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -100,8 +101,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 18,
-        'endLine' => 23,
+        'startLine' => 22,
+        'endLine' => 27,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -137,8 +138,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * receipt_settings is a single-row table (id = 1); this returns that row.
  */',
-        'startLine' => 28,
-        'endLine' => 31,
+        'startLine' => 32,
+        'endLine' => 35,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

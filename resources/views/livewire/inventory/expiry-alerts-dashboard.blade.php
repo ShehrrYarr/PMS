@@ -29,7 +29,7 @@
                                 ({{ $days < 0 ? __('batches.expired') : __('batches.days_left', ['days' => $days]) }})
                             </span>
                             <p class="mt-1 text-sm font-semibold text-[var(--text-secondary)]">
-                                {{ __('alerts.remaining_qty', ['qty' => number_format((float) $batch->quantity_remaining, 2)]) }}
+                                {{ __('alerts.remaining_qty', ['qty' => number_format((float) $batch->quantity_remaining, 0)]) }}
                             </p>
                         </div>
                     </div>

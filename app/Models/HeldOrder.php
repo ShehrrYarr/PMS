@@ -12,6 +12,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * A parked cart. Not a financial record — nothing reports on it and it's
  * deleted the moment it's resumed or discarded, which is why the cart lives
  * in a JSON payload rather than normalised line-item tables.
+ *
+ * @property array<string, mixed> $payload Larastan otherwise infers this as
+ *                                          string from an unrelated `payload`
+ *                                          column elsewhere in the schema.
  */
 class HeldOrder extends Model
 {

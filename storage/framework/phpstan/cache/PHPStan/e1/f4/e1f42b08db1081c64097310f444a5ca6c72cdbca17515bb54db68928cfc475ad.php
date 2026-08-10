@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Models\Sale.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Sale
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-e72a101eabf8b29c045d9687243033ff046643b9fe353237a3d78c583c6629a8',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-25538f9a6bc4684ff754af8b394e13003a63413dce51f77248f4cdf06c3ca129',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 11,
-    'endLine' => 60,
+    'startLine' => 13,
+    'endLine' => 147,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -36,6 +36,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
+      0 => 'App\\Models\\Concerns\\BelongsToShop',
     ),
     'immediateConstants' => 
     array (
@@ -51,23 +52,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'invoice_number\', \'customer_id\', \'user_id\', \'total_amount\', \'status\', \'photo_path\']',
+          'code' => '[\'shop_id\', \'invoice_number\', \'client_uuid\', \'customer_id\', \'user_id\', \'total_amount\', \'discount_type\', \'discount_value\', \'discount_amount\', \'status\', \'photo_path\', \'synced_at\']',
           'attributes' => 
           array (
-            'startLine' => 13,
-            'endLine' => 20,
-            'startTokenPos' => 46,
-            'startFilePos' => 256,
-            'endTokenPos' => 66,
-            'endFilePos' => 394,
+            'startLine' => 17,
+            'endLine' => 30,
+            'startTokenPos' => 61,
+            'startFilePos' => 347,
+            'endTokenPos' => 99,
+            'endFilePos' => 626,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 13,
-        'endLine' => 20,
+        'startLine' => 17,
+        'endLine' => 30,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -100,8 +101,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 22,
-        'endLine' => 27,
+        'startLine' => 32,
+        'endLine' => 41,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -109,6 +110,83 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isGenerator' => false,
         'isVariadic' => false,
         'modifiers' => 2,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Sale',
+        'implementingClassName' => 'App\\Models\\Sale',
+        'currentClassName' => 'App\\Models\\Sale',
+        'aliasName' => NULL,
+      ),
+      'syncConflicts' => 
+      array (
+        'name' => 'syncConflicts',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @return HasMany<SaleSyncConflict, $this>
+ */',
+        'startLine' => 46,
+        'endLine' => 49,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Sale',
+        'implementingClassName' => 'App\\Models\\Sale',
+        'currentClassName' => 'App\\Models\\Sale',
+        'aliasName' => NULL,
+      ),
+      'wasMadeOffline' => 
+      array (
+        'name' => 'wasMadeOffline',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'bool',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * True for a sale that was rung up while the till was offline and
+ * replayed later — those keep the SL-OFF… number printed on the
+ * customer\'s receipt rather than being renumbered into the online
+ * sequence.
+ */',
+        'startLine' => 57,
+        'endLine' => 60,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
         'namespace' => 'App\\Models',
         'declaringClassName' => 'App\\Models\\Sale',
         'implementingClassName' => 'App\\Models\\Sale',
@@ -137,8 +215,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Customer, $this>
  */',
-        'startLine' => 32,
-        'endLine' => 35,
+        'startLine' => 65,
+        'endLine' => 68,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -174,8 +252,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<User, $this>
  */',
-        'startLine' => 40,
-        'endLine' => 43,
+        'startLine' => 73,
+        'endLine' => 76,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -211,8 +289,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<SaleItem, $this>
  */',
-        'startLine' => 48,
-        'endLine' => 51,
+        'startLine' => 81,
+        'endLine' => 84,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -248,8 +326,197 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<SaleReturn, $this>
  */',
-        'startLine' => 56,
-        'endLine' => 59,
+        'startLine' => 89,
+        'endLine' => 92,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Sale',
+        'implementingClassName' => 'App\\Models\\Sale',
+        'currentClassName' => 'App\\Models\\Sale',
+        'aliasName' => NULL,
+      ),
+      'costTotal' => 
+      array (
+        'name' => 'costTotal',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * Total cost basis of this sale\'s items, from each item\'s cost_price
+ * snapshot (captured at sale time — see rules.md\'s "create-then-update"
+ * pattern discussion and SaleService::create()). Assumes items is
+ * already eager-loaded to avoid N+1 queries.
+ */',
+        'startLine' => 100,
+        'endLine' => 106,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Sale',
+        'implementingClassName' => 'App\\Models\\Sale',
+        'currentClassName' => 'App\\Models\\Sale',
+        'aliasName' => NULL,
+      ),
+      'profit' => 
+      array (
+        'name' => 'profit',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 108,
+        'endLine' => 111,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Sale',
+        'implementingClassName' => 'App\\Models\\Sale',
+        'currentClassName' => 'App\\Models\\Sale',
+        'aliasName' => NULL,
+      ),
+      'profitMarginPercent' => 
+      array (
+        'name' => 'profitMarginPercent',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 113,
+        'endLine' => 120,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Sale',
+        'implementingClassName' => 'App\\Models\\Sale',
+        'currentClassName' => 'App\\Models\\Sale',
+        'aliasName' => NULL,
+      ),
+      'totalDiscountAmount' => 
+      array (
+        'name' => 'totalDiscountAmount',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * Sum of every item\'s discount_amount plus this sale\'s own discount_amount
+ * — the total ever taken off, regardless of which layer it came from.
+ * Assumes items is already eager-loaded.
+ */',
+        'startLine' => 127,
+        'endLine' => 135,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Sale',
+        'implementingClassName' => 'App\\Models\\Sale',
+        'currentClassName' => 'App\\Models\\Sale',
+        'aliasName' => NULL,
+      ),
+      'subtotalBeforeDiscount' => 
+      array (
+        'name' => 'subtotalBeforeDiscount',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'string',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * What the sale would have cost before any discount — the receipt/invoice
+ * "Subtotal" line. Derived from total_amount + discounts rather than
+ * re-summing unit_price*quantity, so it always agrees with what was
+ * actually charged even if a future edit changes how items are priced.
+ */',
+        'startLine' => 143,
+        'endLine' => 146,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

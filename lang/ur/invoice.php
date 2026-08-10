@@ -13,6 +13,8 @@ return [
     'quantity' => 'مقدار',
     'unit_price' => 'فی یونٹ قیمت',
     'line_total' => 'کل رقم',
+    'subtotal' => 'ذیلی مجموعہ',
+    'discount' => 'رعایت',
     'total' => 'کل رقم',
     'payment' => 'ادائیگی',
 ];

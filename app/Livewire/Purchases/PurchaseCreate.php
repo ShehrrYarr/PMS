@@ -88,7 +88,7 @@ class PurchaseCreate extends Component
             'items.*.manufacturing_date' => 'required|date',
             'items.*.expiry_date' => 'required|date|after:items.*.manufacturing_date',
             'items.*.cost_price' => 'required|numeric|min:0.01',
-            'items.*.quantity' => 'required|numeric|min:0.01',
+            'items.*.quantity' => 'required|integer|min:1',
             'items.*.barcode' => ['nullable', 'string', 'max:100', 'unique:batches,barcode'],
             'paymentLines' => 'required|array|min:1',
             'paymentLines.*.method' => 'required|in:cash,bank,ledger',

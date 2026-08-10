@@ -215,4 +215,125 @@ class SaleServiceTest extends TestCase
         $this->assertSame(0, Sale::query()->count());
         $this->assertSame('20.00', $batch->fresh()->quantity_remaining);
     }
+
+    public function test_a_flat_per_item_discount_reduces_the_line_and_sale_total(): void
+    {
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        $sale = app(SaleService::class)->create(
+            customer: null,
+            items: [[
+                'batch_id' => $batch->id,
+                'quantity' => '5',
+                'unit_price' => '800.00',
+                'discount_type' => 'flat',
+                'discount_value' => '500.00',
+            ]],
+            paymentLines: [['method' => 'cash', 'amount' => '3500.00', 'bank_id' => null]],
+            user: $user,
+        );
+
+        $this->assertSame('3500.00', $sale->total_amount);
+        $saleItem = SaleItem::query()->where('sale_id', $sale->id)->firstOrFail();
+        $this->assertSame('500.00', $saleItem->discount_amount);
+        $this->assertSame('3500.00', $saleItem->line_total);
+    }
+
+    public function test_a_percentage_per_item_discount_truncates_and_reduces_the_sale_total(): void
+    {
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        $sale = app(SaleService::class)->create(
+            customer: null,
+            items: [[
+                'batch_id' => $batch->id,
+                'quantity' => '5',
+                'unit_price' => '800.00',
+                'discount_type' => 'percentage',
+                'discount_value' => '10',
+            ]],
+            paymentLines: [['method' => 'cash', 'amount' => '3600.00', 'bank_id' => null]],
+            user: $user,
+        );
+
+        $this->assertSame('3600.00', $sale->total_amount);
+        $this->assertSame('400.00', SaleItem::query()->where('sale_id', $sale->id)->firstOrFail()->discount_amount);
+    }
+
+    public function test_a_sale_level_discount_stacks_on_top_of_a_per_item_discount(): void
+    {
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        // Line: 5 x 800.00 = 4000.00, minus a flat 500.00 item discount = 3500.00.
+        // Sale-level 10% then takes 350.00 off that, leaving 3150.00.
+        $sale = app(SaleService::class)->create(
+            customer: null,
+            items: [[
+                'batch_id' => $batch->id,
+                'quantity' => '5',
+                'unit_price' => '800.00',
+                'discount_type' => 'flat',
+                'discount_value' => '500.00',
+            ]],
+            paymentLines: [['method' => 'cash', 'amount' => '3150.00', 'bank_id' => null]],
+            user: $user,
+            discountType: 'percentage',
+            discountValue: '10',
+        );
+
+        $this->assertSame('3150.00', $sale->total_amount);
+        $this->assertSame('350.00', $sale->discount_amount);
+    }
+
+    public function test_a_discount_exceeding_the_subtotal_is_rejected_and_writes_nothing(): void
+    {
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        try {
+            app(SaleService::class)->create(
+                customer: null,
+                items: [[
+                    'batch_id' => $batch->id,
+                    'quantity' => '1',
+                    'unit_price' => '100.00',
+                    'discount_type' => 'flat',
+                    'discount_value' => '150.00',
+                ]],
+                paymentLines: [['method' => 'cash', 'amount' => '0.00', 'bank_id' => null]],
+                user: $user,
+            );
+
+            $this->fail('Expected InvalidSaleItemException was not thrown.');
+        } catch (InvalidSaleItemException) {
+            // expected
+        }
+
+        $this->assertSame(0, Sale::query()->count());
+        $this->assertSame('20.00', $batch->fresh()->quantity_remaining);
+    }
+
+    public function test_an_on_account_sale_with_a_discount_posts_the_discounted_total_to_the_ledger(): void
+    {
+        $customer = Customer::factory()->create();
+        $user = User::factory()->create();
+        $batch = $this->makeBatch('20');
+
+        // 5 x 800.00 = 4000.00, minus a flat 400.00 sale discount = 3600.00 —
+        // the customer's ledger must reflect this discounted total, not 4000.00.
+        $sale = app(SaleService::class)->create(
+            customer: $customer,
+            items: [['batch_id' => $batch->id, 'quantity' => '5', 'unit_price' => '800.00']],
+            paymentLines: [['method' => 'ledger', 'amount' => '3600.00', 'bank_id' => null]],
+            user: $user,
+            discountType: 'flat',
+            discountValue: '400.00',
+        );
+
+        $this->assertSame('3600.00', $sale->total_amount);
+        $this->assertSame('3600.00', $customer->currentBalance());
+    }
 }

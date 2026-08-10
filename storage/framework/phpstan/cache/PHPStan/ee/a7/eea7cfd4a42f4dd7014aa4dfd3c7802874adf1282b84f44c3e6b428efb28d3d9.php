@@ -12,9 +12,11 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'userfactory' => 'Database\\Factories\\UserFactory',
           'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
           'notifiable' => 'Illuminate\\Notifications\\Notifiable',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
@@ -34,6 +36,160 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
+      )),
+      'e3f766675644fe0342a693dc4d2683c9' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\User',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+          1 => 'App\\Models\\User',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => '/** @use HasFactory<UserFactory> */',
+        ),
+      )),
+      '49f167cb1094e54220cc798d55ace9eb' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\User',
+         'functionName' => 'bootBelongsToShop',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Models\\Concerns',
+           'uses' => 
+          array (
+            'shop' => 'App\\Models\\Shop',
+            'user' => 'App\\Models\\User',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          ),
+           'className' => 'App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+          1 => 'App\\Models\\User',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => '/** @use HasFactory<UserFactory> */',
+        ),
+      )),
+      '8fe563889706b81546d641c96726aa9c' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models\\Concerns',
+         'uses' => 
+        array (
+          'shop' => 'App\\Models\\Shop',
+          'user' => 'App\\Models\\User',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Models\\User',
+         'functionName' => 'currentShopId',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Models\\Concerns',
+           'uses' => 
+          array (
+            'shop' => 'App\\Models\\Shop',
+            'user' => 'App\\Models\\User',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          ),
+           'className' => 'App\\Models\\User',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Models\\Concerns\\BelongsToShop',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php',
+          1 => 'App\\Models\\User',
+          2 => 'App\\Models\\Concerns\\BelongsToShop',
+          3 => NULL,
+          4 => '/** @use HasFactory<UserFactory> */',
+        ),
       )),
       '71b811fa2ee3ba2caecc4ac45503cfc3' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
@@ -2674,9 +2830,11 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
           'userfactory' => 'Database\\Factories\\UserFactory',
           'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
           'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
           'notifiable' => 'Illuminate\\Notifications\\Notifiable',
           'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
@@ -2697,10 +2855,41 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
+      '3bc07d814dd50c5a2f704642f78104a7' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'belongstoshop' => 'App\\Models\\Concerns\\BelongsToShop',
+          'userfactory' => 'Database\\Factories\\UserFactory',
+          'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+          'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+        ),
+         'className' => 'App\\Models\\User',
+         'functionName' => 'shop',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php' => '9ca319a73f3746671252922b9cbd0d31fb35e0a1362a0c4861e85ec5939880fe',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\User.php' => '43fee44b76a6853a014d2634cece86e465124a243eb41df04118c450df9d749b',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Models\\Concerns\\BelongsToShop.php' => '3708db7209115b37a0288f18d258c5573a4b13da79c901154a241684cbed5a16',
       'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer\\..\\spatie\\laravel-permission\\src\\Traits\\HasRoles.php' => '2a592993c44a108bcce617ba904f42128ceebbddf464e87b2d40f6af986fce0f',
       'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer\\..\\spatie\\laravel-permission\\src\\Traits\\HasPermissions.php' => '89d1dc525802930071b0d69e4541279edee0de7e82f08b06f816d87b7fe8cd55',

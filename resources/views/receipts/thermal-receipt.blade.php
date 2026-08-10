@@ -75,7 +75,7 @@
                         @foreach ($sale->items as $item)
                             <tr>
                                 <td>{{ $item->batch->product->name }}</td>
-                                <td class="text-end">{{ rtrim(rtrim(number_format((float) $item->quantity, 2), '0'), '.') }}</td>
+                                <td class="text-end">{{ number_format((float) $item->quantity, 0) }}</td>
                                 <td class="text-end">{{ money($item->line_total) }}</td>
                             </tr>
                         @endforeach
@@ -83,6 +83,17 @@
                 </table>
 
                 <div class="divider"></div>
+
+                @if (bccomp($sale->totalDiscountAmount(), '0', 2) > 0)
+                    <div class="totals-row">
+                        <span>{{ __('receipt.subtotal') }}</span>
+                        <span>{{ money($sale->subtotalBeforeDiscount()) }}</span>
+                    </div>
+                    <div class="totals-row">
+                        <span>{{ __('receipt.discount') }}</span>
+                        <span>-{{ money($sale->totalDiscountAmount()) }}</span>
+                    </div>
+                @endif
 
                 <div class="totals-row grand-total">
                     <span>{{ __('receipt.total') }}</span>

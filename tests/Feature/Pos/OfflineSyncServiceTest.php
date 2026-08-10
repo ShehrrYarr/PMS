@@ -252,4 +252,37 @@ class OfflineSyncServiceTest extends TestCase
         $this->assertSame(0, Sale::query()->count());
         $this->assertSame('20.00', $batch->fresh()->quantity_remaining);
     }
+
+    public function test_a_queued_sale_carrying_a_per_item_and_sale_level_discount_replays_correctly(): void
+    {
+        $user = $this->salesman();
+        $device = $this->device($user);
+        $batch = $this->makeBatch('20');
+
+        // Line: 2 x 800.00 = 1600.00, minus a flat 100.00 item discount = 1500.00.
+        // Sale-level 10% then takes 150.00 off, leaving 1350.00.
+        $queued = [[
+            'client_uuid' => (string) Str::uuid(),
+            'occurred_at' => Carbon::now()->toIso8601String(),
+            'invoice_seq' => 1,
+            'customer_id' => null,
+            'items' => [[
+                'batch_id' => $batch->id,
+                'quantity' => '2',
+                'unit_price' => '800.00',
+                'discount_type' => 'flat',
+                'discount_value' => '100.00',
+            ]],
+            'payment_lines' => [['method' => 'cash', 'amount' => '1350.00', 'bank_id' => null]],
+            'discount_type' => 'percentage',
+            'discount_value' => '10',
+        ]];
+
+        $results = app(OfflineSyncService::class)->syncSales($queued, $user, $device);
+
+        $this->assertSame('synced', $results[0]['status'], $results[0]['message'] ?? '');
+        $sale = Sale::query()->firstOrFail();
+        $this->assertSame('1350.00', $sale->total_amount);
+        $this->assertSame('150.00', $sale->discount_amount);
+    }
 }

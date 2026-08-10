@@ -19,6 +19,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'user' => 'App\\Models\\User',
           'vendor' => 'App\\Models\\Vendor',
           'vendorledger' => 'App\\Models\\VendorLedger',
+          'carboninterface' => 'Carbon\\CarbonInterface',
           'db' => 'Illuminate\\Support\\Facades\\DB',
         ),
          'className' => 'App\\Services\\LedgerService',
@@ -49,6 +50,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'user' => 'App\\Models\\User',
           'vendor' => 'App\\Models\\Vendor',
           'vendorledger' => 'App\\Models\\VendorLedger',
+          'carboninterface' => 'Carbon\\CarbonInterface',
           'db' => 'Illuminate\\Support\\Facades\\DB',
         ),
          'className' => 'App\\Services\\LedgerService',
@@ -68,6 +70,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'user' => 'App\\Models\\User',
             'vendor' => 'App\\Models\\Vendor',
             'vendorledger' => 'App\\Models\\VendorLedger',
+            'carboninterface' => 'Carbon\\CarbonInterface',
             'db' => 'Illuminate\\Support\\Facades\\DB',
           ),
            'className' => 'App\\Services\\LedgerService',
@@ -108,6 +111,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'user' => 'App\\Models\\User',
           'vendor' => 'App\\Models\\Vendor',
           'vendorledger' => 'App\\Models\\VendorLedger',
+          'carboninterface' => 'Carbon\\CarbonInterface',
           'db' => 'Illuminate\\Support\\Facades\\DB',
         ),
          'className' => 'App\\Services\\LedgerService',
@@ -127,6 +131,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'user' => 'App\\Models\\User',
             'vendor' => 'App\\Models\\Vendor',
             'vendorledger' => 'App\\Models\\VendorLedger',
+            'carboninterface' => 'Carbon\\CarbonInterface',
             'db' => 'Illuminate\\Support\\Facades\\DB',
           ),
            'className' => 'App\\Services\\LedgerService',
@@ -158,7 +163,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php' => '5fbbef7b45819ac2f64011455088b03e3309d62a69e4f7897a1c30a43ac9e220',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Services\\LedgerService.php' => '9a8083b31fcd83d4f3228fd31ca096ee130d29e2891ad9d8008c68725ab0b4ff',
     ),
   ),
 ));

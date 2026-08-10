@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Models\Product.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Product
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-244bab63260e3de25e9efb0182a81c05ac4e61d986643be106f713d65f574aff',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-03b96cc7efbff71b439b6517b3aff3dca9d6d2fa4ed8cd128111fe02510866a3',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 12,
-    'endLine' => 53,
+    'startLine' => 13,
+    'endLine' => 64,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -36,7 +36,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
-      0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      0 => 'App\\Models\\Concerns\\BelongsToShop',
+      1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
     ),
     'immediateConstants' => 
     array (
@@ -52,23 +53,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'name\', \'sku\', \'category_id\', \'unit\', \'default_sale_price\', \'is_active\']',
+          'code' => '[\'shop_id\', \'name\', \'sku\', \'category_id\', \'company_id\', \'unit\', \'default_sale_price\', \'is_active\']',
           'attributes' => 
           array (
-            'startLine' => 16,
-            'endLine' => 23,
-            'startTokenPos' => 56,
-            'startFilePos' => 335,
-            'endTokenPos' => 76,
-            'endFilePos' => 462,
+            'startLine' => 17,
+            'endLine' => 26,
+            'startTokenPos' => 64,
+            'startFilePos' => 389,
+            'endTokenPos' => 90,
+            'endFilePos' => 557,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 16,
-        'endLine' => 23,
+        'startLine' => 17,
+        'endLine' => 26,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -101,8 +102,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 25,
-        'endLine' => 31,
+        'startLine' => 28,
+        'endLine' => 34,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -138,8 +139,45 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Category, $this>
  */',
-        'startLine' => 36,
-        'endLine' => 39,
+        'startLine' => 39,
+        'endLine' => 42,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Product',
+        'implementingClassName' => 'App\\Models\\Product',
+        'currentClassName' => 'App\\Models\\Product',
+        'aliasName' => NULL,
+      ),
+      'company' => 
+      array (
+        'name' => 'company',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @return BelongsTo<Company, $this>
+ */',
+        'startLine' => 47,
+        'endLine' => 50,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -175,8 +213,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<Batch, $this>
  */',
-        'startLine' => 44,
-        'endLine' => 47,
+        'startLine' => 55,
+        'endLine' => 58,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -210,8 +248,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 49,
-        'endLine' => 52,
+        'startLine' => 60,
+        'endLine' => 63,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

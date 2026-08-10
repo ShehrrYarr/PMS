@@ -12,15 +12,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -275,15 +281,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -299,15 +311,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -344,15 +362,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -368,15 +392,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -413,15 +443,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -437,15 +473,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -482,15 +524,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -506,15 +554,345 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '2d5a47f1d0c8ba61586ca15188a6f406' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'holdOrder',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'a7b5d113086598cb428dfea6bd77c717' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'resumeHeldOrder',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'd83d840fc0fcc9565293c6142db494fe' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'discardHeldOrder',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '7efd349643660fb77dd3f38f0a61be5e' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'rehydrateCart',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -551,15 +929,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -575,15 +959,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -620,15 +1010,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -644,15 +1040,588 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'b017bbb7f6249e00669499423db793c7' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'lineSubtotal',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '16f1335a0edb802b9667f4d03f4691d3' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'lineDiscountAmount',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'ab6a8066996c5a9f974224df3de1c39a' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'lineTotal',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '155f869d27168e13f7e949117af31c9e' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'getCartSubtotalProperty',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'b051b6c983e5ca2544dceb1c830c77f0' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'getCartItemDiscountTotalProperty',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'adf4f6ae4d3817b0a8dbc8d9776107ab' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'subtotalAfterItemDiscounts',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
+            'layout' => 'Livewire\\Attributes\\Layout',
+            'component' => 'Livewire\\Component',
+            'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+            'withfileuploads' => 'Livewire\\WithFileUploads',
+          ),
+           'className' => 'App\\Livewire\\Pos\\Pos',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'daaf4816d72933085cf3206aa23d3505' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Livewire\\Pos',
+         'uses' => 
+        array (
+          'discounttype' => 'App\\Enums\\DiscountType',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+          'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+          'bank' => 'App\\Models\\Bank',
+          'batch' => 'App\\Models\\Batch',
+          'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
+          'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
+          'saleservice' => 'App\\Services\\SaleService',
+          'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
+          'layout' => 'Livewire\\Attributes\\Layout',
+          'component' => 'Livewire\\Component',
+          'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+          'withfileuploads' => 'Livewire\\WithFileUploads',
+        ),
+         'className' => 'App\\Livewire\\Pos\\Pos',
+         'functionName' => 'getSaleDiscountAmountProperty',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Livewire\\Pos',
+           'uses' => 
+          array (
+            'discounttype' => 'App\\Enums\\DiscountType',
+            'paymentmethod' => 'App\\Enums\\PaymentMethod',
+            'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
+            'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
+            'bank' => 'App\\Models\\Bank',
+            'batch' => 'App\\Models\\Batch',
+            'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
+            'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
+            'saleservice' => 'App\\Services\\SaleService',
+            'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -689,15 +1658,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -713,15 +1688,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -758,15 +1739,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -782,15 +1769,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -827,15 +1820,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -851,15 +1850,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -896,15 +1901,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -920,15 +1931,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -965,15 +1982,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -989,15 +2012,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -1034,15 +2063,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -1058,15 +2093,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -1103,15 +2144,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Livewire\\Pos',
          'uses' => 
         array (
+          'discounttype' => 'App\\Enums\\DiscountType',
           'paymentmethod' => 'App\\Enums\\PaymentMethod',
           'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+          'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+          'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
           'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
           'bank' => 'App\\Models\\Bank',
           'batch' => 'App\\Models\\Batch',
           'customer' => 'App\\Models\\Customer',
+          'heldorder' => 'App\\Models\\HeldOrder',
           'sale' => 'App\\Models\\Sale',
+          'discountcalculator' => 'App\\Services\\DiscountCalculator',
           'saleservice' => 'App\\Services\\SaleService',
           'view' => 'Illuminate\\Contracts\\View\\View',
+          'str' => 'Illuminate\\Support\\Str',
           'layout' => 'Livewire\\Attributes\\Layout',
           'component' => 'Livewire\\Component',
           'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -1127,15 +2174,21 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Livewire\\Pos',
            'uses' => 
           array (
+            'discounttype' => 'App\\Enums\\DiscountType',
             'paymentmethod' => 'App\\Enums\\PaymentMethod',
             'insufficientstockexception' => 'App\\Exceptions\\InsufficientStockException',
+            'invalidsaleitemexception' => 'App\\Exceptions\\InvalidSaleItemException',
+            'invalidsalepaymentexception' => 'App\\Exceptions\\InvalidSalePaymentException',
             'unbalancedpaymentsplitexception' => 'App\\Exceptions\\UnbalancedPaymentSplitException',
             'bank' => 'App\\Models\\Bank',
             'batch' => 'App\\Models\\Batch',
             'customer' => 'App\\Models\\Customer',
+            'heldorder' => 'App\\Models\\HeldOrder',
             'sale' => 'App\\Models\\Sale',
+            'discountcalculator' => 'App\\Services\\DiscountCalculator',
             'saleservice' => 'App\\Services\\SaleService',
             'view' => 'Illuminate\\Contracts\\View\\View',
+            'str' => 'Illuminate\\Support\\Str',
             'layout' => 'Livewire\\Attributes\\Layout',
             'component' => 'Livewire\\Component',
             'temporaryuploadedfile' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
@@ -1170,7 +2223,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php' => '34db9954afd7a62321bfa65654fa0f3a9a2b6fafa903975271bfe31d114ada2e',
+      'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\app\\Livewire\\Pos\\Pos.php' => 'ebb9a93ca3b08eaf2fd5dbce61624cb992eb3e00c96fe7f273793fb669cffdb8',
       'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer\\..\\livewire\\livewire\\src\\WithFileUploads.php' => 'd0dfb990e95ccd774c27719889835f46734cd1c9514903def29b8eba8572a8fe',
       'C:\\Users\\shehr\\OneDrive\\Desktop\\Personal Projects\\PesticidesManagmentSystem\\vendor\\composer\\..\\livewire\\livewire\\src\\Features\\SupportFileUploads\\WithFileUploads.php' => 'e67671a85d437d2cc3a334a8867b19f357cf5033d6fcaa090da059abb6315fe7',
     ),

@@ -11,6 +11,8 @@ return [
     'item' => 'Item',
     'qty' => 'Qty',
     'amount' => 'Amount',
+    'subtotal' => 'Subtotal',
+    'discount' => 'Discount',
     'total' => 'Total',
     'payment' => 'Payment',
 ];

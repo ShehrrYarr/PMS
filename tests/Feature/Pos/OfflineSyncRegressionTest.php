@@ -81,25 +81,37 @@ class OfflineSyncRegressionTest extends TestCase
     }
 
     /**
-     * The client used to round where bcmul truncates, so a fractional quantity
-     * produced a total one paisa above the server's and the sale was rejected
-     * as unbalanced after the customer had paid.
+     * Quantities are whole numbers now, so the client's percentOf() must still
+     * truncate exactly where PHP's bcdiv(bcmul(...,4),'100',2) does, or a
+     * percentage discount produces a total one paisa off from the server's and
+     * the sale is rejected as unbalanced after the customer had paid.
      */
-    public function test_a_fractional_quantity_sale_balances_and_is_accepted(): void
+    public function test_a_percentage_discount_sale_truncates_identically_and_is_accepted(): void
     {
         $user = $this->salesman();
         $device = $this->device($user);
-        $batch = $this->makeBatch($user, '50', '333.33');
+        $batch = $this->makeBatch($user, '50', '1111.00');
 
-        // 333.33 x 1.5 truncates to 499.99 — the value the fixed client sends.
-        $results = app(OfflineSyncService::class)->syncSales(
-            [$this->queuedSale($batch, '1.5', '333.33', '499.99', 1)],
-            $user,
-            $device,
-        );
+        // Subtotal 3 x 1111.00 = 3333.00; 15.50% of that truncates to 516.61
+        // (not 516.615 rounded), giving a total of 2816.39 — the value the
+        // fixed client's percentOf() sends.
+        $queued = [[
+            'client_uuid' => (string) Str::uuid(),
+            'occurred_at' => Carbon::now()->toIso8601String(),
+            'invoice_seq' => 1,
+            'customer_id' => null,
+            'items' => [['batch_id' => $batch->id, 'quantity' => '3', 'unit_price' => '1111.00']],
+            'payment_lines' => [['method' => 'cash', 'amount' => '2816.39', 'bank_id' => null]],
+            'discount_type' => 'percentage',
+            'discount_value' => '15.50',
+        ]];
+
+        $results = app(OfflineSyncService::class)->syncSales($queued, $user, $device);
 
         $this->assertSame('synced', $results[0]['status'], $results[0]['message'] ?? '');
-        $this->assertSame('499.99', Sale::query()->firstOrFail()->total_amount);
+        $sale = Sale::query()->firstOrFail();
+        $this->assertSame('2816.39', $sale->total_amount);
+        $this->assertSame('516.61', $sale->discount_amount);
     }
 
     /**

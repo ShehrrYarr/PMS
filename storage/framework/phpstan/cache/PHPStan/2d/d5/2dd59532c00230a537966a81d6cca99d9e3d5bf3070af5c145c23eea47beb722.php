@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Admin\SettingsPage.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Admin\SettingsPage
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-fe652f83009c475a303db595c9f05fb1cf65d4d3f9a15bb1c687f0f97b739c41',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-f0dbc8a7ee45164ec10bc377c721b636607b68b43693df3c5412d3b3dadc879e',
    'data' => 
   array (
     'locatedSource' => 
@@ -36,19 +36,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'code' => '\'layouts.app\'',
             'attributes' => 
             array (
-              'startLine' => 14,
-              'endLine' => 14,
-              'startTokenPos' => 48,
-              'startFilePos' => 260,
-              'endTokenPos' => 48,
-              'endFilePos' => 272,
+              'startLine' => 17,
+              'endLine' => 17,
+              'startTokenPos' => 63,
+              'startFilePos' => 394,
+              'endTokenPos' => 63,
+              'endFilePos' => 406,
             ),
           ),
         ),
       ),
     ),
-    'startLine' => 14,
-    'endLine' => 202,
+    'startLine' => 17,
+    'endLine' => 308,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -57,6 +57,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
+      0 => 'Livewire\\WithFileUploads',
     ),
     'immediateConstants' => 
     array (
@@ -72,12 +73,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[[\'name\' => \'Forest\', \'navbar_primary_color\' => \'#2f6f4f\', \'navbar_accent_color\' => \'#e8f5ee\', \'sidebar_primary_color\' => \'#1f4d38\', \'sidebar_accent_color\' => \'#eaf6f0\', \'sidebar_gradient_from\' => \'#1f4d38\', \'sidebar_gradient_to\' => \'#0d2b1f\'], [\'name\' => \'Ocean\', \'navbar_primary_color\' => \'#1e5f8c\', \'navbar_accent_color\' => \'#e6f2fa\', \'sidebar_primary_color\' => \'#123a56\', \'sidebar_accent_color\' => \'#e3f0f9\', \'sidebar_gradient_from\' => \'#123a56\', \'sidebar_gradient_to\' => \'#0a2438\'], [\'name\' => \'Sunset\', \'navbar_primary_color\' => \'#c1552c\', \'navbar_accent_color\' => \'#fbeee7\', \'sidebar_primary_color\' => \'#7a3418\', \'sidebar_accent_color\' => \'#fbeee7\', \'sidebar_gradient_from\' => \'#7a3418\', \'sidebar_gradient_to\' => \'#4a1f0d\'], [\'name\' => \'Royal\', \'navbar_primary_color\' => \'#5b3a8e\', \'navbar_accent_color\' => \'#efe9f8\', \'sidebar_primary_color\' => \'#3a2459\', \'sidebar_accent_color\' => \'#efe9f8\', \'sidebar_gradient_from\' => \'#3a2459\', \'sidebar_gradient_to\' => \'#1f1330\']]',
           'attributes' => 
           array (
-            'startLine' => 24,
-            'endLine' => 61,
-            'startTokenPos' => 72,
-            'startFilePos' => 797,
-            'endTokenPos' => 290,
-            'endFilePos' => 2189,
+            'startLine' => 29,
+            'endLine' => 66,
+            'startTokenPos' => 92,
+            'startFilePos' => 957,
+            'endTokenPos' => 310,
+            'endFilePos' => 2349,
           ),
         ),
         'docComment' => '/**
@@ -90,8 +91,132 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 24,
-        'endLine' => 61,
+        'startLine' => 29,
+        'endLine' => 66,
+        'startColumn' => 5,
+        'endColumn' => 6,
+      ),
+      'MIN_FONT_SIZE_PERCENT' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'name' => 'MIN_FONT_SIZE_PERCENT',
+        'modifiers' => 4,
+        'type' => NULL,
+        'value' => 
+        array (
+          'code' => '80',
+          'attributes' => 
+          array (
+            'startLine' => 105,
+            'endLine' => 105,
+            'startTokenPos' => 521,
+            'startFilePos' => 3616,
+            'endTokenPos' => 521,
+            'endFilePos' => 3617,
+          ),
+        ),
+        'docComment' => '/**
+ * A free +/- stepper, not named presets — clamped to a range that keeps
+ * text from becoming illegibly small or breaking layouts at the top end.
+ */',
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 105,
+        'endLine' => 105,
+        'startColumn' => 5,
+        'endColumn' => 45,
+      ),
+      'MAX_FONT_SIZE_PERCENT' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'name' => 'MAX_FONT_SIZE_PERCENT',
+        'modifiers' => 4,
+        'type' => NULL,
+        'value' => 
+        array (
+          'code' => '150',
+          'attributes' => 
+          array (
+            'startLine' => 107,
+            'endLine' => 107,
+            'startTokenPos' => 532,
+            'startFilePos' => 3663,
+            'endTokenPos' => 532,
+            'endFilePos' => 3665,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 107,
+        'endLine' => 107,
+        'startColumn' => 5,
+        'endColumn' => 46,
+      ),
+      'FONT_SIZE_STEP' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'name' => 'FONT_SIZE_STEP',
+        'modifiers' => 4,
+        'type' => NULL,
+        'value' => 
+        array (
+          'code' => '10',
+          'attributes' => 
+          array (
+            'startLine' => 109,
+            'endLine' => 109,
+            'startTokenPos' => 543,
+            'startFilePos' => 3704,
+            'endTokenPos' => 543,
+            'endFilePos' => 3705,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 109,
+        'endLine' => 109,
+        'startColumn' => 5,
+        'endColumn' => 38,
+      ),
+      'ALLOWED_LOGO_EXTENSIONS' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'name' => 'ALLOWED_LOGO_EXTENSIONS',
+        'modifiers' => 4,
+        'type' => NULL,
+        'value' => 
+        array (
+          'code' => '[\'image/jpeg\' => \'jpg\', \'image/png\' => \'png\', \'image/webp\' => \'webp\', \'image/gif\' => \'gif\']',
+          'attributes' => 
+          array (
+            'startLine' => 122,
+            'endLine' => 127,
+            'startTokenPos' => 578,
+            'startFilePos' => 4284,
+            'endTokenPos' => 608,
+            'endFilePos' => 4413,
+          ),
+        ),
+        'docComment' => '/**
+ * Deliberately excludes svg: the generic `image` rule accepts
+ * image/svg+xml, and an SVG can embed a <script> tag that executes when
+ * its stored URL is opened directly (not just used inside an <img> tag)
+ * — a stored-XSS vector on the app\'s own origin.
+ */',
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 122,
+        'endLine' => 127,
         'startColumn' => 5,
         'endColumn' => 6,
       ),
@@ -118,12 +243,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 64,
-            'endLine' => 64,
-            'startTokenPos' => 308,
-            'startFilePos' => 2266,
-            'endTokenPos' => 308,
-            'endFilePos' => 2267,
+            'startLine' => 69,
+            'endLine' => 69,
+            'startTokenPos' => 328,
+            'startFilePos' => 2426,
+            'endTokenPos' => 328,
+            'endFilePos' => 2427,
           ),
         ),
         'docComment' => NULL,
@@ -140,19 +265,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'nullable|string|max:255\'',
                 'attributes' => 
                 array (
-                  'startLine' => 63,
-                  'endLine' => 63,
-                  'startTokenPos' => 296,
-                  'startFilePos' => 2208,
-                  'endTokenPos' => 296,
-                  'endFilePos' => 2232,
+                  'startLine' => 68,
+                  'endLine' => 68,
+                  'startTokenPos' => 316,
+                  'startFilePos' => 2368,
+                  'endTokenPos' => 316,
+                  'endFilePos' => 2392,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 63,
-        'endLine' => 64,
+        'startLine' => 68,
+        'endLine' => 69,
         'startColumn' => 5,
         'endColumn' => 33,
         'isPromoted' => false,
@@ -182,12 +307,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 67,
-            'endLine' => 67,
-            'startTokenPos' => 326,
-            'startFilePos' => 2354,
-            'endTokenPos' => 326,
-            'endFilePos' => 2355,
+            'startLine' => 72,
+            'endLine' => 72,
+            'startTokenPos' => 346,
+            'startFilePos' => 2514,
+            'endTokenPos' => 346,
+            'endFilePos' => 2515,
           ),
         ),
         'docComment' => NULL,
@@ -204,19 +329,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'nullable|string|max:1000\'',
                 'attributes' => 
                 array (
-                  'startLine' => 66,
-                  'endLine' => 66,
-                  'startTokenPos' => 314,
-                  'startFilePos' => 2286,
-                  'endTokenPos' => 314,
-                  'endFilePos' => 2311,
+                  'startLine' => 71,
+                  'endLine' => 71,
+                  'startTokenPos' => 334,
+                  'startFilePos' => 2446,
+                  'endTokenPos' => 334,
+                  'endFilePos' => 2471,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 66,
-        'endLine' => 67,
+        'startLine' => 71,
+        'endLine' => 72,
         'startColumn' => 5,
         'endColumn' => 42,
         'isPromoted' => false,
@@ -246,12 +371,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 70,
-            'endLine' => 70,
-            'startTokenPos' => 344,
-            'startFilePos' => 2442,
-            'endTokenPos' => 344,
-            'endFilePos' => 2443,
+            'startLine' => 75,
+            'endLine' => 75,
+            'startTokenPos' => 364,
+            'startFilePos' => 2602,
+            'endTokenPos' => 364,
+            'endFilePos' => 2603,
           ),
         ),
         'docComment' => NULL,
@@ -268,19 +393,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'nullable|string|max:1000\'',
                 'attributes' => 
                 array (
-                  'startLine' => 69,
-                  'endLine' => 69,
-                  'startTokenPos' => 332,
-                  'startFilePos' => 2374,
-                  'endTokenPos' => 332,
-                  'endFilePos' => 2399,
+                  'startLine' => 74,
+                  'endLine' => 74,
+                  'startTokenPos' => 352,
+                  'startFilePos' => 2534,
+                  'endTokenPos' => 352,
+                  'endFilePos' => 2559,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 69,
-        'endLine' => 70,
+        'startLine' => 74,
+        'endLine' => 75,
         'startColumn' => 5,
         'endColumn' => 42,
         'isPromoted' => false,
@@ -310,12 +435,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'true',
           'attributes' => 
           array (
-            'startLine' => 73,
-            'endLine' => 73,
-            'startTokenPos' => 362,
-            'startFilePos' => 2509,
-            'endTokenPos' => 362,
-            'endFilePos' => 2512,
+            'startLine' => 78,
+            'endLine' => 78,
+            'startTokenPos' => 382,
+            'startFilePos' => 2669,
+            'endTokenPos' => 382,
+            'endFilePos' => 2672,
           ),
         ),
         'docComment' => NULL,
@@ -332,19 +457,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'boolean\'',
                 'attributes' => 
                 array (
-                  'startLine' => 72,
-                  'endLine' => 72,
-                  'startTokenPos' => 350,
-                  'startFilePos' => 2462,
-                  'endTokenPos' => 350,
-                  'endFilePos' => 2470,
+                  'startLine' => 77,
+                  'endLine' => 77,
+                  'startTokenPos' => 370,
+                  'startFilePos' => 2622,
+                  'endTokenPos' => 370,
+                  'endFilePos' => 2630,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 72,
-        'endLine' => 73,
+        'startLine' => 77,
+        'endLine' => 78,
         'startColumn' => 5,
         'endColumn' => 40,
         'isPromoted' => false,
@@ -374,12 +499,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'80mm\'',
           'attributes' => 
           array (
-            'startLine' => 76,
-            'endLine' => 76,
-            'startTokenPos' => 380,
-            'startFilePos' => 2596,
-            'endTokenPos' => 380,
-            'endFilePos' => 2601,
+            'startLine' => 81,
+            'endLine' => 81,
+            'startTokenPos' => 400,
+            'startFilePos' => 2756,
+            'endTokenPos' => 400,
+            'endFilePos' => 2761,
           ),
         ),
         'docComment' => NULL,
@@ -396,19 +521,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'required|in:58mm,80mm\'',
                 'attributes' => 
                 array (
-                  'startLine' => 75,
-                  'endLine' => 75,
-                  'startTokenPos' => 368,
-                  'startFilePos' => 2531,
-                  'endTokenPos' => 368,
-                  'endFilePos' => 2553,
+                  'startLine' => 80,
+                  'endLine' => 80,
+                  'startTokenPos' => 388,
+                  'startFilePos' => 2691,
+                  'endTokenPos' => 388,
+                  'endFilePos' => 2713,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 75,
-        'endLine' => 76,
+        'startLine' => 80,
+        'endLine' => 81,
         'startColumn' => 5,
         'endColumn' => 46,
         'isPromoted' => false,
@@ -438,12 +563,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'#2f6f4f\'',
           'attributes' => 
           array (
-            'startLine' => 79,
-            'endLine' => 79,
-            'startTokenPos' => 398,
-            'startFilePos' => 2699,
-            'endTokenPos' => 398,
-            'endFilePos' => 2707,
+            'startLine' => 84,
+            'endLine' => 84,
+            'startTokenPos' => 418,
+            'startFilePos' => 2859,
+            'endTokenPos' => 418,
+            'endFilePos' => 2867,
           ),
         ),
         'docComment' => NULL,
@@ -460,19 +585,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'required|regex:/^#[0-9a-fA-F]{6}$/\'',
                 'attributes' => 
                 array (
-                  'startLine' => 78,
-                  'endLine' => 78,
-                  'startTokenPos' => 386,
-                  'startFilePos' => 2620,
-                  'endTokenPos' => 386,
-                  'endFilePos' => 2655,
+                  'startLine' => 83,
+                  'endLine' => 83,
+                  'startTokenPos' => 406,
+                  'startFilePos' => 2780,
+                  'endTokenPos' => 406,
+                  'endFilePos' => 2815,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 78,
-        'endLine' => 79,
+        'startLine' => 83,
+        'endLine' => 84,
         'startColumn' => 5,
         'endColumn' => 50,
         'isPromoted' => false,
@@ -502,12 +627,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'#e8f5ee\'',
           'attributes' => 
           array (
-            'startLine' => 82,
-            'endLine' => 82,
-            'startTokenPos' => 416,
-            'startFilePos' => 2804,
-            'endTokenPos' => 416,
-            'endFilePos' => 2812,
+            'startLine' => 87,
+            'endLine' => 87,
+            'startTokenPos' => 436,
+            'startFilePos' => 2964,
+            'endTokenPos' => 436,
+            'endFilePos' => 2972,
           ),
         ),
         'docComment' => NULL,
@@ -524,19 +649,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'required|regex:/^#[0-9a-fA-F]{6}$/\'',
                 'attributes' => 
                 array (
-                  'startLine' => 81,
-                  'endLine' => 81,
-                  'startTokenPos' => 404,
-                  'startFilePos' => 2726,
-                  'endTokenPos' => 404,
-                  'endFilePos' => 2761,
+                  'startLine' => 86,
+                  'endLine' => 86,
+                  'startTokenPos' => 424,
+                  'startFilePos' => 2886,
+                  'endTokenPos' => 424,
+                  'endFilePos' => 2921,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 81,
-        'endLine' => 82,
+        'startLine' => 86,
+        'endLine' => 87,
         'startColumn' => 5,
         'endColumn' => 49,
         'isPromoted' => false,
@@ -566,12 +691,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'#1f4d38\'',
           'attributes' => 
           array (
-            'startLine' => 85,
-            'endLine' => 85,
-            'startTokenPos' => 434,
-            'startFilePos' => 2911,
-            'endTokenPos' => 434,
-            'endFilePos' => 2919,
+            'startLine' => 90,
+            'endLine' => 90,
+            'startTokenPos' => 454,
+            'startFilePos' => 3071,
+            'endTokenPos' => 454,
+            'endFilePos' => 3079,
           ),
         ),
         'docComment' => NULL,
@@ -588,19 +713,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'required|regex:/^#[0-9a-fA-F]{6}$/\'',
                 'attributes' => 
                 array (
-                  'startLine' => 84,
-                  'endLine' => 84,
-                  'startTokenPos' => 422,
-                  'startFilePos' => 2831,
-                  'endTokenPos' => 422,
-                  'endFilePos' => 2866,
+                  'startLine' => 89,
+                  'endLine' => 89,
+                  'startTokenPos' => 442,
+                  'startFilePos' => 2991,
+                  'endTokenPos' => 442,
+                  'endFilePos' => 3026,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 84,
-        'endLine' => 85,
+        'startLine' => 89,
+        'endLine' => 90,
         'startColumn' => 5,
         'endColumn' => 51,
         'isPromoted' => false,
@@ -630,12 +755,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'#eaf6f0\'',
           'attributes' => 
           array (
-            'startLine' => 88,
-            'endLine' => 88,
-            'startTokenPos' => 452,
-            'startFilePos' => 3017,
-            'endTokenPos' => 452,
-            'endFilePos' => 3025,
+            'startLine' => 93,
+            'endLine' => 93,
+            'startTokenPos' => 472,
+            'startFilePos' => 3177,
+            'endTokenPos' => 472,
+            'endFilePos' => 3185,
           ),
         ),
         'docComment' => NULL,
@@ -652,19 +777,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'required|regex:/^#[0-9a-fA-F]{6}$/\'',
                 'attributes' => 
                 array (
-                  'startLine' => 87,
-                  'endLine' => 87,
-                  'startTokenPos' => 440,
-                  'startFilePos' => 2938,
-                  'endTokenPos' => 440,
-                  'endFilePos' => 2973,
+                  'startLine' => 92,
+                  'endLine' => 92,
+                  'startTokenPos' => 460,
+                  'startFilePos' => 3098,
+                  'endTokenPos' => 460,
+                  'endFilePos' => 3133,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 87,
-        'endLine' => 88,
+        'startLine' => 92,
+        'endLine' => 93,
         'startColumn' => 5,
         'endColumn' => 50,
         'isPromoted' => false,
@@ -694,12 +819,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'#1f4d38\'',
           'attributes' => 
           array (
-            'startLine' => 91,
-            'endLine' => 91,
-            'startTokenPos' => 470,
-            'startFilePos' => 3124,
-            'endTokenPos' => 470,
-            'endFilePos' => 3132,
+            'startLine' => 96,
+            'endLine' => 96,
+            'startTokenPos' => 490,
+            'startFilePos' => 3284,
+            'endTokenPos' => 490,
+            'endFilePos' => 3292,
           ),
         ),
         'docComment' => NULL,
@@ -716,19 +841,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'required|regex:/^#[0-9a-fA-F]{6}$/\'',
                 'attributes' => 
                 array (
-                  'startLine' => 90,
-                  'endLine' => 90,
-                  'startTokenPos' => 458,
-                  'startFilePos' => 3044,
-                  'endTokenPos' => 458,
-                  'endFilePos' => 3079,
+                  'startLine' => 95,
+                  'endLine' => 95,
+                  'startTokenPos' => 478,
+                  'startFilePos' => 3204,
+                  'endTokenPos' => 478,
+                  'endFilePos' => 3239,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 90,
-        'endLine' => 91,
+        'startLine' => 95,
+        'endLine' => 96,
         'startColumn' => 5,
         'endColumn' => 51,
         'isPromoted' => false,
@@ -758,12 +883,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'#1f4d38\'',
           'attributes' => 
           array (
-            'startLine' => 94,
-            'endLine' => 94,
-            'startTokenPos' => 488,
-            'startFilePos' => 3229,
-            'endTokenPos' => 488,
-            'endFilePos' => 3237,
+            'startLine' => 99,
+            'endLine' => 99,
+            'startTokenPos' => 508,
+            'startFilePos' => 3389,
+            'endTokenPos' => 508,
+            'endFilePos' => 3397,
           ),
         ),
         'docComment' => NULL,
@@ -780,21 +905,230 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
                 'code' => '\'required|regex:/^#[0-9a-fA-F]{6}$/\'',
                 'attributes' => 
                 array (
-                  'startLine' => 93,
-                  'endLine' => 93,
-                  'startTokenPos' => 476,
-                  'startFilePos' => 3151,
-                  'endTokenPos' => 476,
-                  'endFilePos' => 3186,
+                  'startLine' => 98,
+                  'endLine' => 98,
+                  'startTokenPos' => 496,
+                  'startFilePos' => 3311,
+                  'endTokenPos' => 496,
+                  'endFilePos' => 3346,
                 ),
               ),
             ),
           ),
         ),
-        'startLine' => 93,
-        'endLine' => 94,
+        'startLine' => 98,
+        'endLine' => 99,
         'startColumn' => 5,
         'endColumn' => 49,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'fontSizePercent' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'name' => 'fontSizePercent',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'int',
+            'isIdentifier' => true,
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => '100',
+          'attributes' => 
+          array (
+            'startLine' => 114,
+            'endLine' => 114,
+            'startTokenPos' => 565,
+            'startFilePos' => 3941,
+            'endTokenPos' => 565,
+            'endFilePos' => 3943,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+          0 => 
+          array (
+            'name' => 'Livewire\\Attributes\\Validate',
+            'isRepeated' => false,
+            'arguments' => 
+            array (
+              0 => 
+              array (
+                'code' => '\'required|integer|min:80|max:150\'',
+                'attributes' => 
+                array (
+                  'startLine' => 113,
+                  'endLine' => 113,
+                  'startTokenPos' => 553,
+                  'startFilePos' => 3871,
+                  'endTokenPos' => 553,
+                  'endFilePos' => 3903,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'startLine' => 113,
+        'endLine' => 114,
+        'startColumn' => 5,
+        'endColumn' => 38,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'logo' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'name' => 'logo',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionUnionType',
+          'data' => 
+          array (
+            'types' => 
+            array (
+              0 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'Livewire\\Features\\SupportFileUploads\\TemporaryUploadedFile',
+                  'isIdentifier' => false,
+                ),
+              ),
+              1 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'null',
+                  'isIdentifier' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => 'null',
+          'attributes' => 
+          array (
+            'startLine' => 130,
+            'endLine' => 130,
+            'startTokenPos' => 627,
+            'startFilePos' => 4524,
+            'endTokenPos' => 627,
+            'endFilePos' => 4527,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+          0 => 
+          array (
+            'name' => 'Livewire\\Attributes\\Validate',
+            'isRepeated' => false,
+            'arguments' => 
+            array (
+              0 => 
+              array (
+                'code' => '\'nullable|mimes:jpg,jpeg,png,webp,gif|max:1024\'',
+                'attributes' => 
+                array (
+                  'startLine' => 129,
+                  'endLine' => 129,
+                  'startTokenPos' => 614,
+                  'startFilePos' => 4432,
+                  'endTokenPos' => 614,
+                  'endFilePos' => 4478,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'startLine' => 129,
+        'endLine' => 130,
+        'startColumn' => 5,
+        'endColumn' => 47,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'logoPath' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'name' => 'logoPath',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionUnionType',
+          'data' => 
+          array (
+            'types' => 
+            array (
+              0 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'string',
+                  'isIdentifier' => true,
+                ),
+              ),
+              1 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'null',
+                  'isIdentifier' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => 'null',
+          'attributes' => 
+          array (
+            'startLine' => 132,
+            'endLine' => 132,
+            'startTokenPos' => 639,
+            'startFilePos' => 4562,
+            'endTokenPos' => 639,
+            'endFilePos' => 4565,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 132,
+        'endLine' => 132,
+        'startColumn' => 5,
+        'endColumn' => 36,
         'isPromoted' => false,
         'declaredAtCompileTime' => true,
         'immediateVirtual' => false,
@@ -825,8 +1159,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 96,
-        'endLine' => 115,
+        'startLine' => 134,
+        'endLine' => 156,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -860,8 +1194,78 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 117,
-        'endLine' => 130,
+        'startLine' => 158,
+        'endLine' => 172,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Admin',
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'currentClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'aliasName' => NULL,
+      ),
+      'saveLogo' => 
+      array (
+        'name' => 'saveLogo',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 174,
+        'endLine' => 202,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Admin',
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'currentClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'aliasName' => NULL,
+      ),
+      'removeLogo' => 
+      array (
+        'name' => 'removeLogo',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 204,
+        'endLine' => 219,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -895,8 +1299,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 132,
-        'endLine' => 151,
+        'startLine' => 221,
+        'endLine' => 240,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -934,8 +1338,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 153,
-            'endLine' => 153,
+            'startLine' => 242,
+            'endLine' => 242,
             'startColumn' => 33,
             'endColumn' => 42,
             'parameterIndex' => 0,
@@ -956,8 +1360,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 153,
-        'endLine' => 169,
+        'startLine' => 242,
+        'endLine' => 258,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -991,8 +1395,78 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 171,
-        'endLine' => 194,
+        'startLine' => 260,
+        'endLine' => 286,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Admin',
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'currentClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'aliasName' => NULL,
+      ),
+      'increaseFontSize' => 
+      array (
+        'name' => 'increaseFontSize',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 288,
+        'endLine' => 293,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Admin',
+        'declaringClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'implementingClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'currentClassName' => 'App\\Livewire\\Admin\\SettingsPage',
+        'aliasName' => NULL,
+      ),
+      'decreaseFontSize' => 
+      array (
+        'name' => 'decreaseFontSize',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 295,
+        'endLine' => 300,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -1026,8 +1500,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 196,
-        'endLine' => 201,
+        'startLine' => 302,
+        'endLine' => 307,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

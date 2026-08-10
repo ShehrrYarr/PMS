@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Services\PurchaseService.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Services\PurchaseService
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-538b99b2b572a7aec26ea06ec648a07ad3fecda4dbe50588dfc88a854bd12640',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-24ad3f19d1402c645dccbe96f727314cc978be6d22eb380e9e569918b62a40ad',
    'data' => 
   array (
     'locatedSource' => 
@@ -32,7 +32,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 25,
-    'endLine' => 114,
+    'endLine' => 118,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -372,11 +372,11 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => '/**
- * @param  list<array{product_id: int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string}>  $items
+ * @param  list<array{product_id: int, manufacturing_date: string, expiry_date: string, cost_price: string, quantity: string, barcode?: ?string}>  $items
  * @param  list<array{method: string, amount: string, bank_id: ?int}>  $paymentLines
  */',
         'startLine' => 37,
-        'endLine' => 113,
+        'endLine' => 117,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

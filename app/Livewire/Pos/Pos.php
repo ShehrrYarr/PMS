@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Livewire\Pos;
 
+use App\Enums\DiscountType;
 use App\Enums\PaymentMethod;
 use App\Exceptions\InsufficientStockException;
 use App\Exceptions\InvalidSaleItemException;
@@ -14,6 +15,7 @@ use App\Models\Batch;
 use App\Models\Customer;
 use App\Models\HeldOrder;
 use App\Models\Sale;
+use App\Services\DiscountCalculator;
 use App\Services\SaleService;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
@@ -24,6 +26,9 @@ use Livewire\WithFileUploads;
 
 /**
  * @property-read string $cartTotal Livewire computed property backed by getCartTotalProperty().
+ * @property-read string $cartSubtotal Livewire computed property backed by getCartSubtotalProperty().
+ * @property-read string $cartItemDiscountTotal Livewire computed property backed by getCartItemDiscountTotalProperty().
+ * @property-read string $saleDiscountAmount Livewire computed property backed by getSaleDiscountAmountProperty().
  */
 #[Layout('layouts.app')]
 class Pos extends Component
@@ -34,7 +39,7 @@ class Pos extends Component
 
     public ?string $scanError = null;
 
-    /** @var list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string}> */
+    /** @var list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}> */
     public array $cart = [];
 
     public ?int $customer_id = null;
@@ -45,6 +50,11 @@ class Pos extends Component
     public array $paymentLines = [];
 
     public ?TemporaryUploadedFile $capturedPhoto = null;
+
+    /** Whole-sale discount, applied on top of any per-item discounts already folded into each line. */
+    public ?string $discountType = null;
+
+    public string $discountValue = '0';
 
     public function mount(): void
     {
@@ -100,6 +110,8 @@ class Pos extends Component
             'unit_price' => (string) $batch->product->default_sale_price,
             'quantity' => '1',
             'available' => (string) $batch->quantity_remaining,
+            'discount_type' => null,
+            'discount_value' => '0',
         ];
     }
 
@@ -136,11 +148,15 @@ class Pos extends Component
             'payload' => [
                 'cart' => $this->cart,
                 'customer_id' => $this->customer_id,
+                'discount_type' => $this->discountType,
+                'discount_value' => $this->discountValue,
             ],
         ]);
 
         $this->cart = [];
         $this->customer_id = null;
+        $this->discountType = null;
+        $this->discountValue = '0';
 
         session()->flash('success', __('pos.order_held'));
     }
@@ -174,6 +190,8 @@ class Pos extends Component
         // that also arrives from the offline sync path.
         $this->cart = $this->rehydrateCart($heldOrder->payload['cart'] ?? []);
         $this->customer_id = $heldOrder->payload['customer_id'] ?? null;
+        $this->discountType = $heldOrder->payload['discount_type'] ?? null;
+        $this->discountValue = (string) ($heldOrder->payload['discount_value'] ?? '0');
 
         $heldOrder->delete();
 
@@ -193,7 +211,7 @@ class Pos extends Component
 
     /**
      * @param  mixed  $lines
-     * @return list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string}>
+     * @return list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}>
      */
     private function rehydrateCart(mixed $lines): array
     {
@@ -229,6 +247,10 @@ class Pos extends Component
                     ? (string) $batch->quantity_remaining
                     : $quantity,
                 'available' => (string) $batch->quantity_remaining,
+                'discount_type' => in_array($line['discount_type'] ?? null, [DiscountType::Flat->value, DiscountType::Percentage->value], true)
+                    ? $line['discount_type']
+                    : null,
+                'discount_value' => (string) ($line['discount_value'] ?? '0'),
             ];
         }
 
@@ -258,20 +280,72 @@ class Pos extends Component
 
         $newQuantity = bcsub($this->cart[$index]['quantity'] ?: '0', '1', 2);
 
-        if (bccomp($newQuantity, '0.01', 2) < 0) {
+        // Floor of 1, not 0 — quantities are always whole units, and a sale
+        // can't carry a zero-quantity line.
+        if (bccomp($newQuantity, '1', 2) < 0) {
             return;
         }
 
         $this->cart[$index]['quantity'] = $newQuantity;
     }
 
-    public function getCartTotalProperty(): string
+    public function lineSubtotal(array $line): string
+    {
+        return bcmul($line['unit_price'] ?: '0', $line['quantity'] ?: '0', 2);
+    }
+
+    public function lineDiscountAmount(array $line): string
+    {
+        return app(DiscountCalculator::class)->amount(
+            $this->lineSubtotal($line),
+            $line['discount_type'] ?? null,
+            $line['discount_value'] ?? null,
+        );
+    }
+
+    /** The line's total after its own per-item discount, before the sale-level discount. */
+    public function lineTotal(array $line): string
+    {
+        return bcsub($this->lineSubtotal($line), $this->lineDiscountAmount($line), 2);
+    }
+
+    /** Sum of every line's pre-discount subtotal — the receipt's "Subtotal" figure. */
+    public function getCartSubtotalProperty(): string
     {
         return array_reduce(
             $this->cart,
-            fn (string $carry, array $line) => bcadd($carry, bcmul($line['unit_price'] ?: '0', $line['quantity'] ?: '0', 2), 2),
+            fn (string $carry, array $line) => bcadd($carry, $this->lineSubtotal($line), 2),
             '0.00',
         );
+    }
+
+    public function getCartItemDiscountTotalProperty(): string
+    {
+        return array_reduce(
+            $this->cart,
+            fn (string $carry, array $line) => bcadd($carry, $this->lineDiscountAmount($line), 2),
+            '0.00',
+        );
+    }
+
+    private function subtotalAfterItemDiscounts(): string
+    {
+        return bcsub($this->cartSubtotal, $this->cartItemDiscountTotal, 2);
+    }
+
+    public function getSaleDiscountAmountProperty(): string
+    {
+        return app(DiscountCalculator::class)->amount(
+            $this->subtotalAfterItemDiscounts(),
+            $this->discountType,
+            $this->discountValue,
+        );
+    }
+
+    /** Subtotal minus every item discount minus the sale-level discount — what the customer actually owes. */
+    public function getCartTotalProperty(): string
+    {
+        return bcsub($this->subtotalAfterItemDiscounts(), $this->saleDiscountAmount, 2);
     }
 
     public function openCheckout(): void
@@ -314,13 +388,17 @@ class Pos extends Component
 
         $this->validate([
             'cart' => 'required|array|min:1',
-            'cart.*.quantity' => 'required|numeric|min:0.01',
+            'cart.*.quantity' => 'required|integer|min:1',
             'cart.*.unit_price' => 'required|numeric|min:0',
+            'cart.*.discount_type' => 'nullable|in:flat,percentage',
+            'cart.*.discount_value' => 'nullable|required_with:cart.*.discount_type|numeric|min:0',
             'paymentLines' => 'required|array|min:1',
             'paymentLines.*.method' => 'required|in:cash,bank,ledger',
             'paymentLines.*.amount' => 'required|numeric|min:0.01',
             'paymentLines.*.bank_id' => 'nullable|exists:banks,id',
             'capturedPhoto' => 'nullable|image|max:5120',
+            'discountType' => 'nullable|in:flat,percentage',
+            'discountValue' => 'nullable|required_with:discountType|numeric|min:0',
         ]);
 
         foreach ($this->paymentLines as $line) {
@@ -343,6 +421,8 @@ class Pos extends Component
             'batch_id' => $line['batch_id'],
             'quantity' => $line['quantity'],
             'unit_price' => $line['unit_price'],
+            'discount_type' => $line['discount_type'],
+            'discount_value' => $line['discount_value'],
         ], $this->cart);
 
         try {
@@ -352,6 +432,8 @@ class Pos extends Component
                 paymentLines: $this->paymentLines,
                 user: auth()->user(),
                 photo: $this->capturedPhoto,
+                discountType: $this->discountType,
+                discountValue: $this->discountValue,
             );
         } catch (InsufficientStockException|UnbalancedPaymentSplitException|InvalidSaleItemException|InvalidSalePaymentException $e) {
             $this->addError('paymentLines', $e->getMessage());
@@ -364,6 +446,8 @@ class Pos extends Component
         $this->customer_id = null;
         $this->paymentLines = [];
         $this->capturedPhoto = null;
+        $this->discountType = null;
+        $this->discountValue = '0';
 
         $this->dispatch('sale-completed', receiptUrl: route('sales.receipt', $sale));
         session()->flash('success', __('pos.sale_completed', ['invoice' => $sale->invoice_number]));

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Services;
 
+use App\Enums\DiscountType;
 use App\Enums\LedgerEntryType;
 use App\Enums\PayableType;
 use App\Enums\PaymentMethod;
@@ -33,10 +34,11 @@ class SaleService
     public function __construct(
         private readonly PaymentSplitService $paymentSplitService,
         private readonly LedgerService $ledgerService,
+        private readonly DiscountCalculator $discountCalculator,
     ) {}
 
     /**
-     * @param  list<array{batch_id: int, quantity: string, unit_price: string}>  $items
+     * @param  list<array{batch_id: int, quantity: string, unit_price: string, discount_type?: ?string, discount_value?: ?string}>  $items
      * @param  list<array{method: string, amount: string, bank_id: ?int}>  $paymentLines
      * @param  ?string  $clientUuid Idempotency key for a sale replayed from an offline queue.
      * @param  ?string  $invoiceNumber Pre-assigned number (offline sales keep the SL-OFF… number
@@ -46,6 +48,9 @@ class SaleService
      *                                       sales pass this so they aren't all dated to sync time.
      * @param  bool  $allowOverdraw Skip the stock-availability check only. Passed true solely by
      *                              OfflineSyncService — see the guard comment below.
+     * @param  ?string  $discountType 'flat' or 'percentage', applied to the whole sale on top of
+     *                                any per-item discounts already folded into each line.
+     * @param  ?string  $discountValue The PKR amount ('flat') or percentage number ('percentage').
      */
     public function create(
         ?Customer $customer,
@@ -57,12 +62,49 @@ class SaleService
         ?string $invoiceNumber = null,
         ?CarbonInterface $occurredAt = null,
         bool $allowOverdraw = false,
+        ?string $discountType = null,
+        ?string $discountValue = null,
     ): Sale {
-        $totalAmount = array_reduce(
-            $items,
-            fn (string $carry, array $item) => bcadd($carry, bcmul($item['unit_price'], $item['quantity'], 2), 2),
-            '0.00',
+        // Pure arithmetic, no DB access — resolves every item's discount and
+        // the whole-sale discount BEFORE anything is locked, so a bad
+        // discount (negative, over 100%, or bigger than what it's discounting)
+        // fails fast exactly like the pre-existing balance check below, without
+        // opening a transaction or touching a single batch row.
+        $preparedItems = [];
+        $subtotalAfterItemDiscounts = '0.00';
+
+        foreach ($items as $item) {
+            $lineSubtotal = bcmul($item['unit_price'], $item['quantity'], 2);
+            $itemDiscountType = $item['discount_type'] ?? null;
+            $itemDiscountValue = $item['discount_value'] ?? null;
+            $context = "batch_id {$item['batch_id']}";
+
+            $itemDiscountAmount = $this->resolveDiscountAmount(
+                $lineSubtotal,
+                $itemDiscountType,
+                $itemDiscountValue,
+                $context,
+            );
+
+            $lineTotal = bcsub($lineSubtotal, $itemDiscountAmount, 2);
+            $subtotalAfterItemDiscounts = bcadd($subtotalAfterItemDiscounts, $lineTotal, 2);
+
+            $preparedItems[] = $item + [
+                'discount_type' => $itemDiscountType,
+                'discount_value' => $itemDiscountValue,
+                'discount_amount' => $itemDiscountAmount,
+                'line_total' => $lineTotal,
+            ];
+        }
+
+        $saleDiscountAmount = $this->resolveDiscountAmount(
+            $subtotalAfterItemDiscounts,
+            $discountType,
+            $discountValue,
+            'sale',
         );
+
+        $totalAmount = bcsub($subtotalAfterItemDiscounts, $saleDiscountAmount, 2);
 
         $this->paymentSplitService->assertBalanced($paymentLines, $totalAmount);
 
@@ -74,7 +116,7 @@ class SaleService
             }
         }
 
-        return DB::transaction(function () use ($customer, $items, $paymentLines, $totalAmount, $user, $photo, $clientUuid, $invoiceNumber, $occurredAt, $allowOverdraw) {
+        return DB::transaction(function () use ($customer, $preparedItems, $paymentLines, $totalAmount, $discountType, $discountValue, $saleDiscountAmount, $user, $photo, $clientUuid, $invoiceNumber, $occurredAt, $allowOverdraw) {
             $sale = Sale::query()->create([
                 'shop_id' => $user->shop_id,
                 'invoice_number' => (string) Str::uuid(),
@@ -82,6 +124,9 @@ class SaleService
                 'customer_id' => $customer?->id,
                 'user_id' => $user->id,
                 'total_amount' => $totalAmount,
+                'discount_type' => $discountType,
+                'discount_value' => $discountValue,
+                'discount_amount' => $saleDiscountAmount,
                 'status' => 'completed',
             ]);
 
@@ -102,10 +147,10 @@ class SaleService
                 $sale->forceFill(['created_at' => $occurredAt, 'updated_at' => $occurredAt])->save();
             }
 
-            foreach ($items as $item) {
+            foreach ($preparedItems as $item) {
                 $batch = Batch::query()->lockForUpdate()->findOrFail($item['batch_id']);
 
-                if (bccomp($item['quantity'], '0.01', 2) < 0) {
+                if (bccomp($item['quantity'], '1', 2) < 0) {
                     throw InvalidSaleItemException::forNonPositiveQuantity($batch->barcode, $item['quantity']);
                 }
 
@@ -123,16 +168,21 @@ class SaleService
                     throw InsufficientStockException::forBatch($batch->barcode, $item['quantity'], (string) $batch->quantity_remaining);
                 }
 
-                $lineTotal = bcmul($item['unit_price'], $item['quantity'], 2);
-
                 $saleItem = SaleItem::query()->create([
                     'shop_id' => $user->shop_id,
                     'sale_id' => $sale->id,
                     'batch_id' => $batch->id,
                     'quantity' => $item['quantity'],
                     'unit_price' => $item['unit_price'],
+                    'discount_type' => $item['discount_type'],
+                    'discount_value' => $item['discount_value'],
+                    'discount_amount' => $item['discount_amount'],
                     'cost_price' => $batch->cost_price,
-                    'line_total' => $lineTotal,
+                    // Computed in the pre-transaction pass above, from the
+                    // same unit_price/quantity/discount already validated
+                    // there — not recomputed here, so there is exactly one
+                    // place this arithmetic happens.
+                    'line_total' => $item['line_total'],
                 ]);
 
                 if ($occurredAt !== null) {
@@ -185,5 +235,36 @@ class SaleService
 
             return $sale;
         });
+    }
+
+    /**
+     * Validates a discount against what it's discounting and returns the
+     * resolved PKR amount. $context is either "batch_id {id}" for a per-item
+     * discount or the literal string "sale" for the whole-cart discount —
+     * used only to make a rejected discount's error message identify which
+     * one it was.
+     */
+    private function resolveDiscountAmount(string $subtotal, ?string $type, ?string $value, string $context): string
+    {
+        if ($type === null || $value === null) {
+            return '0.00';
+        }
+
+        if ($type === DiscountType::Percentage->value
+            && (bccomp($value, '0', 2) < 0 || bccomp($value, '100', 2) > 0)) {
+            throw InvalidSaleItemException::forInvalidDiscountPercentage($context, $value);
+        }
+
+        if ($type === DiscountType::Flat->value && bccomp($value, '0', 2) < 0) {
+            throw InvalidSaleItemException::forNegativeDiscountValue($context, $value);
+        }
+
+        $amount = $this->discountCalculator->amount($subtotal, $type, $value);
+
+        if (bccomp($amount, $subtotal, 2) > 0) {
+            throw InvalidSaleItemException::forDiscountExceedsSubtotal($context, $amount, $subtotal);
+        }
+
+        return $amount;
     }
 }

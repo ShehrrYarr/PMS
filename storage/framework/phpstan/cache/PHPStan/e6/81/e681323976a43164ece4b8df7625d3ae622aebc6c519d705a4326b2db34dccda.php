@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Services\BarcodeService.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Services\BarcodeService
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-3afc3952787f77f92d7fdf6df0abacb0a58326a5dbae45d85a4092ae867d231b',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-cac2cf40fd73bb015ac116bd92697a55bf1f9a5aff4b46cfbbc4ea906a859c69',
    'data' => 
   array (
     'locatedSource' => 
@@ -30,8 +30,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 17,
-    'endLine' => 47,
+    'startLine' => 18,
+    'endLine' => 65,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -66,8 +66,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 19,
-        'endLine' => 19,
+        'startLine' => 20,
+        'endLine' => 20,
         'startColumn' => 33,
         'endColumn' => 72,
         'isPromoted' => true,
@@ -104,8 +104,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 19,
-            'endLine' => 19,
+            'startLine' => 20,
+            'endLine' => 20,
             'startColumn' => 33,
             'endColumn' => 72,
             'parameterIndex' => 0,
@@ -118,8 +118,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 19,
-        'endLine' => 19,
+        'startLine' => 20,
+        'endLine' => 20,
         'startColumn' => 5,
         'endColumn' => 76,
         'couldThrow' => false,
@@ -157,8 +157,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 27,
-            'endLine' => 27,
+            'startLine' => 31,
+            'endLine' => 31,
             'startColumn' => 44,
             'endColumn' => 60,
             'parameterIndex' => 0,
@@ -179,13 +179,16 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => '/**
- * Create a batch and assign it a permanent barcode in one step, since the
- * barcode value is derived from the batch\'s own (post-insert) id.
+ * Create a batch and assign it a barcode in one step. If the caller
+ * supplies a non-empty \'barcode\' attribute (e.g. the manufacturer\'s own
+ * printed barcode, entered manually during a purchase), that value is
+ * used as-is. Otherwise a permanent barcode is derived from the batch\'s
+ * own (post-insert) id, same as always.
  *
  * @param  array<string, mixed>  $attributes
  */',
-        'startLine' => 27,
-        'endLine' => 41,
+        'startLine' => 31,
+        'endLine' => 59,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -223,8 +226,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 43,
-            'endLine' => 43,
+            'startLine' => 61,
+            'endLine' => 61,
             'startColumn' => 31,
             'endColumn' => 42,
             'parameterIndex' => 0,
@@ -245,8 +248,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 43,
-        'endLine' => 46,
+        'startLine' => 61,
+        'endLine' => 64,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Inventory\ProductList.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Inventory\ProductList
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-7276eff03851f2dfd843aac47edc58cfb5002239647823d2d355621d37b0176a',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-39546bea8e7cb8faa899b0b5908ad82255f43bcb5c65cce9e3eb7e662c2971f7',
    'data' => 
   array (
     'locatedSource' => 
@@ -36,19 +36,19 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'code' => '\'layouts.app\'',
             'attributes' => 
             array (
-              'startLine' => 15,
-              'endLine' => 15,
-              'startTokenPos' => 53,
-              'startFilePos' => 284,
-              'endTokenPos' => 53,
-              'endFilePos' => 296,
+              'startLine' => 16,
+              'endLine' => 16,
+              'startTokenPos' => 58,
+              'startFilePos' => 308,
+              'endTokenPos' => 58,
+              'endFilePos' => 320,
             ),
           ),
         ),
       ),
     ),
-    'startLine' => 15,
-    'endLine' => 85,
+    'startLine' => 16,
+    'endLine' => 97,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -84,8 +84,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 20,
-        'endLine' => 20,
+        'startLine' => 21,
+        'endLine' => 21,
         'startColumn' => 5,
         'endColumn' => 29,
         'isPromoted' => false,
@@ -115,22 +115,84 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '\'\'',
           'attributes' => 
           array (
-            'startLine' => 22,
-            'endLine' => 22,
-            'startTokenPos' => 87,
-            'startFilePos' => 422,
-            'endTokenPos' => 87,
-            'endFilePos' => 423,
+            'startLine' => 23,
+            'endLine' => 23,
+            'startTokenPos' => 92,
+            'startFilePos' => 446,
+            'endTokenPos' => 92,
+            'endFilePos' => 447,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 22,
-        'endLine' => 22,
+        'startLine' => 23,
+        'endLine' => 23,
         'startColumn' => 5,
         'endColumn' => 31,
+        'isPromoted' => false,
+        'declaredAtCompileTime' => true,
+        'immediateVirtual' => false,
+        'immediateHooks' => 
+        array (
+        ),
+      ),
+      'companyId' => 
+      array (
+        'declaringClassName' => 'App\\Livewire\\Inventory\\ProductList',
+        'implementingClassName' => 'App\\Livewire\\Inventory\\ProductList',
+        'name' => 'companyId',
+        'modifiers' => 1,
+        'type' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionUnionType',
+          'data' => 
+          array (
+            'types' => 
+            array (
+              0 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'int',
+                  'isIdentifier' => true,
+                ),
+              ),
+              1 => 
+              array (
+                'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+                'data' => 
+                array (
+                  'name' => 'null',
+                  'isIdentifier' => true,
+                ),
+              ),
+            ),
+          ),
+        ),
+        'default' => 
+        array (
+          'code' => 'null',
+          'attributes' => 
+          array (
+            'startLine' => 25,
+            'endLine' => 25,
+            'startTokenPos' => 104,
+            'startFilePos' => 480,
+            'endTokenPos' => 104,
+            'endFilePos' => 483,
+          ),
+        ),
+        'docComment' => NULL,
+        'attributes' => 
+        array (
+        ),
+        'startLine' => 25,
+        'endLine' => 25,
+        'startColumn' => 5,
+        'endColumn' => 34,
         'isPromoted' => false,
         'declaredAtCompileTime' => true,
         'immediateVirtual' => false,
@@ -158,20 +220,20 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => 'false',
           'attributes' => 
           array (
-            'startLine' => 24,
-            'endLine' => 24,
-            'startTokenPos' => 98,
-            'startFilePos' => 456,
-            'endTokenPos' => 98,
-            'endFilePos' => 460,
+            'startLine' => 27,
+            'endLine' => 27,
+            'startTokenPos' => 115,
+            'startFilePos' => 516,
+            'endTokenPos' => 115,
+            'endFilePos' => 520,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 24,
-        'endLine' => 24,
+        'startLine' => 27,
+        'endLine' => 27,
         'startColumn' => 5,
         'endColumn' => 35,
         'isPromoted' => false,
@@ -204,8 +266,43 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 26,
-        'endLine' => 29,
+        'startLine' => 29,
+        'endLine' => 32,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Livewire\\Inventory',
+        'declaringClassName' => 'App\\Livewire\\Inventory\\ProductList',
+        'implementingClassName' => 'App\\Livewire\\Inventory\\ProductList',
+        'currentClassName' => 'App\\Livewire\\Inventory\\ProductList',
+        'aliasName' => NULL,
+      ),
+      'updatingCompanyId' => 
+      array (
+        'name' => 'updatingCompanyId',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'void',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 34,
+        'endLine' => 37,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -239,8 +336,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 31,
-        'endLine' => 37,
+        'startLine' => 39,
+        'endLine' => 45,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -278,8 +375,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 39,
-            'endLine' => 39,
+            'startLine' => 47,
+            'endLine' => 47,
             'startColumn' => 26,
             'endColumn' => 39,
             'parameterIndex' => 0,
@@ -300,8 +397,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 39,
-        'endLine' => 45,
+        'startLine' => 47,
+        'endLine' => 53,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -335,8 +432,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 47,
-        'endLine' => 61,
+        'startLine' => 55,
+        'endLine' => 69,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -374,8 +471,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 63,
-            'endLine' => 63,
+            'startLine' => 71,
+            'endLine' => 71,
             'startColumn' => 34,
             'endColumn' => 47,
             'parameterIndex' => 0,
@@ -396,8 +493,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 63,
-        'endLine' => 69,
+        'startLine' => 71,
+        'endLine' => 77,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -431,8 +528,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 71,
-        'endLine' => 84,
+        'startLine' => 79,
+        'endLine' => 96,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

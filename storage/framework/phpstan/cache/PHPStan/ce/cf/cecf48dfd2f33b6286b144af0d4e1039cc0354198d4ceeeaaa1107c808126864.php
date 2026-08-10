@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Models\ThemeSetting.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\ThemeSetting
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-d6c2197f4e34501874675aa4cc86abef1636f4afbd3210b449dfbb3b1872c716',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-c7bfc875976a4e4933abca62f8d76bb705444eb57e5b878527c029b4e17f5950',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 9,
-    'endLine' => 39,
+    'startLine' => 10,
+    'endLine' => 53,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -36,6 +36,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
+      0 => 'App\\Models\\Concerns\\BelongsToShop',
     ),
     'immediateConstants' => 
     array (
@@ -51,23 +52,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'logo_path\', \'shop_name\', \'navbar_primary_color\', \'navbar_accent_color\', \'sidebar_primary_color\', \'sidebar_accent_color\', \'sidebar_gradient_from\', \'sidebar_gradient_to\', \'default_locale\']',
+          'code' => '[\'shop_id\', \'logo_path\', \'shop_name\', \'navbar_primary_color\', \'navbar_accent_color\', \'sidebar_primary_color\', \'sidebar_accent_color\', \'sidebar_gradient_from\', \'sidebar_gradient_to\', \'default_locale\', \'banner_interval_seconds\', \'font_size_percent\']',
           'attributes' => 
           array (
-            'startLine' => 11,
-            'endLine' => 21,
-            'startTokenPos' => 36,
-            'startFilePos' => 158,
-            'endTokenPos' => 65,
-            'endFilePos' => 424,
+            'startLine' => 14,
+            'endLine' => 27,
+            'startTokenPos' => 46,
+            'startFilePos' => 221,
+            'endTokenPos' => 84,
+            'endFilePos' => 570,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 11,
-        'endLine' => 21,
+        'startLine' => 14,
+        'endLine' => 27,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -80,6 +81,41 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'immediateMethods' => 
     array (
+      'casts' => 
+      array (
+        'name' => 'casts',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'array',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => NULL,
+        'startLine' => 29,
+        'endLine' => 35,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 2,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\ThemeSetting',
+        'implementingClassName' => 'App\\Models\\ThemeSetting',
+        'currentClassName' => 'App\\Models\\ThemeSetting',
+        'aliasName' => NULL,
+      ),
       'current' => 
       array (
         'name' => 'current',
@@ -102,8 +138,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * theme_settings is a single-row table (id = 1); this returns that row.
  */',
-        'startLine' => 26,
-        'endLine' => 29,
+        'startLine' => 40,
+        'endLine' => 43,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -140,8 +176,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * The name shown in the navbar, sidebar, browser tab, and receipts —
  * falls back to the app\'s own name until an admin sets a shop name.
  */',
-        'startLine' => 35,
-        'endLine' => 38,
+        'startLine' => 49,
+        'endLine' => 52,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Livewire\Customers\CustomerList.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Livewire\Customers\CustomerList
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-ec04dcd30ecf666afd16f106a026b62aa82b1c97313cd0f6ac7fb24d53cbf07e',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-5dd99993965327a120e4c0be21054a9efc7b9180df646b9ded547ddf9cc44f48',
    'data' => 
   array (
     'locatedSource' => 
@@ -48,7 +48,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       ),
     ),
     'startLine' => 18,
-    'endLine' => 100,
+    'endLine' => 106,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Livewire\\Component',
@@ -362,7 +362,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => NULL,
         'startLine' => 51,
-        'endLine' => 79,
+        'endLine' => 85,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -400,8 +400,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 81,
-            'endLine' => 81,
+            'startLine' => 87,
+            'endLine' => 87,
             'startColumn' => 34,
             'endColumn' => 48,
             'parameterIndex' => 0,
@@ -422,8 +422,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 81,
-        'endLine' => 87,
+        'startLine' => 87,
+        'endLine' => 93,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -457,8 +457,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 89,
-        'endLine' => 99,
+        'startLine' => 95,
+        'endLine' => 105,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -89,7 +89,7 @@ class OfflineSyncService
                     ];
                 }
 
-                /** @var list<array{batch_id: int, quantity: string, unit_price: string}> $items */
+                /** @var list<array{batch_id: int, quantity: string, unit_price: string, discount_type?: ?string, discount_value?: ?string}> $items */
                 $items = $queued['items'] ?? [];
 
                 $shortfalls = $this->detectShortfalls($items);
@@ -108,6 +108,8 @@ class OfflineSyncService
                     invoiceNumber: $invoiceNumber,
                     occurredAt: $occurredAt,
                     allowOverdraw: true,
+                    discountType: $queued['discount_type'] ?? null,
+                    discountValue: $queued['discount_value'] ?? null,
                 );
 
                 foreach ($shortfalls as $shortfall) {

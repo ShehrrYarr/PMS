@@ -129,7 +129,7 @@
                                         <button type="button" wire:click="decrementQuantity({{ $index }})" class="flex min-h-[40px] min-w-[36px] items-center justify-center text-lg font-bold text-[var(--text-secondary)] hover:bg-black/5" aria-label="{{ __('pos.qty') }} -">
                                             &minus;
                                         </button>
-                                        <input type="number" step="0.01" min="0.01" max="{{ $line['available'] }}" wire:model.live="cart.{{ $index }}.quantity" class="min-h-[40px] w-14 border-0 bg-transparent text-center text-sm font-bold text-[var(--text-primary)] focus:ring-0">
+                                        <input type="number" step="1" min="1" max="{{ $line['available'] }}" wire:model.live="cart.{{ $index }}.quantity" class="min-h-[40px] w-14 border-0 bg-transparent text-center text-sm font-bold text-[var(--text-primary)] focus:ring-0">
                                         <button type="button" wire:click="incrementQuantity({{ $index }})" class="flex min-h-[40px] min-w-[36px] items-center justify-center text-lg font-bold text-[var(--text-secondary)] hover:bg-black/5" aria-label="{{ __('pos.qty') }} +">
                                             +
                                         </button>
@@ -143,9 +143,24 @@
                                     <x-input-error :messages="$errors->get('cart.'.$index.'.unit_price')" class="mt-1" />
                                 </div>
 
+                                <div class="w-28">
+                                    <x-input-label :value="__('pos.discount')" class="text-xs" />
+                                    <select wire:model.live="cart.{{ $index }}.discount_type" class="mt-1 min-h-[40px] w-full rounded-lg border border-black/10 bg-white px-1 py-1 text-xs font-semibold text-[var(--text-primary)]">
+                                        <option value="">{{ __('pos.no_discount') }}</option>
+                                        <option value="flat">{{ __('pos.discount_type_flat') }}</option>
+                                        <option value="percentage">{{ __('pos.discount_type_percentage') }}</option>
+                                    </select>
+                                    @if (($line['discount_type'] ?? null) === 'flat')
+                                        <input type="number" step="1" min="0" wire:model.live="cart.{{ $index }}.discount_value" class="mt-1 min-h-[40px] w-full rounded-lg border border-black/10 bg-white px-2 py-1 text-sm font-semibold text-[var(--text-primary)]">
+                                    @elseif (($line['discount_type'] ?? null) === 'percentage')
+                                        <input type="number" step="0.01" min="0" max="100" wire:model.live="cart.{{ $index }}.discount_value" class="mt-1 min-h-[40px] w-full rounded-lg border border-black/10 bg-white px-2 py-1 text-sm font-semibold text-[var(--text-primary)]">
+                                    @endif
+                                    <x-input-error :messages="$errors->get('cart.'.$index.'.discount_value')" class="mt-1" />
+                                </div>
+
                                 <div class="w-24 text-end">
                                     <x-input-label :value="__('pos.line_total')" class="text-xs" />
-                                    <p class="mt-2 text-base font-bold text-[var(--text-primary)]">{{ money((float) $line['unit_price'] * (float) $line['quantity']) }}</p>
+                                    <p class="mt-2 text-base font-bold text-[var(--text-primary)]">{{ money($this->lineTotal($line)) }}</p>
                                 </div>
 
                                 <button type="button" wire:click="removeCartItem({{ $index }})" class="flex min-h-[40px] min-w-[40px] items-center justify-center rounded-lg text-[var(--color-danger)] hover:bg-black/5" aria-label="{{ __('products.actions') }}">
@@ -217,9 +232,39 @@
                     </div>
                     <div class="flex items-center justify-between text-sm font-semibold text-[var(--text-secondary)]">
                         <span>{{ __('pos.subtotal') }}</span>
-                        <span>{{ money($this->cartTotal) }}</span>
+                        <span>{{ money($this->cartSubtotal) }}</span>
                     </div>
+                    @if (bccomp(bcadd($this->cartItemDiscountTotal, $this->saleDiscountAmount, 2), '0', 2) > 0)
+                        <div class="flex items-center justify-between text-sm font-semibold text-[var(--color-danger)]">
+                            <span>{{ __('pos.discount') }}</span>
+                            <span>-{{ money(bcadd($this->cartItemDiscountTotal, $this->saleDiscountAmount, 2)) }}</span>
+                        </div>
+                    @endif
                 </div>
+
+                <div class="border-b border-black/10 py-4">
+                    <div class="flex items-end gap-2">
+                        <div class="flex-1">
+                            <x-input-label :value="__('pos.discount')" class="text-xs" />
+                            <select wire:model.live="discountType" class="mt-1 min-h-[40px] w-full rounded-lg border border-black/10 bg-white px-2 py-1 text-sm font-semibold text-[var(--text-primary)]">
+                                <option value="">{{ __('pos.no_discount') }}</option>
+                                <option value="flat">{{ __('pos.discount_type_flat') }}</option>
+                                <option value="percentage">{{ __('pos.discount_type_percentage') }}</option>
+                            </select>
+                        </div>
+                        @if ($discountType === 'flat')
+                            <div class="w-20">
+                                <input type="number" step="1" min="0" wire:model.live="discountValue" class="min-h-[40px] w-full rounded-lg border border-black/10 bg-white px-2 py-1 text-sm font-semibold text-[var(--text-primary)]">
+                            </div>
+                        @elseif ($discountType === 'percentage')
+                            <div class="w-20">
+                                <input type="number" step="0.01" min="0" max="100" wire:model.live="discountValue" class="min-h-[40px] w-full rounded-lg border border-black/10 bg-white px-2 py-1 text-sm font-semibold text-[var(--text-primary)]">
+                            </div>
+                        @endif
+                    </div>
+                    <x-input-error :messages="$errors->get('discountValue')" class="mt-1" />
+                </div>
+
                 <div class="flex items-center justify-between pt-4">
                     <span class="text-lg font-bold text-[var(--text-primary)]">{{ __('pos.total') }}</span>
                     <span class="text-3xl font-bold text-[var(--text-primary)]">{{ money($this->cartTotal) }}</span>

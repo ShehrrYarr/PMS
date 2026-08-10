@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\shehr\OneDrive\Desktop\Personal Projects\PesticidesManagmentSystem\app\Models\Payment.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Payment
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.2.26-7cc5d69859cc53257624b4dc484d89e2e4aacbe4bf8236e97219f8e5619a5cee',
+   'variableKey' => 'v2-6.70.0.3-8.2.26-1815ad4ea50d7907c279eb8c43754cea745e9c8bfb3d330fde6ee1e241616fe3',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 12,
-    'endLine' => 41,
+    'startLine' => 13,
+    'endLine' => 45,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -36,6 +36,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
+      0 => 'App\\Models\\Concerns\\BelongsToShop',
     ),
     'immediateConstants' => 
     array (
@@ -51,23 +52,23 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'type' => NULL,
         'default' => 
         array (
-          'code' => '[\'payable_type\', \'payable_id\', \'method\', \'bank_id\', \'amount\', \'user_id\']',
+          'code' => '[\'shop_id\', \'payable_type\', \'payable_id\', \'method\', \'bank_id\', \'amount\', \'user_id\']',
           'attributes' => 
           array (
-            'startLine' => 14,
-            'endLine' => 21,
-            'startTokenPos' => 51,
-            'startFilePos' => 263,
-            'endTokenPos' => 71,
-            'endFilePos' => 389,
+            'startLine' => 17,
+            'endLine' => 25,
+            'startTokenPos' => 61,
+            'startFilePos' => 326,
+            'endTokenPos' => 84,
+            'endFilePos' => 471,
           ),
         ),
         'docComment' => NULL,
         'attributes' => 
         array (
         ),
-        'startLine' => 14,
-        'endLine' => 21,
+        'startLine' => 17,
+        'endLine' => 25,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -100,8 +101,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 23,
-        'endLine' => 30,
+        'startLine' => 27,
+        'endLine' => 34,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -135,8 +136,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 32,
-        'endLine' => 35,
+        'startLine' => 36,
+        'endLine' => 39,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -170,8 +171,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 37,
-        'endLine' => 40,
+        'startLine' => 41,
+        'endLine' => 44,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

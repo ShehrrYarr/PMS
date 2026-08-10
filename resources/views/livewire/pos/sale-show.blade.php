@@ -47,8 +47,8 @@
                             <tr class="border-b border-black/5 text-base font-medium text-[var(--text-primary)]">
                                 <td class="px-3 py-3">{{ $item->batch->product->name }}</td>
                                 <td class="px-3 py-3 font-mono text-sm text-[var(--text-secondary)]">{{ $item->batch->barcode }}</td>
-                                <td class="px-3 py-3 text-end">{{ number_format((float) $item->quantity, 2) }}</td>
-                                <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ number_format((float) $item->quantity_returned, 2) }}</td>
+                                <td class="px-3 py-3 text-end">{{ number_format((float) $item->quantity, 0) }}</td>
+                                <td class="px-3 py-3 text-end text-[var(--text-secondary)]">{{ number_format((float) $item->quantity_returned, 0) }}</td>
                                 <td class="px-3 py-3 text-end">{{ money($item->unit_price) }}</td>
                                 <td class="px-3 py-3 text-end font-bold">{{ money($item->line_total) }}</td>
                                 <td class="px-3 py-3 text-end">
@@ -95,7 +95,7 @@
 
             <div>
                 <x-input-label for="returnQuantity" :value="__('purchases.quantity')" />
-                <x-text-input id="returnQuantity" type="number" step="0.01" min="0.01" class="mt-1" wire:model="returnQuantity" />
+                <x-text-input id="returnQuantity" type="number" step="1" min="1" class="mt-1" wire:model="returnQuantity" />
                 <x-input-error :messages="$errors->get('returnQuantity')" class="mt-1" />
             </div>
 
