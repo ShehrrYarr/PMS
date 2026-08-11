@@ -144,4 +144,21 @@ class PurchaseCreatePaymentLineTest extends TestCase
         $test->call('addItem')
             ->assertCount('items', 2);
     }
+
+    /**
+     * cost_price/quantity used to bind with plain wire:model (deferred), so
+     * the Payment section's Total only reflected a typed value once some
+     * other action (e.g. "Add Payment Line") triggered a network round trip
+     * — a cashier watching the Total while filling in an item saw it stay
+     * frozen. A PHP-level ->set() can't catch this (it writes the property
+     * directly regardless of binding style), so this asserts the rendered
+     * HTML itself carries the live modifier on both inputs.
+     */
+    public function test_cost_price_and_quantity_inputs_update_the_total_live(): void
+    {
+        Livewire::actingAs($this->admin())
+            ->test(PurchaseCreate::class)
+            ->assertSeeHtml('wire:model.live="items.0.cost_price"')
+            ->assertSeeHtml('wire:model.live="items.0.quantity"');
+    }
 }
