@@ -282,14 +282,27 @@ class OfflineSyncRegressionTest extends TestCase
         $user = $this->salesman();
         $device = $this->device($user);
 
+        $countQueries = function () use ($user, $device): int {
+            DB::flushQueryLog();
+            DB::enableQueryLog();
+            app(OfflineDataService::class)->snapshotFor($user, $device);
+            $queries = count(DB::getQueryLog());
+            DB::disableQueryLog();
+
+            return $queries;
+        };
+
+        \App\Models\Customer::factory()->count(2)->create(['shop_id' => $user->shop_id]);
+        // Warm-up: the first snapshot also loads (and caches) permissions.
+        $countQueries();
+        $withFew = $countQueries();
+
         \App\Models\Customer::factory()->count(12)->create(['shop_id' => $user->shop_id]);
+        $withMany = $countQueries();
 
-        DB::enableQueryLog();
-        app(OfflineDataService::class)->snapshotFor($user, $device);
-        $queries = count(DB::getQueryLog());
-        DB::disableQueryLog();
-
-        // Comfortably under 12; the old N+1 alone would have added 12 more.
-        $this->assertLessThan(12, $queries, "Snapshot ran {$queries} queries — the N+1 may be back.");
+        // Measured against the snapshot's own baseline rather than a fixed
+        // ceiling, which broke every time the snapshot legitimately grew
+        // (e.g. the product grid's catalogue). The old N+1 would add 12 here.
+        $this->assertSame($withFew, $withMany, "12 more customers cost ".($withMany - $withFew).' extra queries — the N+1 may be back.');
     }
 }

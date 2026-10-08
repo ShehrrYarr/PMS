@@ -28,4 +28,12 @@ return [
     'none' => 'کوئی پروڈکٹ نہیں ملی۔',
     'cancel' => 'منسوخ',
     'save' => 'محفوظ کریں',
+    'image' => 'پروڈکٹ کی تصویر',
+    'image_hint' => 'اختیاری۔ JPG، PNG یا WebP — بڑی تصاویر خود بخود چھوٹی کر دی جاتی ہیں۔',
+    'image_choose' => 'تصویر منتخب کریں',
+    'image_change' => 'تصویر تبدیل کریں',
+    'image_remove' => 'ہٹائیں',
+    'image_uploading' => 'اپ لوڈ ہو رہی ہے…',
+    'image_invalid_type' => 'براہ کرم JPG، PNG یا WebP تصویر منتخب کریں۔',
+    'image_upload_failed' => 'تصویر اپ لوڈ نہیں ہو سکی۔ دوبارہ کوشش کریں۔',
 ];

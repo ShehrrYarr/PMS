@@ -28,6 +28,8 @@ import {
 } from './offline/pos-engine';
 import { printReceipt } from './offline/receipt';
 import { createOfflineSession, STALE_WARNING_HOURS } from './offline/session';
+// Also registers the shared product grid (Alpine.data('posCatalog')).
+import { expiryStatus, formatDisplayDate } from './pos/catalog';
 
 function uuid() {
     if (crypto.randomUUID) {
@@ -65,9 +67,9 @@ document.addEventListener('alpine:init', () => {
         snapshot: null,
         cart: createCart(),
         paymentLines: [],
-        barcodeInput: '',
-        scanError: '',
         problems: [],
+        // The cart is a slide-up drawer on screens narrower than lg.
+        cartOpen: false,
 
         online: false,
         needsLogin: false,
@@ -107,6 +109,7 @@ document.addEventListener('alpine:init', () => {
                     this.snapshot = this.session.snapshot();
                     this.applyTheme();
                     this.stage = 'ready';
+                    this.refreshCatalog();
                     await this.loadHeldOrders();
                 } else {
                     this.stage = 'unprepared';
@@ -187,30 +190,120 @@ document.addEventListener('alpine:init', () => {
             return this.translations.data_age.replace(':hours', String(hours));
         },
 
-        // ---- Cart ------------------------------------------------------
+        // ---- Product grid adapter (see resources/js/pos/catalog.js) -----
 
-        scan() {
-            this.scanError = '';
-            const batch = findBatchByBarcode(this.snapshot, this.barcodeInput);
+        /** The grid's data, straight from the stored snapshot. */
+        catalogSource() {
+            if (!this.snapshot) {
+                return null;
+            }
+
+            return {
+                products: this.snapshot.products,
+                batches: this.snapshot.batches,
+                categories: this.snapshot.categories ?? [],
+                companies: this.snapshot.companies ?? [],
+            };
+        },
+
+        /** Tells the grid to re-read the snapshot (stock moved, or it was replaced). */
+        refreshCatalog() {
+            window.dispatchEvent(new CustomEvent('pos-catalog-refresh'));
+        },
+
+        imageUrlFor(batch) {
+            return this.snapshot?.products?.find((product) => product.id === batch.product_id)?.image_url ?? null;
+        },
+
+        /** Turns an addBatch() refusal into the same wording the live POS uses. */
+        addFailureMessage(result, batch) {
+            switch (result.reason) {
+                case 'invalid_quantity':
+                    return this.translations.add_invalid_quantity;
+                case 'exceeds_stock':
+                    return this.translations.quantity_exceeds_stock.replace(':available', result.available);
+                case 'exceeds_stock_in_cart':
+                    return this.translations.quantity_exceeds_stock_in_cart
+                        .replace(':available', result.available)
+                        .replace(':in_cart', result.inCart);
+                default:
+                    return this.translations.out_of_stock.replace(':barcode', batch.barcode);
+            }
+        },
+
+        /** The batch pop-up's Enter. */
+        addFromCatalog(catalogBatch, quantity) {
+            // Look the batch up in the snapshot itself — that's the copy whose
+            // stock is decremented after each sale and persisted.
+            const batch = this.snapshot?.batches.find((candidate) => candidate.id === catalogBatch.id);
+
+            if (!batch) {
+                return { ok: false, message: this.translations.batch_unavailable };
+            }
+
+            const result = addBatch(this.cart, batch, quantity, { imageUrl: this.imageUrlFor(batch) });
+
+            return result.ok ? { ok: true } : { ok: false, message: this.addFailureMessage(result, batch) };
+        },
+
+        /** A barcode typed or scanned into the grid's search box. */
+        scanCode(code) {
+            const batch = findBatchByBarcode(this.snapshot, code);
 
             if (batch === null) {
-                this.scanError = this.translations.barcode_not_found.replace(':barcode', this.barcodeInput);
-                this.barcodeInput = '';
-
-                return;
+                return { ok: false, message: this.translations.barcode_not_found.replace(':barcode', code) };
             }
 
-            const result = addBatch(this.cart, batch);
+            const result = addBatch(this.cart, batch, '1', { imageUrl: this.imageUrlFor(batch) });
 
             if (!result.ok) {
-                this.scanError = this.translations.out_of_stock.replace(':barcode', batch.barcode);
+                return { ok: false, message: this.addFailureMessage(result, batch) };
             }
 
-            this.barcodeInput = '';
+            // Sold anyway — the shop decides — but never silently.
+            const warning = batch.expiry_date && expiryStatus(batch.expiry_date) === 'expired'
+                ? this.translations.batch_expired_warning
+                    .replace(':barcode', batch.barcode)
+                    .replace(':date', formatDisplayDate(batch.expiry_date, this.translations.receipt.lang))
+                : null;
+
+            return { ok: true, warning };
         },
+
+        // ---- Cart ------------------------------------------------------
 
         removeLine(index) {
             this.cart.lines.splice(index, 1);
+        },
+
+        incrementLine(index) {
+            const line = this.cart.lines[index];
+
+            if (line && compare(add(line.quantity, '1'), line.available) <= 0) {
+                line.quantity = add(line.quantity, '1');
+            }
+        },
+
+        decrementLine(index) {
+            const line = this.cart.lines[index];
+
+            // Floor of 1, matching the live POS.
+            if (line && compare(subtract(line.quantity, '1'), '1') >= 0) {
+                line.quantity = subtract(line.quantity, '1');
+            }
+        },
+
+        /** 'expired' | 'soon' | 'ok' | null for lines from before expiry dates were carried. */
+        lineExpiry(line) {
+            return line.expiry_date ? expiryStatus(line.expiry_date) : null;
+        },
+
+        lineExpiryDate(line) {
+            return line.expiry_date ? formatDisplayDate(line.expiry_date, this.translations.receipt.lang) : '';
+        },
+
+        get itemCount() {
+            return this.cart.lines.length;
         },
 
         clearCart() {
@@ -441,12 +534,14 @@ document.addEventListener('alpine:init', () => {
                 // would let the same units be sold again.
                 applyStockToSnapshot(this.snapshot, this.cart);
                 await this.session.persistSnapshot();
+                this.refreshCatalog();
 
                 this.lastSale = sale;
 
                 this.clearCart();
                 this.paymentLines = [];
                 this.showCheckout = false;
+                this.cartOpen = false;
                 if (this.photoDataUrl) {
                     URL.revokeObjectURL(this.photoDataUrl);
                 }
@@ -500,6 +595,7 @@ document.addEventListener('alpine:init', () => {
 
                 await this.session.refresh();
                 this.snapshot = this.session.snapshot();
+                this.refreshCatalog();
                 await this.refreshCounters();
                 await this.loadHeldOrders();
             } catch (error) {

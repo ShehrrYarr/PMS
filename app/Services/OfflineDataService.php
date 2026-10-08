@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Services;
 
 use App\Models\Bank;
-use App\Models\Batch;
 use App\Models\Customer;
 use App\Models\CustomerLedger;
 use App\Models\PosDevice;
@@ -25,11 +24,17 @@ use Illuminate\Support\Facades\Storage;
  */
 class OfflineDataService
 {
+    public function __construct(private readonly PosCatalogService $catalogService) {}
+
     /**
      * @return array<string, mixed>
      */
     public function snapshotFor(User $user, PosDevice $device): array
     {
+        // products/batches/categories/companies — the same data the live
+        // POS's product grid uses, so the offline till shows the same grid.
+        $catalog = $this->catalogService->forUser($user);
+
         return [
             'generated_at' => now()->toIso8601String(),
             'device' => [
@@ -45,38 +50,14 @@ class OfflineDataService
                 'id' => $user->id,
                 'name' => $user->name,
             ],
-            'batches' => $this->batches(),
+            'products' => $catalog['products'],
+            'batches' => $catalog['batches'],
+            'categories' => $catalog['categories'],
+            'companies' => $catalog['companies'],
             'customers' => $this->customers(),
             'banks' => $this->banks(),
             'settings' => $this->settings(),
         ];
-    }
-
-    /**
-     * Only batches that can actually be sold. A batch at or below zero is
-     * omitted rather than sent with a zero count — the offline till has no
-     * use for it and it would bloat the payload for a large catalogue.
-     *
-     * @return list<array<string, mixed>>
-     */
-    private function batches(): array
-    {
-        return Batch::query()
-            ->with('product:id,name,default_sale_price,unit')
-            ->where('quantity_remaining', '>', 0)
-            ->whereHas('product', fn ($query) => $query->where('is_active', true))
-            ->get()
-            ->map(fn (Batch $batch) => [
-                'id' => $batch->id,
-                'barcode' => $batch->barcode,
-                'product_name' => $batch->product->name,
-                'unit' => $batch->product->unit,
-                'unit_price' => (string) $batch->product->default_sale_price,
-                'quantity_remaining' => (string) $batch->quantity_remaining,
-                'expiry_date' => $batch->expiry_date->toDateString(),
-            ])
-            ->values()
-            ->all();
     }
 
     /**

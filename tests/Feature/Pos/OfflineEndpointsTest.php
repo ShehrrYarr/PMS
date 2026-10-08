@@ -149,6 +149,55 @@ class OfflineEndpointsTest extends TestCase
         $this->assertSame(1, Sale::query()->where('client_uuid', $uuid)->count());
     }
 
+    /**
+     * Regression: the till stores quantities at 2dp and used to send "2.00",
+     * which the integer rule rejected — stranding every offline sale.
+     */
+    public function test_sync_accepts_a_whole_quantity_written_with_decimals(): void
+    {
+        $user = $this->userWithRole(UserRole::Salesman);
+        $batch = $this->makeBatch($user);
+        $device = PosDevice::query()->create(['shop_id' => $user->shop_id, 'user_id' => $user->id]);
+        $uuid = (string) Str::uuid();
+
+        $this->actingAs($user)->postJson($this->shopPath($user, 'pos/sync'), [
+            'device_id' => $device->id,
+            'sales' => [[
+                'client_uuid' => $uuid,
+                'occurred_at' => Carbon::now()->subHour()->toIso8601String(),
+                'invoice_seq' => 1,
+                'customer_id' => null,
+                'items' => [['batch_id' => $batch->id, 'quantity' => '2.00', 'unit_price' => '800.00']],
+                'payment_lines' => [['method' => 'cash', 'amount' => '1600.00', 'bank_id' => null]],
+            ]],
+            'held_orders' => [],
+        ])->assertOk()->assertJsonPath('results.0.status', 'synced');
+
+        $this->assertSame('2.00', Sale::query()->where('client_uuid', $uuid)->firstOrFail()->items()->value('quantity'));
+    }
+
+    public function test_sync_still_rejects_a_fractional_quantity(): void
+    {
+        $user = $this->userWithRole(UserRole::Salesman);
+        $batch = $this->makeBatch($user);
+        $device = PosDevice::query()->create(['shop_id' => $user->shop_id, 'user_id' => $user->id]);
+
+        $this->actingAs($user)->postJson($this->shopPath($user, 'pos/sync'), [
+            'device_id' => $device->id,
+            'sales' => [[
+                'client_uuid' => (string) Str::uuid(),
+                'occurred_at' => Carbon::now()->subHour()->toIso8601String(),
+                'invoice_seq' => 1,
+                'customer_id' => null,
+                'items' => [['batch_id' => $batch->id, 'quantity' => '2.5', 'unit_price' => '800.00']],
+                'payment_lines' => [['method' => 'cash', 'amount' => '2000.00', 'bank_id' => null]],
+            ]],
+            'held_orders' => [],
+        ])->assertUnprocessable()->assertJsonValidationErrors(['sales.0.items.0.quantity']);
+
+        $this->assertSame(0, Sale::query()->count());
+    }
+
     public function test_sync_rejects_a_device_belonging_to_another_shop(): void
     {
         $user = $this->userWithRole(UserRole::Salesman);

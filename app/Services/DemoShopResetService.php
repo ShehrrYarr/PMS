@@ -28,6 +28,7 @@ use App\Models\Vendor;
 use App\Models\VendorLedger;
 use Database\Seeders\CategorySeeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * Wipes every bit of business data (products, batches, sales, purchases,
@@ -91,5 +92,9 @@ class DemoShopResetService
 
             app(CategorySeeder::class)->run($shop->id);
         });
+
+        // The product rows are gone, so their uploaded images are orphans —
+        // left alone they'd pile up on disk with every daily reset.
+        Storage::disk('public')->deleteDirectory("products/{$shop->id}");
     }
 }

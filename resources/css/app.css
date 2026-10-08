@@ -84,6 +84,16 @@ body {
     -webkit-backdrop-filter: blur(var(--blur-nav));
 }
 
+/* Horizontally scrolling rows (the POS category tabs): still swipe- and
+   trackpad-scrollable, just without a scrollbar track under the pills. */
+.scrollbar-none {
+    scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
 @media print {
     body {
         background: none;

@@ -16,6 +16,7 @@ use App\Models\Customer;
 use App\Models\HeldOrder;
 use App\Models\Sale;
 use App\Services\DiscountCalculator;
+use App\Services\PosCatalogService;
 use App\Services\SaleService;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
@@ -25,6 +26,12 @@ use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Livewire\WithFileUploads;
 
 /**
+ * The cart, checkout and held orders live here, server-side. The product
+ * grid and batch pop-up are client-side (resources/js/pos/catalog.js): the
+ * grid loads its data once through catalog() and calls addBatch() /
+ * scanBarcode() to put things in the cart, so typing in the search box or
+ * opening a pop-up never costs a server round trip.
+ *
  * @property-read string $cartTotal Livewire computed property backed by getCartTotalProperty().
  * @property-read string $cartSubtotal Livewire computed property backed by getCartSubtotalProperty().
  * @property-read string $cartItemDiscountTotal Livewire computed property backed by getCartItemDiscountTotalProperty().
@@ -39,7 +46,13 @@ class Pos extends Component
 
     public ?string $scanError = null;
 
-    /** @var list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}> */
+    /** Non-blocking, e.g. a scanned batch that has already expired. */
+    public ?string $scanWarning = null;
+
+    /** Confirmation shown in the POS itself (a held order, a completed sale). */
+    public ?string $notice = null;
+
+    /** @var list<array{batch_id: int, product_id: int, barcode: string, product_name: string, image_url: ?string, expiry_date: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}> */
     public array $cart = [];
 
     public ?int $customer_id = null;
@@ -61,58 +74,162 @@ class Pos extends Component
         $this->authorize('create', Sale::class);
     }
 
-    public function scanBarcode(): void
+    /**
+     * The product grid's data — fetched by the browser once on load and again
+     * after every sale (stock moves), never re-sent on ordinary re-renders.
+     *
+     * @return array<string, mixed>
+     */
+    public function catalog(PosCatalogService $catalogService): array
     {
+        $this->authorize('create', Sale::class);
+
+        return $catalogService->forUser(auth()->user());
+    }
+
+    /**
+     * Adds a scanned barcode as one unit. Takes the code as an argument from
+     * the grid's search box; falls back to $barcodeInput for callers that
+     * bind the property instead.
+     *
+     * @return array{ok: bool, message: ?string, warning: ?string}
+     */
+    public function scanBarcode(?string $code = null): array
+    {
+        $this->authorize('create', Sale::class);
+
         $this->scanError = null;
-        $barcode = trim($this->barcodeInput);
+        $this->scanWarning = null;
+        $barcode = trim($code ?? $this->barcodeInput);
         $this->barcodeInput = '';
 
         if ($barcode === '') {
-            return;
+            return ['ok' => false, 'message' => null, 'warning' => null];
         }
 
-        $batch = Batch::query()->where('barcode', $barcode)->first();
+        $batch = Batch::query()->with('product')->where('barcode', $barcode)->first();
 
         if ($batch === null) {
-            $this->scanError = __('pos.barcode_not_found', ['barcode' => $barcode]);
-
-            return;
+            return $this->scanFailed(__('pos.barcode_not_found', ['barcode' => $barcode]));
         }
 
-        if (bccomp((string) $batch->quantity_remaining, '0', 2) <= 0) {
-            $this->scanError = __('pos.out_of_stock', ['barcode' => $barcode]);
+        $error = $this->addToCart($batch, '1');
 
-            return;
+        if ($error !== null) {
+            return $this->scanFailed($error);
+        }
+
+        // Sold anyway — the shop decides — but never silently.
+        if ($batch->isExpired()) {
+            $this->scanWarning = __('pos.batch_expired_warning', [
+                'barcode' => $batch->barcode,
+                'date' => $batch->expiry_date->translatedFormat('j M Y'),
+            ]);
+        }
+
+        return ['ok' => true, 'message' => null, 'warning' => $this->scanWarning];
+    }
+
+    /**
+     * The batch pop-up's "Add to cart": a specific batch, in a specific
+     * quantity. Everything is re-checked here against the live batch —
+     * the grid's copy of the stock may be minutes old.
+     *
+     * @return array{ok: bool, message: ?string, warning: ?string}
+     */
+    public function addBatch(int $batchId, mixed $quantity = '1'): array
+    {
+        $this->authorize('create', Sale::class);
+
+        $quantity = trim((string) $quantity);
+
+        if (preg_match('/^\d+$/', $quantity) !== 1 || bccomp($quantity, '1', 0) < 0) {
+            return ['ok' => false, 'message' => __('pos.invalid_quantity'), 'warning' => null];
+        }
+
+        $batch = Batch::query()->with('product')->find($batchId);
+
+        if ($batch === null) {
+            return ['ok' => false, 'message' => __('pos.batch_unavailable'), 'warning' => null];
+        }
+
+        $error = $this->addToCart($batch, $quantity);
+
+        return ['ok' => $error === null, 'message' => $error, 'warning' => null];
+    }
+
+    /**
+     * @return array{ok: false, message: string, warning: null}
+     */
+    private function scanFailed(string $message): array
+    {
+        $this->scanError = $message;
+
+        return ['ok' => false, 'message' => $message, 'warning' => null];
+    }
+
+    /**
+     * Merges into an existing line for the same batch rather than adding a
+     * duplicate row. Returns an error message, or null on success.
+     *
+     * Quantities are kept as whole-number strings ('3', not '3.00'): checkout
+     * validates cart.*.quantity as an integer, and Laravel's integer rule
+     * rejects '3.00'.
+     */
+    private function addToCart(Batch $batch, string $quantity): ?string
+    {
+        $remaining = (string) $batch->quantity_remaining;
+
+        if (bccomp($remaining, '0', 2) <= 0) {
+            return __('pos.out_of_stock', ['barcode' => $batch->barcode]);
         }
 
         $existingIndex = collect($this->cart)->search(fn (array $line) => $line['batch_id'] === $batch->id);
+        $alreadyInCart = $existingIndex !== false ? $this->wholeQuantity($this->cart[$existingIndex]['quantity']) : '0';
+        $newQuantity = bcadd($alreadyInCart, $quantity, 0);
 
-        if ($existingIndex !== false) {
-            $newQuantity = bcadd($this->cart[$existingIndex]['quantity'], '1', 2);
-
-            if (bccomp($newQuantity, (string) $batch->quantity_remaining, 2) > 0) {
-                $this->scanError = __('pos.out_of_stock', ['barcode' => $barcode]);
-
-                return;
-            }
-
-            $this->cart[$existingIndex]['quantity'] = $newQuantity;
-
-            return;
+        if (bccomp($newQuantity, $remaining, 2) > 0) {
+            return $existingIndex !== false
+                ? __('pos.quantity_exceeds_stock_in_cart', ['available' => $this->wholeQuantity($remaining), 'in_cart' => $alreadyInCart])
+                : __('pos.quantity_exceeds_stock', ['available' => $this->wholeQuantity($remaining)]);
         }
 
-        $batch->loadMissing('product');
+        if ($existingIndex !== false) {
+            $this->cart[$existingIndex]['quantity'] = $newQuantity;
+            $this->cart[$existingIndex]['available'] = $remaining;
 
-        $this->cart[] = [
+            return null;
+        }
+
+        $this->cart[] = $this->cartLine($batch, $newQuantity, (string) $batch->product->default_sale_price);
+
+        return null;
+    }
+
+    /**
+     * @return array{batch_id: int, product_id: int, barcode: string, product_name: string, image_url: ?string, expiry_date: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}
+     */
+    private function cartLine(Batch $batch, string $quantity, string $unitPrice, ?string $discountType = null, string $discountValue = '0'): array
+    {
+        return [
             'batch_id' => $batch->id,
+            'product_id' => $batch->product_id,
             'barcode' => $batch->barcode,
             'product_name' => $batch->product->name,
-            'unit_price' => (string) $batch->product->default_sale_price,
-            'quantity' => '1',
+            'image_url' => $batch->product->imageUrl(),
+            'expiry_date' => $batch->expiry_date->toDateString(),
+            'unit_price' => $unitPrice,
+            'quantity' => $quantity,
             'available' => (string) $batch->quantity_remaining,
-            'discount_type' => null,
-            'discount_value' => '0',
+            'discount_type' => $discountType,
+            'discount_value' => $discountValue,
         ];
+    }
+
+    /** '20.00' → '20'. Stock and quantities are always whole units. */
+    private function wholeQuantity(string $quantity): string
+    {
+        return bcadd($quantity !== '' ? $quantity : '0', '0', 0);
     }
 
     public function removeCartItem(int $index): void
@@ -124,6 +241,13 @@ class Pos extends Component
     public function clearCart(): void
     {
         $this->cart = [];
+    }
+
+    public function dismissNotice(): void
+    {
+        $this->notice = null;
+        $this->scanError = null;
+        $this->scanWarning = null;
     }
 
     /**
@@ -158,7 +282,7 @@ class Pos extends Component
         $this->discountType = null;
         $this->discountValue = '0';
 
-        session()->flash('success', __('pos.order_held'));
+        $this->notice = __('pos.order_held');
     }
 
     public function resumeHeldOrder(int $heldOrderId): void
@@ -211,7 +335,7 @@ class Pos extends Component
 
     /**
      * @param  mixed  $lines
-     * @return list<array{batch_id: int, barcode: string, product_name: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}>
+     * @return list<array{batch_id: int, product_id: int, barcode: string, product_name: string, image_url: ?string, expiry_date: string, unit_price: string, quantity: string, available: string, discount_type: ?string, discount_value: string}>
      */
     private function rehydrateCart(mixed $lines): array
     {
@@ -234,24 +358,20 @@ class Pos extends Component
                 continue;
             }
 
-            $quantity = (string) ($line['quantity'] ?? '1');
+            $quantity = $this->wholeQuantity((string) ($line['quantity'] ?? '1'));
+            $remaining = $this->wholeQuantity((string) $batch->quantity_remaining);
 
-            $cart[] = [
-                'batch_id' => $batch->id,
-                'barcode' => $batch->barcode,
-                'product_name' => $batch->product->name,
-                'unit_price' => (string) ($line['unit_price'] ?? $batch->product->default_sale_price),
+            $cart[] = $this->cartLine(
+                $batch,
                 // Clamp to what's actually left now, not what was available
                 // when the order was parked.
-                'quantity' => bccomp($quantity, (string) $batch->quantity_remaining, 2) > 0
-                    ? (string) $batch->quantity_remaining
-                    : $quantity,
-                'available' => (string) $batch->quantity_remaining,
-                'discount_type' => in_array($line['discount_type'] ?? null, [DiscountType::Flat->value, DiscountType::Percentage->value], true)
+                bccomp($quantity, $remaining, 0) > 0 ? $remaining : $quantity,
+                (string) ($line['unit_price'] ?? $batch->product->default_sale_price),
+                in_array($line['discount_type'] ?? null, [DiscountType::Flat->value, DiscountType::Percentage->value], true)
                     ? $line['discount_type']
                     : null,
-                'discount_value' => (string) ($line['discount_value'] ?? '0'),
-            ];
+                (string) ($line['discount_value'] ?? '0'),
+            );
         }
 
         return $cart;
@@ -263,7 +383,7 @@ class Pos extends Component
             return;
         }
 
-        $newQuantity = bcadd($this->cart[$index]['quantity'] ?: '0', '1', 2);
+        $newQuantity = bcadd($this->wholeQuantity($this->cart[$index]['quantity']), '1', 0);
 
         if (bccomp($newQuantity, $this->cart[$index]['available'], 2) > 0) {
             return;
@@ -278,11 +398,11 @@ class Pos extends Component
             return;
         }
 
-        $newQuantity = bcsub($this->cart[$index]['quantity'] ?: '0', '1', 2);
+        $newQuantity = bcsub($this->wholeQuantity($this->cart[$index]['quantity']), '1', 0);
 
         // Floor of 1, not 0 — quantities are always whole units, and a sale
         // can't carry a zero-quantity line.
-        if (bccomp($newQuantity, '1', 2) < 0) {
+        if (bccomp($newQuantity, '1', 0) < 0) {
             return;
         }
 
@@ -448,9 +568,13 @@ class Pos extends Component
         $this->capturedPhoto = null;
         $this->discountType = null;
         $this->discountValue = '0';
+        $this->scanError = null;
+        $this->scanWarning = null;
 
         $this->dispatch('sale-completed', receiptUrl: route('sales.receipt', $sale));
-        session()->flash('success', __('pos.sale_completed', ['invoice' => $sale->invoice_number]));
+        // Stock just moved — the grid re-fetches its counts.
+        $this->dispatch('pos-catalog-refresh');
+        $this->notice = __('pos.sale_completed', ['invoice' => $sale->invoice_number]);
     }
 
     public function render(): View

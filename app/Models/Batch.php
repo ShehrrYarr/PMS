@@ -9,6 +9,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
+/**
+ * Declared for static analysis, which otherwise reads these date columns as
+ * plain strings despite the 'date' casts below.
+ *
+ * @property \Illuminate\Support\Carbon $manufacturing_date
+ * @property \Illuminate\Support\Carbon $expiry_date
+ */
 class Batch extends Model
 {
     use BelongsToShop, HasFactory;

@@ -35,7 +35,11 @@ class SyncController extends Controller
             'sales.*.discount_value' => ['nullable', 'required_with:sales.*.discount_type', 'numeric', 'min:0'],
             'sales.*.items' => ['required', 'array', 'min:1'],
             'sales.*.items.*.batch_id' => ['required', 'integer'],
-            'sales.*.items.*.quantity' => ['required', 'integer', 'min:1'],
+            // A whole number of units, written either way: the offline till
+            // stores quantities at 2dp ("3.00"), and Laravel's integer rule
+            // rejects that — which left every offline sale stranded in the
+            // till's queue with a 422. "3.5" is still refused.
+            'sales.*.items.*.quantity' => ['required', 'numeric', 'min:1', 'regex:/^\d+(\.0+)?$/'],
             'sales.*.items.*.unit_price' => ['required', 'numeric', 'min:0'],
             'sales.*.items.*.discount_type' => ['nullable', 'in:flat,percentage'],
             'sales.*.items.*.discount_value' => ['nullable', 'required_with:sales.*.items.*.discount_type', 'numeric', 'min:0'],

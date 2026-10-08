@@ -16,6 +16,15 @@
 const CACHE_PREFIX = 'pos-offline-';
 
 /**
+ * Product photos for the offline grid live in their own cache, one per shop,
+ * under a prefix dropStaleCaches() never touches — a deploy changes the build
+ * fingerprint, not the photos. Safe to serve cache-first forever: every upload
+ * gets a fresh filename (see ProductList::storeImage()), so a URL's content
+ * never changes.
+ */
+const IMAGE_CACHE_PREFIX = 'pos-images-';
+
+/**
  * Derives the cache name from the current build's asset hashes.
  *
  * Computed on demand rather than held in a module variable: a service worker
@@ -117,6 +126,12 @@ self.addEventListener('activate', (event) => {
  * current build even though sw.js itself never changed.
  */
 self.addEventListener('message', (event) => {
+    if (event.data?.type === 'cache-product-images') {
+        event.waitUntil(cacheProductImages(event.data.shop, event.data.urls));
+
+        return;
+    }
+
     if (event.data?.type !== 'cache-offline-shell') {
         return;
     }
@@ -143,6 +158,63 @@ self.addEventListener('message', (event) => {
         })(),
     );
 });
+
+/**
+ * Mirrors the shop's current product photos into its image cache: fetches
+ * what's missing, drops photos of products that were removed or re-shot.
+ * One at a time, so a till on a weak connection isn't flooded.
+ */
+async function cacheProductImages(shop, urls) {
+    if (typeof shop !== 'string' || shop === '' || !Array.isArray(urls)) {
+        return;
+    }
+
+    try {
+        const cache = await caches.open(IMAGE_CACHE_PREFIX + shop);
+        const wanted = new Set(
+            urls
+                .map((url) => {
+                    try {
+                        return new URL(url, self.location.origin);
+                    } catch {
+                        return null;
+                    }
+                })
+                // Same-origin only: the fetch handler below never sees
+                // cross-origin requests, so caching them would be wasted.
+                .filter((url) => url !== null && url.origin === self.location.origin)
+                .map((url) => url.href),
+        );
+
+        for (const request of await cache.keys()) {
+            if (!wanted.has(request.url)) {
+                await cache.delete(request);
+            }
+        }
+
+        for (const url of wanted) {
+            if (await cache.match(url)) {
+                continue;
+            }
+
+            try {
+                const response = await fetch(url, { credentials: 'same-origin' });
+
+                if (response.ok) {
+                    await cache.put(url, response);
+                }
+            } catch {
+                // Try again on the next refresh.
+            }
+        }
+    } catch {
+        // Photos are a nicety; never let them break anything.
+    }
+}
+
+function isProductImageRequest(url) {
+    return /\/storage\/products\//.test(url.pathname);
+}
 
 function isOfflineShellRequest(url) {
     return /\/pos\/offline\/?$/.test(url.pathname);
@@ -209,6 +281,14 @@ self.addEventListener('fetch', (event) => {
             fetch(request).catch(() =>
                 Response.redirect(`${url.pathname.replace(/\/$/, '')}/offline`, 302),
             ),
+        );
+
+        return;
+    }
+
+    if (request.destination === 'image' && isProductImageRequest(url)) {
+        event.respondWith(
+            caches.match(request, { ignoreSearch: true }).then((cached) => cached ?? fetch(request)),
         );
 
         return;

@@ -28,4 +28,12 @@ return [
     'none' => 'No products found.',
     'cancel' => 'Cancel',
     'save' => 'Save',
+    'image' => 'Product Image',
+    'image_hint' => 'Optional. JPG, PNG or WebP — large photos are shrunk automatically.',
+    'image_choose' => 'Choose image',
+    'image_change' => 'Change image',
+    'image_remove' => 'Remove',
+    'image_uploading' => 'Uploading…',
+    'image_invalid_type' => 'Please choose a JPG, PNG or WebP image.',
+    'image_upload_failed' => 'The image could not be uploaded. Please try again.',
 ];

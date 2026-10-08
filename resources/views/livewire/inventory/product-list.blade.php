@@ -52,7 +52,18 @@
                 <tbody>
                     @forelse ($products as $product)
                         <tr class="border-b border-black/5 text-base font-medium text-[var(--text-primary)]">
-                            <td class="px-3 py-3">{{ $product->name }}</td>
+                            <td class="px-3 py-3">
+                                <div class="flex items-center gap-3">
+                                    <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-black/10 bg-[var(--navbar-accent-color)]">
+                                        @if ($product->image_path)
+                                            <img src="{{ $product->imageUrl() }}" alt="" loading="lazy" class="h-full w-full object-cover">
+                                        @else
+                                            <span class="text-sm font-bold text-[var(--navbar-primary-color)]">{{ mb_strtoupper(mb_substr($product->name, 0, 1)) }}</span>
+                                        @endif
+                                    </div>
+                                    <span>{{ $product->name }}</span>
+                                </div>
+                            </td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->sku }}</td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->category?->name ?? '—' }}</td>
                             <td class="px-3 py-3 text-[var(--text-secondary)]">{{ $product->company?->name ?? '—' }}</td>
@@ -99,6 +110,56 @@
             <h3 class="text-xl font-bold text-[var(--text-primary)]">
                 {{ $form->product ? __('products.edit') : __('products.add') }}
             </h3>
+
+            <div
+                x-data="imageUpload({
+                    model: 'form.image',
+                    removeMethod: 'removeImage',
+                    maxDimension: 800,
+                    invalidTypeMessage: @js(__('products.image_invalid_type')),
+                    failedMessage: @js(__('products.image_upload_failed')),
+                })"
+                wire:key="product-image-{{ $formVersion }}"
+            >
+                <x-input-label :value="__('products.image')" />
+                @php
+                    $serverPreview = $form->image?->isPreviewable()
+                        ? $form->image->temporaryUrl()
+                        : ($form->existingImagePath !== null && ! $form->removeImage ? \Illuminate\Support\Facades\Storage::disk('public')->url($form->existingImagePath) : null);
+                @endphp
+                <div class="mt-1 flex items-center gap-4">
+                    <div class="relative flex h-24 w-24 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-black/10 bg-white/60">
+                        <img x-show="localPreview" x-cloak :src="localPreview" alt="" class="h-full w-full object-cover">
+                        @if ($serverPreview)
+                            <img x-show="! localPreview" src="{{ $serverPreview }}" alt="" class="h-full w-full object-cover">
+                        @else
+                            <svg x-show="! localPreview" xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-[var(--text-secondary)]/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21zm9-12.75h.008v.008H12.75V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+                        @endif
+                        <div x-show="uploading" x-cloak class="absolute inset-x-0 bottom-0 h-1.5 bg-black/10">
+                            <div class="h-full bg-[var(--navbar-primary-color)] transition-all" :style="`width: ${progress}%`"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex flex-wrap gap-2">
+                            <label class="inline-flex min-h-[44px] cursor-pointer items-center rounded-xl bg-black/5 px-4 py-2 text-sm font-bold text-[var(--text-primary)] hover:bg-black/10">
+                                <span>{{ $serverPreview ? __('products.image_change') : __('products.image_choose') }}</span>
+                                <input type="file" accept="image/jpeg,image/png,image/webp" class="sr-only" @change="pick($event)" :disabled="uploading">
+                            </label>
+                            @if ($serverPreview)
+                                <button type="button" @click="remove()" :disabled="uploading" class="min-h-[44px] rounded-xl px-3 py-2 text-sm font-semibold text-[var(--color-danger)] hover:bg-black/5">
+                                    {{ __('products.image_remove') }}
+                                </button>
+                            @endif
+                        </div>
+                        <p class="text-xs font-medium text-[var(--text-secondary)]" x-show="! uploading">{{ __('products.image_hint') }}</p>
+                        <p class="text-xs font-semibold text-[var(--text-secondary)]" x-show="uploading" x-cloak>{{ __('products.image_uploading') }}</p>
+                    </div>
+                </div>
+                <p x-show="error" x-cloak x-text="error" class="mt-1 text-sm font-semibold text-[var(--color-danger)]"></p>
+                <x-input-error :messages="$errors->get('form.image')" class="mt-1" />
+            </div>
 
             <div>
                 <x-input-label for="name" :value="__('products.name')" />
@@ -150,7 +211,9 @@
                 <button type="button" wire:click="$set('showModal', false)" class="min-h-[44px] rounded-xl px-5 py-2 text-base font-semibold text-[var(--text-secondary)] hover:bg-black/5">
                     {{ __('products.cancel') }}
                 </button>
-                <x-primary-button>{{ __('products.save') }}</x-primary-button>
+                {{-- Also held disabled while a picked image is still uploading, so Save
+                     can't fire mid-upload and quietly drop the photo. --}}
+                <x-primary-button wire:target="save, form.image">{{ __('products.save') }}</x-primary-button>
             </div>
         </form>
     </x-glass-modal>

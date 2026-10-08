@@ -147,8 +147,9 @@ class HeldOrderTest extends TestCase
         $component->call('resumeHeldOrder', HeldOrder::query()->value('id'));
 
         $cart = $component->get('cart');
-        // Clamped down to live stock, carrying the batch's decimal:2 cast.
-        $this->assertSame('4.00', $cart[0]['quantity']);
+        // Clamped down to live stock — as a whole number, since checkout's
+        // integer rule rejects '4.00'. 'available' keeps the decimal:2 cast.
+        $this->assertSame('4', $cart[0]['quantity']);
         $this->assertSame('4.00', $cart[0]['available']);
     }
 

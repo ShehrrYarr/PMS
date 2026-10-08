@@ -9,7 +9,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Storage;
 
+/**
+ * @property int $shop_id
+ * @property ?string $image_path
+ */
 class Product extends Model
 {
     use BelongsToShop, HasFactory;
@@ -20,6 +25,7 @@ class Product extends Model
         'sku',
         'category_id',
         'company_id',
+        'image_path',
         'unit',
         'default_sale_price',
         'is_active',
@@ -55,6 +61,14 @@ class Product extends Model
     public function batches(): HasMany
     {
         return $this->hasMany(Batch::class);
+    }
+
+    /** Public URL of the optional product image, or null when none was uploaded. */
+    public function imageUrl(): ?string
+    {
+        return $this->image_path !== null
+            ? Storage::disk('public')->url($this->image_path)
+            : null;
     }
 
     public function totalRemainingQuantity(): string

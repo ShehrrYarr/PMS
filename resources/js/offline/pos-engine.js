@@ -34,34 +34,52 @@ export function findBatchByBarcode(snapshot, barcode) {
 }
 
 /**
- * Adds a scanned batch, merging with an existing line the way the online POS
- * does rather than creating a duplicate row.
+ * Adds a batch — one unit for a scan, or whatever the batch pop-up asked
+ * for — merging with an existing line the way the online POS does rather
+ * than creating a duplicate row. Mirrors Pos::addBatch()'s checks.
+ *
+ * `extra.imageUrl` is display-only, so the cart can show the product photo.
  */
-export function addBatch(cart, batch) {
-    const existing = cart.lines.find((line) => line.batch_id === batch.id);
+export function addBatch(cart, batch, quantity = '1', extra = {}) {
+    const requested = String(quantity ?? '').trim();
 
-    if (existing) {
-        const next = add(existing.quantity, '1');
-
-        if (compare(next, existing.available) > 0) {
-            return { ok: false, reason: 'out_of_stock' };
-        }
-
-        existing.quantity = next;
-
-        return { ok: true };
+    if (!/^\d+$/.test(requested) || compare(requested, '1') < 0) {
+        return { ok: false, reason: 'invalid_quantity' };
     }
 
     if (compare(batch.quantity_remaining, '0') <= 0) {
         return { ok: false, reason: 'out_of_stock' };
     }
 
+    const existing = cart.lines.find((line) => line.batch_id === batch.id);
+    const inCart = existing ? existing.quantity : '0';
+    const next = add(inCart, requested);
+
+    if (compare(next, batch.quantity_remaining) > 0) {
+        return {
+            ok: false,
+            reason: existing ? 'exceeds_stock_in_cart' : 'exceeds_stock',
+            available: formatQuantity(batch.quantity_remaining),
+            inCart: formatQuantity(inCart),
+        };
+    }
+
+    if (existing) {
+        existing.quantity = next;
+        existing.available = normalize(batch.quantity_remaining);
+
+        return { ok: true };
+    }
+
     cart.lines.push({
         batch_id: batch.id,
+        product_id: batch.product_id ?? null,
         barcode: batch.barcode,
         product_name: batch.product_name,
+        image_url: extra.imageUrl ?? null,
+        expiry_date: batch.expiry_date ?? null,
         unit_price: normalize(batch.unit_price),
-        quantity: '1.00',
+        quantity: normalize(requested),
         available: normalize(batch.quantity_remaining),
         discount_type: null,
         discount_value: '0',
@@ -247,7 +265,9 @@ export function buildQueuedSale(cart, paymentLines, { clientUuid, invoiceNumber,
         discount_value: cart.discountType === null ? null : normalize(cart.discountValue ?? '0'),
         items: cart.lines.map((line) => ({
             batch_id: line.batch_id,
-            quantity: normalize(line.quantity),
+            // Whole units, "3" not "3.00" — validateSale() has already
+            // refused anything fractional.
+            quantity: formatQuantity(line.quantity),
             unit_price: normalize(line.unit_price),
             discount_type: line.discount_type ?? null,
             discount_value: (line.discount_type ?? null) === null ? null : normalize(line.discount_value ?? '0'),

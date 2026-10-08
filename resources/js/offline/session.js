@@ -64,6 +64,29 @@ export function createOfflineSession(shopSlug, userId) {
     }
 
     /**
+     * Asks the service worker to keep a copy of every product photo, so the
+     * offline grid shows the same pictures as the live one. Best-effort and
+     * never awaited on the worker: a missing photo only means a letter tile.
+     *
+     * getRegistration() rather than navigator.serviceWorker.ready — ready
+     * never settles on a device where no worker was ever registered, which
+     * would hang refresh() for good.
+     */
+    async function cacheProductImages(data) {
+        try {
+            const registration = await navigator.serviceWorker?.getRegistration('/');
+
+            registration?.active?.postMessage({
+                type: 'cache-product-images',
+                shop: shopSlug,
+                urls: (data?.products ?? []).map((product) => product.image_url).filter(Boolean),
+            });
+        } catch {
+            // Photos are a nicety; the till works without them.
+        }
+    }
+
+    /**
      * "Go Offline": download everything and make sure the page itself will
      * load without a server.
      */
@@ -92,6 +115,7 @@ export function createOfflineSession(shopSlug, userId) {
 
         await registerServiceWorker();
         await cacheOfflineShell();
+        await cacheProductImages(snapshot);
 
         return { snapshot: data, persisted };
     }
@@ -171,6 +195,7 @@ export function createOfflineSession(shopSlug, userId) {
 
             snapshot = await deductQueuedStock(data);
             await refs.save(snapshot);
+            await cacheProductImages(snapshot);
 
             // Only ever move the invoice counter FORWARD. The server reports
             // its own last used sequence, which knows nothing about sales
