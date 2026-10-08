@@ -174,6 +174,46 @@ export function paymentsTotal(paymentLines) {
     return paymentLines.reduce((carry, line) => add(carry, line.amount || '0'), '0.00');
 }
 
+const isBlankAmount = (amount) => amount === null || amount === undefined || String(amount).trim() === '';
+
+/**
+ * Mirrors Pos::resolvedPaymentLines(): a single On Account line left blank
+ * takes whatever the other lines don't cover, once every other amount is a
+ * plain decimal and something is actually left. Otherwise the lines come
+ * back untouched and validateSale() asks for the missing amount.
+ */
+export function resolvePaymentLines(paymentLines, total) {
+    const blank = paymentLines
+        .map((line, index) => (line.method === 'ledger' && isBlankAmount(line.amount) ? index : null))
+        .filter((index) => index !== null);
+
+    if (blank.length !== 1) {
+        return paymentLines;
+    }
+
+    let covered = '0.00';
+
+    for (const [index, line] of paymentLines.entries()) {
+        if (index === blank[0]) {
+            continue;
+        }
+
+        if (!/^\d+(\.\d+)?$/.test(String(line.amount))) {
+            return paymentLines;
+        }
+
+        covered = add(covered, line.amount);
+    }
+
+    const rest = subtract(total, covered);
+
+    if (compare(rest, '0') <= 0) {
+        return paymentLines;
+    }
+
+    return paymentLines.map((line, index) => (index === blank[0] ? { ...line, amount: rest } : line));
+}
+
 /**
  * Returns a list of human-readable problems, empty when the sale may proceed.
  * Ordered so the most actionable message surfaces first.

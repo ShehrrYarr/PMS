@@ -22,6 +22,7 @@ import {
     lineDiscountAmount,
     lineTotal,
     paymentsTotal,
+    resolvePaymentLines,
     saleDiscountAmount,
     applyStockToSnapshot,
     validateSale,
@@ -476,14 +477,31 @@ document.addEventListener('alpine:init', () => {
             this.paymentLines.splice(index, 1);
         },
 
+        /** What checkout will queue: a blank On Account line takes the rest. */
+        get resolvedPaymentLines() {
+            return resolvePaymentLines(this.paymentLines, this.total);
+        },
+
+        /** The hint under a blank On Account amount, or null. */
+        restOnAccount(index) {
+            const line = this.paymentLines[index];
+            const resolved = this.resolvedPaymentLines[index];
+
+            if (!line || line.method !== 'ledger' || resolved === line) {
+                return null;
+            }
+
+            return this.translations.rest_on_account.replace(':amount', formatMoney(resolved.amount));
+        },
+
         get remainingToPay() {
             // Exact decimal subtraction, not floats — this figure has to agree
             // with the server's balance check to the paisa.
-            return formatMoney(subtract(this.total, paymentsTotal(this.paymentLines)));
+            return formatMoney(subtract(this.total, paymentsTotal(this.resolvedPaymentLines)));
         },
 
         get isFullyPaid() {
-            return compare(paymentsTotal(this.paymentLines), this.total) === 0;
+            return compare(paymentsTotal(this.resolvedPaymentLines), this.total) === 0;
         },
 
         get needsPhoto() {
@@ -502,7 +520,8 @@ document.addEventListener('alpine:init', () => {
         },
 
         async completeSale() {
-            this.problems = validateSale(this.cart, this.paymentLines, this.translations);
+            const paymentLines = this.resolvedPaymentLines;
+            this.problems = validateSale(this.cart, paymentLines, this.translations);
 
             if (this.problems.length > 0) {
                 return;
@@ -514,7 +533,7 @@ document.addEventListener('alpine:init', () => {
                 const { invoice_number: invoiceNumber, invoice_seq: invoiceSeq } =
                     await this.session.nextInvoice();
 
-                const sale = buildQueuedSale(this.cart, this.paymentLines, {
+                const sale = buildQueuedSale(this.cart, paymentLines, {
                     clientUuid: uuid(),
                     invoiceNumber,
                     invoiceSeq,

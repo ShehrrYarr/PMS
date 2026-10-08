@@ -351,6 +351,10 @@
                 <p class="text-3xl font-bold tracking-tight text-[var(--text-primary)]">{{ money($this->cartTotal) }}</p>
             </div>
 
+            @php
+                // Blank On Account lines filled with the rest, as checkout will post them.
+                $resolvedLines = $this->resolvedPaymentLines();
+            @endphp
             <div class="space-y-3">
                 @foreach ($paymentLines as $index => $line)
                     <div wire:key="payment-line-{{ $index }}" class="grid grid-cols-1 gap-3 rounded-xl border border-black/10 bg-white/60 p-4 sm:grid-cols-[1fr_1fr_1fr_auto]">
@@ -361,6 +365,7 @@
                                 <option value="bank">{{ __('ledger.bank') }}</option>
                                 <option value="ledger" @if (! $customer_id) disabled @endif>{{ __('purchases.on_account') }}</option>
                             </select>
+                            <x-input-error :messages="$errors->get('paymentLines.'.$index.'.method')" class="mt-1" />
                         </div>
                         <div>
                             @if ($line['method'] === 'bank')
@@ -371,11 +376,18 @@
                                         <option value="{{ $bank->id }}">{{ $bank->name }}</option>
                                     @endforeach
                                 </select>
+                                <x-input-error :messages="$errors->get('paymentLines.'.$index.'.bank_id')" class="mt-1" />
                             @endif
                         </div>
+                        @php
+                            $restOnAccount = $line['method'] === 'ledger' && blank($line['amount']) && ! blank($resolvedLines[$index]['amount'] ?? null)
+                                ? $resolvedLines[$index]['amount']
+                                : null;
+                        @endphp
                         <div>
                             <x-input-label :value="__('ledger.amount')" />
-                            <input type="number" step="0.01" min="0.01" wire:model.live="paymentLines.{{ $index }}.amount" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white px-3 py-2 text-sm font-medium text-[var(--text-primary)]">
+                            <input type="number" step="0.01" min="0.01" wire:model.live="paymentLines.{{ $index }}.amount" @if ($restOnAccount !== null) placeholder="{{ $restOnAccount }}" @endif class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white px-3 py-2 text-sm font-medium text-[var(--text-primary)]">
+                            <x-input-error :messages="$errors->get('paymentLines.'.$index.'.amount')" class="mt-1" />
                         </div>
                         <div class="flex items-end">
                             @if (count($paymentLines) > 1)
@@ -384,6 +396,9 @@
                                 </button>
                             @endif
                         </div>
+                        @if ($restOnAccount !== null)
+                            <p class="text-xs font-semibold text-[var(--text-secondary)] sm:col-span-4">{{ __('pos.rest_on_account', ['amount' => money($restOnAccount)]) }}</p>
+                        @endif
                     </div>
                 @endforeach
             </div>
@@ -393,7 +408,7 @@
             </button>
 
             @php
-                $paidSoFar = collect($paymentLines)->sum(fn ($line) => (float) ($line['amount'] ?: 0));
+                $paidSoFar = collect($resolvedLines)->sum(fn ($line) => (float) ($line['amount'] ?: 0));
                 $remaining = round((float) $this->cartTotal - $paidSoFar, 2);
             @endphp
             <div class="flex items-center justify-between rounded-xl border px-4 py-3 {{ $remaining === 0.0 ? 'border-[var(--color-success)]/30 bg-[var(--color-success)]/10' : 'border-[var(--color-warning)]/30 bg-[var(--color-warning)]/10' }}">
@@ -459,6 +474,11 @@
             @endif
 
             <x-input-error :messages="$errors->get('paymentLines')" class="mt-1" />
+            <x-input-error :messages="$errors->get('capturedPhoto')" class="mt-1" />
+            {{-- Cart and discount errors render in the cart, which this pop-up covers. --}}
+            @if ($errors->hasAny(['cart', 'cart.*', 'discountType', 'discountValue']))
+                <x-input-error :messages="[__('pos.fix_cart_first')]" class="mt-1" />
+            @endif
 
             <div class="flex justify-end gap-3 pt-2">
                 <button type="button" wire:click="$set('showCheckoutModal', false)" class="min-h-[44px] rounded-xl px-5 py-2 text-base font-semibold text-[var(--text-secondary)] hover:bg-black/5">

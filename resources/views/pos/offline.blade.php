@@ -54,6 +54,7 @@
                 'payment_required' => __('offline.payment_required'),
                 'bank_required' => __('ledger.bank_required'),
                 'customer_required_for_ledger' => __('pos.customer_required_for_ledger'),
+                'rest_on_account' => __('pos.rest_on_account'),
                 'cart_not_empty_to_resume' => __('pos.cart_not_empty_to_resume'),
                 'discard_order_confirm' => __('pos.discard_order_confirm'),
                 'hold_failed' => __('offline.hold_failed'),
@@ -450,7 +451,7 @@
                                 </div>
                                 <div>
                                     <label class="block text-sm font-semibold" :for="'pay-amount-' + index">{{ __('ledger.amount') }}</label>
-                                    <input :id="'pay-amount-' + index" type="number" step="0.01" min="0.01" x-model="line.amount" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white px-3 py-2 text-sm">
+                                    <input :id="'pay-amount-' + index" type="number" step="0.01" min="0.01" x-model="line.amount" :placeholder="restOnAccount(index) ? resolvedPaymentLines[index].amount : ''" class="mt-1 min-h-[44px] w-full rounded-xl border border-black/10 bg-white px-3 py-2 text-sm">
                                 </div>
                                 {{-- Without this, a payment line added by mistake could only be
                                      escaped by cancelling the whole checkout. --}}
@@ -462,6 +463,7 @@
                                         aria-label="{{ __('offline.remove_payment_line') }}"
                                     >&times;</button>
                                 </div>
+                                <p x-show="restOnAccount(index)" x-cloak x-text="restOnAccount(index)" class="text-xs font-semibold text-[var(--text-secondary)] sm:col-span-3"></p>
                             </div>
                         </template>
                     </div>

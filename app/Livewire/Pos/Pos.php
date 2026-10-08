@@ -502,6 +502,67 @@ class Pos extends Component
         $this->capturedPhoto = null;
     }
 
+    /**
+     * The payment lines as checkout will post them. An On Account line left
+     * blank takes whatever the other lines don't cover — the cashier's way of
+     * saying "the rest goes on the customer's account". That only works for
+     * a single blank On Account line, once every other amount is known and
+     * something is actually left; otherwise the blank stays and validation
+     * asks for an amount.
+     *
+     * Mirrored by resolvePaymentLines() in resources/js/offline/pos-engine.js.
+     *
+     * @return list<array{method: string, amount: string, bank_id: ?int}>
+     */
+    public function resolvedPaymentLines(): array
+    {
+        $lines = $this->paymentLines;
+        $blank = array_keys(array_filter(
+            $lines,
+            fn (array $line) => $line['method'] === PaymentMethod::Ledger->value && blank($line['amount']),
+        ));
+
+        if (count($blank) !== 1) {
+            return $lines;
+        }
+
+        $covered = '0.00';
+
+        foreach ($lines as $index => $line) {
+            if ($index === $blank[0]) {
+                continue;
+            }
+
+            // bcmath only takes plain decimals — anything else is left for
+            // validation to reject.
+            if (preg_match('/^\d+(\.\d+)?$/', (string) $line['amount']) !== 1) {
+                return $lines;
+            }
+
+            $covered = bcadd($covered, (string) $line['amount'], 2);
+        }
+
+        $rest = bcsub($this->cartTotal, $covered, 2);
+
+        if (bccomp($rest, '0', 2) <= 0) {
+            return $lines;
+        }
+
+        $lines[$blank[0]]['amount'] = $rest;
+
+        return $lines;
+    }
+
+    /** Checkout validates the lines it will post, not the blanks as typed. */
+    protected function prepareForValidation($attributes): array
+    {
+        if (array_key_exists('paymentLines', $attributes)) {
+            $attributes['paymentLines'] = $this->resolvedPaymentLines();
+        }
+
+        return $attributes;
+    }
+
     public function checkout(SaleService $saleService): void
     {
         $this->authorize('create', Sale::class);
@@ -519,10 +580,17 @@ class Pos extends Component
             'capturedPhoto' => 'nullable|image|max:5120',
             'discountType' => 'nullable|in:flat,percentage',
             'discountValue' => 'nullable|required_with:discountType|numeric|min:0',
+        ], [
+            'paymentLines.*.amount.required' => __('pos.payment_amount_required'),
+            'paymentLines.*.amount.numeric' => __('pos.payment_amount_invalid'),
+            'paymentLines.*.amount.min' => __('pos.payment_amount_invalid'),
+            'paymentLines.*.bank_id.exists' => __('ledger.bank_required'),
         ]);
 
-        foreach ($this->paymentLines as $line) {
-            if ($line['method'] === PaymentMethod::Bank->value && $line['bank_id'] === null) {
+        $paymentLines = $this->resolvedPaymentLines();
+
+        foreach ($paymentLines as $line) {
+            if ($line['method'] === PaymentMethod::Bank->value && blank($line['bank_id'])) {
                 $this->addError('paymentLines', __('ledger.bank_required'));
 
                 return;
@@ -549,7 +617,7 @@ class Pos extends Component
             $sale = $saleService->create(
                 customer: $customer,
                 items: $items,
-                paymentLines: $this->paymentLines,
+                paymentLines: $paymentLines,
                 user: auth()->user(),
                 photo: $this->capturedPhoto,
                 discountType: $this->discountType,
