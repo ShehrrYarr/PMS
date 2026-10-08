@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Concerns\LocksDemoShopSetup;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -8,6 +9,8 @@ use Livewire\Volt\Component;
 
 new class extends Component
 {
+    use LocksDemoShopSetup;
+
     public string $name = '';
     public string $email = '';
 
@@ -25,6 +28,10 @@ new class extends Component
      */
     public function updateProfileInformation(): void
     {
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $user = Auth::user();
 
         $validated = $this->validate([

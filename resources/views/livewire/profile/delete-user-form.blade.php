@@ -1,11 +1,14 @@
 <?php
 
 use App\Livewire\Actions\Logout;
+use App\Livewire\Concerns\LocksDemoShopSetup;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Volt\Component;
 
 new class extends Component
 {
+    use LocksDemoShopSetup;
+
     public string $password = '';
 
     /**
@@ -13,6 +16,11 @@ new class extends Component
      */
     public function deleteUser(Logout $logout): void
     {
+        // Deleting the demo Admin would break "See Demo" for everyone.
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $this->validate([
             'password' => ['required', 'string', 'current_password'],
         ]);

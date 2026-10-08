@@ -23,6 +23,8 @@
         </div>
     </div>
 
+    {{-- Tabs above stay clickable; only the panels are locked in the demo shop. --}}
+    <x-demo-setup-lock>
     <div class="mt-4">
         {{-- General --}}
         <div x-show="tab === 'general'" x-cloak class="glass-panel p-4 sm:p-6">
@@ -247,4 +249,5 @@
             <livewire:admin.banner-manager />
         </div>
     </div>
+    </x-demo-setup-lock>
 </div>

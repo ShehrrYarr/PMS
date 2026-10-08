@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Livewire\Admin;
 
+use App\Livewire\Concerns\LocksDemoShopSetup;
 use App\Models\Bank;
 use Illuminate\Contracts\View\View;
 use Livewire\Attributes\Layout;
@@ -13,6 +14,8 @@ use Livewire\Component;
 #[Layout('layouts.app')]
 class BankAccountManager extends Component
 {
+    use LocksDemoShopSetup;
+
     public ?int $editingBankId = null;
 
     #[Validate('required|string|max:255')]
@@ -27,6 +30,10 @@ class BankAccountManager extends Component
     {
         $this->authorize('bank-accounts.manage');
 
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $this->reset(['editingBankId', 'name', 'accountNumber']);
         $this->showModal = true;
     }
@@ -34,6 +41,10 @@ class BankAccountManager extends Component
     public function edit(int $bankId): void
     {
         $this->authorize('bank-accounts.manage');
+
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
 
         $bank = Bank::query()->findOrFail($bankId);
         $this->editingBankId = $bank->id;
@@ -45,6 +56,10 @@ class BankAccountManager extends Component
     public function save(): void
     {
         $this->authorize('bank-accounts.manage');
+
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
 
         $this->validate();
 
@@ -66,6 +81,10 @@ class BankAccountManager extends Component
     public function toggleActive(int $bankId): void
     {
         $this->authorize('bank-accounts.manage');
+
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
 
         $bank = Bank::query()->findOrFail($bankId);
         $bank->update(['is_active' => ! $bank->is_active]);

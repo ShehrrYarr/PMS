@@ -13,6 +13,7 @@ use App\Models\Customer;
 use App\Models\CustomerLedger;
 use App\Models\Expense;
 use App\Models\ExpenseCategory;
+use App\Models\HeldOrder;
 use App\Models\Payment;
 use App\Models\Product;
 use App\Models\Purchase;
@@ -23,6 +24,7 @@ use App\Models\Sale;
 use App\Models\SaleItem;
 use App\Models\SaleReturn;
 use App\Models\SaleReturnItem;
+use App\Models\SaleSyncConflict;
 use App\Models\Shop;
 use App\Models\Vendor;
 use App\Models\VendorLedger;
@@ -33,10 +35,11 @@ use Illuminate\Support\Facades\Storage;
 /**
  * Wipes every bit of business data (products, batches, sales, purchases,
  * vendors, customers, ledgers, expenses, ...) out of the shared public demo
- * shop and reseeds a clean baseline — the shop row itself, its role users,
- * and its theme/receipt settings are left untouched so the "See Demo" login
- * and branding keep working. Run on a schedule (routes/console.php) so
- * whatever a visitor does to the demo is only ever temporary.
+ * shop — the shop row itself, its role users, and its theme/receipt settings
+ * are left untouched so the "See Demo" login and branding keep working.
+ *
+ * No longer scheduled: the demo now keeps its data (see DemoShopSeeder,
+ * which uses wipe() before loading the full demo dataset).
  */
 class DemoShopResetService
 {
@@ -50,6 +53,10 @@ class DemoShopResetService
      * @var list<class-string<\Illuminate\Database\Eloquent\Model>>
      */
     private const SHOP_SCOPED_MODELS = [
+        // Both point at sales/batches; left behind they would dangle once
+        // those rows are gone.
+        SaleSyncConflict::class,
+        HeldOrder::class,
         Payment::class,
         SaleReturnItem::class,
         PurchaseReturnItem::class,
@@ -82,6 +89,25 @@ class DemoShopResetService
         }
 
         DB::transaction(function () use ($shop) {
+            $this->wipe($shop);
+
+            app(CategorySeeder::class)->run($shop->id);
+        });
+
+        // The product rows are gone, so their uploaded images are orphans —
+        // left alone they'd pile up on disk.
+        Storage::disk('public')->deleteDirectory("products/{$shop->id}");
+    }
+
+    /**
+     * Deletes one shop's business-data rows — database only. Files are left
+     * to the caller: DemoShopSeeder runs this inside its own transaction and
+     * touches files only after that commits, so a failed reseed can't leave
+     * rows pointing at deleted images.
+     */
+    public function wipe(Shop $shop): void
+    {
+        DB::transaction(function () use ($shop) {
             DB::statement('SET FOREIGN_KEY_CHECKS=0');
 
             foreach (self::SHOP_SCOPED_MODELS as $modelClass) {
@@ -89,12 +115,6 @@ class DemoShopResetService
             }
 
             DB::statement('SET FOREIGN_KEY_CHECKS=1');
-
-            app(CategorySeeder::class)->run($shop->id);
         });
-
-        // The product rows are gone, so their uploaded images are orphans —
-        // left alone they'd pile up on disk with every daily reset.
-        Storage::disk('public')->deleteDirectory("products/{$shop->id}");
     }
 }

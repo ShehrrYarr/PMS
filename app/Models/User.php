@@ -62,4 +62,10 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->belongsTo(Shop::class);
     }
+
+    /** True for accounts in the public "See Demo" shop, whose setup is read-only (see LocksDemoShopSetup). */
+    public function inDemoShop(): bool
+    {
+        return (bool) $this->shop?->is_demo;
+    }
 }

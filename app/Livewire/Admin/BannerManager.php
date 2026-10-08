@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Livewire\Admin;
 
+use App\Livewire\Concerns\LocksDemoShopSetup;
 use App\Models\Banner;
 use App\Models\ThemeSetting;
 use Illuminate\Contracts\View\View;
@@ -17,7 +18,7 @@ use Livewire\WithFileUploads;
 #[Layout('layouts.app')]
 class BannerManager extends Component
 {
-    use WithFileUploads;
+    use LocksDemoShopSetup, WithFileUploads;
 
     #[Validate('nullable|image|max:2048')]
     public ?TemporaryUploadedFile $banner = null;
@@ -36,6 +37,10 @@ class BannerManager extends Component
     {
         $this->authorize('branding.manage');
 
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $this->validate(['banner' => 'required|image|max:2048']);
 
         Banner::query()->create([
@@ -49,6 +54,10 @@ class BannerManager extends Component
     {
         $this->authorize('branding.manage');
 
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $banner = Banner::query()->findOrFail($bannerId);
 
         Storage::disk('public')->delete($banner->image_path);
@@ -58,6 +67,10 @@ class BannerManager extends Component
     public function saveInterval(): void
     {
         $this->authorize('branding.manage');
+
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
 
         $this->validate(['intervalSeconds' => 'required|integer|min:2|max:60']);
 

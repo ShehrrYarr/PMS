@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Concerns\LocksDemoShopSetup;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
@@ -8,6 +9,8 @@ use Livewire\Volt\Component;
 
 new class extends Component
 {
+    use LocksDemoShopSetup;
+
     public string $current_password = '';
     public string $password = '';
     public string $password_confirmation = '';
@@ -17,6 +20,10 @@ new class extends Component
      */
     public function updatePassword(): void
     {
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         try {
             $validated = $this->validate([
                 'current_password' => ['required', 'string', 'current_password'],

@@ -5,6 +5,7 @@
         </h2>
     </x-slot>
 
+    <x-demo-setup-lock>
     <div class="space-y-6">
         <div class="glass-panel p-4 sm:p-8">
             <div class="max-w-xl">
@@ -24,4 +25,5 @@
             </div>
         </div>
     </div>
+    </x-demo-setup-lock>
 </x-app-layout>

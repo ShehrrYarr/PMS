@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Livewire\Admin;
 
+use App\Livewire\Concerns\LocksDemoShopSetup;
 use App\Models\ReceiptSetting;
 use App\Models\ThemeSetting;
 use Illuminate\Contracts\View\View;
@@ -17,7 +18,7 @@ use Livewire\WithFileUploads;
 #[Layout('layouts.app')]
 class SettingsPage extends Component
 {
-    use WithFileUploads;
+    use LocksDemoShopSetup, WithFileUploads;
 
     /**
      * Four curated palettes an admin can apply with one click, then still
@@ -159,6 +160,10 @@ class SettingsPage extends Component
     {
         $this->authorize('branding.manage');
 
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $this->validate([
             'shopName' => 'nullable|string|max:255',
         ]);
@@ -174,6 +179,10 @@ class SettingsPage extends Component
     public function saveLogo(): void
     {
         $this->authorize('branding.manage');
+
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
 
         $this->validate([
             'logo' => 'required|mimes:jpg,jpeg,png,webp,gif|max:1024',
@@ -205,6 +214,10 @@ class SettingsPage extends Component
     {
         $this->authorize('branding.manage');
 
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $theme = ThemeSetting::current();
 
         if ($theme->logo_path !== null) {
@@ -221,6 +234,10 @@ class SettingsPage extends Component
     public function saveReceipt(): void
     {
         $this->authorize('receipt-settings.manage');
+
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
 
         $this->validate([
             'receiptHeaderText' => 'nullable|string|max:1000',
@@ -243,6 +260,10 @@ class SettingsPage extends Component
     {
         $this->authorize('branding.manage');
 
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $preset = self::PRESET_THEMES[$index] ?? null;
 
         if ($preset === null) {
@@ -260,6 +281,10 @@ class SettingsPage extends Component
     public function saveTheme(): void
     {
         $this->authorize('branding.manage');
+
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
 
         $this->validate([
             'navbarPrimaryColor' => 'required|regex:/^#[0-9a-fA-F]{6}$/',
@@ -289,12 +314,20 @@ class SettingsPage extends Component
     {
         $this->authorize('branding.manage');
 
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
+
         $this->fontSizePercent = min(self::MAX_FONT_SIZE_PERCENT, $this->fontSizePercent + self::FONT_SIZE_STEP);
     }
 
     public function decreaseFontSize(): void
     {
         $this->authorize('branding.manage');
+
+        if ($this->blockedInDemoShop()) {
+            return;
+        }
 
         $this->fontSizePercent = max(self::MIN_FONT_SIZE_PERCENT, $this->fontSizePercent - self::FONT_SIZE_STEP);
     }
