@@ -41,8 +41,14 @@ export function createOfflineSession(shopSlug, userId) {
             // revalidated against the server. Without it a browser can keep
             // serving a byte-cached sw.js for up to 24 hours, which would
             // pin a shop to stale offline behaviour after a deploy.
-            const registration = await navigator.serviceWorker.register('/sw.js', {
-                scope: '/',
+            //
+            // Registered from the app's own base path — "/sw.js" at a domain
+            // root, "/pms/sw.js" under a subdirectory — and scoped to it, so
+            // the worker exists at all on a subdirectory install and never
+            // reaches into other sites sharing the domain.
+            const base = basePath(shopSlug);
+            const registration = await navigator.serviceWorker.register(`${base}/sw.js`, {
+                scope: `${base}/`,
                 updateViaCache: 'none',
             });
 
@@ -74,7 +80,7 @@ export function createOfflineSession(shopSlug, userId) {
      */
     async function cacheProductImages(data) {
         try {
-            const registration = await navigator.serviceWorker?.getRegistration('/');
+            const registration = await navigator.serviceWorker?.getRegistration(`${basePath(shopSlug)}/`);
 
             registration?.active?.postMessage({
                 type: 'cache-product-images',

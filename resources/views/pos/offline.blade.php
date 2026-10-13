@@ -136,9 +136,13 @@
                              needsLogin is deliberately NOT blocked: there the
                              server IS reachable and only the session has expired,
                              so following the link reaches the login page, which is
-                             exactly what the cashier needs. --}}
+                             exactly what the cashier needs.
+
+                             route(), not a hand-built "/{shop}/pos": the app may
+                             live under a subdirectory (/pms on the server), and
+                             route() keeps that prefix via APP_URL. --}}
                         <a
-                            href="/{{ request()->route('shop') }}/pos"
+                            href="{{ route('pos.index') }}"
                             @click="if (! online && ! needsLogin) { $event.preventDefault(); notice = @js(__('offline.online_pos_needs_connection')); }"
                             :aria-disabled="(! online && ! needsLogin) ? 'true' : null"
                             :class="(! online && ! needsLogin)

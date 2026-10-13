@@ -13,6 +13,7 @@ use App\Models\User;
 use App\Services\BarcodeService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 use Tests\TestCase;
 
@@ -269,5 +270,23 @@ class OfflineEndpointsTest extends TestCase
             $this->actingAs($user)->getJson($this->shopPath($user, 'pos/ping'))->assertOk();
             $this->actingAs($user)->getJson($this->shopPath($user, 'pos/offline-data'))->assertOk();
         }
+    }
+
+    /**
+     * Hosted under a subdirectory (APP_URL http://host/pms), "Back to Online
+     * POS" used to point at /{shop}/pos — the domain root, a 404 — dropping
+     * the /pms prefix.
+     */
+    public function test_back_to_online_pos_keeps_the_apps_subdirectory(): void
+    {
+        $user = $this->userWithRole(UserRole::Salesman);
+        // Resolved first: the test client builds request URLs from the same
+        // forced root, and this test only needs the page's links to use it.
+        $page = url($this->shopPath($user, 'pos/offline'));
+        URL::forceRootUrl('http://localhost/pms');
+
+        $this->actingAs($user)->get($page)
+            ->assertOk()
+            ->assertSee('href="http://localhost/pms/'.$user->shop->slug.'/pos"', false);
     }
 }

@@ -2,16 +2,24 @@
  * Service worker for the offline POS.
  *
  * Hand-written and served straight from public/ rather than built by Vite:
- * a service worker needs a stable, unhashed URL at the origin root to control
+ * a service worker needs a stable, unhashed URL at the app's root to control
  * /{shop}/pos, and Vite would hash the filename on every build. Apache serves
  * it directly (public/.htaccess only rewrites to index.php for paths that
  * aren't real files).
  *
- * Scope note: this sits at the origin root and therefore spans EVERY shop on
- * the domain. It deliberately caches nothing shop-specific beyond the offline
+ * Scope note: this sits at the app's root and therefore spans EVERY shop in
+ * the app. It deliberately caches nothing shop-specific beyond the offline
  * shell, and the shell itself holds no per-request data — all shop data lives
  * in IndexedDB, keyed by shop and user.
  */
+
+/**
+ * The app's base path, read from this script's own URL: "" when the app is
+ * hosted at a domain root (/sw.js), "/pms" under a subdirectory (/pms/sw.js).
+ * Every app URL below is built on it — a bare "/build/..." would point at the
+ * domain root, where a subdirectory install has nothing.
+ */
+const BASE = self.location.pathname.replace(/\/sw\.js$/, '');
 
 const CACHE_PREFIX = 'pos-offline-';
 
@@ -34,7 +42,7 @@ const IMAGE_CACHE_PREFIX = 'pos-images-';
  * cache and keep the stale one.
  */
 async function resolveCache() {
-    const response = await fetch('/build/manifest.json', { cache: 'no-store' });
+    const response = await fetch(`${BASE}/build/manifest.json`, { cache: 'no-store' });
 
     // Throw rather than return a fallback name. A 404/503 during a deploy, or
     // a captive portal returning its own page, would otherwise resolve to a
@@ -51,10 +59,10 @@ async function resolveCache() {
 
     for (const entry of Object.values(manifest)) {
         if (entry.file) {
-            urls.push(`/build/${entry.file}`);
+            urls.push(`${BASE}/build/${entry.file}`);
         }
         for (const cssFile of entry.css ?? []) {
-            urls.push(`/build/${cssFile}`);
+            urls.push(`${BASE}/build/${cssFile}`);
         }
     }
 
@@ -295,7 +303,7 @@ self.addEventListener('fetch', (event) => {
     }
 
     // Hashed build assets are immutable, so cache-first is safe and fast.
-    if (url.pathname.startsWith('/build/')) {
+    if (url.pathname.startsWith(`${BASE}/build/`)) {
         event.respondWith(caches.match(request).then((cached) => cached ?? fetch(request)));
     }
 });
